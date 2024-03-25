@@ -1,10 +1,10 @@
 # API
 
-## Description
+## Définition
 L'API ouverte de GoPaaS permet à des applications tierces d'interagir facilement avec la plateforme. Elle fournit un ensemble de règles et de protocoles qui autorisent l'accès aux données, facilitant ainsi l'intégration et l'extension des capacités du logiciel dans d'autres systèmes ou applications.
 
 
-## Avantages
+### Avantages
 
 - ***Interconnectivité***: Permet une intégration transparente avec d'autres outils et systèmes, favorisant un écosystème numérique cohérent et connecté.
 
@@ -14,14 +14,14 @@ L'API ouverte de GoPaaS permet à des applications tierces d'interagir facilemen
 
 - ***Innovation***: Encourage l'innovation en permettant aux développeurs de créer de nouvelles applications ou services qui tirent parti des fonctionnalités du logiciel.
 
-## Bénéfices
+### Bénéfices
 - ***Amélioration de l'efficacité opérationnelle***: L'intégration et l'automatisation des processus entraînent une réduction significative du temps et des coûts opérationnels.
 
 - ***Augmentation de la satisfaction client***: La capacité à personnaliser et à intégrer GoPaaS avec d'autres outils peut améliorer l'expérience utilisateur.
 
 - ***Flexibilité et évolutivité***: L'API ouverte permet aux entreprises de s'adapter rapidement aux changements du marché et d'évoluer en fonction des besoins croissants de leur clientèle.
 
-## Pré-requis
+### Pré-requis
 Pour utiliser l'API GoPaaS, il licence ADMIN ou Utilisateur est nécessaire pour la gestion des connexions.
 
 ## Endpoints
