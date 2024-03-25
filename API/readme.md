@@ -367,7 +367,7 @@ curl -X POST \
 
 La restriction IP limite les requêtes à une API aux adresses IP spécifiées ou à des plages d'adresses IP. Cela signifie que seules les requêtes provenant d'adresses IP autorisées peuvent accéder à l'API, tandis que toutes les autres tentatives sont rejetées. Cette approche ajoute une couche de sécurité supplémentaire en s'assurant que même si des clés API sont compromises, l'accès est toujours restreint aux emplacements réseau approuvés.
 
-### Utilisation des Restrictions IP
+### Utilisation
 
 Les restrictions IP sont couramment utilisées dans les scénarios suivants :
 
@@ -377,7 +377,7 @@ Les restrictions IP sont couramment utilisées dans les scénarios suivants :
 
 - Sécurisation des environnements de production : Pour s'assurer que seuls les serveurs de production ou les systèmes backend peuvent communiquer avec l'API.
 
-## Avantages
+### Avantages
 
 - Réduction du Risque de Fuites de Données : En limitant l'accès aux adresses IP fiables, le risque de fuites de données dues à des accès non autorisés est réduit.
 
@@ -385,7 +385,7 @@ Les restrictions IP sont couramment utilisées dans les scénarios suivants :
 
 - Complément aux Autres Méthodes de Sécurité : Utilisé en combinaison avec l'authentification, le chiffrement et d'autres politiques de sécurité, il renforce la posture de sécurité globale.
 
-## Implémentation
+### Implémentation
 
 Dans la fiche utilisateur API définir dans la section API KEY les informations suivante :
 
