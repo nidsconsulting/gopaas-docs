@@ -29,6 +29,7 @@ Pour utiliser l'API GoPaaS, il licence ADMIN ou Utilisateur est nécessaire pour
 ### list
 
 #### Request
+
 | Method | URL                 |
 |--------|---------------------|
 | `GET`  | `api/list/{{id}}/`  |
@@ -39,6 +40,7 @@ Pour utiliser l'API GoPaaS, il licence ADMIN ou Utilisateur est nécessaire pour
 | `HEAD (option)` | `advancedSearch` | String |
 
 #### Response
+
 | Status | Response                                             |
 |--------|------------------------------------------------------|
 | 200    | JSON                                                 |
@@ -47,10 +49,15 @@ Pour utiliser l'API GoPaaS, il licence ADMIN ou Utilisateur est nécessaire pour
 | 500    | {"msg":"Something went wrong. Please try again later."} |
 
 #### Exemple
+
 Avec curl.
+
 - `{{URL}}` URL de  l’application
+
 - `{{id}}` identifiant unique de la vue
+
 - `{{bearer_token}}` est une chaîne
+
 - `{{advancedSearch}}` est une chaîne
 
 ```php
@@ -62,7 +69,9 @@ curl -X GET \
 ```
 
 ### item
+
 #### Request
+
 | Method | URL                 |
 |--------|---------------------|
 | `GET`  | `api/item/tableName/{{id}}/`  |
@@ -72,6 +81,7 @@ curl -X GET \
 | `HEAD`        | `bearer_token`  | String |
 
 #### Response
+
 | Status | Response                                             |
 |--------|------------------------------------------------------|
 | 200    | JSON                                                 |
@@ -80,10 +90,15 @@ curl -X GET \
 | 500    | {"msg":"Something went wrong. Please try again later."} |
 
 #### Exemple
+
 Avec curl.
+
 - `{{URL}}` URL de  l’application
+
 - `{{id}}` identifiant unique de la fiche
+
 - `{{bearer_token}}` est une chaîne
+
 - `{{tableName}}` est une chaîne avec le nom de la table
 
 ```php
@@ -96,7 +111,9 @@ curl -X POST \
 ```
 
 ### items
+
 #### Request
+
 | Method | URL                 |
 |--------|---------------------|
 | `POST`  | `api/items/tableName/`  |
@@ -107,6 +124,7 @@ curl -X POST \
 | `POST`        | `data`          | JSON   |
 
 #### Response
+
 | Status | Response                                             |
 |--------|------------------------------------------------------|
 | 200    | JSON                                                 |
@@ -115,23 +133,46 @@ curl -X POST \
 | 500    | {"msg":"Something went wrong. Please try again later."} |
 
 #### Exemple
+
 Avec curl.
+
 - `{{URL}}` URL de  l’application
-- `{{id}}` identifiant unique de la fiche
+
+- `{{key}}` identifiant unique de la fiche
+
 - `{{bearer_token}}` est une chaîne
+
 - `{{tableName}}` est une chaîne avec le nom de la table
 
 ```php
-curl -X GET \
-{{URL}}/api/list/{{id}}/
 curl -X POST \
-{{URL}}/api/item/{{tableName}}/{{id}}/
--H "Authorization: Bearer {{bearer_token}}" \
--H 'content-type: application/json'
+
+  {{URL}}/api/items/{{tableName}}/
+-H "Authorization: Bearer {{access_token}}" \
+-H 'content-type: application/json' \
+-d '[{
+"cle": "{{key}}",
+"num_commande": "551035",
+"date_billed": "2016-07-05",
+"actual_billable_amount": "437.50",
+"num_invoice": "16000162",
+“date_closed”:”2016-09-05”
+},{
+"cle": "{{key}}",
+"num_commande": "672620",
+"date_billed": "2017-06-14",
+"actual_billable_amount": "595",
+"num_invoice": "17000100",
+“date_closed”:”2017-07-31”
+}]'
 ```
 
 
+> Si aucune cle {{key}} n’est spécifiée alors une nouvelle fiche sera crée.
+
+
 ## oAuth2
+
 OAuth 2.0 est un protocole standard de délégation d'autorisation pour la sécurisation des accès aux API. Il permet aux applications  externe d'obtenir un accès limité à GoPaaS sans avoir accès aux mots de passe.
 
 ### Configuration
@@ -161,6 +202,7 @@ Dans la fiche utilisateur API définir dans la section OAuth2 les informations s
 
 
 #### Response
+
 | Status | Response                                             |
 |--------|------------------------------------------------------|
 | 200    | JSON                                                 |
@@ -184,6 +226,7 @@ Dans la fiche utilisateur API définir dans la section OAuth2 les informations s
 #### list
 
 ##### Request
+
 | Method | URL                 |
 |--------|---------------------|
 | `GET`  | `api/oauth2/list/{{id}}/`  |
@@ -194,6 +237,7 @@ Dans la fiche utilisateur API définir dans la section OAuth2 les informations s
 | `HEAD (option)` | `advancedSearch` | String |
 
 ##### Response
+
 | Status | Response                                             |
 |--------|------------------------------------------------------|
 | 200    | JSON                                                 |
@@ -202,10 +246,15 @@ Dans la fiche utilisateur API définir dans la section OAuth2 les informations s
 | 500    | {"msg":"Something went wrong. Please try again later."} |
 
 #### Exemple
+
 Avec curl.
+
 - `{{URL}}` URL de  l’application
+
 - `{{id}}` identifiant unique de la vue
+
 - `{{bearer_token}}` est une chaîne
+
 - `{{advancedSearch}}` est une chaîne
 
 ```php
@@ -217,7 +266,9 @@ curl -X GET \
 ```
 
 #### item
+
 ##### Request
+
 | Method | URL                 |
 |--------|---------------------|
 | `GET`  | `api/oauth2/item/tableName/{{id}}/`  |
@@ -235,10 +286,15 @@ curl -X GET \
 | 500    | {"msg":"Something went wrong. Please try again later."} |
 
 ##### Exemple
+
 Avec curl.
+
 - `{{URL}}` URL de  l’application
+
 - `{{id}}` identifiant unique de la fiche
+
 - `{{bearer_token}}` est une chaîne
+
 - `{{tableName}}` est une chaîne avec le nom de la table
 
 ```php
@@ -251,7 +307,9 @@ curl -X POST \
 ```
 
 #### items
+
 ##### Request
+
 | Method | URL                 |
 |--------|---------------------|
 | `POST`  | `api/oauth2/items/tableName/`  |
@@ -262,6 +320,7 @@ curl -X POST \
 | `POST`        | `data`          | JSON   |
 
 ##### Response
+
 | Status | Response                                             |
 |--------|------------------------------------------------------|
 | 200    | JSON                                                 |
@@ -270,37 +329,64 @@ curl -X POST \
 | 500    | {"msg":"Something went wrong. Please try again later."} |
 
 #### Exemple
-Avec curl.
+
 - `{{URL}}` URL de  l’application
-- `{{id}}` identifiant unique de la fiche
+
+- `{{key}}` identifiant unique de la fiche
+
 - `{{bearer_token}}` est une chaîne
+
 - `{{tableName}}` est une chaîne avec le nom de la table
 
 ```php
-curl -X GET \
-{{URL}}/api/oauth2/list/{{id}}/
 curl -X POST \
-{{URL}}/api/item/{{tableName}}/{{id}}/
--H "Authorization: Bearer {{bearer_token}}" \
--H 'content-type: application/json'
+
+  {{URL}}/api/items/{{tableName}}/
+-H "Authorization: Bearer {{access_token}}" \
+-H 'content-type: application/json' \
+-d '[{
+"cle": "{{key}}",
+"num_commande": "551035",
+"date_billed": "2016-07-05",
+"actual_billable_amount": "437.50",
+"num_invoice": "16000162",
+“date_closed”:”2016-09-05”
+},{
+"cle": "{{key}}",
+"num_commande": "672620",
+"date_billed": "2017-06-14",
+"actual_billable_amount": "595",
+"num_invoice": "17000100",
+“date_closed”:”2017-07-31”
+}]'
 ```
 
+> Si aucune cle {{key}} n’est spécifiée alors une nouvelle fiche sera crée.
+
 ## Restricition IP
+
 La restriction IP limite les requêtes à une API aux adresses IP spécifiées ou à des plages d'adresses IP. Cela signifie que seules les requêtes provenant d'adresses IP autorisées peuvent accéder à l'API, tandis que toutes les autres tentatives sont rejetées. Cette approche ajoute une couche de sécurité supplémentaire en s'assurant que même si des clés API sont compromises, l'accès est toujours restreint aux emplacements réseau approuvés.
 
 ### Utilisation des Restrictions IP
+
 Les restrictions IP sont couramment utilisées dans les scénarios suivants :
 
 - Environnements d'entreprise : Pour limiter l'accès aux API aux bureaux de l'entreprise ou à des réseaux spécifiques.
+
 - Applications B2B : Pour restreindre l'accès entre entreprises partenaires à des plages d'adresses IP connues.
+
 - Sécurisation des environnements de production : Pour s'assurer que seuls les serveurs de production ou les systèmes backend peuvent communiquer avec l'API.
 
 ## Avantages
+
 - Réduction du Risque de Fuites de Données : En limitant l'accès aux adresses IP fiables, le risque de fuites de données dues à des accès non autorisés est réduit.
+
 - Contrôle d'Accès Amélioré : Fournit un moyen simple mais efficace de contrôler qui peut accéder à l'API.
+
 - Complément aux Autres Méthodes de Sécurité : Utilisé en combinaison avec l'authentification, le chiffrement et d'autres politiques de sécurité, il renforce la posture de sécurité globale.
 
 ## Implémentation
+
 Dans la fiche utilisateur API définir dans la section API KEY les informations suivante :
 
 | Champs | Valeur                 |
