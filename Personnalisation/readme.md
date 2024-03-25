@@ -9,163 +9,53 @@ Dans cette rubrique, nous passons en revue l’ensemble des possibilités de per
 
 La plateforme GoPaaS vous permet d'ajouter de nouvelles tables afin de créer de nouvelles fonctionnalités liées à vos besoins et à l’'évolution de votre utilisation.
 
-Pour cela, rendez vous dans le menu personnalisation 
-![alt_text](images/image1.png "image_tooltip")
- > Tables > cliquer sur Ajouter.
+Pour cela, rendez vous dans le menu personnalisation ![alt_text](images/image5.png ) -> Tables -> cliquer sur Ajouter.
 
-
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image4.png )
 
 
 Afin d'enregistrer la table en base de donnée, il faut obligatoirement renseigner deux champs :
 
-
-<table>
-  <tr>
-   <td><strong>Champ</strong>
-   </td>
-   <td><strong>Valeur</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Intitulé</strong>
-   </td>
-   <td>Le nom de la table en base de donnée
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Alias</strong>
-   </td>
-   <td>Le nom de la table dans l'application
-   </td>
-  </tr>
-</table>
-
+| Champ   | Valeur                              |
+|---------|-------------------------------------|
+| Intitulé | Le nom de la table en base de donnée |
+| Alias   | Le nom de la table dans l'application |
 
 Pour une meilleure utilisation d'autres champs sont à renseigner également :
 
 
-<table>
-  <tr>
-   <td><strong>Champ</strong>
-   </td>
-   <td><strong>Valeur</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Champs à afficher dans connexion</strong>
-   </td>
-   <td>Définir les champs à afficher dans un champ de type connexion sur une autre table. Séparer les champs par une virgule pour en afficher plusieurs lors de la connexion.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Ordre</strong>
-   </td>
-   <td>Ordre de la table dans la barre de navigation.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Icône</strong>
-   </td>
-   <td>Icône de la table dans la barre de navigation, aller à l'URL suivante pour avoir accès à la bibliothèque d'icônes. (https://fontawesome.com/v5/search).
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Type</strong>
-   </td>
-   <td>Choisir l'onglet de la barre de navigation dans lequel afficher la table.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Module</strong>
-   </td>
-   <td>Choisir le module de la barre de navigation dans lequel afficher la table.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Loading method</strong>
-   </td>
-   <td>Choisir l’option de chargement des données des fiches de la table.
-<p>
-<strong>Synchronous </strong>: Les données se chargent en arrière-plan et l’utilisateur peut interagir avec l’interface.
-<p>
-<strong>Asynchronous </strong>: Toutes les données et les interfaces sont pré-chargées et prêtes à être consultées immédiatement.
-<p>
-<strong>Lazy </strong>: Seul les données de l’onglet principal se chargent et l’utilisateur peut interagir avec l’interface.
-<p>
-<strong>SmartLoad </strong>: Les données de l’onglet principal et toutes les interfaces sont pré-chargées, prêtes à être consultées immédiatement et l’utilisateur peut interagir avec l’interface.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Couleur</strong>
-   </td>
-   <td>Choisir la couleur en anglais (green) ou au format hexadécimal (#095A35) pour modifier la couleur des onglets et des intitulés des sections.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Afficher les vues dans la barre de navigation</strong>
-   </td>
-   <td>Cocher cette option permet d'afficher le menu des vues en sous-menu dans la barre de navigation.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Afficher dans Ajout rapide</strong>
-   </td>
-   <td>Cocher cette option permet d'afficher une option de création rapide.
-   </td>
-  </tr>
-</table>
-
-
-
+| Champ                                     | Valeur                                                                                                                                                                                                                                                                                           |
+|-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Champs à afficher dans connexion         | Définir les champs à afficher dans un champ de type connexion sur une autre table. Séparer les champs par une virgule pour en afficher plusieurs lors de la connexion.                                                                                                                        |
+| Ordre                                     | Ordre de la table dans la barre de navigation.                                                                                                                                                                                                                                                 |
+| Icône                                     | Icône de la table dans la barre de navigation, aller à l'URL suivante pour avoir accès à la bibliothèque d'icônes. (https://fontawesome.com/v5/search).                                                                                                                                    |
+| Type                                      | Choisir l'onglet de la barre de navigation dans lequel afficher la table.                                                                                                                                                                                                                      |
+| Module                                    | Choisir le module de la barre de navigation dans lequel afficher la table.                                                                                                                                                                                                                     |
+| Loading method                            | Choisir l’option de chargement des données des fiches de la table. <br> - **Synchronous**: Les données se chargent en arrière-plan et l’utilisateur peut interagir avec l’interface. <br> - **Asynchronous**: Toutes les données et les interfaces sont pré-chargées et prêtes à être consultées immédiatement. <br> - **Lazy**: Seul les données de l’onglet principal se chargent et l’utilisateur peut interagir avec l’interface. <br> - **SmartLoad**: Les données de l’onglet principal et toutes les interfaces sont pré-chargées, prêtes à être consultées immédiatement et l’utilisateur peut interagir avec l’interface. |
+| Couleur                                   | Choisir la couleur en anglais (green) ou au format hexadécimal (#095A35) pour modifier la couleur des onglets et des intitulés des sections.                                                                                                                                                 |
+| Afficher les vues dans la barre de navigation | Cocher cette option permet d'afficher le menu des vues en sous-menu dans la barre de navigation.                                                                                                                                                                                               |
+| Afficher dans Ajout rapide               | Cocher cette option permet d'afficher une option de création rapide.                                                                                                                                                                                                                            |
 ## Les onglets
 
 Chaque table est associée à un seul formulaire de saisie et de visualisation de données.
 
 Ces masques sont organisés sous forme d'onglets, chaque onglet contenant lui-même des sections et dans chaque section, des champs.
 
-A la création d'une nouvelle table, GoPaaS ajoute automatiquement 2 onglets, l'onglet **Principal** et l'onglet **Système**. Pour ajouter un nouvel onglet, passer par le FormDesigner puis cliquer sur le bouton 
-![alt_text](images/image3.png "image_tooltip")
-.
-![alt_text](images/image4.png "image_tooltip")
+A la création d'une nouvelle table, GoPaaS ajoute automatiquement 2 onglets, l'onglet **Principal** et l'onglet **Système**. Pour ajouter un nouvel onglet, passer par le FormDesigner puis cliquer sur le bouton ![alt_text](images/image3.png ). ![alt_text](images/image1.png )
 
 
 Afin d'enregistrer un onglet en base de données, il faut renseigner obligatoirement certains champs :
 
-​​​​​​​
+| Champ   | Valeur                                          |
+|---------|-------------------------------------------------|
+| Intitulé | Nom du champ en base.                          |
+| Table   | Nom de la table dans laquelle l'onglet se trouve. |
+| Ordre   | Ordre de l'onglet sur la table.                |
 
 
-<table>
-  <tr>
-   <td><strong>Champ</strong>
-   </td>
-   <td><strong>Valeur</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Intitulé</strong>
-   </td>
-   <td>Nom du champ en base.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Table</strong>
-   </td>
-   <td>Nom de la table dans laquelle l'onglet se trouve.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Ordre</strong>
-   </td>
-   <td>Ordre de l'onglet sur la table.
-   </td>
-  </tr>
-</table>
+Le champ **Label** correspond au nom du champ dans l'application.
 
-
-Le champ **Label **correspond au nom du champ dans l'application.
-
-**_NB_ **: _Le moyen le plus simple et le plus rapide pour créer des onglets est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)_.
+**NB**: _Le moyen le plus simple et le plus rapide pour créer des onglets est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)_.
 
 
 ## Les champs
@@ -177,179 +67,46 @@ Par défaut, à la création d'une nouvelle table, l'application crée un certai
 C'est le premier champ de la table, vous pouvez le modifier ou le supprimer.
 
 Pour ajouter un nouveau champ cliquez sur Ajouter.
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image2.png )
 Afin d'enregistrer le champ en base de donnée, il faut renseigner obligatoirement les champs suivants :
 
 **Détails :**
 
-
-<table>
-  <tr>
-   <td><strong>Champs</strong>
-   </td>
-   <td><strong>Valeur</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Table</strong>
-   </td>
-   <td>C'est la table sur laquelle le champ va être créé.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Onglet</strong>
-   </td>
-   <td>L'onglet de la table sur lequel le champ va être créé.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Section</strong>
-   </td>
-   <td>La section de l'onglet sur laquelle le champ va être créé.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Colonne</strong>
-   </td>
-   <td>Définir le numéro de colonne, une section peut contenir au maximum 3 colonnes.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Odre du champ</strong>
-   </td>
-   <td>Ordre du champ dans la colonne.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Type</strong>
-   </td>
-   <td>Plusieurs types de champs sont mis à disposition.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Nom du champ</strong>
-   </td>
-   <td>C'est le nom du champ en base de données.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Alias/Nom table connectée</strong>
-   </td>
-   <td>L'alias du champ doit être unique dans toute l'application. Dans le cas où le champ créé est de type <em>connexion, </em>il faut renseigner le nom de la table à connecter.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Intitulé</strong>
-   </td>
-   <td>C'est le nom du champ dans l'application.
-   </td>
-  </tr>
-</table>
+| Champs                   | Valeur                                                                                             |
+|--------------------------|----------------------------------------------------------------------------------------------------|
+| Table                    | C'est la table sur laquelle le champ va être créé.                                                  |
+| Onglet                   | L'onglet de la table sur lequel le champ va être créé.                                              |
+| Section                  | La section de l'onglet sur laquelle le champ va être créé.                                           |
+| Colonne                  | Définir le numéro de colonne, une section peut contenir au maximum 3 colonnes.                      |
+| Ordre du champ           | Ordre du champ dans la colonne.                                                                    |
+| Type                     | Plusieurs types de champs sont mis à disposition.                                                    |
+| Nom du champ             | C'est le nom du champ en base de données.                                                           |
+| Alias/Nom table connectée| L'alias du champ doit être unique dans toute l'application. Dans le cas où le champ créé est de type *connexion*, il faut renseigner le nom de la table à connecter.|
+| Intitulé                 | C'est le nom du champ dans l'application.                                                           |
 
 
-**NB : _Les valeurs de nom du champ ne doivent pas contenir de majuscule, d'espace ou de caractères spéciaux_**
+**NB** : _Les valeurs de nom du champ ne doivent pas contenir de majuscule, d'espace ou de caractères spéciaux_
 
-Pour optimiser le paramétrage de l'application, renseigner également les champs suivants :.
+Pour optimiser le paramétrage de l'application, renseigner également les champs suivants :
 
 **Détails :**
 
-**​​​​​​​**
 
-
-<table>
-  <tr>
-   <td><strong>Champs </strong>
-   </td>
-   <td><strong>Valeur</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Aide</strong>
-   </td>
-   <td>Permet d'ajouter une aide pour l'utilisateur au survole du champ.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Largeur intitulé</strong>
-   </td>
-   <td>C'est l'espacement entre le titre du champ et le champ, il existe des valeurs prédéfinies allant de 1 à 12.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Alignement intitulé</strong>
-   </td>
-   <td>Permet de régler le positionnement de l'intitulé.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Filtre de connexion</strong>
-   </td>
-   <td>A utiliser dans les champs de type Connexion pour filtrer la liste des valeurs disponibles.
-<p>
-Par exemple, dans une connexion entre Client et Devis, pour afficher les Devis créent par la personne qui gère le Client :
-<p>
-<code>[ {"field":"creation_par", "source_field":"gestion_par"} ]</code>
-<p>
-Vous pouvez cumuler plusieurs filtres en les séparant par une virgule :
-<p>
-<code>[ {"field":"groupe", "value":"Admin"}, {"field":"annee", "value":"2016"} ]</code>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Valeur</strong>
-   </td>
-   <td>A utiliser dans les champs de type liste, les valeurs correspondent aux choix de la liste. Toutes les valeurs doivent être séparées par un retour à la ligne.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Hauteur (memo)</strong>
-   </td>
-   <td>Définir la hauteur par défaut d'un champ de type mémo.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Masquer</strong>
-   </td>
-   <td>Option permettant de masquer le champ.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Obligatoire</strong>
-   </td>
-   <td>Option permettant de rendre obligatoire le champ.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Lecture seule</strong>
-   </td>
-   <td>Option permettant de rendre le champ insaisissable.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Audit Trail</strong>
-   </td>
-   <td>Permet d'obtenir un historique sur les modifications apportées à ce champ.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>index</strong>
-   </td>
-   <td>Permet d'indexer le champ en base de données.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Données personnelles</strong>
-   </td>
-   <td>Permet de catégoriser ce champ au niveau RGPD.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Données sensibles</strong>
-   </td>
-   <td>Permet de catégoriser ce champ au niveau RGPD.
-   </td>
-  </tr>
-</table>
+| Champs                  | Valeur                                                                                                                                     |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| Aide                    | Permet d'ajouter une aide pour l'utilisateur au survole du champ.                                                                        |
+| Largeur intitulé        | C'est l'espacement entre le titre du champ et le champ, il existe des valeurs prédéfinies allant de 1 à 12.                             |
+| Alignement intitulé     | Permet de régler le positionnement de l'intitulé.                                                                                        |
+| Filtre de connexion     | A utiliser dans les champs de type Connexion pour filtrer la liste des valeurs disponibles. Par exemple, dans une connexion entre Client et Devis, pour afficher les Devis créés par la personne qui gère le Client : <br> ``` [ {"field":"creation_par", "source_field":"gestion_par"} ]``` <br> Vous pouvez cumuler plusieurs filtres en les séparant par une virgule : <br> ```[ {"field":"groupe", "value":"Admin"}, {"field":"annee", "value":"2016"} ]``` <br> |
+| Valeur                  | A utiliser dans les champs de type liste, les valeurs correspondent aux choix de la liste. Toutes les valeurs doivent être séparées par un retour à la ligne. |
+| Hauteur (memo)          | Définir la hauteur par défaut d'un champ de type mémo.                                                                                   |
+| Masquer                 | Option permettant de masquer le champ.                                                                                                   |
+| Obligatoire             | Option permettant de rendre obligatoire le champ.                                                                                        |
+| Lecture seule           | Option permettant de rendre le champ insaisissable.                                                                                      |
+| Audit Trail             | Permet d'obtenir un historique sur les modifications apportées à ce champ.                                                                |
+| index                   | Permet d'indexer le champ en base de données.                                                                                             |
+| Données personnelles    | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
+| Données sensibles       | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
 
 
 **_NB : Le moyen le plus rapide et le plus simple pour créer des champs est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)._**
