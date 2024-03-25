@@ -371,7 +371,16 @@ Le champ Script JS est utilisé pour surcharger le code dans le cas d'une vue li
 
 
 
-## Détail pour la ligne "Appel sortant" : vb.addAddButton("Appel sortant", null, {"type":"Appel sortant",objet:"Commercial",statut:"En cours",compte:itemComponent.getValue('compte')});
+Détail pour la ligne "Appel sortant" : 
+```javascript
+vb.addAddButton("Appel sortant", null, {
+      type: "Appel sortant",
+      objet: "Commercial",
+      statut: "En cours",
+      compte: itemComponent.getValue('compte')
+   }
+);
+```
 
 
 <table>
