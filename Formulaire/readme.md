@@ -1,6 +1,5 @@
 # Les formulaires
 
-
 ## Form Designer
 
 Le Form Designer est de loin le moyen le plus simple et le plus rapide pour gérer vos formulaires. 
@@ -13,9 +12,7 @@ Depuis le menu ![alt_text](images/image2.png ) d'une fiche, cliquez sur “FormD
 
 Depuis le menu de personnalisation ![alt_text](images/image7.png ) sélectionnez la table à modifier puis menu ![alt_text](images/image2.png ) -> FormDesigner.
 
-
 ![alt_text](images/image5.jpg )
-
 
 Depuis cette interface graphique il est possible de déplacer les champs entre les sections et les colonnes par le biais d'un glisser déposer.
 
@@ -29,17 +26,15 @@ Et enfin, il suffit de cliquer sur le bouton ![alt_text](images/image3.png ) pou
 
 __NB__ : _Il est conseillé de rafraîchir la page et de vider le cache du navigateur à chaque modification ou création importante_.
 
-
 ## Les sections
 
 Les sections vous permettent d'organiser vos formulaires et de regrouper vos champs. L'utilisation des sections vous offre une meilleure ergonomie et facilite la saisie de données.
 
-L'accès aux sections se fait via la barre de personnalisation ![alt_text](images/image8.png ) -> Tables -> Onglets -> Section.
+L'accès aux sections se fait via la barre de personnalisation ![alt_text](images/image8.png ) -> Section.
 
 Après avoir sélectionné la table et l'onglet sur lequel la section doit être créée, cliquer sur ![alt_text](images/image1.png ).
 
 Sur la fiche des sections il existe un certain nombre de champs à renseigner :
-
 
 ![alt_text](images/image4.png )
 
