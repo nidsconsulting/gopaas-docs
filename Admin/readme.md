@@ -26,9 +26,7 @@ Il existe deux solutions pour accéder à l'audit trail :
 * Depuis la fiche que vous souhaitez auditer, cliquer sur le menu Outil > Audit-Trail
 * Depuis la barre de navigation > Admin > Audit trail. Dans ce cas vous arriverez sur une vue avec toutes les modifications de toutes les fiches classées par table.
 
-
-![alt_text](images/image16.png "image_tooltip")
-
+<img src="images/image16.png" width="650">
 
 **NB** : _Ne pas oublier d'activer l'audit trail dans les champs d'une table en cochant "Audit Trail" dans l'onglet Principal._
 
@@ -273,8 +271,7 @@ Vous retrouverez sur la fiche les informations suivante
 
 Vous retrouverez ici la liste de toutes les fiches supprimées et si nécessaire les restaurer
 
-
-![alt_text](images/image22.png "image_tooltip") 
+<img src="images/image22.png" width="550">
 
 
 | Table Name      | Nom de la table                   |
