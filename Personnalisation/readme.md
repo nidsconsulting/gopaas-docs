@@ -4,7 +4,6 @@ Un des atouts majeurs de GoPaaS réside dans ses nombreuses fonctions de personn
 
 Dans cette rubrique, nous passons en revue l’ensemble des possibilités de personnalisation de GoPaaS.
 
-
 ## Ajouter une table
 
 La plateforme GoPaaS vous permet d'ajouter de nouvelles tables afin de créer de nouvelles fonctionnalités liées à vos besoins et à l’'évolution de votre utilisation.
@@ -12,7 +11,6 @@ La plateforme GoPaaS vous permet d'ajouter de nouvelles tables afin de créer de
 Pour cela, rendez vous dans le menu personnalisation ![alt_text](images/image5.png ) -> Tables -> cliquer sur Ajouter.
 
 ![alt_text](images/image4.png )
-
 
 Afin d'enregistrer la table en base de donnée, il faut obligatoirement renseigner deux champs :
 
@@ -22,7 +20,6 @@ Afin d'enregistrer la table en base de donnée, il faut obligatoirement renseign
 | Alias   | Le nom de la table dans l'application |
 
 Pour une meilleure utilisation d'autres champs sont à renseigner également :
-
 
 | Champ                                     | Valeur                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +31,7 @@ Pour une meilleure utilisation d'autres champs sont à renseigner également :
 | Loading method                            | Choisir l’option de chargement des données des fiches de la table. <br> - **Synchronous**: Les données se chargent en arrière-plan et l’utilisateur peut interagir avec l’interface. <br> - **Asynchronous**: Toutes les données et les interfaces sont pré-chargées et prêtes à être consultées immédiatement. <br> - **Lazy**: Seul les données de l’onglet principal se chargent et l’utilisateur peut interagir avec l’interface. <br> - **SmartLoad**: Les données de l’onglet principal et toutes les interfaces sont pré-chargées, prêtes à être consultées immédiatement et l’utilisateur peut interagir avec l’interface. |
 | Couleur                                   | Choisir la couleur en anglais (green) ou au format hexadécimal (#095A35) pour modifier la couleur des onglets et des intitulés des sections.                                                                                                                                                 |
 | Afficher les vues dans la barre de navigation | Cocher cette option permet d'afficher le menu des vues en sous-menu dans la barre de navigation.                                                                                                                                                                                               |
-| Afficher dans Ajout rapide               | Cocher cette option permet d'afficher une option de création rapide.                                                                                                                                                                                                                            |
+| Afficher dans Ajout rapide               | Cocher cette option permet d'afficher une option de création rapide.                                                                                                                                                    |
 ## Les onglets
 
 Chaque table est associée à un seul formulaire de saisie et de visualisation de données.
@@ -42,7 +39,6 @@ Chaque table est associée à un seul formulaire de saisie et de visualisation d
 Ces masques sont organisés sous forme d'onglets, chaque onglet contenant lui-même des sections et dans chaque section, des champs.
 
 A la création d'une nouvelle table, GoPaaS ajoute automatiquement 2 onglets, l'onglet **Principal** et l'onglet **Système**. Pour ajouter un nouvel onglet, passer par le FormDesigner puis cliquer sur le bouton ![alt_text](images/image3.png ). ![alt_text](images/image1.png )
-
 
 Afin d'enregistrer un onglet en base de données, il faut renseigner obligatoirement certains champs :
 
@@ -52,11 +48,9 @@ Afin d'enregistrer un onglet en base de données, il faut renseigner obligatoire
 | Table   | Nom de la table dans laquelle l'onglet se trouve. |
 | Ordre   | Ordre de l'onglet sur la table.                |
 
-
 Le champ **Label** correspond au nom du champ dans l'application.
 
 **NB**: _Le moyen le plus simple et le plus rapide pour créer des onglets est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)_.
-
 
 ## Les champs
 
@@ -84,13 +78,9 @@ Afin d'enregistrer le champ en base de donnée, il faut renseigner obligatoireme
 | Alias/Nom table connectée| L'alias du champ doit être unique dans toute l'application. Dans le cas où le champ créé est de type *connexion*, il faut renseigner le nom de la table à connecter.|
 | Intitulé                 | C'est le nom du champ dans l'application.                                                           |
 
-
 **NB** : _Les valeurs de nom du champ ne doivent pas contenir de majuscule, d'espace ou de caractères spéciaux_
 
 Pour optimiser le paramétrage de l'application, renseigner également les champs suivants :
-
-**Détails :**
-
 
 | Champs                  | Valeur                                                                                                                                     |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -107,6 +97,5 @@ Pour optimiser le paramétrage de l'application, renseigner également les champ
 | index                   | Permet d'indexer le champ en base de données.                                                                                             |
 | Données personnelles    | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
 | Données sensibles       | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
-
 
 **_NB : Le moyen le plus rapide et le plus simple pour créer des champs est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)._**

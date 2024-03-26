@@ -5,19 +5,33 @@
 Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé un Dashboard existant.
 
 1. Dans le Dashboard ajouter une **nouvelle ligne de Dashboard**.
+
 2. Donner un Nom à cette nouvelle ligne plus cliquer sur le bouton **« Appliquer »** pour sauvegarder la fiche sans la fermer.
+
 3. Cocher la case **« Options avancées »** pour affiche l’onglet **« Html »** puis l’ouvrir.
+
 4. Dans le menu outil, cliquer sur l’option **« Ajouter un WebReport »**.
+
 5. Cette option permet d’insérer dans le champ **« Html »** le script pour appeler le composant WebReport.
+
 6. Les paramètres du script insérés devront être modifiés pour appeler une source de données existante (**vue**).
+
 7. Rechercher la ligne suivante **« `var viewKey = "A_RENSEIGNER"` »** et remplacer la chaine **« A_RENSEIGNER »** par la **« cle »** de la vue avec la source de données souhaités. Par exemple **« var viewKey = "Par défaut Affaire" »**.
+
 8. **Enregistrer** la ligne de dashboard et ouvrir le Dashboard pour afficher le WebReport avec la configuration par défaut.
+
 9. Cliquer sur la **flèche diagonale** en haut à droite du pivot pour modifier le WebReport en ajoutant des champs dans les lignes, colonnes, filtres, et valeurs.
+
 10. Configurer le WebReport selon les besoins puis cliquer sur le bouton **« Enr. »** pour afficher la nouvelle configuration du WebReport au **format JSON**.
+
 11. Cette configuration devra être **copié** afin de l'insérer dans le champ Html de la ligne de dashboard.
+
 12. Ouvrir la ligne de dashboard puis l’onglet Html.
+
 13. **Coller** pour remplacer la nouvelle configuration au format JSON entre les balises de commentaires ==Début== et ==Fin==.
+
 14. Cliquer sur le bouton **« Enregistrer »** pour sauvegarder dans la nouvelle configuration du WebReport.
+
 
 > Dans le champ Html, il est possible de modifier la configuration du WebReport en ajoutant ou modifiant les propriétés des objets **slice**, **options**, **conditions** et **formats**.
 
@@ -26,15 +40,25 @@ Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé
 WebReport propose de nombreuses opérations directement sur le pivot :
 
 - **Afficher** plusieurs champs par ligne, colonne et appliquer les filtres dont vous avez besoin.
+
 - **Faites glisser les champs** entre les colonnes, les lignes et les filtres de rapport.
+
 - Quand il a plus d’un champ dans une ligne ou colonne, **développer ou réduire** la liste des valeurs en cliquant sur l'icône sur la gauche de la cellule.
+
 - **Drill up & down** multi-niveau des champs en cliquant sur l’icône à droite de la cellule.
+
 - **Filtrez les valeurs** en cliquant sur le nom du champ.
+
 - Affichez ou masquez les **totaux et les totaux généraux** sur le pivot.
+
 - **Trier les valeurs** en utilisant les contrôles à droite de chaque nom de champ ou le total des cellules.
+
 - Double-cliquer pour **afficher le détail** d’une cellule avec des données non agrégées.
+
 - **Redimensionnez les colonnes et les lignes** en faisant glisser les limites de l'en-tête; double-cliquez sur les en-têtes de ligne ou colonne pour définir la taille par défaut.
+
 - **Sélectionnez les cellules** du pivot, **copiez le contenu** et collez-le directement dans une feuille de calcul; par exemple - Excel.
+
 - Utilisez la barre d'outils pour sélectionner entre **les vues compact, classique et plat**.
 
 ![Pivot](images/image1.png)
@@ -80,9 +104,13 @@ La liste de tous les champs est également disponible depuis cette fenêtre. Uti
 Les graphiques pivot offrent les mêmes fonctionnalités d'analyse que le pivot :
 
 - Dans le coin supérieur gauche, choisissez la **valeur active** dans la liste déroulante. Si l'option « Valeurs multiples » est sélectionné (Bouton Graphique), la liste déroulante permettra de sélectionner plusieurs valeurs.   
+
 - **Filtres** pour les champs sélectionnées. 
+
 - Cliquez deux fois sur les éléments du graphique pour afficher le détail et visualiser les premières données.  
+
 - Utilisez la barre d'outils pour basculer facilement entre les différents types de graphiques. 
+
 - S'il y a plusieurs champs dans les lignes, **dépliez ou réduire** les valeurs en cliquant sur le signe plus à gauche du nom du champ sur l'axe x. Pour plusieurs champs dans les colonnes, utilisez le signe plus sur la légende.  
 
 ## Barre d'outils
@@ -90,12 +118,19 @@ Les graphiques pivot offrent les mêmes fonctionnalités d'analyse que le pivot 
 La barre d'outils permet de personnaliser le pivot et le graphique pivot. La barre d'outils utilise des appels d'API les plus couramment utilisés à travers des formulaires :
 
 - Le bouton **Enregistrer** enregistre le pivot avec ses configurations dans un format JSON.
+
 - Utilisez le bouton **Exporter** pour imprimer le contenu ou l’exporter au format HTML, CSV, Excel, Image et PDF.
+
 - Le bouton **Tableau** bascule la vue en mode pivot.
+
 - Le bouton **Graphiques** affiche tous les types de graphiques pivot et possède une case à cocher « Valeurs multiples » pour permettre la sélection de plusieurs valeurs pour les graphiques.
+
 - Le bouton **Format** propose deux options : Formater les cellules pour la mise en forme numérique et la mise en forme conditionnelle.
+
 - Cliquez sur **Options** pour afficher la fenêtre contextuelle avec des options de mise en page telles que les totaux généraux et les sous-totaux. Utilisez la mise en page section pour basculer entre les vues compact, classique et plat.
+
 - Le bouton **Champs** ouvre la liste des champs.
+
 - Cliquez sur **Plein écran** et passez en mode plein écran. Quittez ce mode en cliquant sur Échap.
 
 ## Mise en forme
@@ -104,11 +139,16 @@ La mise en forme des nombres peut être appliquée via la fenêtre contextuelle 
 
 La fenêtre contextuelle de **mise en forme conditionnelle** peut être ouverte en cliquant sur **Format** dans la barre d'outils et en choisissant **Mise en forme conditionnelle**.
 
-Dans la fenêtre contextuelle, 
+Dans la fenêtre contextuelle,
+
 - cliquez sur l’icône plus pour ajouter une nouvelle condition. Vous pouvez appliquer la condition soit à « toutes les valeurs » ou à une valeur spécifique de la liste déroulante. 
+
 - Sélectionnez le type et la valeur de la condition, la famille de polices et la taille. 
+
 - Cliquez sur l’icône de lettre A pour remplacer la police et les couleurs d’arrière-plan par défaut. Choisissez les nouvelles couleurs dans le sélecteur de couleurs ou entrez les codes hexadécimaux. 
+
 - Cliquez sur « Appliquer » pour ajouter ces couleurs à la condition. Découvrez le résultat à l’intérieur de la zone à droite. Pour voir le résultat sur le pivot, cliquez sur le bouton **APPLIQUER**. 
+
 - Supprimez la condition en cliquant sur l'icône de la corbeille à droite de la condition.
 
 ## Slice
@@ -116,36 +156,120 @@ Dans la fenêtre contextuelle,
 Slice est la définition de la source de données qui sera affiché dans le pivot. Cet objet a les propriétés suivantes :
 
 - `columns` – Array of objects. Liste des champs sélectionné dans le Pivot pour les. Chaque objet peut avoir les propriétés suivantes :
+
   - `uniqueName` – String. Nom de champ unique.
+
   - `caption` (optional) – String. Intitulé du champ.
+
   - `dimensionName` (optional) – String. Nom de la dimension.
+
   - `filter` (optional) – Filter Object. Contient les informations de filtres.
+
   - `levelName` (optional) – String. Permet de spécifier le niveau de la hiérarchie qui s'affiche sur le pivot.
+
   - `sort` (optional) – String. Tri sur le champ ("asc", "desc" ou "unsorted").
+
   - `sortOrder` (optional) – Array. Permet de définir un tri personnalisé pour les valeurs du champ. Vous pouvez spécifier sortOrder de la manière suivante : `["Janvier", "Février", "Mars", etc.]`.
 
 - `drills` (optional) – Object. Contient les informations sur le détail des valeurs :
+
   - `drillAll` (optional) – Boolean. Permet de définir si tous les niveaux seront explorés
 
 - `drillThrough` (optional) – Array. Permet de définir la liste des champs à afficher dans la fenêtre "Détails" pour l'exportation des données. Exemple: `["Compte", "Ville", "CA", etc.]`
 
 - `expands` (optional) – Object. Informations sur les nœuds dépliés :
+
   - `expandAll` (optional) – Boolean. Permet d’indiquer si tout doit être condensé (false) ou déplié (true) sur le pivot et le graphique.
+
   - `columns` (optional) – Array of objects. Permet de sauvegarder les colonnes à déplier par défaut.
+
   - `rows` – Array of objects. Permet de sauvegarder les lignes à déplier par défaut.
 
 - `flatSort` – Array of objects. Contient la liste des objets définissant le tri multi-colonnes sur le tableau. Chaque objet a les propriétés suivantes :
+
   - `uniqueName` – String. Le nom de champ unique qui sera trié.
+
   - `sort` – String. Type de tri ("asc", "desc", ou "undefined").
 
 - `measures` – Array of objects. Liste des valeurs sélectionnées et ceux qui ont des propriétés différentes de celles par défaut. Chaque objet a les propriétés suivantes :
+
   - `uniqueName` – String. Nom unique de la valeur.
+
   - `active` (optional) – Boolean. Valeur sélectionnée par défaut (true ou false).
-  - ... et d'autres propriétés définies pour les mesures.
+
+  - `aggregation` (optional) — String. Nom unique d'agrégation qui sera donné à la valeur ("sum", "count", "distinctcount", "average", "median", "product", "min", "max", "percent", "percentofcolumn", "percentofrow", "percentofparentrowtotal", "percentofparentcolumntotal", "index", "difference", "%difference", "runningtotals", "stdevp", "stdevs"). Si c’est un champ calculé, cette option sera à "none".
+
+  - `caption` (optional) – String. Intitulé de la valeur.
+
+  - `formula` (optional) – String. Formule contenant les opérations suivantes : +, -, *, / ; les autres valeurs peuvent être utilisées avec les fonctions d'agrégations, par exemple sum("Prix") ou max("Ordre").
+
+  - `individual` (optional) – Boolean. Définit si la formule est calculée à l'aide de valeurs brutes (true) ou utilise des valeurs agrégées (false). Valeur par défaut : false.
+
+  - `calculateNaN` (optional) – Boolean. Définit si la formule est calculée à l'aide des valeurs NaN (true) ou utilise la valeur NULL (false). Valeur par défaut : true.
+
+  - `format` (optional) – String. Nom de formatage des nombres.
+
+  - `grandTotalCaption` (optional) – String. Intitulé du total général.
 
 - `flatOrder` – Array of strings. Définit l’ordre des champs pour le type de tableau "plat". `flatOrder` peut-être spécifié comme ceci : `["Nom champ 1", "Nom champ 2", etc… ]`.
 
 - `reportFilters` – Array of objects. Liste des champs sélectionnés dans le slice pour filtrer le pivot. Chaque objet a des propriétés similaires aux `columns`.
+
+  - `uniqueName` – String. Nom de champ unique.
+
+  - `caption` (optional) – String. Intitulé du champ.
+
+  - `dimensionName` (optional) – String. Nom de la dimension.
+
+  - `filter` (optional) – Filter Object. Contient les informations du filtre.
+
+  - `levelName` (optional) – String. Utilisé pour spécifier le niveau de la hiérarchie affichée sur le tableau.
+
+  - `sort` (optional) – String. Type de tri `("asc", "desc" ou "unsorted")`.
+
+  - `sortOrder` (optional) – Array. Permet de définir un tri personnalisé pour les valeurs du champ. Vous pouvez spécifier sortOrder de la manière suivante : `["champ_1", "champ_2", etc...]`.
+
+- `rows` – Array of objects. A list of hierarchies selected in the report slice for rows. Each object can have the following properties:
+
+  - `uniqueName` – String. Nom de champ unique.
+
+  - `caption` (optional) – String. Intitulé du champ.
+
+  - `dimensionName` (optional) – String. Nom de la dimension.
+
+  - `filter` (optional) – Filter Object. Contient les informations du filtre.
+
+  - `levelName` (optional) – String. Utilisé pour spécifier le niveau de la hiérarchie affichée sur le tableau.
+
+  - `sort` (optional) – String. Type de tri `("asc", "desc" or "unsorted")`.
+
+  - `sortOrder` (optional) – Array. Permet de définir un tri personnalisé pour les valeurs du champ. Vous pouvez spécifier sortOrder de la manière suivante : `["champ_1", "champ_2", etc...]`.
+ 
+- `sorting` (optional) – Object. Définit le tri des nombres dans une ligne ou colonne spécifique du pivot.
+ 
+- `column` – Object. Définit le tri des nombres dans une colonne spécifique.
+
+  - `tuple` – Array. Se compose de noms uniques qui identifient la colonne du tableau en fonction des données qu'elle contient.
+
+  - `measure` – Object. Identifie la valeur sur laquelle le tri sera appliqué.
+
+    - `uniqueName` – String. Nom de mesure unique.
+
+    - `aggregation` (optional) – String. Type d’agrégation de la valeur.
+
+  - `type` – String. Type de tri ("asc" ou "desc").
+ 
+- `row` – Object. Définit le tri des nombres dans une colonne spécifique.
+  
+  - `tuple` – Array. Se compose de noms uniques qui identifient la colonne du tableau en fonction des données qu'elle contient.
+  
+  - `measure` – Object. Object. Identifie la valeur sur laquelle le tri sera appliqué.
+  
+    - `uniqueName` – String. Nom de mesure unique.
+  
+    - `aggregation` (optional) – String. Type d’agrégation de la valeur.
+  
+  - `type` – String. Type de tri ("asc" ou "desc").
 
 > Changer le slice en utilisant l’API `runQuery()` et `setReport()`. Récupérer le slice d’un autre en utilisant `getReport()`.
 
@@ -156,8 +280,11 @@ Un **WebReport** peut être personnalisé à l'aide de l'objet `options`. Cet ob
 L'objet `options` est défini dans l'objet Report. Si aucune option n'est spécifiée, le **WebReport** utilisera les options par défaut. Nous allons voir ici toutes les options disponibles et comment les utiliser.
 
 Toutes les options sont définies dans 3 sous-groupes :
+
 - **Grid** – définit l'apparence du pivot et les fonctionnalités.
+
 - **Chart** – définit l'apparence du graphique pivot et les fonctionnalités.
+
 - **General** – définit les options applicables à tous les composants.
 
 ### Grid
