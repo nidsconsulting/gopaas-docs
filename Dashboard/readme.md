@@ -13,7 +13,7 @@ La méthode pour créer un dashboard efficace consiste à créer des vues person
 
 Pour créer un nouveau dashboard, rendez vous dans la barre de navigation > Références > Dashboard.
 
-Cliquer sur ajouter.
+Cliquer sur le bouton `Ajouter`.
 
 
 ![alt_text](images/image2.png "image_tooltip")
@@ -35,12 +35,12 @@ Ci-dessous, la description des champs de l’onglet principal.
 
 Pour un fonctionnement optimal, il est conseillé de renseigner, au minimum, les champs intitulé et permission.
 
-Une fois renseigné, cliquer sur appliquer pour continuer.
+Une fois renseigné, cliquer sur le bouton `Appliquer` pour continuer.
 
 
 ### Ligne de dashboard
 
-Dans la section détails, cliquer sur ajouter pour créer une nouvelle ligne de dashboard.
+Dans la section détails, cliquer sur le bouton `Ajouter` pour créer une nouvelle ligne de dashboard.
 
 
 ![alt_text](images/image3.png "image_tooltip")
@@ -71,7 +71,7 @@ La somme totale des largeurs de vue ne peut pas excéder “12”.
 ![alt_text](images/image4.png "image_tooltip")
 
 
-Cliquer sur enregistrer pour conserver le paramétrage de la ligne de dashboard.
+Cliquer sur le bouton `Enregistrer` pour conserver le paramétrage de la ligne de dashboard.
 
 ​​​​​
 NB : Après avoir paramétré un dashboard, il est conseillé de rafraîchir la page et de vider le cache du navigateur.
@@ -92,10 +92,9 @@ Depuis la fiche dashboard, menu outil > Dupliquer Dashboard
 L’administrateur GoPaaS dispose d’un droit supplémentaire lui permettant de paramétrer rapidement un dashboard en partant de l’interface utilisateur.
 
 Sur un dashboard existant, cliquer sur l'icône “baguette magique” en haut à droite de l’écran.
+> mettre l'icone baguette magique
 
 Depuis cette interface, il est possible de : 
-
-
 
 * Modifier la largeur du widget en glisser déposer
 * Modifier le nom du widget
@@ -103,7 +102,7 @@ Depuis cette interface, il est possible de :
 * Supprimer un widget du dashboard
 
 Cliquer sur l'icône “disquette” pour enregistrer les modifications.
-
+> mettre l'icone disquette
 
 ![alt_text](images/image6.jpg "image_tooltip")
 

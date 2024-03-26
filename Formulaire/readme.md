@@ -16,7 +16,7 @@ Depuis le menu de personnalisation ![alt_text](images/image7.png ) sélectionnez
 
 Depuis cette interface graphique il est possible de déplacer les champs entre les sections et les colonnes par le biais d'un glisser déposer.
 
-Le bouton ![alt_text](images/image9.png ) permet d'actualiser la page, à utiliser à chaque création de nouveaux éléments pour visualiser les modifications.
+Le bouton ![alt_text](images/image9.png ) permet d'actualiser la page et d'enregistrer le modèle, à utiliser à chaque création de nouveaux éléments pour visualiser les modifications.
 
 Le bouton ![alt_text](images/image6.png ) va permettre d'ajouter un nouvel onglet.
 
