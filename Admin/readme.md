@@ -26,9 +26,7 @@ Il existe deux solutions pour accéder à l'audit trail :
 * Depuis la fiche que vous souhaitez auditer, cliquer sur le menu Outil > Audit-Trail
 * Depuis la barre de navigation > Admin > Audit trail. Dans ce cas vous arriverez sur une vue avec toutes les modifications de toutes les fiches classées par table.
 
-
-![alt_text](images/image16.png "image_tooltip")
-
+<img src="images/image16.png" width="600px">
 
 **NB** : _Ne pas oublier d'activer l'audit trail dans les champs d'une table en cochant "Audit Trail" dans l'onglet Principal._
 
