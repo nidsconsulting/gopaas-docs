@@ -343,6 +343,8 @@ Une fois le mode modification activé, vous devez spécifier quels champs seront
 2. Autoriser la modification : Pour chaque champ que vous souhaitez rendre modifiable, cochez la case "Autoriser modification". Si vous ne cochez pas cette option, le champ restera en lecture seule et ne pourra pas être édité directement depuis la vue.
 ![alt_text](images/image4.png )
 
+**NB** : _L'alias du champ doit rester identique au nom du champ pour que les modifications fonctionnent correctement._
+
 ### Fonctionnalités Clés
 
 - **Ajout** de fiches : Créez de nouvelles fiches directement depuis la vue, facilitant l'entrée de données sans quitter le contexte actuel.
