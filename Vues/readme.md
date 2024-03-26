@@ -22,7 +22,7 @@ Il est conseillé de renseigner un certain nombre de champs pour paramétrer cor
 |------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Intitulé                     | Nom de la vue.                                                                                                         |
 | Table                        | Table SQL sur laquelle la vue est connectée                                                                            |
-| Type                         | Choisir le type de vue : Tableau, Agenda, Graphique, Pivot, Agile                                                      |
+| Type                         | Choisir le type de vue : Tableau, Agenda, Graphique, WebReport, Pivot, Kanban                                                      |
 | Rapport                      | Afficher la vue dans un rapport.                                                                                       |
 | Afficher dans les accès rapide | Permet d'afficher la vue dans l'Accès rapide ![alt_text](images/image34.png ) de la barre de navigation.                                                 |
 | Afficher dans le menu des vues | Permet d'afficher la vue dans le menu des vues.                                                                         |
@@ -42,7 +42,9 @@ Il est conseillé de renseigner un certain nombre de champs pour paramétrer cor
 | Permissions                  | Permet de gérer les permissions de la vue.                                                                            |
 | Description                  | Champ note pour la saisie d'une description de la vue.                                                                 |
 
-* Il est également possible de dupliquer la vue par défaut et de modifier les paramètres pour créer une nouvelle vue :
+**NB** : _Il est déconseillé de cocher toutes les options pour un soucis de performance lors du chargement de la vue._
+
+- Il est également possible de dupliquer la vue par défaut et de modifier les paramètres pour créer une nouvelle vue :
     * Depuis la vue par défaut cliquer sur ![alt_text](images/image5.png ) ->  ![alt_text](images/image18.png ) ->  Dupliquer, il suffit alors de modifier le nom de la vue puis de cliquer sur ![alt_text](images/image36.png ) pour commencer le paramétrage.
 
 ## Agencer les champs
@@ -59,7 +61,7 @@ Nous allons maintenant passer à l'onglet **Champs**, c'est ici que vous allez s
 
 4. Les champs choisis pour apparaître dans la vue, l'ordre d'affichage peut-être modifié avec un glissé-déposé.
 
-**NB**: Pour ajouter ou supprimer un champ, il suffit de le sectionner et de le déplacer à droite ou à gauche à l'aide des flèches.
+**NB** : _Pour ajouter ou supprimer un champ, il suffit de le sectionner et de le déplacer à droite ou à gauche à l'aide des flèches._
 
 ## Propriétés de la colonne
 
@@ -78,9 +80,15 @@ D'autres champs sont renseignés par défaut mais peuvent être modifiés :
 | Largeur             | Définir la largeur souhaitée.                                                                                           |
 | Format              | Par défaut, GoPaaS détecte le type de champ et renseigne la donnée automatiquement. Mais pour plus de personnalisation, il est possible de choisir un format SQL ou SQLNumber. |
 | SQL                 | Renseigner la commande SQL à condition d'avoir sélectionné le bon format préalablement.                                |
-| Visible             | Décocher l'option pour masquer le champ dans la vue.                                                                    |
 | Alignement          | Définir l'alignement du champ dans la colonne (left, center ou right). Si aucune valeur n'est renseignée, la valeur par défaut est left.                                            |
-| Masquer sur mobile  | Cocher l'option pour masquer le champ sur le mobile.                                                                    |
+| Style             | Permet d'ajouter du style dans ma colonne. <br> Exemple : <br> ```[{"value": "Client", "style":"font-size:8px;background-color:#ff0000;color:#fff;font-weight:bold;"}, {"value": "Prospect", "style":"font-size:8px;background-color:green;color:#fff;font-weight:normal;"}]  ```                                                        |
+| Visible             | Décocher l'option pour masquer le champ dans la vue.                                                                    |
+| Masquer sur mobile  | Cocher l'option pour masquer le champ sur le mobile.                                                                  |
+| Masquer intitulé sur mobile  | Cocher l'option pour masquer l'intitulé sur le mobile.                                                                  |
+| Afficher en ligne sur mobile  | Cocher l'option pour afficher les données à l'horizontal. **NB** _Le mode mobile de l'utilisateur doit être "List"_          |
+| Autoriser modification  | Permet de modifier le champ lors de l'utilisation du mode EditView (se référer à la section "Fonctionnalités d'EditView")                                                                  |
+
+
 ## Ajouter des conditions
 
 ![alt_text](images/image43.png )
@@ -156,7 +164,7 @@ La vue tableau sert à afficher tout ou partie des enregistrements d’une table
 
 ## Mettre à jour en masse
 
-Utilisez la fonction de mise à jour en masse pour modifier rapidement les valeurs d'une liste de fiches.
+Utilisez la fonction de mise à jour en masse depuis le menu Outil de la vue pour modifier rapidement les valeurs d'une liste de fiches.
 
 Recherche / Remplace, suppression ou concaténation de plusieurs champs, ces fonctions sont disponibles dans l'outil MassUpdate.
 
@@ -201,7 +209,6 @@ Vous pouvez ajouter une vue de type Graphique pour analyser par exemple vos affa
 
 ![alt_text](images/image12.png )
 
-
 **Détails :**
 
 | Champ                   | Description                                                                                                      |
@@ -226,9 +233,9 @@ La vue type Pivot vous permet d'avoir un tableau croisé dynamique directement s
 4. Choix du type de pivot : Table, Bar Chart, ...
 5. Visuel dynamique du pivot.
 
-## Agile
+## KanBan
 
-La vue agile permet de changer le statut des actions rapidement à l'aide de glisser-déposer.
+La vue KanBan permet de changer le statut des actions rapidement à l'aide de glisser-déposer.
 
 ![alt_text](images/image1.jpg )
 
