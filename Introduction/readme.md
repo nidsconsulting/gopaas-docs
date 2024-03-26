@@ -1,21 +1,13 @@
 # Introduction
 
-
 ## Environnement
 
-GoPaaS fonctionne comme une application web monopage (en anglais single-page application ou SPA), une application web accessible via une page web unique. \
-Le but est d'éviter le chargement d'une nouvelle page à chaque action demandée, et de fluidifier ainsi l'expérience utilisateur. \
-Chaque fiche GoPaaS est créée à partir de modèle et stockée en cache dans le navigateur pour optimiser les temps de réponse avec le serveur avec lequel il échange des données. \
+GoPaaS fonctionne comme une application web monopage (en anglais single-page application ou SPA), une application web accessible via une page web unique.
+Le but est d'éviter le chargement d'une nouvelle page à chaque action demandée, et de fluidifier ainsi l'expérience utilisateur.
+Chaque fiche GoPaaS est créée à partir de modèle et stockée en cache dans le navigateur pour optimiser les temps de réponse avec le serveur avec lequel il échange des données.
 L'interface utilisateur n'a pas besoin d'être re télécharger du serveur à chaque ouverture. 
 
-
-<p style="text-align: right">
-
-<img src="images/image1.jpg" width="" alt="alt_text" title="image_tooltip">
-</p>
-
-
-
+![Ecran principal](images/image1.png "Ecran principal")
 
 1. **La barre de navigation**
 2. **La barre d'outils**
@@ -23,13 +15,11 @@ L'interface utilisateur n'a pas besoin d'être re télécharger du serveur à ch
 4. **L'espace principale**
 5. **Les onglets de navigation**
 
-
 ### La barre de navigation
 
 La barre de navigation est l'espace situé à gauche de l'écran, sur laquelle se placent des boutons correspondant aux vues. En cliquant sur l'un de ces boutons, vous ouvrez la vue sélectionnée.
 
 La vue est représentée par une icône et un titre qui vous permet de l'identifier rapidement. La barre de navigation est totalement paramétrable. Vous décidez quelles vues y faire figurer et dans quelle rubrique (Application, Accès rapide, Dashboard ou Référence); vous choisissez les icônes et leur titre.
-
 
 #### Applications
 
@@ -37,29 +27,21 @@ Application configure les modules qui constituent votre application. Quand vous 
 
 Cette liste dépend entièrement des choix faits lors de la création de la table et peuvent être modifiés à tout moment, en modifiant le paramétrage de la table concernée. Lorsque vous cliquez sur une de ces tables vous ouvrez la vue « Par défaut » de cette table ou les vues que vous avez sélectionné comme "**Afficher dans le menu des vues**" . Bien que la vue par défaut soit paramétrable comme toutes les autres, elle a pour but d’afficher tous les enregistrements de la table.
 
-
 #### Accès rapide
 
 Dans cette liste figure toutes les vues pour lesquelles l’option "**Afficher dans les raccourcis**" a été cochée. Il suffit de cliquer sur le titre de la vue dans la liste pour ouvrir cette vue dans un nouvel onglet.
-
 
 #### Dashboard
 
 Le Dashboard permet de rassembler sur une seule page un ensemble de vues, analyses et graphiques permettant de piloter les données de votre application.
 
-
 #### Référence
 
 Il s’agit de la liste des tables de références de votre application, celles auxquelles font appel les tables applicatives.
 
-
 #### Admin
 
 Dans cette liste sont regroupées les principales fonctions d’administration de l’application.
-
-
-
-
 
 ### La barre d'outils
 
@@ -67,11 +49,7 @@ Dans cette liste sont regroupées les principales fonctions d’administration d
 
 ![alt_text](images/image15.png "image_tooltip")
 
-
-\
-\
 ![alt_text](images/image3.png "image_tooltip")  Ce bouton permet de réduire la barre de navigation.
-
 
 ![alt_text](images/image4.png "image_tooltip") Ce bouton permet d’ouvrir la barre de personnalisation pour accéder au paramétrage des tables, des champs, pour personnaliser plus avant votre application. Il inclut aussi la fonction d’import des données, et de mise à jour de l’environnement GoPaaS.
 
@@ -86,12 +64,6 @@ Dans cette liste sont regroupées les principales fonctions d’administration d
 ![alt_text](images/image12.png "image_tooltip") Ce bouton permet d'accéder aux options du profil utilisateur. Il offre des liens pour voir et éditer le profil de l'utilisateur, changer le mot de passe, et se déconnecter de la session actuelle. 
 
 ![alt_text](images/image14.png "image_tooltip") Ce bouton permet de synchroniser des données du mode hors connexion. Les boutons indiquent "Synchro IN" pour importer des données, "Synchro OUT" pour exporter des données, "Sauvegarder" pour enregistrer les données actuelles, "Restaurer" pour revenir à un état antérieur des données, et "Switch" pour changer de mode ou de profil. C'est un outil pratique pour gérer des données lorsqu'on n'a pas accès à Internet.
-
-
-
-
-
-
 
 ## Les applications
 
@@ -108,9 +80,6 @@ A travers l’aide en ligne, nous vous présenterons les fonctionnalités de GoP
 Pour créer votre propre application vous pourrez partir de modules existants et y apporter, à votre rythme, les modifications que vous souhaitez ou bien créer une nouvelle application.
 
 De nombreuses applications ont été développées pour répondre aux besoins de différents secteurs et professions. N’hésitez pas à nous contacter ou consulter notre site Web [NIDS](http://www.nids.fr)  pour en savoir plus sur les différentes applications de GoPaaS.
-
-
-
 
 ## Personnalisation
 
@@ -130,34 +99,12 @@ Les informations que vous saisissez dans une base ne sont pas toutes du même ty
 
 Voici des exemples de tables que vous pourriez trouver dans une base de CRM :
 
-
-<table>
-  <tr>
-   <td><strong>Contact</strong>
-   </td>
-   <td>Utilisez cette table pour saisir les coordonnées et toutes informations relatives à vos interlocuteurs professionnels ou privés (fournisseurs, clients, prospects, amis...).
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Compte</strong>
-   </td>
-   <td>Pour saisir les sociétés avec lesquelles vous traitez. Un lien entre les tables compte et contact permet de ne pas avoir à ressaisir les coordonnées de la société, dans les fiches des contacts qu’elle emploie.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Action</strong>
-   </td>
-   <td>L'utilisation de cette table sert à classer l’historique d’un contact ou d’une société : courriers, appels, compte-rendu de visites, notes… Lors de la création d’un courrier ou d’un email, GoPaaS crée automatiquement une fiche courrier faisant référence au document créé, à laquelle vous pourrez associer le collaborateur qui en est l’auteur, le destinataire, le sujet traité et pourquoi pas le projet concerné.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Affaire</strong>
-   </td>
-   <td>Pour gérer les opportunités de vente
-   </td>
-  </tr>
-</table>
-
+| **Table** | Description |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Contact** | Utilisez cette table pour saisir les coordonnées et toutes informations relatives à vos interlocuteurs professionnels ou privés (fournisseurs, clients, prospects, amis...). |
+| **Compte**  | Pour saisir les sociétés avec lesquelles vous traitez. Un lien entre les tables compte et contact permet de ne pas avoir à ressaisir les coordonnées de la société, dans les fiches des contacts qu’elle emploie. |
+| **Action**  | L'utilisation de cette table sert à classer l’historique d’un contact ou d’une société : courriers, appels, compte-rendu de visites, notes… Lors de la création d’un courrier ou d’un email, GoPaaS crée automatiquement une fiche courrier faisant référence au document créé, à laquelle vous pourrez associer le collaborateur qui en est l’auteur, le destinataire, le sujet traité et pourquoi pas le projet concerné. |
+| **Affaire** | Pour gérer les opportunités de vente |
 
 
 ### Les champs
@@ -192,11 +139,5 @@ Cette classification des données par table aurait bien peu d'intérêt si GoPaa
 GoPaaS met en œuvre une technologie unique d’automatisation qui permet de robotiser un certain nombre de tâches ou de procédures. La création de ces automatisations est simple,on définit dans quelles conditions elles se déclenchent et quelles sont les actions à réaliser?
 
 Par exemple, GoPaaS peut générer une fiche de relance suite à l’appel d’un client, envoyer un email à tous les participants d’une réunion, ou signaler automatiquement à un client que son contrat arrive à échéance. En outre, il est aussi possible d’adjoindre des scripts javascript Basic aux formulaires de saisie ; cela permet d’automatiser une partie de la saisie et du traitement des données.
-
-
-
-
-
-
 
 Cette classification des données par table aurait bien peu d'intérêt si GoPaaS ne permettait de les relier entre elles et de respecter ainsi les associations que vous faites tout naturellement, dans votre esprit, entre différents types d'information. Telle note concerne tel projet et doit être communiquée à telle personne. Une telle réunion prend place dans telle salle, avec tels collaborateurs, et mobilise telles ressources. Dans GoPaaS ces liens s'appellent des connexions ; elles vous permettent de lier les informations entre elles et donc de ne les saisir qu'une fois, de les retrouver facilement, ou encore de naviguer rapidement dans votre base ; GoPaaS vous permettra d'en rajouter ou d'en supprimer librement.
