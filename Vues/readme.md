@@ -134,7 +134,7 @@ Le champ Script JS est utilisé pour surcharger le code dans le cas d'une vue li
 
 ![alt_text](images/image28.png )
 
-Le script JS va afficher dans la vue liée un nouveau menu sur le bouton "Ajouter"
+Le script JS peut afficher dans la vue liée un nouveau menu sur le bouton "Ajouter"
 
 ![alt_text](images/image8.png )
 
