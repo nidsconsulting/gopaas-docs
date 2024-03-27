@@ -54,7 +54,7 @@ Le champ **Label** correspond au nom du champ dans l'application.
 
 ## Les champs
 
-Cliquez sur l'onglet **Champs **pour pouvoir ajouter des champs à cette nouvelle table.
+Cliquez sur l'onglet **Champs** pour pouvoir ajouter des champs à cette nouvelle table.
 
 Par défaut, à la création d'une nouvelle table, l'application crée un certain nombre de champs système ainsi qu'un champ **Intitulé.**
 
@@ -99,3 +99,53 @@ Pour optimiser le paramétrage de l'application, renseigner également les champ
 | Données sensibles       | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
 
 **_NB : Le moyen le plus rapide et le plus simple pour créer des champs est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)._**
+
+## Les relations
+
+Cliquez sur l'onglet **Relations** afin de visualiser toutes les connexions existantes de la table.
+
+![alt_text](images/image6.png )
+
+## Script JS
+
+Cliquez sur l'onglet **Script JS** pour avoir accès à l'éditeur de texte de la table pour écrire du JavaScript. 
+
+Cet onglet offre une manière flexible d'étendre et de personnaliser les fonctionnalités à travers l'écritures de scripts JavaScript directement dans le paramètrage de la table. Il vous permet de manipuler les données et le comportement du formulaire selon vos besoins spécifiques.
+
+![alt_text](images/image7.png )
+
+Deux fonctions sont présentes par défaut dans l'éditeur :
+
+- onLoad : le script inséré dans cette fonction s'exécutera lors de l'ouverture d'une fiche.
+
+- onSave : par défaut ce script génère une clé unique lors de l'enregistrement de nouvelles fiches.
+
+**Bonnes pratiques :**
+
+- Il est fortement conseillé d'effectuer des tests approfondis pour vous assurer que votre script fonctionne correctement dans différentes conditions.
+
+- Éviter de dépasser les 1000 lignes de code pour un souci de performances lors du chargement du script.
+
+Pour cela on peut fragmenter le code en fonction des différentes fonctionnalités que vous souhaitez implémenter. Cela permettra de mieux organiser votre code et de le rendre plus facile à comprendre et à maintenir à long terme.
+
+## Class JS
+
+Cliquez sur l'onglet **Class JS** pour lister les fonctions JavaScript spécifiques liés à la table :
+
+![alt_text](images/image8.png )
+
+Tout comme l'éditeur de texte de l'onglet **Script JS**, les fiches **Class JS** possèdent elles aussi un éditeur de texte permettant de coder du JavaScript. Cet onglet permet de fragmenter le code afin d'avoir une meilleure organisation et une meilleure maintenabilité de celui-ci.
+
+![alt_text](images/image9.png )
+
+| Champ  | Description                            |
+|--------|----------------------------------------|
+| Table  | Nom de la table correspondante         |
+| Name   | Nom de la fonction que l'on développe            |
+| Note (facultatif)  | Remarques ou informations supplémentaires concernant la fonctionnalité développé |
+
+## Script PHP
+
+Cliquez sur l'onglet **Script PHP** pour avoir accès à l'éditeur de texte de la table pour écrire du PHP.
+
+Tout comme le JavaScript, il est possible d'écrire des scripts PHP via cet onglet.
