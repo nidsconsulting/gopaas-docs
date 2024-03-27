@@ -87,12 +87,12 @@ Depuis la fiche dashboard, menu outil > Dupliquer Dashboard
 ![alt_text](images/image5.jpg "image_tooltip")
 
 
+
 ## Dashboard designer
 
 L’administrateur GoPaaS dispose d’un droit supplémentaire lui permettant de paramétrer rapidement un dashboard en partant de l’interface utilisateur.
 
-Sur un dashboard existant, cliquer sur l'icône “baguette magique” en haut à droite de l’écran.
-> mettre l'icone baguette magique
+Sur un dashboard existant, cliquer sur l'icône ![alt_text](../asset/edit.png "image_tooltip") en haut à droite de l’écran.
 
 Depuis cette interface, il est possible de : 
 
@@ -101,8 +101,7 @@ Depuis cette interface, il est possible de :
 * Modifier la couleur du widget
 * Supprimer un widget du dashboard
 
-Cliquer sur l'icône “disquette” pour enregistrer les modifications.
-> mettre l'icone disquette
+Cliquer sur l'icône ![alt_text](../asset/diskSave.png "image_tooltip") pour enregistrer les modifications.
 
 ![alt_text](images/image6.jpg "image_tooltip")
 
