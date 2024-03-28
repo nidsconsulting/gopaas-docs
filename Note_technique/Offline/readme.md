@@ -58,3 +58,35 @@ Une fois le JSON prêt, insérez-le dans le champ "script" de la fiche configura
 Assurez-vous que l'utilisateur dispose des permissions nécessaires sur chacune des vues (tableaux, widgets, icônes, vues liées, etc.) qui doivent fonctionner en mode hors ligne.
 
 <img src="images/image3.png" width="550">
+
+## Synchronisation
+
+En haut à droite de GoPaaS vous trouverez cet icone ![alt text](images/image5.png), qui permet de vérifier le statut de la connexion :
+* vert = en ligne
+* orange = connexion lente
+* rouge : hors ligne
+
+Au clique sur ce bouton un menu apparait
+![alt text](images/image4.png)
+
+| Intitulé      | Description                               |
+|--------------|-------------------------------------------|
+| Synchro IN   | Lance la synchronisation sur la base de données locale du navigateur. |
+| Synchro OUT  | Lance la synchronisation de la base de données locale vers GoPaaS. |
+| Sauvegarder  | Crée une sauvegarde de la base de données locale au format JSON. |
+| Restaurer    | Permet de restaurer un backup JSON sur la base de données locale. |
+| Switch       | Permet de permuter de la base de données locale à la base connectée. |
+
+## Utilisation
+Avant chaque utilisation du mode `OFFLINE` il faut faire une `Synchro IN`.
+* Confirmer la demande de synchro :
+
+<img src="images/image6.png" width="320" >
+
+* Ce message indique que la synchronisation est terminée :
+<img src="images/image7.png" width="250" >
+
+* Ensuite vous pouvez travailler normalement, si la connexion est perdu GoPaaS fonctionnera automatiquement en mode `OFFLINE`.
+
+* Une fois la connexion retrouvé un message vous propose de synchroniser vos données local vers GoPaaS (Synchro OUT), répondez `Oui` pour lancer la synchro.
+<img src="images/image8.png" width="320" >
