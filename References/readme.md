@@ -174,4 +174,4 @@ Ci-dessous, la description des champs de l’onglet principal.
 
 Accessible via la barre de navigation > Paramètres > Vue, cette fonctionnalité regroupe l'ensemble des vues de votre application et vous permet de les ouvrir directement à partir d'ici.
 
-![Menu des vues](images/image15.png)
+![Menu des vues](images/image16.png)
