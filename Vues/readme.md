@@ -126,7 +126,7 @@ Dans l'onglet "Code source" apparaît la requête SQL de la vue.
 | JOIN         | Permet de créer une jointure avec une autre table.                                                          |
 | WHERE        | Génère automatiquement en fonction des champs sélectionnés dans les conditions.                             |
 | COLONNE      | Génère automatiquement le paramétrage de chacun des champs.                                                 |
-| STYLE        | Permet d'appliquer un style en fonction de la valeur d'un champ du tableau, voir exemple ci-dessous : Si la ville de la fiche contact = "PARIS" il applique une couleur et met en gras le texte :<br> ```<format><item datafield="ville" value="PARIS" code="0xAE642D" fontweight="bold" fontstyle="normal"/></format>``` |
+| STYLE        | Permet d'appliquer un style en fonction de la valeur d'un champ du tableau, voir exemple ci-dessous : Si la ville de la fiche contact = "PARIS" il applique une couleur et met en gras le texte :<br> Au format XML : <br>```<format><item datafield="ville" value="PARIS" code="0xAE642D" fontweight="bold" fontstyle="normal"/></format>``` <br> Ou au format JSON : <br>  ``` {"format": {"item": {"datafield": "ville","value": "PARIS","code":"0xAE642D","fontweight": "bold","fontstyle": "normal"}}} ```|
 
 ## Script JS
 
