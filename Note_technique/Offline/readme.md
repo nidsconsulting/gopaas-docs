@@ -66,7 +66,8 @@ En haut à droite de GoPaaS vous trouverez cet icone ![alt text](images/image5.p
 * orange = connexion lente
 * rouge : hors ligne
 
-Au clique sur ce bouton un menu apparait
+Au clic sur ce bouton un menu apparait
+<br>
 ![alt text](images/image4.png)
 
 | Intitulé      | Description                               |
