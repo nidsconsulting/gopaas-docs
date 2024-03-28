@@ -5,7 +5,9 @@
 Installer l'extension "**itemAddButton**"
 
 1. Télécharger le fichier **itemAddButton.zip** et le décompresser.
+
 2.  **Menu → Admin → Transfer In**.
+
 3. Sélectionner le fichier “**itemAddButton.json**”.
 
 ## Paramètres
@@ -51,11 +53,12 @@ itemAddButton(thisComponent, buttons);
 ## Résultat
 
 
-![alt_text](images/bouton1.png "Bouton")
-![alt_text](images/bouton2.png "Bouton")
-![alt_text](images/bouton3.png "Bouton")
+![screenshot](images/bouton1.png "Bouton")
+![screenshot](images/bouton2.png "Bouton")
+![screenshot](images/bouton3.png "Bouton")
 
-***Remarque :***
-+ *N'hésitez pas à ajuster ces informations en fonction de votre cas d'utilisation spécifique.*
-+ *L'extension est modifiable, vous pouvez l'adapter à vos besoins.*
+
+> N'hésitez pas à ajuster ces informations en fonction de votre cas d'utilisation spécifique.
+
+> L'extension est modifiable, vous pouvez l'adapter à vos besoins.
 

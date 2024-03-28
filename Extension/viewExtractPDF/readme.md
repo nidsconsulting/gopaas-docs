@@ -3,8 +3,11 @@
 ## Prérequis
 
 Importer le fichier "**viewExtractPDF.json**":
+
 1. Télécharger le fichier **viewExtractPDF.zip** et le décompresser.
+
 2. **Menu → Admin → Transfer In**.
+
 3. Sélectionner le fichier “**viewExtractPDF.json**”.
 
 ## Paramètres 
@@ -24,13 +27,15 @@ Importer le fichier "**viewExtractPDF.json**":
 ## Mode debug
 
 Le mode debug permet aux administrateurs de récupérer les valeurs de la position horizontale et verticale d'un élément contenu dans un fichier PDF en réalisant une recherche par mot-clé.
+
 Pour passer en mode debug, le paramètre "**debug**" doit être renseigné à "**true**" :
+
 ```javascript
 let debug = true;
 viewExtractPDF(options, async function(data){}, debug);
 ```
 
-![alt_text](images/viewExtractPDF1.png "viewExtractPDF")
+![screenshot](images/viewExtractPDF1.png "viewExtractPDF")
 
 ## Exemple
 
@@ -76,4 +81,4 @@ viewbar.addTool("<span><i class='fas fa-file-pdf'></i>&nbspExtractPDF</span>", f
 
 ## Résultat
 
-![alt_text](images/viewExtractPDF2.png "viewExtractPDF")
+![screenshot](images/viewExtractPDF2.png "viewExtractPDF")

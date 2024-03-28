@@ -1,0 +1,274 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.navbar {
+  background-color: #2c3e50; /* Couleur de fond */
+  color: #ffffff; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement interne */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre portée pour la profondeur */
+  position: -webkit-sticky; /* Pour le support Safari */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* S'assure que la navbar reste au-dessus des autres contenus */
+}
+
+
+.navbar-content {
+  max-width: 1200px; /* Largeur max du contenu */
+  margin: 0 auto; /* Centrer le contenu */
+  display: flex; /* Utiliser Flexbox pour le layout */
+  align-items: center; /* Aligner les éléments verticalement */
+}
+
+.navbar h1 {
+  margin: 0; /* Supprimer la marge par défaut */
+  font-size: 24px; /* Taille du texte */
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar-left {
+  min-width: 200px;
+  background-color: #333;
+  color: #ecf0f1;
+  padding: 20px;
+  overflow-y: auto;
+  position: -webkit-sticky; /* Pour le support Safari */
+  position: fixed;
+  height: 100%;
+
+}
+
+#sidebar-left-title{
+  font-weight: bold;
+  padding: 10px;
+}
+
+#sidebar-right {
+  min-width: 200px;
+  background-color: #333;
+  color: #ecf0f1;
+  padding: 20px;
+  overflow-y: auto;
+  position: -webkit-sticky; /* Pour le support Safari */
+  position: fixed;
+  height: 100%;
+  right: 0;
+  width: 200px;
+  font-size: 14px;
+}
+
+#content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-left: 250px;
+  margin-right: 250px;
+  overflow-y: auto;
+}
+
+.chapter, .sub-chapter {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.chapter:hover, .sub-chapter:hover {
+  background-color: #34495e;
+}
+
+/* Moderniser les barres de défilement */
+#sidebar-left::-webkit-scrollbar, #sidebar-right::-webkit-scrollbar {
+  width: 8px;
+}
+
+#sidebar-left::-webkit-scrollbar-thumb, #sidebar-right::-webkit-scrollbar-thumb {
+  background: #bdc3c7;
+  border-radius: 10px;
+}
+
+#sidebar-left::-webkit-scrollbar-track, #sidebar-right::-webkit-scrollbar-track {
+  background: #ecf0f1;
+}
+
+.sub-chapter {
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.sub-chapter:hover {
+  background-color: #34495e;
+}
+
+.sub-chapter a {
+  text-decoration: none;
+  color:#fff;
+}
+
+.sub-chapter-detail {
+  cursor: pointer;
+  margin: 5px 0;
+  padding-left: 25px;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.sub-chapter-detail:hover {
+  background-color: #34495e;
+}
+
+.sub-chapter-detail a {
+  text-decoration: none;
+  color:#fff;
+}
+
+.sub-chapter-anchor {
+  display: block;
+  padding-top: 60px; /* Ajustez en fonction de la hauteur de votre navbar */
+  margin-top: -60px; /* Ajustement négatif pour compenser le décalage dû au scroll */
+}
+
+table {
+  width: 100%; /* Utilise toute la largeur disponible */
+  border-collapse: collapse; /* Supprime l'espacement entre les bordures des cellules */
+  margin-bottom: 20px; /* Espacement après la table */
+  background-color: #ffffff; /* Fond de la table */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre portée légère pour la profondeur */
+}
+
+th, td {
+  text-align: left; /* Alignement du texte dans les cellules */
+  padding: 8px; /* Espacement interne dans les cellules */
+  border-bottom: 1px solid #ddd; /* Bordure de séparation des lignes */
+}
+
+th {
+  background-color: #f8f8f8; /* Fond des en-têtes de colonne */
+  color: #333; /* Couleur du texte des en-têtes */
+  font-weight: bold; /* Texte en gras pour les en-têtes */
+}
+
+tr:hover {
+  background-color: #f5f5f5; /* Changement de fond au survol d'une ligne */
+}
+
+/* Style pour améliorer l'apparence des bordures de la table si nécessaire */
+table, th, td {
+  border: 1px solid #ddd; /* Bordure légère autour de la table et des cellules */
+}
+
+/* Styliser les bordures et les rayures des lignes pour améliorer la lisibilité */
+/* Couleur de fond pour les lignes impaires */
+
+/*
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; 
+}
+*/
+
+blockquote {
+  background-color: #f7f7f7;
+  border-left: 5px solid grey;
+  margin: 1.5em 5px;
+  padding: 0.5em 5px;
+}
+
+
+blockquote p {
+  padding-left: 30px;;
+  display: inline;
+}
+
+h1 {
+  color: #264653; /* Une couleur foncée et sophistiquée */
+  font-size: 24px; /* Taille de la police significative pour l'importance de h1 */
+  font-weight: 700; /* Poids de la police pour plus d'impact */
+  text-align: left; /* Centre le titre pour attirer l'attention */
+  margin-top: 24px; /* Espacement au-dessus du titre */
+  margin-bottom: 20px; /* Espacement en dessous du titre */
+  letter-spacing: -1px; /* Rapprochement des lettres pour un effet stylisé */
+}
+
+h2 {
+  color: #2C3E50; /* Une couleur moderne et attrayante, ici un vert océan */
+  font-size: 20px; /* Taille de la police */
+  font-weight: bold; /* Rend le texte en gras */
+  text-transform: uppercase; /* Optionnel: transforme le texte en majuscules pour un effet plus moderne */
+  margin-bottom: 20px; /* Espacement après le titre pour aérer le contenu */
+  padding-bottom: 5px; /* Espacement entre le texte et la bordure */
+}
+
+h3 {
+  color: #2C3E50; /* Une couleur chaude pour attirer l'attention */
+  font-size: 18px; /* Taille de police appropriée pour distinguer des paragraphes tout en restant sous les h1 et h2 */
+  font-weight: 500; /* Poids moyen pour l'équilibre visuel */
+  text-transform: none; /* Gardez le texte en casse normale pour une approche plus douce que pour h2 */
+  margin-top: 30px; /* Espacement au-dessus du titre pour une bonne séparation */
+  margin-bottom: 10px; /* Espacement en dessous du titre pour rapprocher du contenu associé */
+}
+
+h4 {
+  color: #2C3E50; /* Une couleur sobre et élégante, plus foncée pour un contraste subtil */
+  font-size: 16px; /* Taille légèrement inférieure à h3 pour respecter la hiérarchie */
+  font-weight: 400; /* Poids normal pour éviter de surcharger visuellement */
+  text-transform: capitalize; /* Capitalise chaque mot pour une distinction subtile */
+  margin-top: 25px; /* Espacement au-dessus pour une bonne séparation */
+  margin-bottom: 10px; /* Espacement en dessous pour rapprocher du contenu associé */
+  padding-bottom: 5px; /* Espacement sous le texte avant la bordure */
+}
+
+
+p {
+  color: #333333; /* Une couleur sombre pour une lecture facile, mais moins dure que le noir pur */
+  font-size: 14px; /* Une taille standard pour le corps du texte */
+  line-height: 1.6; /* Espacement entre les lignes pour améliorer la lisibilité */
+  margin-bottom: 20px; /* Espacement entre les paragraphes pour aérer le texte */
+  text-align: justify; /* Justification du texte pour une présentation soignée */
+}
+
+.copy-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+pre {
+  position: relative;
+}
+
+code {
+  background-color: #f4f4f4;
+  color: #d63384;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+img[alt=screenshot] { max-width: 800px; text-align: center; }

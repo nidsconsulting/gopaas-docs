@@ -1,11 +1,13 @@
 # Dropfile
 
-## Prérequis
+## Pré-requis
 
 Installer l'extension "**dropfile**"
 
 1. Télécharger le fichier **dropfile.zip** et le décompresser.
+
 2.  **Menu → Admin → Transfer In**.
+
 3. Sélectionner le fichier “**dropfile.json**”.
 
 ## Paramètres
@@ -47,9 +49,9 @@ thisComponent.ui.find('#btnDragNDrop').on('click', function() {
 
 ## Résultat
 
-![alt_text](images/dropfile1.png "dropfile")
+![screenshot](images/dropfile1.png "dropfile")
 
-***Remarque :***
-+ *N'hésitez pas à ajuster ces informations en fonction de votre cas d'utilisation spécifique.*
-+ *L'extension est modifiable, vous pouvez l'adapter à vos besoins.*
 
+> N'hésitez pas à ajuster ces informations en fonction de votre cas d'utilisation spécifique.*
+
+> L'extension est modifiable, vous pouvez l'adapter à vos besoins.*

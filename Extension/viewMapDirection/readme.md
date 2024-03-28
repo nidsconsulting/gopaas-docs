@@ -5,7 +5,9 @@
 Importer le fichier "**viewMapDirection.json**":
 
 1. Télécharger le fichier **viewMapDirection.zip** et le décompresser.
+
 2. **Menu → Admin → Transfer In**.
+
 3. Sélectionner le fichier “**viewMapDirection.json**”.
 
 ## Paramètres
@@ -19,6 +21,7 @@ Importer le fichier "**viewMapDirection.json**":
 ## Exemple
 
 Pour afficher le bouton "**Afficher sur une carte**" et intégerer l'extension, insérer le code suivant dans l'onglet "**Script JS**" de la vue et/ou de la vue liée :
+
 ```javascript
 thisComponent.ui.find(".glyphicon-search").after("<button id='btnShowMap' type='button' role='button' class='btn btn-info' style='margin-left:5px; color:white;' title='Afficher sur une carte'><i class='fas fa-map-marker-alt'></i>&nbsp;<span class='trn'>Afficher sur une carte</span></button>");
   thisComponent.ui.find("#btnShowMap").on('click', async function(){
@@ -44,8 +47,8 @@ thisComponent.ui.find(".glyphicon-search").after("<button id='btnShowMap' type='
 
 ## Résultat
 
-![alt_text](images/viewMapDirection.png "Carte")
+![screenshot](images/viewMapDirection.png "Carte")
 
-***Remarque :***
-+ *N'hésitez pas à ajuster ces informations en fonction de votre cas d'utilisation spécifique.*
-+ *L'extension est modifiable, vous pouvez l'adapter à vos besoins.*
+> N'hésitez pas à ajuster ces informations en fonction de votre cas d'utilisation spécifique.
+
+> L'extension est modifiable, vous pouvez l'adapter à vos besoins.

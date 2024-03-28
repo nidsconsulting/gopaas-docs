@@ -3,8 +3,11 @@
 ## Prérequis
 
 Importer le fichier "**viewExportCompta.json**":
+
 1. Télécharger le fichier **viewExportCompta.zip** et le décompresser
+
 2. **Menu → Admin → Transfer In**
+
 3. Sélectionner le fichier “**viewExportCompta.json**”.
 
 ## Paramètres
@@ -53,5 +56,6 @@ viewExportCompta(data);
 
 ## Résultat
 
-![alt_text](images/exportCompta1.png "exportCompta")
-![alt_text](images/exportCompta2.png "exportCompta")
+![screenshot](images/exportCompta1.png "exportCompta")
+
+![screenshot](images/exportCompta2.png "exportCompta")
