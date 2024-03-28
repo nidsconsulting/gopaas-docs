@@ -2,14 +2,11 @@
 
 # Automatisation
 
-
 ## Introduction
 
 L’automatisation est l’une des fonctionnalités les plus utiles de GoPaaS.
 
 Elle fonctionne un peu comme un assistant.
-
- 
 
 Les automatisations indiqueront à GoPaaS comment accomplir des tâches répétitives ou routinières, comme l’envoi d’un mail tous les jours à 9 heures avec les tâches de la journée, ou encore des tâches plus complexes, comme envoyer un mail à un commercial en charge d’un compte, pour lequel un technicien a signalé un incident important voire critique.
 
@@ -28,9 +25,7 @@ Pour créer une nouvelle automatisation, rendez-vous dans la barre de personnali
 | Ordre                  | Ordre de l’automatisation dans la vue par défaut |
 
 
-![alt_text](images/mainItem.png)
-
-
+![screenshot](images/mainItem.png)
 
 ## Mode de fonctionnement des automatisations
 
@@ -41,12 +36,11 @@ Un automatisation est une série d’instructions que GoPaaS exécute automatiqu
 
 Evénement à partir duquel l’automatisation sera exécutée. Il existe deux types de déclencheurs : 
 
-
-
 * Enregistrement d’une fiche
+
 * Timer
 
-![alt_text](images/trigger.png)
+![screenshot](images/trigger.png)
 
 #### Enregistrement d’une fiche
 
@@ -84,12 +78,14 @@ L'automatisation se déclenche avec une configuration temporelle. Plusieurs autr
 
 Cette section permet de définir les conditions à respecter pour que l’automatisation déclenche une série d'actions.
 
-![alt_text](images/filter.png)
+![screenshot](images/filter.png)
 
-Cliquer sur icone ![alt_text](../asset/plusbtn.png) pour ajouter une condition puis renseigner : 
+Cliquer sur icone ![ajouter](../asset/plusbtn.png) pour ajouter une condition puis renseigner : 
 
 * Un champ dans la liste déroulante
+
 * Un opérateur
+
 * La valeur recherchée
 
 Répéter l’opération pour cumuler d’autres conditions.
@@ -101,7 +97,7 @@ Plusieurs conditions peuvent être cumulées pour une seule automatisation.
 
 Cette dernière section permet d’ajouter les actions à exécuter lorsque les conditions sont respectées.
 
-![alt_text](images/action.png)
+![screenshot](images/action.png)
 
 Au total de sept actions sont disponibles dans GoPaaS.
 

@@ -76,7 +76,7 @@ La somme totale des largeurs de vue ne peut pas excéder “12”.
 Cliquer sur le bouton `Enregistrer` pour conserver le paramétrage de la ligne de dashboard.
 
 ​​​​​
-NB : Après avoir paramétré un dashboard, il est conseillé de rafraîchir la page et de vider le cache du navigateur.
+> Après avoir paramétré un dashboard, il est conseillé de rafraîchir la page et de vider le cache du navigateur.
 
 
 ## Dupliquer un dashboard

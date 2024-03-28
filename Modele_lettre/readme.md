@@ -2,9 +2,11 @@
 
 # Modèle de lettre
 
+## Description
+
 Les modèles de lettre simplifient le processus de fusion de données en permettant aux utilisateurs de créer rapidement des documents personnalisés à partir des données de leur application. En utilisant les modèles de lettre, les utilisateurs peuvent générer des documents professionnels et cohérents en un clin d'œil.
 
-![alt_text](images/exemple.png)
+![screenshot](images/exemple.png)
 
 
 ### Prérequis
@@ -16,7 +18,7 @@ Pour assurer une fusion de données correcte, les informations de l'application 
 
 Pour créer un modèle de lettre rendez vous dans dans la barre de navigation > Références > Modèle > Modèle de lettre.
 
-![alt_text](images/menuModelLetter.png)
+![screenshot](images/menuModelLetter.png)
 
 Cliquer sur `ajouter`.
 
@@ -33,8 +35,6 @@ Ci-dessous, la description des champs de l’onglet principal.
 | Note                  | Description détaillée du modèle de lettre                         |
 
 
-
-
 ## Créer et paramétrer le modèle de fusion
 
 Dans l’exemple ci dessous nous allons utiliser un modèle type odt.
@@ -43,9 +43,8 @@ La méthode implique l'insertion de balise GoPaaS aux emplacements où doivent f
 
 Il existe deux types de balises: 
 
-
-
 * Les champs
+
 * Les blocs
 
 Un champ GoPaaS est une balise GoPaaS qui doit être remplacée par une donnée simple. Il est possible de spécifier un format d'affichage ainsi que d'autres paramètres.
@@ -57,10 +56,12 @@ Le plus souvent il s'agit d'une ligne d'un tableau.
 Il existe quatres formats d’affichage de balise.
 
 
-
 * Texte
+
 * Nombre
+
 * Date
+
 * Image
 
 Les différents formats sont disponibles à la fusion pour tous les types de balise existants.
@@ -80,9 +81,9 @@ Les différents formats sont disponibles à la fusion pour tous les types de bal
 
 En choisissant la vue de fusion dans le modèle de lettre, GoPaaS offre une liste des champs disponibles à fusionner dans le modèle. Si un champ nécessaire à la fusion est absent, il doit être ajouté à la vue de fusion.
 
-![alt_text](images/viewMergeField.png)
+![screenshot](images/viewMergeField.png)
 
-Cliquer sur l'icône ![alt_text](../asset/copybtn.png) dans le tableau des champs pour copier le code de fusion puis coller dans le modèle de fusion.
+Cliquer sur l'icône ![copie](../asset/copybtn.png) dans le tableau des champs pour copier le code de fusion puis coller dans le modèle de fusion.
 
 Exemple dans le modèle de fusion : 
 `Adresse client : [onshow.client_adresse;noerr;ifempty'']`
@@ -92,11 +93,11 @@ Exemple dans le modèle de fusion :
 
 En sélectionnant  les vues liées de fusion dans le modèle de lettre, GoPaaS offre une liste des champs disponibles à fusionner dans le modèle. Si un champ nécessaire à la fusion est absent, il doit être ajouté à la vue de fusion.
 
-![alt_text](images/linkviewMerge.png)
+![screenshot](images/linkviewMerge.png)
 
 Remarque : Lors de la fusion d'une vue liée, le code de fusion du premier champ de la vue est légèrement modifié. Il est important de prendre en compte l'ordre des champs dans la vue.
 
-Pour inclure le premier champ d'une vue liée cliquer sur l'icône ![alt_text](../asset/copybtn.png)  dans le tableau des champs, puis collez-le dans le modèle de fusion. Répéter l’opération pour les autres champs de la vue liée.
+Pour inclure le premier champ d'une vue liée cliquer sur l'icône ![copie](../asset/copybtn.png)  dans le tableau des champs, puis collez-le dans le modèle de fusion. Répéter l’opération pour les autres champs de la vue liée.
 
 Exemple dans le modèle de fusion : 
 | REF | Montant HT | Remise |
@@ -109,6 +110,7 @@ Exemple dans le modèle de fusion :
 Les modèles de lettre peuvent être imprimés depuis :
 
 * Une fiche
+
 * Une vue
 
 Depuis une fiche, menu outil > Fusionner > choisir le modèle > Fusionner

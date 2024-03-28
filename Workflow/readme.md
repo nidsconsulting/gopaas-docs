@@ -1,25 +1,16 @@
-<!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 1 -->
-
-
 # Workflow
 
+## Description
 Le workflow permet de structurer et d'automatiser des tâches ou des processus, améliorant ainsi l'efficacité et la cohérence des opérations. Il facilite également la coordination entre les personnes impliquées dans ces processus en définissant clairement les étapes à suivre
 
-
-![alt_text](images/image1.png)
-
-
+![screenshot](images/image1.png)
 
 ### Prérequis
 
 Pour pouvoir utiliser un workflow sur une table, il y a deux paramètres à prendre en compte.
 
-
-
 * Il est impératif de définir un champ "Étape" pour superviser les diverses phases du workflow. Ce champ doit être obligatoire et configuré exclusivement en format liste en mode lecture seule.
+
 * Il serait pertinent de spécifier un champ "Commentaires workflow" de type "mémo", avec un accès en lecture seule, pour enregistrer les commentaires en cas de rejet. Ce champ reste facultatif.
 
 
@@ -27,12 +18,11 @@ Pour pouvoir utiliser un workflow sur une table, il y a deux paramètres à pren
 
 Pour créer un nouveau workflow, rendez vous dans la barre de navigation > Admin > Workflow.
 
-![alt_text](images/admWorkflow.png)
+![screenshot](images/admWorkflow.png)
 
 Cliquer sur `ajouter`.
 
 Ci-dessous, la description des champs de l’onglet principal.
-
 
 | Champ                      | Description                                   |
 |----------------------------|-----------------------------------------------|
@@ -43,19 +33,15 @@ Ci-dessous, la description des champs de l’onglet principal.
 | Actif                      | Rendre actif ou non le workflow               |
 | Description                | Description détaillée du workflow             |
 
-
-
 Une fois renseigné, cliquer sur `appliquer` pour continuer.
-
 
 ## Définir les étapes du workflow
 
 Dans la section étape, cliquer sur ajouter pour créer une nouvelle étape de workflow.
 
-![alt_text](images/workflow_fullstep.png)
+![screenshot](images/workflow_fullstep.png)
 
 Ci-dessous, la description des champs de l’onglet principal.
-
 
 | Champ                     | Description                                                                                   |
 |---------------------------|-----------------------------------------------------------------------------------------------|
@@ -66,10 +52,6 @@ Ci-dessous, la description des champs de l’onglet principal.
 | Nom du bouton             | Intitulé du bouton.                                                                          |
 | Etape déclencheur         | Valeur du champ "Étape", sur laquelle notre automatisme se déclenche</br>                        Exemple : Validation du rdv                                                                        |
 | Etape suivante à renseigner| Valeur du champ "Étape" après exécution de notre automatisme.Exemple : RDV validé                                   |                                                               
-
-
-
-
 
 * Renseigner les champs suivants pour le bouton de "Refus" (optionnel) :
 
@@ -82,12 +64,9 @@ Ci-dessous, la description des champs de l’onglet principal.
 | Etape déclencheur       | Valeur du champ "Étape", sur laquelle notre automatisme se déclenche </br>             Exemple : Refus du RDV                                                              |
 | Étape refus à renseigner| Valeur du champ "Étape" après exécution de notre automatisme </br> Exemple : RDV refusé                                                                |
 
-
-
 Une fois renseigné, cliquer sur `appliquer` pour continuer et enregistrer l’étape de workflow.
 
 Répéter l’opération pour ajouter d’autres étapes au workflow.
-
 
 ## Ajouter un automatisme
 
@@ -100,8 +79,6 @@ Rendez-vous dans le menu paramétrage en haut à droite de l’écran > Automati
   <tr>
    <td colspan="2" >
 <h4>Déclencheur</h4>
-
-
    </td>
   </tr>
   <tr>
@@ -125,8 +102,6 @@ Rendez-vous dans le menu paramétrage en haut à droite de l’écran > Automati
   <tr>
    <td colspan="2" >
 <h4>Filtre</h4>
-
-
    </td>
   </tr>
   <tr>
@@ -138,8 +113,6 @@ Rendez-vous dans le menu paramétrage en haut à droite de l’écran > Automati
   <tr>
    <td colspan="2" >
 <h4>Action</h4>
-
-
    </td>
   </tr>
   <tr>
@@ -157,7 +130,7 @@ Rendez-vous dans le menu paramétrage en haut à droite de l’écran > Automati
 </table>
 
 
-NB : Il est possible de cumuler plusieurs filtres et/ou plusieurs actions pour une seule automatisation.
+> Il est possible de cumuler plusieurs filtres et/ou plusieurs actions pour une seule automatisation.
 
 
 ## Rendre le workflow disponible

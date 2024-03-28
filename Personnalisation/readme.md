@@ -53,7 +53,7 @@ Afin d'enregistrer un onglet en base de données, il faut renseigner obligatoire
 
 Le champ **Label** correspond au nom du champ dans l'application.
 
-**NB**: _Le moyen le plus simple et le plus rapide pour créer des onglets est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)_.
+> Le moyen le plus simple et le plus rapide pour créer des onglets est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)_.
 
 ## Les champs
 
@@ -83,7 +83,7 @@ Afin d'enregistrer le champ en base de donnée, il faut renseigner obligatoireme
 | Alias/Nom table connectée| L'alias du champ doit être unique dans toute l'application. Dans le cas où le champ créé est de type *connexion*, il faut renseigner le nom de la table à connecter.|
 | Intitulé                 | C'est le nom du champ dans l'application.                                                           |
 
-**NB** : _Les valeurs de nom du champ ne doivent pas contenir de majuscule, d'espace ou de caractères spéciaux_
+> Les valeurs de nom du champ ne doivent pas contenir de majuscule, d'espace ou de caractères spéciaux_
 
 Pour optimiser le paramétrage de l'application, renseigner également les champs suivants :
 
@@ -103,7 +103,7 @@ Pour optimiser le paramétrage de l'application, renseigner également les champ
 | Données personnelles    | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
 | Données sensibles       | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
 
-**_NB : Le moyen le plus rapide et le plus simple pour créer des champs est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)._**
+> Le moyen le plus rapide et le plus simple pour créer des champs est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41).
 
 ## Les relations
 

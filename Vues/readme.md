@@ -42,7 +42,7 @@ Il est conseillé de renseigner un certain nombre de champs pour paramétrer cor
 | Permissions                  | Permet de gérer les permissions de la vue.                                                                            |
 | Description                  | Champ note pour la saisie d'une description de la vue.                                                                 |
 
-**NB** : _Il est déconseillé de cocher toutes les options pour un soucis de performance lors du chargement de la vue._
+> Il est déconseillé de cocher toutes les options pour un soucis de performance lors du chargement de la vue._
 
 - Il est également possible de dupliquer la vue par défaut et de modifier les paramètres pour créer une nouvelle vue :
     * Depuis la vue par défaut cliquer sur ![alt_text](images/image5.png ) ->  ![alt_text](images/image18.png ) ->  Dupliquer, il suffit alors de modifier le nom de la vue puis de cliquer sur ![alt_text](images/image36.png ) pour commencer le paramétrage.
@@ -61,7 +61,7 @@ Nous allons maintenant passer à l'onglet **Champs**, c'est ici que vous allez s
 
 4. Les champs choisis pour apparaître dans la vue, l'ordre d'affichage peut-être modifié avec un glissé-déposé.
 
-**NB** : _Pour ajouter ou supprimer un champ, il suffit de le sectionner et de le déplacer à droite ou à gauche à l'aide des flèches._
+> Pour ajouter ou supprimer un champ, il suffit de le sectionner et de le déplacer à droite ou à gauche à l'aide des flèches._
 
 ## Propriétés de la colonne
 
@@ -343,7 +343,7 @@ Une fois le mode modification activé, vous devez spécifier quels champs seront
 2. Autoriser la modification : Pour chaque champ que vous souhaitez rendre modifiable, cochez la case "Autoriser modification". Si vous ne cochez pas cette option, le champ restera en lecture seule et ne pourra pas être édité directement depuis la vue.
 ![alt_text](images/image4.png )
 
-**NB** : _L'alias du champ doit rester identique au nom du champ pour que les modifications fonctionnent correctement._
+> L'alias du champ doit rester identique au nom du champ pour que les modifications fonctionnent correctement._
 
 ### Fonctionnalités Clés
 

@@ -24,7 +24,7 @@ Cliquer sur le bouton ![alt_text](images/image1.png ) pour ajouter une nouvelle 
 
 Et enfin, il suffit de cliquer sur le bouton ![alt_text](images/image3.png ) pour créer un nouveau champ.
 
-__NB__ : _Il est conseillé de rafraîchir la page et de vider le cache du navigateur à chaque modification ou création importante_.
+> Il est conseillé de rafraîchir la page et de vider le cache du navigateur à chaque modification ou création importante_.
 
 ## Les sections
 
@@ -49,4 +49,4 @@ Sur la fiche des sections il existe un certain nombre de champs à renseigner :
 | Ordre                | Renseigner l'ordre de la section dans le masque (valeur numérique).                         |
 | Réduire par défaut   | Permet de réduire la section lors de l'ouverture de la fiche.                                |
 
-__NB__ : _Le moyen le plus rapide et le plus simple pour créer une section est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)._
+> Le moyen le plus rapide et le plus simple pour créer une section est de passer par le [Form Designer](http://www.gopaas.fr/aide.php?rubrique=Personnaliser%20les%20applications#41)._

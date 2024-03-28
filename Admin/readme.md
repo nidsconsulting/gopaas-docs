@@ -28,7 +28,7 @@ Il existe deux solutions pour accéder à l'audit trail :
 
 <img src="images/image16.png" width="650">
 
-**NB** : _Ne pas oublier d'activer l'audit trail dans les champs d'une table en cochant "Audit Trail" dans l'onglet Principal._
+> _Ne pas oublier d'activer l'audit trail dans les champs d'une table en cochant "Audit Trail" dans l'onglet Principal._
 
 
 | **Champ**       | Description           |
@@ -101,7 +101,7 @@ Il est possible de paramétrer la couleur des boutons :
 
 Il est également possible de personnaliser les couleurs de la vue Pivot (Tableau croisé dynamique) via la section** Couleur vue pivot.**
 
-***NB** : Pour le paramétrage des couleurs, veuillez renseigner une valeur au format : **#FFFFFF**.*
+> Pour le paramétrage des couleurs, veuillez renseigner une valeur au format : **#FFFFFF**.
 ### Onglet Script
 
 Ajouter un script à cet emplacement pour des paramétrages spécifiques comme :
@@ -167,7 +167,7 @@ Saisir le nom de votre extension, une description et cocher la case pour l’act
 | **PHP**       | Cet onglet n’est pas actif |
 
 
-**NB :** il faudra vous déconnecter et vous reconnecter de GoPaaS pour que l’extension soit chargée
+> il faudra vous déconnecter et vous reconnecter de GoPaaS pour que l’extension soit chargée
 
 
 ### 
@@ -402,4 +402,4 @@ Permet d’importer des éléments d’une autre application
 | Choisir un fichier | Sélectionner un JSON à importer |
 | Bouton Importer   | Lance l’import                 |
 
-***NB** : Pour l’import d’une table il faudra se rendre dans le Check application pour créer la table et les champs*
+> Pour l’import d’une table il faudra se rendre dans le Check application pour créer la table et les champs*
