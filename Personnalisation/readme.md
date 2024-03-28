@@ -1,5 +1,6 @@
 # Personnalisation
 
+## Description
 Un des atouts majeurs de GoPaaS réside dans ses nombreuses fonctions de personnalisation. Cela confère une souplesse au produit, qui peut ainsi se prêter aux utilisations et applications les plus variées. Selon vos besoins, vous pouvez ajouter et modifier des tables, des connexions, des vues, des formulaires, des automatisations, et tous les éléments (ou définitions) qui constituent la structure de votre application.
 
 Dans cette rubrique, nous passons en revue l’ensemble des possibilités de personnalisation de GoPaaS.
@@ -8,9 +9,9 @@ Dans cette rubrique, nous passons en revue l’ensemble des possibilités de per
 
 La plateforme GoPaaS vous permet d'ajouter de nouvelles tables afin de créer de nouvelles fonctionnalités liées à vos besoins et à l’'évolution de votre utilisation.
 
-Pour cela, rendez vous dans le menu personnalisation ![alt_text](images/image5.png ) -> Tables -> cliquer sur Ajouter.
+Pour cela, rendez vous dans le menu personnalisation ![screenshot](images/image5.png ) -> Tables -> cliquer sur Ajouter.
 
-![alt_text](images/image4.png )
+![screenshot](images/image4.png )
 
 Afin d'enregistrer la table en base de donnée, il faut obligatoirement renseigner deux champs :
 
@@ -38,7 +39,9 @@ Chaque table est associée à un seul formulaire de saisie et de visualisation d
 
 Ces masques sont organisés sous forme d'onglets, chaque onglet contenant lui-même des sections et dans chaque section, des champs.
 
-A la création d'une nouvelle table, GoPaaS ajoute automatiquement 2 onglets, l'onglet **Principal** et l'onglet **Système**. Pour ajouter un nouvel onglet, passer par le FormDesigner puis cliquer sur le bouton ![alt_text](images/image3.png ). ![alt_text](images/image1.png )
+A la création d'une nouvelle table, GoPaaS ajoute automatiquement 2 onglets, l'onglet **Principal** et l'onglet **Système**. Pour ajouter un nouvel onglet, passer par le FormDesigner puis cliquer sur le bouton ![screenshot](images/image3.png ).
+
+![screenshot](images/image1.png )
 
 Afin d'enregistrer un onglet en base de données, il faut renseigner obligatoirement certains champs :
 
@@ -61,7 +64,9 @@ Par défaut, à la création d'une nouvelle table, l'application crée un certai
 C'est le premier champ de la table, vous pouvez le modifier ou le supprimer.
 
 Pour ajouter un nouveau champ cliquez sur Ajouter.
-![alt_text](images/image2.png )
+
+![screenshot](images/image2.png )
+
 Afin d'enregistrer le champ en base de donnée, il faut renseigner obligatoirement les champs suivants :
 
 **Détails :**
@@ -104,7 +109,7 @@ Pour optimiser le paramétrage de l'application, renseigner également les champ
 
 Cliquez sur l'onglet **Relations** afin de visualiser toutes les connexions existantes de la table.
 
-![alt_text](images/image6.png )
+![screenshot](images/image6.png )
 
 ## Script JS
 
@@ -112,7 +117,7 @@ Cliquez sur l'onglet **Script JS** pour avoir accès à l'éditeur de texte de l
 
 Cet onglet offre une manière flexible d'étendre et de personnaliser les fonctionnalités à travers l'écritures de scripts JavaScript directement dans le paramètrage de la table. Il vous permet de manipuler les données et le comportement du formulaire selon vos besoins spécifiques.
 
-![alt_text](images/image7.png )
+![screenshot](images/image7.png )
 
 Deux fonctions sont présentes par défaut dans l'éditeur :
 
@@ -132,11 +137,11 @@ Pour cela on peut fragmenter le code en fonction des différentes fonctionnalit�
 
 Cliquez sur l'onglet **Class JS** pour lister les fonctions JavaScript spécifiques liés à la table :
 
-![alt_text](images/image8.png )
+![screenshot](images/image8.png )
 
 Tout comme l'éditeur de texte de l'onglet **Script JS**, les fiches **Class JS** possèdent elles aussi un éditeur de texte permettant de coder du JavaScript. Cet onglet permet de fragmenter le code afin d'avoir une meilleure organisation et une meilleure maintenabilité de celui-ci.
 
-![alt_text](images/image9.png )
+![screenshot](images/image9.png )
 
 | Champ  | Description                            |
 |--------|----------------------------------------|

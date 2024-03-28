@@ -7,12 +7,16 @@ Le but est d'éviter le chargement d'une nouvelle page à chaque action demandé
 Chaque fiche GoPaaS est créée à partir de modèle et stockée en cache dans le navigateur pour optimiser les temps de réponse avec le serveur avec lequel il échange des données.
 L'interface utilisateur n'a pas besoin d'être re télécharger du serveur à chaque ouverture. 
 
-![Ecran principal](images/image1.png "Ecran principal")
+![screenshot](images/image1.png "Ecran principal")
 
 1. **La barre de navigation**
+
 2. **La barre d'outils**
+
 3. **La barre de personnalisation**
+
 4. **L'espace principale**
+
 5. **Les onglets de navigation**
 
 ### La barre de navigation
@@ -47,23 +51,23 @@ Dans cette liste sont regroupées les principales fonctions d’administration d
 
 **La barre d'outils** regroupe plusieurs boutons :
 
-![Bouton](images/image15.png)
+![Bouton](images/Image15.png)
 
-![Bouton](images/image3.png)  Ce bouton permet de réduire la barre de navigation.
+![Bouton](images/Image3.png)  Ce bouton permet de réduire la barre de navigation.
 
-![Bouton](images/image4.png) Ce bouton permet d’ouvrir la barre de personnalisation pour accéder au paramétrage des tables, des champs, pour personnaliser plus avant votre application. Il inclut aussi la fonction d’import des données, et de mise à jour de l’environnement GoPaaS.
+![Bouton](images/Image4.png) Ce bouton permet d’ouvrir la barre de personnalisation pour accéder au paramétrage des tables, des champs, pour personnaliser plus avant votre application. Il inclut aussi la fonction d’import des données, et de mise à jour de l’environnement GoPaaS.
 
-![Bouton](images/image16.png) Ce bouton sert à attribuer une action par défaut qui sera exécutée rapidement, comme la création d'une nouvelle tâche, simplifiant ainsi le processus pour les utilisateurs en offrant un raccourci pratique.
+![Bouton](images/Image16.png) Ce bouton sert à attribuer une action par défaut qui sera exécutée rapidement, comme la création d'une nouvelle tâche, simplifiant ainsi le processus pour les utilisateurs en offrant un raccourci pratique.
 
-![Bouton](images/image5.png) Ce bouton "FR" permet de sélectionner la langue de votre application. Les autres options disponibles dans le menu, telles que "EN" pour l'anglais, "DE" pour l'allemand, "ES" pour l'espagnol, "IT" pour l'italien et "PT" pour le portugais. 
+![Bouton](images/Image5.png) Ce bouton "FR" permet de sélectionner la langue de votre application. Les autres options disponibles dans le menu, telles que "EN" pour l'anglais, "DE" pour l'allemand, "ES" pour l'espagnol, "IT" pour l'italien et "PT" pour le portugais. 
 
-![Bouton](images/image7.png) Ce bouton permet d'accéder au menu contextuel pour la gestion des onglets actifs sur GoPaaS. Les options présentées sont "Fermer les autres onglets", "Fermer les onglets sur la gauche", "Fermer les onglets sur la droite", et "Fermer tous les onglets". Cela offre à l'utilisateur une manière rapide et facile de contrôler et d'organiser ses onglets ouverts. 
+![Bouton](images/Image7.png) Ce bouton permet d'accéder au menu contextuel pour la gestion des onglets actifs sur GoPaaS. Les options présentées sont "Fermer les autres onglets", "Fermer les onglets sur la gauche", "Fermer les onglets sur la droite", et "Fermer tous les onglets". Cela offre à l'utilisateur une manière rapide et facile de contrôler et d'organiser ses onglets ouverts. 
 
-![Bouton](images/image9.png) Ce bouton permet d'afficher un panneau de gestion des onglets dans votre application GoPaaS, où l'utilisateur peut visualiser à la fois les onglets actuellement ouverts et ceux qui ont été récemment fermés. Les onglets ouverts sont listés avec des options pour naviguer directement vers eux, tandis que les onglets récemment fermés sont présentés avec l'heure de fermeture pour un accès rapide si l'utilisateur souhaite les rouvrir.
+![Bouton](images/Image9.png) Ce bouton permet d'afficher un panneau de gestion des onglets dans votre application GoPaaS, où l'utilisateur peut visualiser à la fois les onglets actuellement ouverts et ceux qui ont été récemment fermés. Les onglets ouverts sont listés avec des options pour naviguer directement vers eux, tandis que les onglets récemment fermés sont présentés avec l'heure de fermeture pour un accès rapide si l'utilisateur souhaite les rouvrir.
 
-![Bouton](images/image12.png) Ce bouton permet d'accéder aux options du profil utilisateur. Il offre des liens pour voir et éditer le profil de l'utilisateur, changer le mot de passe, et se déconnecter de la session actuelle. 
+![Bouton](images/Image12.png) Ce bouton permet d'accéder aux options du profil utilisateur. Il offre des liens pour voir et éditer le profil de l'utilisateur, changer le mot de passe, et se déconnecter de la session actuelle. 
 
-![Bouton](images/image14.png) Ce bouton permet de synchroniser des données du mode hors connexion. Les boutons indiquent "Synchro IN" pour importer des données, "Synchro OUT" pour exporter des données, "Sauvegarder" pour enregistrer les données actuelles, "Restaurer" pour revenir à un état antérieur des données, et "Switch" pour changer de mode ou de profil. C'est un outil pratique pour gérer des données lorsqu'on n'a pas accès à Internet.
+![Bouton](images/Image14.png) Ce bouton permet de synchroniser des données du mode hors connexion. Les boutons indiquent "Synchro IN" pour importer des données, "Synchro OUT" pour exporter des données, "Sauvegarder" pour enregistrer les données actuelles, "Restaurer" pour revenir à un état antérieur des données, et "Switch" pour changer de mode ou de profil. C'est un outil pratique pour gérer des données lorsqu'on n'a pas accès à Internet.
 
 ## Les applications
 

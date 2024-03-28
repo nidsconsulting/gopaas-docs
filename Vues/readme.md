@@ -6,13 +6,13 @@ Vous pouvez adapter une vue en fonction de vos besoins, par exemple changer les 
 
 Ajouter une nouvelle vue depuis le menu "Vue" puis cliquer sur le bouton "Ajouter" pour accéder au paramétrage.
 
-![alt_text](images/image45.png )
+![screenshot](images/image45.png )
 
 ## Description
 
 Vous voilà sur la fiche de personnalisation des vues, elle se compose de plusieurs onglets, pour le moment cliquer sur l'onglet **Description** pour débuter le paramétrage.
 
-![alt_text](images/image16.png )
+![screenshot](images/image16.png )
 
 Il est conseillé de renseigner un certain nombre de champs pour paramétrer correctement la vue :
 
@@ -24,7 +24,7 @@ Il est conseillé de renseigner un certain nombre de champs pour paramétrer cor
 | Table                        | Table SQL sur laquelle la vue est connectée                                                                            |
 | Type                         | Choisir le type de vue : Tableau, Agenda, Graphique, WebReport, Pivot, Kanban                                                      |
 | Rapport                      | Afficher la vue dans un rapport.                                                                                       |
-| Afficher dans les accès rapide | Permet d'afficher la vue dans l'Accès rapide ![alt_text](images/image34.png ) de la barre de navigation.                                                 |
+| Afficher dans les accès rapide | Permet d'afficher la vue dans l'Accès rapide ![acces_rapide](images/image34.png ) de la barre de navigation.                                                 |
 | Afficher dans le menu des vues | Permet d'afficher la vue dans le menu des vues.                                                                         |
 | Afficher au démarrage        | Option permettant l'ouverture de la vue au chargement de l'application.                                                 |
 | Pour le(s) groupes(s)        | Fonctionne avec la case à cocher "Afficher au démarrage".                                                               |
@@ -51,7 +51,7 @@ Il est conseillé de renseigner un certain nombre de champs pour paramétrer cor
 
 Nous allons maintenant passer à l'onglet **Champs**, c'est ici que vous allez sélectionner les champs que vous souhaitez voir apparaître dans votre nouvelle vue.
 
-![alt_text](images/image27.png )
+![screenshot](images/image27.png )
 
 1. La liste de table affiche toutes les tables disponibles dans l'application.
 
@@ -67,7 +67,7 @@ Nous allons maintenant passer à l'onglet **Champs**, c'est ici que vous allez s
 
 A l'aide d'un double clic sur un des champs de la colonne de droite, vous accédez aux propriétés du champ dans la colonne. C'est ici que vous allez effectuer des actions ciblées sur le champ de votre vue comme par exemple, augmenter ou diminuer la largeur de la colonne ou encore l'alignement du champ.
 
-![alt_text](images/image21.png )
+![screenshot](images/image21.png )
 
 A l'ouverture de la fiche, un certain nombre de champs sont repris : 
 
@@ -91,7 +91,7 @@ D'autres champs sont renseignés par défaut mais peuvent être modifiés :
 
 ## Ajouter des conditions
 
-![alt_text](images/image43.png )
+![screenshot](images/image43.png )
 
 1. La liste de table nous affiche toutes les tables disponibles dans l'application.
 
@@ -105,7 +105,7 @@ D'autres champs sont renseignés par défaut mais peuvent être modifiés :
 
 Via l'onglet mise en forme, il est possible d'effectuer des tris sur votre vue, par exemple pour afficher des actions par statut ou encore trier des comptes par ordre alphabétique.
 
-![alt_text](images/image38.png )
+![screenshot](images/image38.png )
 
 1.  Les tris de 1 à 5 permettent de classer les fiches en fonction des champs qui sont affichés dans la vue (onglet Champs).
 2.  Afficher par ordre croissant ou décroissant.
@@ -115,7 +115,7 @@ Via l'onglet mise en forme, il est possible d'effectuer des tris sur votre vue, 
 
 Dans l'onglet "Code source" apparaît la requête SQL de la vue.
 
-![alt_text](images/image40.png )
+![screenshot](images/image40.png )
 
 **Détails :**
 
@@ -132,11 +132,11 @@ Dans l'onglet "Code source" apparaît la requête SQL de la vue.
 
 Le champ Script JS est utilisé pour surcharger le code dans le cas d'une vue liée.
 
-![alt_text](images/image28.png )
+![screenshot](images/image28.png )
 
 Le script JS peut afficher dans la vue liée un nouveau menu sur le bouton "Ajouter"
 
-![alt_text](images/image8.png )
+![menu_ajouter](images/image8.png )
 
 Détail pour la ligne "Appel sortant" : 
 ```javascript
@@ -160,7 +160,7 @@ vb.addAddButton("Appel sortant", null, {
 
 La vue tableau sert à afficher tout ou partie des enregistrements d’une table donnée. Elle s’ouvre dans un onglet de l’application.
 
-![alt_text](images/image32.png )
+![screenshot](images/image32.png )
 
 ## Mettre à jour en masse
 
@@ -168,17 +168,17 @@ Utilisez la fonction de mise à jour en masse depuis le menu Outil de la vue pou
 
 Recherche / Remplace, suppression ou concaténation de plusieurs champs, ces fonctions sont disponibles dans l'outil MassUpdate.
 
-![alt_text](images/image29.png )
+![screenshot](images/image29.png )
 
 ## Agenda
 
 La vue agenda vous permet d'afficher par exemple les historiques directement dans un agenda.
 
-![alt_text](images/image6.png )
+![screenshot](images/image6.png )
 
 Le paramétrage de la vue Agenda s'effectue dans l'onglet "Agenda". Dans chacune des listes apparaît les champs que l'on a choisi dans l'onglet "Champs" de la vue.
 
-![alt_text](images/image20.png )
+![screenshot](images/image20.png )
 
 
 **Détails :**
@@ -201,13 +201,13 @@ Le paramétrage de la vue Agenda s'effectue dans l'onglet "Agenda". Dans chacune
 
 Vous pouvez ajouter une vue de type Graphique pour analyser par exemple vos affaires en cours.
 
-![alt_text](images/image25.png )
+![screenshot](images/image25.png )
 
-![alt_text](images/image39.jpg )
+![screenshot](images/image39.jpg )
 
 **Type graphique** : Choix du type de graphique.
 
-![alt_text](images/image12.png )
+![screenshot](images/image12.png )
 
 **Détails :**
 
@@ -225,7 +225,7 @@ Vous pouvez ajouter une vue de type Graphique pour analyser par exemple vos affa
 ## Pivot
 
 La vue type Pivot vous permet d'avoir un tableau croisé dynamique directement sur votre application.
-![alt_text](images/image31.jpg )
+![screenshot](images/image31.jpg )
 
 1. Liste des champs que l'on a ajouté dans la vue.
 2. Afficher des champs dans l'axe des ordonnées.
@@ -237,9 +237,9 @@ La vue type Pivot vous permet d'avoir un tableau croisé dynamique directement s
 
 La vue KanBan permet de changer le statut des actions rapidement à l'aide de glisser-déposer.
 
-![alt_text](images/image1.jpg )
+![screenshot](images/image1.jpg )
 
-![alt_text](images/image9.png )
+![screenshot](images/image9.png )
 
 1. Choix du champ pour regrouper les fiches.
 2. Chaîne JSON listant les valeurs de regroupement dans l'ordre souhaité.
@@ -250,25 +250,25 @@ La vue KanBan permet de changer le statut des actions rapidement à l'aide de gl
 Les vues servent à afficher tout ou une partie des enregistrements d’une table donnée.
 Ou bien dans une fiche, généralement pour lister les enregistrements d’une table connectée, comme par exemple la liste des contacts d’un compte donné.
 
-![alt_text](images/image15.jpg )
+![screenshot](images/image15.jpg )
 
-- Le bouton ![alt_text](images/image19.png ) permet d’ajouter une fiche dans la table sur laquelle porte la vue.
+- Le bouton ![ajouter](images/image19.png ) permet d’ajouter une fiche dans la table sur laquelle porte la vue.
 
-- Le bouton ![alt_text](images/image30.png ) sert à supprimer une ou plusieurs fiches dans la vue. Si la vue est du type Multi-sélection (voir plus loin), on peut sélectionner plusieurs fiches et les supprimer en une seule passe. Si la vue n’est pas du type Multi-sélection, le bouton - Supprimer sert uniquement à supprimer la fiche en surbrillance.
+- Le bouton ![supprimer](images/image30.png ) sert à supprimer une ou plusieurs fiches dans la vue. Si la vue est du type Multi-sélection (voir plus loin), on peut sélectionner plusieurs fiches et les supprimer en une seule passe. Si la vue n’est pas du type Multi-sélection, le bouton - Supprimer sert uniquement à supprimer la fiche en surbrillance.
 
-- Le menu ![alt_text](images/image18.png ) de la vue permet d'exporter vers csv, mettre à jour en masse et de fusionner des modèles de document. On peut y ajouter d'autres options en javascript.
+- Le menu ![outil](images/image18.png ) de la vue permet d'exporter vers csv, mettre à jour en masse et de fusionner des modèles de document. On peut y ajouter d'autres options en javascript.
 
-![alt_text](images/image17.png )
+![menu_outil](images/image17.png )
 
-![alt_text](images/image23.png )
+![screenshot](images/image23.png )
 
 - On saisit dans la zone Rechercher la ou les chaînes de caractères que l’on recherche. La zone « dans » permet de préciser sur quel champ la recherche doit s’effectuer. Par défaut, c’est l’option Tous qui est sélectionnée, c’est-à-dire que la recherche doit s’effectuer dans l’ensemble des champs présents dans la vue.
 
-- Le bouton ![alt_text](images/image14.png ) permet de lancer la recherche
+- Le bouton ![rechercher](images/image14.png ) permet de lancer la recherche
 
-- Le bouton ![alt_text](images/image42.png ) permet d'accéder à l'outil de recherche avancée, une nouvelle ligne apparaît en dessous
+- Le bouton ![filtre_avance](images/image42.png ) permet d'accéder à l'outil de recherche avancée, une nouvelle ligne apparaît en dessous
 
-![alt_text](images/image2.png )
+![screenshot](images/image2.png )
 
 On choisit le champ sur lequel on veut filtrer puis la condition.
 Là encore, n’apparaît dans la liste de champs que ceux présents dans la vue (y compris les champs invisibles). Pour ajouter une condition, cliquer sur le bouton plus. Quand on est satisfait de son filtre, on peut l’enregistrer. Cliquer sur la flèche du bouton "Filtrer".
@@ -296,26 +296,26 @@ Avec **ViewDesigner**, vous avez le contrôle total sur la présentation de vos 
 ### Accès au mode Designer
 
 1. Ouvrir la vue de données : Accédez à la vue de données que vous souhaitez personnaliser dans l'application GoPaaS.
-2. Activer ViewDesigner : Cliquez sur le bouton "**Designer**" situé généralement en haut à droite de la vue de données. La vue passera en mode édition, vous permettant de modifier la présentation des données. ![alt_text](images/image26.png )
+2. Activer ViewDesigner : Cliquez sur le bouton "**Designer**" situé généralement en haut à droite de la vue de données. La vue passera en mode édition, vous permettant de modifier la présentation des données. ![screenshot](images/image26.png )
 
 ### Modification de l'emplacement des colonnes
 
 - **Glisser-Déposer :** Cliquez et maintenez la colonne que vous souhaitez déplacer, puis glissez-la à l'emplacement désiré. Relâchez le bouton de la souris pour confirmer le nouvel emplacement.
  
-![alt_text](images/image35.png )
+![screenshot](images/image35.png )
 
 ### Ajustement de la taille des colonnes
 
 - **Redimensionner :** Placez votre curseur sur le bord de la colonne que vous souhaitez ajuster. Le curseur se transformera en icône de redimensionnement. Cliquez et glissez pour ajuster la largeur de la colonne.
 
-![alt_text](images/image13.png )
+![screenshot](images/image13.png )
 
-![alt_text](images/image41.png )
+![screenshot](images/image41.png )
 
 ### Changement des titres des colonnes
 
 - **Éditer le titre :** Cliquez sur le bouton avec l’icône crayon de la colonne que vous souhaitez modifier. Saisissez le nouveau titre dans le champ éditable qui apparaît et validez votre saisie. Appuyez sur la touche Entrée pour valider.
-![alt_text](images/image37.png )
+![screenshot](images/image37.png )
 
 ### Sauvegarde des modifications
 

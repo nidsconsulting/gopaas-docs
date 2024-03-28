@@ -1,19 +1,21 @@
-#Références
+# Références
+
+## Description
 
 Le menu `Références` se trouve dans la `barre de navigation > Références`. Dans ce menu, vous trouverez plusieurs tables système telles que le journal des messages, les e-mails ou encore les paramètres des modèles d'impression, etc.
 
 ## Journal
+
 ### Email
 
-#### Les vues
-
 Sur cette vue, vous retrouvez les emails que vous avez créés.
-![alt text](images/image1.png)
+
+![screenshot](images/image1.png)
 
 Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les emails`, pour voir tous les mails envoyés de GoPaaS.
 <img src="images/image2.png" width="300">
 
-#### Fiche Email
+**Fiche Email**
 
 <img src="images/image3.png" width="550">
 
@@ -36,15 +38,14 @@ Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les emails`
 
 ### Messages (logs)
 
-#### Les vues
-
 Sur cette vue, vous retrouvez les messages que vous avez générés.
-![alt text](images/image4.png)
+
+![screenshot](images/image4.png)
 
 Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les messages`, pour voir tous les messages de GoPaaS.
 <img src="images/image5.png" width="300">
 
-#### Fiche message
+**Fiche message**
 
 <img src="images/image6.png" width="550">
 
@@ -61,11 +62,12 @@ Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les message
 | Heure création | Heure de création du message              |
 
 ## Modèle
+
 ### Modèle email
 
 Cette table est utilisée pour les campagnes GoPaaS ou peut être utilisée sur une fiche avec un développement spécifique.
 
-![Modèle email](images/image7.png)
+![screenshot](images/image7.png)
 
 | Champ                   | Description                                         |
 |-------------------------|-----------------------------------------------------|
@@ -81,9 +83,10 @@ Cette table est utilisée pour les campagnes GoPaaS ou peut être utilisée sur 
 | Campagne                | Campagne connectée                                  |
 
 ### Modèle PDF
+
 Les modèles PDF permette de positionner des champs GoPaaS sur une document PDF.
 
-![Modèle email](images/image8.png)
+![screenshot](images/image8.png)
 
 | Champ                   | Description                                         |
 |-------------------------|-----------------------------------------------------|
@@ -93,7 +96,10 @@ Les modèles PDF permette de positionner des champs GoPaaS sur une document PDF.
 | Modèle PDF              | Document au format PDF sur lequel nous allons positionner nos champs |
 | Description             | Description du modèle                         |
 
-#### Corps paramétrage format JSON
+**Champs personnalisés**
+
+Ajouter des champs personnalisés dans un format JSON dans le champs `Corps`.
+
 | field                   | Value                                         |
 |-------------------------|-----------------------------------------------------|
 | type     | Texte ou Signature                                      |
@@ -107,10 +113,11 @@ Les modèles PDF permette de positionner des champs GoPaaS sur une document PDF.
 | align     | Contrôle l'alignement du texte. Les valeurs possibles sont :<br>L : alignement à gauche<br>C : centrage<br>R : alignement à droite<br>J : justification (valeur par défaut) |
 
 ### Modèle de lettre
-​​​​​​​Cliquer sur `Ajouter` pour créer un nouveau modèle.
+
+​​​​​​​Cliquer sur le bouton `Ajouter` pour créer un nouveau modèle.
 Afin d'enregistrer le modèle de lettre, il faut obligatoirement renseigner les champs suivants :
 
-![Modèle email](images/image9.png)
+![screenshot](images/image9.png)
 
 | Champ                        | Valeur                                             |
 |------------------------------|------------------------------------------------------------------------------------|
@@ -122,19 +129,23 @@ Afin d'enregistrer le modèle de lettre, il faut obligatoirement renseigner les 
 | Vue(s) liée(s) à utiliser    | Choisir la ou les vues liées de fusion.            |
 
 ## Paramètre
+
 ### Assistant
+
 L'assistant GoPaaS permet de créer des modes opératoire étape par étape pour effectuer une tache sur votre application.
 
-#### Fiche Assistant
-![Assistant](images/image10.png)
+**Fiche Assistant**
+
+![screenshot](images/image10.png)
 
 | Champ                        | Valeur                                             |
 |------------------------------|----------------------------------------------------|
 | Intitulé                     | Le nom de l'assistant.                             |
 | Vue étapes                   | Liste des étapes a effectuer                       |
 
-#### Fiche Etape
-![Assistant Étape](images/image11.png)
+**Fiche Etape**
+
+![screenshot](images/image11.png)
 
 | Champ               | Valeur                                                                                     |
 |---------------------|--------------------------------------------------------------------------------------------|
@@ -145,19 +156,22 @@ L'assistant GoPaaS permet de créer des modes opératoire étape par étape pour
 | Mettre en évidence | Crée un effet visuel pour griser toute l'application sauf l'élément spécifié               |
 | Mode Reflex         | Effet visuel sur l'action                                                                   |
 
-#### Exécution de l'assistant
-Cliquez sur l'icone <img src="images/image13.png" width="25"> pour déclencher l'assistant.<br>
+**Exécution de l'assistant**
+
+Cliquez sur l'icone <img src="images/image13.png" width="25"> pour déclencher l'assistant.
 
 <img src="images/image12.png" width="450">
 
 ### Dashboard
+
 Pour créer un nouveau dashboard, rendez vous dans la barre de navigation > Références > Dashboard.
 
 Cliquer sur le bouton Ajouter.
 
-![alt text](images/image14.png)
+![screenshot](images/image14.png)
 
-![alt text](images/image15.png)
+![screenshot](images/image15.png)
+
 Ci-dessous, la description des champs de l’onglet principal.
 
 | Champ                   | Valeur                                                                                   |
@@ -174,4 +188,4 @@ Ci-dessous, la description des champs de l’onglet principal.
 
 Accessible via la barre de navigation > Paramètres > Vue, cette fonctionnalité regroupe l'ensemble des vues de votre application et vous permet de les ouvrir directement à partir d'ici.
 
-![Menu des vues](images/image16.png)
+![screenshot](images/image16.png)
