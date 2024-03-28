@@ -111,6 +111,6 @@ Les modèles de lettre peuvent être imprimés depuis :
 * Une fiche
 * Une vue
 
-Depuis une fiche ![alt_text](../asset/tools.png) > ![alt_text](../asset/merge.png) > choisir le modèle > ![alt_text](../asset/mergeModel.png)
+Depuis une fiche, menu outil > Fusionner > choisir le modèle > Fusionner
 
 Depuis une vue, sélectionner les fiches à fusionner > menu outil > Fusionner > choisir le modèle > Fusionner

@@ -6,7 +6,7 @@ Les Dashboard sont organisés en lignes de dashboard qui contiennent des vues pe
 La méthode pour créer un dashboard efficace consiste à créer des vues personnalisées (widget, graphique, icon ou encore webreport) et de les sélectionner dans les lignes de dashboard.
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/image1.png)
 
 
 ## Créer un dashboard
@@ -16,7 +16,7 @@ Pour créer un nouveau dashboard, rendez vous dans la barre de navigation > Réf
 Cliquer sur le bouton `Ajouter`.
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image2.png )
 
 
 Ci-dessous, la description des champs de l’onglet principal.
@@ -43,7 +43,7 @@ Une fois renseigné, cliquer sur le bouton `Appliquer` pour continuer.
 Dans la section détails, cliquer sur le bouton `Ajouter` pour créer une nouvelle ligne de dashboard.
 
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/image3.png)
 
 
 Ci-dessous, la description des champs de l’onglet principal.
@@ -68,7 +68,7 @@ La largeur maximale est de “12”, la minimale est de “1”. 12 correspond �
 La somme totale des largeurs de vue ne peut pas excéder “12”.
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/image4.png)
 
 
 Cliquer sur le bouton `Enregistrer` pour conserver le paramétrage de la ligne de dashboard.
@@ -84,7 +84,7 @@ Afin de gagner du temps, il est possible de dupliquer un dashboard existant pour
 Depuis la fiche dashboard, menu outil > Dupliquer Dashboard
 
 
-![alt_text](images/image5.jpg "image_tooltip")
+![alt_text](images/image5.jpg )
 
 
 
@@ -92,7 +92,7 @@ Depuis la fiche dashboard, menu outil > Dupliquer Dashboard
 
 L’administrateur GoPaaS dispose d’un droit supplémentaire lui permettant de paramétrer rapidement un dashboard en partant de l’interface utilisateur.
 
-Sur un dashboard existant, cliquer sur l'icône ![alt_text](../asset/edit.png "image_tooltip") en haut à droite de l’écran.
+Sur un dashboard existant, cliquer sur l'icône ![alt_text](../asset/edit.png) en haut à droite de l’écran.
 
 Depuis cette interface, il est possible de : 
 
@@ -101,7 +101,7 @@ Depuis cette interface, il est possible de :
 * Modifier la couleur du widget
 * Supprimer un widget du dashboard
 
-Cliquer sur l'icône ![alt_text](../asset/diskSave.png "image_tooltip") pour enregistrer les modifications.
+Cliquer sur l'icône ![alt_text](../asset/diskSave.png) pour enregistrer les modifications.
 
-![alt_text](images/image6.jpg "image_tooltip")
+![alt_text](images/image6.jpg )
 

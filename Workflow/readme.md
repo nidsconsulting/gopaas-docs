@@ -1,389 +1,192 @@
+<!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+* ERRORs: 0
+* WARNINGs: 0
+* ALERTS: 1 -->
+
+
 # Workflow
 
-Le Workflow permet de gérer des processus métiers dans GoPaaS avec des validations par étape.
+Le workflow permet de structurer et d'automatiser des tâches ou des processus, améliorant ainsi l'efficacité et la cohérence des opérations. Il facilite également la coordination entre les personnes impliquées dans ces processus en définissant clairement les étapes à suivre
+
+
+![alt_text](images/image1.png)
+
 
 
 ### Prérequis
 
-Pour pouvoir ajouter un workflow sur une table, il faut créer les champs suivants : 
+Pour pouvoir utiliser un workflow sur une table, il y a deux paramètres à prendre en compte.
 
 
 
-* Un champ "Etape" de type texte ou liste en lecture seule pour afficher l'étape du workflow.
-* Un champ "Commentaires workflow" de type « mémo » en lecture seule pour enregistrer les commentaires dans le cas d'un refus**.**
+* Il est impératif de définir un champ "Étape" pour superviser les diverses phases du workflow. Ce champ doit être obligatoire et configuré exclusivement en format liste en mode lecture seule.
+* Il serait pertinent de spécifier un champ "Commentaires workflow" de type "mémo", avec un accès en lecture seule, pour enregistrer les commentaires en cas de rejet. Ce champ reste facultatif.
 
 
 ## Ajouter un workflow
 
-<span style="text-decoration:underline;">Description du workflow</span>
+Pour créer un nouveau workflow, rendez vous dans la barre de navigation > Admin > Workflow.
+
+![alt_text](images/admWorkflow.png)
+
+Cliquer sur `ajouter`.
+
+Ci-dessous, la description des champs de l’onglet principal.
+
+
+| Champ                      | Description                                   |
+|----------------------------|-----------------------------------------------|
+| Intitulé                   | Nom du workflow                               |
+| Table                      | Table concernée                               |
+| Champ pour les étapes      | Intitulé du champ "Étape" à utiliser</br>  Exemple : Statut       |                          |
+| Champ pour les commentaires| Intitulé du champ "Commentaire" dans la table |
+| Actif                      | Rendre actif ou non le workflow               |
+| Description                | Description détaillée du workflow             |
 
 
 
-* Dans la barre de navigation, aller dans le menu Admin > Workflow
-* Cliquer sur le bouton "Ajouter"
-* Renseigner les champs suivants : 
-
-<table>
-  <tr>
-   <td>
-<strong>Champ</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Intitulé
-   </td>
-   <td>Nom du workflow
-   </td>
-  </tr>
-  <tr>
-   <td>Table
-   </td>
-   <td>Table concernée
-   </td>
-  </tr>
-  <tr>
-   <td>Champ pour les étapes
-   </td>
-   <td>Intitulé du champ "Étape" dans la table
-   </td>
-  </tr>
-  <tr>
-   <td>Champ pour les commentaires
-   </td>
-   <td>Intitulé du champ "Commentaire" dans la table
-   </td>
-  </tr>
-  <tr>
-   <td>Actif
-   </td>
-   <td>Pour activer le workflow
-   </td>
-  </tr>
-  <tr>
-   <td>Description
-   </td>
-   <td>Description du Workflow.
-   </td>
-  </tr>
-</table>
+Une fois renseigné, cliquer sur `appliquer` pour continuer.
 
 
+## Définir les étapes du workflow
+
+Dans la section étape, cliquer sur ajouter pour créer une nouvelle étape de workflow.
+
+![alt_text](images/workflow_fullstep.png)
+
+Ci-dessous, la description des champs de l’onglet principal.
 
 
-* Cliquer sur le bouton "Appliquer" pour enregistrer le Workflow
+| Champ                     | Description                                                                                   |
+|---------------------------|-----------------------------------------------------------------------------------------------|
+| Workflow                  | Nom du workflow associé                                                                      |
+| Ordre                     | Ordre des étapes du workflow                                                                 |
+| Etape                     | Valeur du champ "Etape" à laquelle les options du workflow doivent être visibles  </br>           Exemple: "Nouveau"                                                                                 |
+| Champs obligatoires       | Liste des champs obligatoires pour valider le passage à l’étape suivante </br>  Ex: </br> `[{ "name": "contact_rdv" },` </br> `{ "name":"date_rdv"},` </br> `{ "name": "heure_rdv" }]`                                                                   |
+| Nom du bouton             | Intitulé du bouton.                                                                          |
+| Etape déclencheur         | Valeur du champ "Étape", sur laquelle notre automatisme se déclenche</br>                        Exemple : Validation du rdv                                                                        |
+| Etape suivante à renseigner| Valeur du champ "Étape" après exécution de notre automatisme.Exemple : RDV validé                                   |                                                               
 
-<span style="text-decoration:underline;">Définir les étapes du workflow</span>
-
-
-
-* Cliquer sur le bouton "Ajouter" de la vue liée Étapes
-* Renseigner les champs suivants pour le bouton de "Validation" : 
-
-<table>
-  <tr>
-   <td>
-<strong>Champ</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Workflow
-   </td>
-   <td>Nom du workflow associé
-   </td>
-  </tr>
-  <tr>
-   <td>Ordre
-   </td>
-   <td>Ordre des étapes du workflow
-   </td>
-  </tr>
-  <tr>
-   <td>Etape
-   </td>
-   <td>Valeur du champ "Etape" à laquelle le bouton doit apparaître.
-<p>
-Ex: "Nouveau"
-   </td>
-  </tr>
-  <tr>
-   <td>Champs obligatoires (optionnel)
-   </td>
-   <td>Liste des champs obligatoires pour passer à l'étape suivante.
-<p>
-Ex :  
-<p>
-<code>[{"name":"contact_rdv"},</code>
-<p>
-<code>{"name":"date_rdv"},</code>
-<p>
-<code>{"name":"heure_rdv"}]</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Nom du bouton
-   </td>
-   <td>Intitulé du bouton.
-   </td>
-  </tr>
-  <tr>
-   <td>Etape déclencheur
-   </td>
-   <td>Valeur du champ "Étape", sur laquelle notre automatisme se déclenche.
-   </td>
-  </tr>
-  <tr>
-   <td>Etape suivante à renseigner
-   </td>
-   <td>Valeur du champ "Étape" après exécution de notre automatisme.
-   </td>
-  </tr>
-</table>
 
 
 
 
 * Renseigner les champs suivants pour le bouton de "Refus" (optionnel) :
 
-<table>
-  <tr>
-   <td>
-<strong>Champ</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Workflow
-   </td>
-   <td>Nom du workflow associé
-   </td>
-  </tr>
-  <tr>
-   <td>Ordre
-   </td>
-   <td>Ordre des étapes du workflow
-   </td>
-  </tr>
-  <tr>
-   <td>Etape
-   </td>
-   <td>Valeur du champ "Etape" à laquelle le bouton doit apparaître.
-<p>
-Ex: "Nouveau"
-   </td>
-  </tr>
-  <tr>
-   <td>Champs obligatoires
-   </td>
-   <td>Liste des champs obligatoires pour passer à l'étape suivante.
-<p>
-Ex : 
-<p>
-<code>[{"name":"contact_rdv"},</code>
-<p>
-<code>{"name":"date_rdv"},</code>
-<p>
-<code>{"name":"heure_rdv"}]</code>
-   </td>
-  </tr>
-  <tr>
-   <td>Nom du bouton
-   </td>
-   <td>Intitulé du bouton.
-   </td>
-  </tr>
-  <tr>
-   <td>Etape déclencheur
-   </td>
-   <td>Valeur du champ "Étape", sur laquelle notre automatisme se déclenchera.
-   </td>
-  </tr>
-  <tr>
-   <td>Étape refus à renseigner
-   </td>
-   <td>Valeur du champ "Étape" après exécution de notre automatisme.
-   </td>
-  </tr>
-</table>
+| Champ                   | Description                                                                         |
+|-------------------------|-------------------------------------------------------------------------------------|
+| Workflow                | Nom du workflow associé                                                            |
+| Ordre                   | Ordre des étapes du workflow                                                       |
+| Etape                   | Valeur du champ "Etape" à laquelle le bouton doit apparaître</br>                     Exemple: "Nouveau"                                                                       |
+| Nom du bouton           | Intitulé du bouton                                                                 |
+| Etape déclencheur       | Valeur du champ "Étape", sur laquelle notre automatisme se déclenche </br>             Exemple : Refus du RDV                                                              |
+| Étape refus à renseigner| Valeur du champ "Étape" après exécution de notre automatisme </br> Exemple : RDV refusé                                                                |
 
 
 
+Une fois renseigné, cliquer sur `appliquer` pour continuer et enregistrer l’étape de workflow.
 
-* Cliquer sur le bouton "Enregistrer" pour enregistrer l'étape de Workflow
-
-
-## Modifier le script JS de la table
-
-Pour modifier le script, ouvrez le script JavaScript de la table Outil > Personnaliser > Script JS
-
-Puis il est nécessaire de réaliser les actions suivantes :
+Répéter l’opération pour ajouter d’autres étapes au workflow.
 
 
+## Ajouter un automatisme
 
-* Initialiser le champ "Étape" avec la valeur pour lancer le Workflow. \
-Ex : Mettre l'étape à "Nouveau" lors de la création d'une nouvelle fiche.
-* Le Workflow doit être appelé dans la fonction onLoad du script JavaScript de notre table.
-* Cliquez sur le bouton "Enregistrer" pour sauvegarder le script.
+Afin de déclencher correctement le workflow il faut utiliser un automatisme spécifique pour chacune des étapes du processus.
 
+Rendez-vous dans le menu paramétrage en haut à droite de l’écran > Automatisation puis cliquer sur ajouter pour créer un nouvel automatisme.
 
-## Ajouter Automatismes
-
-<span style="text-decoration:underline;">Description de l'automatisme</span>
-
-Pour ajouter un automatisme :
-
-
-
-* Dans la barre de personnalisation, cliquez sur le menu "Automatisation"
-* Cliquer sur le bouton "Ajouter"
-* Renseigner les champs suivants :
 
 <table>
   <tr>
-   <td>
-<strong>Champ</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Nom
-   </td>
-   <td>Nom de l'automatisme.
-<p>
-Ex : WF - NOM_DE_LA_TABLE - Étape déclencheur
-   </td>
-  </tr>
-  <tr>
-   <td>Actif
-   </td>
-   <td>Pour activer l'automatisme
-   </td>
-  </tr>
-  <tr>
-   <td>Description
-   </td>
-   <td>Description de l'automatisme.
-   </td>
-  </tr>
-  <tr>
-   <td>Ordre
-   </td>
-   <td>Ordre d'exécution de l'automatisme
-   </td>
-  </tr>
-</table>
+   <td colspan="2" >
+<h4>Déclencheur</h4>
 
 
-
-
-* Cliquer sur le bouton "Enregistrer" pour sauvegarder l'automatisme
-
-<span style="text-decoration:underline;">Déclencheur et filtre</span>
-
-
-
-* Ouvrez de nouveau l'automatisme et renseigner les champs suivants :
-
-<table>
-  <tr>
-   <td>
-<strong>Champ</strong>
-   </td>
-   <td><strong>Description</strong>
    </td>
   </tr>
   <tr>
    <td>Type
    </td>
-   <td>"Enregistrement de fiche"
+   <td>Sélectionner “Enregistrement de fiche”
    </td>
   </tr>
   <tr>
    <td>Mode
    </td>
-   <td>"Modification"
+   <td>Sélectionner “Création et/ou modification” en fonction de la situation
    </td>
   </tr>
   <tr>
    <td>Table
    </td>
-   <td>Table concernée par l’automatisme.
+   <td>Sélectionner la table correspondante
    </td>
   </tr>
   <tr>
-   <td>Filtre
+   <td colspan="2" >
+<h4>Filtre</h4>
+
+
    </td>
-   <td>Valeur du champ "Étape"
-<p>
-(Etape déclencheur, définit lors de la création de l'étape de Workflow)
+  </tr>
+  <tr>
+   <td>Sélectionner le champ défini pour l’étape
+   </td>
+   <td>Égale à “Etape déclencheur” du workflow
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" >
+<h4>Action</h4>
+
+
+   </td>
+  </tr>
+  <tr>
+   <td>Action 1
+   </td>
+   <td>Envoyer un email
+   </td>
+  </tr>
+  <tr>
+   <td>Action 2
+   </td>
+   <td>Mettre à jour la fiche avec “Étape suivante à renseigner” dans le champ défini pour l’étape.
    </td>
   </tr>
 </table>
 
 
+NB : Il est possible de cumuler plusieurs filtres et/ou plusieurs actions pour une seule automatisation.
 
 
-* Cliquer sur le bouton "Appliquer" pour enregistrer l'automatisme
+## Rendre le workflow disponible
 
-<span style="text-decoration:underline;">Définir les actions liées à l'automatisme</span>
+Il faut maintenant rendre le workflow disponible sur la fiche correspondante.
 
+Rendez-vous sur la fiche où le workflow doit être visible puis > menu outil > Personnaliser > onglet Script JS.
 
+Ajouter le code JS suivant pour initialiser le workflow
 
-* Dans la section Action, cliquer sur "Ajouter" 
-* Renseigner les champs suivants : 
-
-<table>
-  <tr>
-   <td>
-<strong>Champ</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Ordre
-   </td>
-   <td>Ordre d'exécution des actions
-   </td>
-  </tr>
-  <tr>
-   <td>Type
-   </td>
-   <td>"Modifier fiche"
-   </td>
-  </tr>
-  <tr>
-   <td>Statut
-   </td>
-   <td>Valeur du champ "Étape" après exécution de l'automatisme.
-<p>
-(Définit lors de la création de l'étape de Workflow)
-   </td>
-  </tr>
-</table>
+```js
+gopaas.util.loadWorkflow(thisComponent, NOM_DE_LA_TABLE);
+```
 
 
+Remplacer “NOM_DE_LA_TABLE” par le nom de la table où le workflow doit être visible.
 
+```js
+Exemple : gopaas.util.loadWorkflow(thisComponent, contact);
+```
 
-* Cliquez sur le bouton "Enregistrer" pour enregistrer la fiche action de l'automatisme.
+Le champ utilisé comme “étape” est normalement en lecture seule, il est donc question de définir une valeur par défaut à la création d’une nouvelle fiche pour rendre visible la première étape du workflow.
 
-Il est également possible de créer d'autre action sur le même automatisme, comme :
+Dans le Javascript de la fiche, ajouter le code suivant
 
+```js
+if (thisComponent.isNew()){
+	thisComponent.setValue('etape', 'Nouveau');
+}
+```
 
-
-* L'ajout d'une fiche
-* La modification d'une fiche
-* Créer un Email
-
-**Exemple de workflow**
-
-Dans cet exemple, nous avons un bouton de validation (en vert) et un bouton de refus (en rouge).
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+Remplacer "étape" par le nom du champ utilisé et ‘Nouveau’ par la valeur de la première étape du workflow.
