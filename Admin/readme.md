@@ -31,8 +31,9 @@ Il existe deux solutions pour accéder à l'audit trail :
 **NB** : _Ne pas oublier d'activer l'audit trail dans les champs d'une table en cochant "Audit Trail" dans l'onglet Principal._
 
 
-| **Table**       | C'est la table reliée à cette fiche Audit trail.           |
+| **Champ**       | Description           |
 |-----------------|-------------------------------------------------------------|
+| **Table**       | C'est la table reliée à cette fiche Audit trail.           |
 | **Date**        | Date de la modification.                                   |
 | **Utilisateur** | L'utilisateur qui a effectué la modification.              |
 | **Fiche**       | La fiche qui est auditée.                                  |
@@ -61,20 +62,21 @@ Renseigner les informations relatives à la société, les coordonnées et le RI
 
 #### Section Application
 
-| **Durée d'inactivité** | Permet de définir la durée maximale d'inactivité durant laquelle la session est ouverte. (Valeur à définir en secondes) |
+| Champ | Description |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Durée d'inactivité** | Permet de définir la durée maximale d'inactivité durant laquelle la session est ouverte. (Valeur à définir en secondes) |
 | **Activer gestion du token** | Un Token peut être utilisé pour authentifier les utilisateurs dans des applications externes ou via une API. |
 | **Activer corbeille** | Permet d’activer la corbeille sur votre application, les fiches envoyées dans la corbeille se retrouvent dans le menu Admin > Corbeille |
 | **Activer historique** | Vous permet d’activer l’historique de navigation |
 
 #### Autres sections
-
-| **Serveur SMTP**             | Vous permet de paramétrer un serveur SMTP qui sera utilisé pour l’envoi des emails depuis GoPaaS. |
-|------------------------------|--------------------------------------------------------------------------------------------------|
-| **Docusign**                 | Authentification sur l’API Docusign                                                             |
-| **Yousign**                  | Authentification sur l’API Yousign                                                              |
-| **SSO (Single Sign-On)**     | Permet d'accéder à GoPaaS avec l’authentification Google                                         |
-| **Google API Key**           | Clé API Google MAP                                                                               |
+| **Champ**            | Description                                                                                        |
+|----------------------|----------------------------------------------------------------------------------------------------|
+| **Serveur SMTP**    | Vous permet de paramétrer un serveur SMTP qui sera utilisé pour l’envoi des emails depuis GoPaaS. |
+| **Docusign**        | Authentification sur l’API Docusign                                                               |
+| **Yousign**         | Authentification sur l’API Yousign                                                                |
+| **SSO (Single Sign-On)** | Permet d'accéder à GoPaaS avec l’authentification Google                                       |
+| **Google API Key**  | Clé API Google MAP                                                                                |
 
 ### Onglet Style
 
@@ -99,24 +101,23 @@ Il est possible de paramétrer la couleur des boutons :
 
 Il est également possible de personnaliser les couleurs de la vue Pivot (Tableau croisé dynamique) via la section** Couleur vue pivot.**
 
-**NB **: Pour le paramétrage des couleurs renseigner une valeur au format : **#FFFFFF**.
-
+***NB** : Pour le paramétrage des couleurs, veuillez renseigner une valeur au format : **#FFFFFF**.*
 ### Onglet Script
 
 Ajouter un script à cet emplacement pour des paramétrages spécifiques comme :
-
 
 * Redimensionnement des photos
 * Paramétrage du mode offline
 * Ou autre fonction personnalisé qui pourra être appelé de toutes l'application
 
 
-### Onglet ARCHIVAGE MAIL
+### Onglet Archivage emails
 
 Vous permet de paramétrer l’archivage email dans GoPaaS
 
-| **Table**                 | Table où archiver les emails                                                                |
+| **Champ**                 | Description
 |---------------------------|--------------------------------------------------------------------------------------------|
+| **Table**                 | Table où archiver les emails                                                                |
 | **Date**                  | Champ sur lequel enregistrer la date                                                        |
 | **Expéditeur**            | Champ sur lequel connecter l’expéditeur (retrouve le contact avec l'émail)                 |
 | **Destinataires(s)**      | Champ sur lequel enregistrer le ou les destinataires                                         |
@@ -124,11 +125,6 @@ Vous permet de paramétrer l’archivage email dans GoPaaS
 | **Corps du message**      | Champ sur lequel enregistrer le message                                                      |
 | **Pièce(s) jointe(s)**   | Champ sur lequel enregistrer les PJ (génère un zip si plusieurs PJ)                         |
 | **Identifiant de l'email**| Champ d’identification unique de l’email                                                     |
-
-
-
-### 
-
 
 ## Dictionnaire
 
@@ -144,8 +140,9 @@ Pour le faire manuellement cliquer sur Ajouter :
 
 Plusieurs champs sont à renseigner pour enregistrer la traduction d'un caractère :
 
-| **Texte de référence** | Il correspond au nom du champ dans la base de données.                                   |
+| **Champ** | Description                                   |
 |-------------------------|-------------------------------------------------------------------------------------------|
+| **Texte de référence** | Il correspond au nom du champ dans la base de données.                                   |
 | **Type**                | Pour l'application, sélectionner systématiquement "application".                           |
 |                         | Inscrire ensuite la traduction du texte de référence dans les autres langues pour valider la traduction. |
 
@@ -188,20 +185,19 @@ Le groupe sera alors associé à un ou plusieurs utilisateurs.
 
 Pour créer un nouveau groupe cliquez sur **Ajouter**, puis renseigner le champ **Intitulé, **il correspond tout simplement au nom du groupe.
 
-
 ![alt_text](images/image8.png "image_tooltip")
-
-
 
 ### Section Utilisateur
 
 Permet de voir la liste des membres du groupe
 
-
 ### Section Permission
 
-Permet de donner l’accès au modules et aux différentes options de la barre de navigation
-
+* *Module(s)* : Permet de donner l’accès aux modules, séparés par une virgule.
+* *Accès rapide* : Rend disponible les `Accès rapide` dans la barre de navigation.
+* *Dashboard* : Rend disponible les `Dashboard` dans la barre de navigation.
+* *Référence* : Rend disponible le menu des `Références` dans la barre de navigation.
+* *Ajout rapide* : Rend disponible l'`Ajout rapide` dans la barre d'outils.
 
 ## History (historique)
 
@@ -216,55 +212,15 @@ Vous retrouverez sur la fiche les informations suivante
 
 ![alt_text](images/image6.png "image_tooltip")
 
-
-
-<table>
-  <tr>
-   <td><strong>Date</strong>
-   </td>
-   <td>Date de l’historique
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Time</strong>
-   </td>
-   <td>heure de l’historique
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Utilisateur</strong>
-   </td>
-   <td>Utilisateur concerné
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Name</strong>
-   </td>
-   <td>Nom de la fiche ou vue ouverte
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Type</strong>
-   </td>
-   <td>Item (fiche) ou view (vue)
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Tablename</strong>
-   </td>
-   <td>table concerné
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Keyvalue</strong>
-   </td>
-   <td>Clé de la fiche ou vue
-   </td>
-  </tr>
-</table>
-
-
-
+| Champ          | Description                      |
+|----------------|----------------------------------|
+| **Date**       | Date de l’historique             |
+| **Time**       | Heure de l’historique            |
+| **Utilisateur**| Utilisateur concerné             |
+| **Name**       | Nom de la fiche ou vue ouverte  |
+| **Type**       | Item (fiche) ou view (vue)       |
+| **Tablename**  | Table concernée                  |
+| **Keyvalue**   | Clé de la fiche ou vue           |
 
 
 ## Corbeille
@@ -274,8 +230,9 @@ Vous retrouverez ici la liste de toutes les fiches supprimées et si nécessaire
 <img src="images/image22.png" width="550">
 
 
-| Table Name      | Nom de la table                   |
+| Champ      | Description                   |
 |-----------------|-----------------------------------|
+| Table Name      | Nom de la table                   |
 | Item ID         | ID de la fiche supprimé          |
 | Item Key        | Clé de la fiche supprimé         |
 | Data            | JSON contenant toute la fiche    |
@@ -310,7 +267,7 @@ Le menu des Permissions permet de définir les droits sur les tables en fonction
 
 ## Sessions
 
-Le menu **Sessions **permet d'afficher la liste des sessions utilisateurs des applications GoPaaS.
+Le menu **Sessions** permet d'afficher la liste des sessions utilisateurs des applications GoPaaS.
 
 Dans la vue vous avez déjà accès à certaines informations comme l'heure, le statut ou encore la durée de connexion en secondes.
 
@@ -357,39 +314,33 @@ Il est conseillé de renseigner un certain nombre de champ pour enregistrer la f
 
 #### Section Google authenticator
 
-| Activer       | Activer Google Authenticator pour améliorer la sécurité au sein de l'application avec la validation en 2 étapes. Cocher l'option Activer puis cliquer sur <img src="images/image2.png" height="30"> |
+| Champ                 | Valeur                                                                                          |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Activer       | Activer Google Authenticator pour améliorer la sécurité au sein de l'application avec la validation en 2 étapes. Cocher l'option Activer puis cliquer sur <img src="images/image2.png" height="30"> |
 | Code Secret   | Et ensuite le renseigner ou de scanner le Qr code via l'application mobile (Google authenticator) installée sur votre smartphone. <br/> <img src="images/image12.png" width="290" alt="alt_text" title="image_tooltip"> |
 
 
 #### Section API KEY
-
-| Bearer token          | Générer votre token                                                                                   |
+| Champ                 | Valeur                                                                                          |
 |-----------------------|--------------------------------------------------------------------------------------------------------|
+| Bearer token          | Générer votre token                                                                                   |
 | IP Authorized Address | Lister les IP autorisées à utiliser le token (fortement recommandé)                                    |
 
 
 #### Section OAuth2.0
-
-| Grant Type            |                                                                                                  |
-|-----------------------|--------------------------------------------------------------------------------------------------|
-| Client ID             |                                                                                                  |
-| Client Secret         |                                                                                                  |
-| Expires in (Seconds)  |                                                                                                  |
+| Champs | Valeur                 |
+|--------|---------------------|
+| `Grant Type`  | `Client Credentials`  |
+| `Client ID`  | Le Client ID est un identifiant public unique attribué à une application cliente lors de son enregistrement auprès du serveur d'autorisation de GoPaaS dans le cadre du protocole OAuth 2.0  |
+| `Client Secret`  | Le Client Secret est une chaîne de caractères secrète utilisée dans le protocole OAuth 2.0, servant à authentifier l'identité d'une application cliente auprès du serveur d'autorisation, en complément de l'identifiant de client (Client ID). |
+| `Expires in`  | La durée d'expiration du token (Expire In), qui indique à l'application combien de temps le token sera valide.  |
 
 
 #### Section SSO (Single Sign-On)
 
-
-<table>
-  <tr>
-   <td>Username
-   </td>
-   <td>Votre email google pour la connexion via SSO
-   </td>
-  </tr>
-</table>
-
+| Champ    | Valeur                                  |
+|----------|----------------------------------------------|
+| Username | Votre email google pour la connexion via SSO |
 
 
 ### Onglet Email sortant
@@ -410,8 +361,9 @@ Vous pouvez ici ajouter un compte mail qui sera disponible dans la barre de navi
 <br/>
 <img src="images/image18.png" width="580">
 
-| Utilisateur     | Utilisateur qui accède à ce webmail                                      |
+| Champ    | Valeur                      |
 |-----------------|-------------------------------------------------------------------------|
+| Utilisateur     | Utilisateur qui accède à ce webmail                                      |
 | Hote            | Adresse du serveur d’email                                              |
 | Identifiant     | Identifiant email                                                        |
 | Mot de passe    | Mot de passe email                                                       |
@@ -430,8 +382,9 @@ Pour Table et vues il y a plusieurs options possibles :
 
 <img src="images/image23.png" width="480">
 
-| Sélectionner une table    | Choix de la table à exporter                      |
+| Champ    | Valeur                      |
 |---------------------------|---------------------------------------------------|
+| Sélectionner une table    | Choix de la table à exporter                      |
 | Designer                  | Exporte toute la partie FormDesigner             |
 | Scripts                   | Exporte les champs script JS, class JS et script PHP |
 | Permissions               | Exporte les permissions                           |
@@ -444,9 +397,9 @@ Permet d’importer des éléments d’une autre application
 
 
 ![alt_text](images/image26.png "image_tooltip")
-
+| Champ    | Valeur                      |
+|---------------------------|---------------------------------------------------|
 | Choisir un fichier | Sélectionner un JSON à importer |
-|--------------------|--------------------------------|
 | Bouton Importer   | Lance l’import                 |
 
-**_NB : Pour l’import d’une table il faudra se rendre dans le Check application pour créer la table et les champs_**
+***NB** : Pour l’import d’une table il faudra se rendre dans le Check application pour créer la table et les champs*
