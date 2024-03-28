@@ -1,65 +1,130 @@
+
+
 # Modèle de lettre
 
-## Fusionner une lettre
+Les modèles de lettre simplifient le processus de fusion de données en permettant aux utilisateurs de créer rapidement des documents personnalisés à partir des données de leur application. En utilisant les modèles de lettre, les utilisateurs peuvent générer des documents professionnels et cohérents en un clin d'œil.
 
-La plateforme GoPaaS est équipée d'une fonctionnalité qui vous permet de fusionner vos données avec un modèle de lettre.
+![alt_text](images/exemple.png "image_tooltip")
 
-Cette fonctionnalité vous offre la possibilité de générer des documents Word personnalisés en quelques clics.
 
-![alt_text](images/image3.png)
+### Prérequis
 
-La fonction Publipostage est accessible de deux manières différentes :
+Pour assurer une fusion de données correcte, les informations de l'application doivent être accessibles à partir d'une vue personnalisée. Lorsque l'architecture de l'application le permet, il est également envisageable d'intégrer les données provenant des tables enfants et/ou parents à la table principale pour une fusion complète et précise.
 
-Depuis une fiche contact, par exemple, cliquer sur le bouton ![alt_text](images/image6.png) puis ![alt_text](images/image9.png)
 
-Il faut ensuite sélectionner le modèle de lettre à utiliser puis cliquer sur ![alt_text](images/image4.png)
+## Créer un modèle de lettre
 
-La deuxième méthode consiste à sélectionner une fiche depuis une vue de type multi sélection puis cliquer sur ![alt_text](images/image6.png) puis ![alt_text](images/image9.png). Sélectionner le modèle à utiliser puis cliquer sur ![alt_text](images/image4.png).
+Pour créer un modèle de lettre rendez vous dans dans la barre de navigation > Références > Modèle > Modèle de lettre.
 
-Dans les deux cas l'outil va télécharger le fichier Word pré-rempli.
+![alt_text](images/menuModelLetter.png "image_tooltip")
 
-## Fusion publipostage word
+Cliquer sur `ajouter`.
 
-La fonction de Publipostage Word vous permet de fusionner les données de plusieurs fiches avec un modèle de lettre.
+Ci-dessous, la description des champs de l’onglet principal.
 
-![alt_text](images/image3.png)
 
-Depuis une vue de type multi sélection, sélectionner le nombre de fiche à fusionner avec le modèle puis cliquez sur ![alt_text](images/image6.png) puis ![alt_text](images/image9.png).
+| Intitulé              | Nom du modèle                                                     |
+|-----------------------|-------------------------------------------------------------------|
+| Table                 | Nom de la table principale pour la fusion du modèle               |
+| Vue                   | Nom de la vue principale à utiliser pour la fusion du modèle      |
+| PDF                   | Option qui permet la fusion du modèle en PDF. La fusion par défaut est au format Word |
+| Fichier               | Modèle de lettre au format docx, odt, xlsx, pttx                 |
+| Vue(s) liée(s) à utiliser | Nom des vues liées pour la fusion du modèle                   |
+| Note                  | Description détaillée du modèle de lettre                         |
 
-Choisissez ensuite le modèle de lettre à utiliser puis cliquez sur ![alt_text](images/image4.png).
 
-L'outil va ensuite télécharger autant de fichier Word pré-rempli que de nombre de fiches sélectionnées dans la vue.
 
-## Créer un modèle
 
-Avant d'utiliser la fonction de fusionnage ou de publipostage vous devez impérativement créer un modèle de lettre word puis l'importer dans GoPaaS.
+## Créer et paramétrer le modèle de fusion
 
-Rendez vous dans la barre de navigation > ![alt_text](images/image8.png) > Modèle > Modèle de lettre.
+Dans l’exemple ci dessous nous allons utiliser un modèle type odt.
 
-![alt_text](images/image1.png)
+La méthode implique l'insertion de balise GoPaaS aux emplacements où doivent figurer les données dans le modèle de fusion. Ces balises seront interprétées par l'application et fusionnées dans le document final.
 
-​​​​​​​Cliquer sur ![alt_text](images/image2.png) pour créer un nouveau modèle.
+Il existe deux types de balises: 
 
-Afin d'enregistrer le modèle de lettre, il faut obligatoirement renseigner les champs suivants :
 
-| Champ                   | Valeur                                                                           |
-|-------------------------|----------------------------------------------------------------------------------|
-| Intitulé                | Le nom du modèle dans l'application.                                             |
-| Table                   | Sélectionner la table dans laquelle le modèle doit apparaître.                   |
-| Vue                     | Choisir la vue créée pour le modèle de lettre.                                   |
-| Note                    | Possibilité de mettre un commentaire.                                            |
-| PDF                     | Possibilité de générer un PDF à la place du Word.                                |
-| Fichier                 | Ajoutez le fichier Word au format .XML.                                          |
-| Vue(s) liée(s) à utiliser | Choisir la vue liée nécessaire, dans le cas d'une fusion en dehors de la table principale. |
 
-Pour ajouter le fichier Word cliquez sur ![alt_text](images/image5.png), puis sélectionner le fichier.
+* Les champs
+* Les blocs
 
-### Insérer des champs
+Un champ GoPaaS est une balise GoPaaS qui doit être remplacée par une donnée simple. Il est possible de spécifier un format d'affichage ainsi que d'autres paramètres.
 
-Lors de la création de votre modèle de lettre, vous devez insérer des champs dans le fichier Word pour que la fusion fonctionne correctement.
+Un bloc GoPaaS est une section qui devra être répétée. Il est défini par une ou deux balises GoPaaS.
 
-Ajouter dans votre vue de fusion l’ensemble des champs nécessaire à votre fusion.
+Le plus souvent il s'agit d'une ligne d'un tableau.
 
-Ensuite, rendez-vous dans votre modèle de lettre pour copier le champ de fusion et l’insérer dans votre document Word. 
+Il existe quatres formats d’affichage de balise.
 
-![alt_text](images/image7.png)
+
+
+* Texte
+* Nombre
+* Date
+* Image
+
+Les différents formats sont disponibles à la fusion pour tous les types de balise existants.
+
+
+| Texte              | [onshow.NOM_ALIAS_DANS_LA_VUE;noerr;ifempty'']      |
+|--------------------|------------------------------------------------------|
+| Date               | [onshow.NOM_ALIAS_DANS_LA_VUE;frm=dd/mm/yyyy;noerr;ifempty''] |
+| Nombre             | [onshow.NOM_ALIAS_DANS_LA_VUE;frm='0 000,00';noerr;ifempty] |
+| Image              | [onshow.NOM_ALIAS_DANS_LA_VUE;ope=changepic;tagpos=inside;adjust;unique] |
+| Image vue de Fusion| Dans la vue de fusion, il faut indiquer le chemin serveur vers le fichier : Exemple sur la table “fichier” et champ “pj1” Colonne SQL = if(fichier.pj1<>'',CONCAT('../../file/fichier/', fichier.pj1),'')  On peut remplir le else avec un fichier par défaut si nécessaire |
+
+
+
+
+### Fusion d’un champ présent sur la vue principale
+
+En choisissant la vue de fusion dans le modèle de lettre, GoPaaS offre une liste des champs disponibles à fusionner dans le modèle. Si un champ nécessaire à la fusion est absent, il doit être ajouté à la vue de fusion.
+
+![alt_text](images/viewMergeField.png "image_tooltip")
+
+Cliquer sur l'icône ![alt_text](../asset/copybtn.png "image_tooltip") dans le tableau des champs pour copier le code de fusion puis coller dans le modèle de fusion.
+
+Exemple dans le modèle de fusion : 
+`Adresse client : [onshow.client_adresse;noerr;ifempty'']`
+
+
+### Fusion d’une vue liée
+
+En sélectionnant  les vues liées de fusion dans le modèle de lettre, GoPaaS offre une liste des champs disponibles à fusionner dans le modèle. Si un champ nécessaire à la fusion est absent, il doit être ajouté à la vue de fusion.
+
+![alt_text](images/linkviewMerge.png "image_tooltip")
+
+Remarque : Lors de la fusion d'une vue liée, le code de fusion du premier champ de la vue est légèrement modifié. Il est important de prendre en compte l'ordre des champs dans la vue.
+
+Pour inclure le premier champ d'une vue liée cliquer sur l'icône ![alt_text](../asset/copybtn.png "image_tooltip")  dans le tableau des champs, puis collez-le dans le modèle de fusion. Répéter l’opération pour les autres champs de la vue liée.
+
+Exemple dans le modèle de fusion : 
+<table>
+  <tr>
+   <td>REF
+   </td>
+   <td>Montant HT
+   </td>
+   <td>Remise
+   </td>
+  </tr>
+  <tr>
+   <td>[facture_ligne.Pardéfaut.WLW4M.reference;block=tbs:row]
+   </td>
+   <td>[facture_ligne.Pardéfaut.WLW4M.facture_ligne_montant_ht;frm='0 000,00']
+   </td>
+   <td>[facture_ligne.Pardéfaut.WLW4M.remise_0;frm='0 000,00']
+   </td>
+  </tr>
+</table>
+
+## Imprimer le modèle de lettre
+
+Les modèles de lettre peuvent être imprimés depuis :
+
+* Une fiche
+* Une vue
+
+Depuis une fiche ![alt_text](../asset/tools.png "image_tooltip") > ![alt_text](../asset/merge.png "image_tooltip") > choisir le modèle > ![alt_text](../asset/mergeModel.png "image_tooltip")
+
+Depuis une vue, sélectionner les fiches à fusionner > menu outil > Fusionner > choisir le modèle > Fusionner
