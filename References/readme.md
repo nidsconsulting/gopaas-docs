@@ -45,11 +45,11 @@ Sur cette vue, vous retrouvez les messages que vous avez générés.
 
 Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les messages`, pour voir tous les messages de GoPaaS.
 
-<img src="images/image5.png" alt="capture" width="400" />
+![screenshot](images/image5.png)
 
 **Fiche message**
 
-<img src="images/image6.png" alt="capture" width="550" />
+![screenshot](images/image6.png)
 
 | Champ          | Description                               |
 |----------------|-------------------------------------------|
@@ -69,7 +69,7 @@ Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les message
 
 Cette table est utilisée pour les campagnes GoPaaS ou peut être utilisée sur une fiche avec un développement spécifique.
 
-<img src="images/image7.png" alt="capture" width="900" />
+![screenshot](images/image7.png)
 
 | Champ                   | Description                                         |
 |-------------------------|-----------------------------------------------------|
@@ -88,7 +88,8 @@ Cette table est utilisée pour les campagnes GoPaaS ou peut être utilisée sur 
 
 Les modèles PDF permette de positionner des champs GoPaaS sur une document PDF.
 
-<img src="images/image8.png" alt="capture" width="800" />
+![screenshot](images/image8.png)
+
 
 | Champ                   | Description                                         |
 |-------------------------|-----------------------------------------------------|
