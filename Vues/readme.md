@@ -196,19 +196,56 @@ Le paramétrage de la vue Agenda s'effectue dans l'onglet "Agenda". Dans chacune
 
 **Détails :** <br>
 ​​​​
-| Champs                    | Valeur                                                                                                                                                  |
-|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Titre                     | C'est le premier texte qui sera affiché sur l'agenda.                                                                                                  |
-| Description / Description 2 / Description 3 | Idem que sur le point précédent, ce sont les champs que l'on veut voir sur l'agenda.                                                               |
-| Date début                | C'est le champ date de début de votre fiche.                                                                                                           |
-| Heure début               | C'est le champ heure de début de votre fiche.                                                                                                          |
-| Date fin                  | C'est le champ date de fin de votre fiche.                                                                                                             |
-| Heure fin                 | C'est le champ heure de fin de votre fiche.                                                                                                            |
-| Table de collaboration    | C'est la vue des collaborateurs que l'on veut afficher dans l'agenda.                                                                                   |
-| Champ du code couleur     | C'est le champ que l'on choisit pour appliquer les codes couleurs.                                                                                      |
-| Code couleur              | Il faut ici saisir le code couleur en [hexadécimal](https://fr.wikipedia.org/wiki/Liste_de_noms_de_couleur#Liste), exemple ci-dessous : <br> **{ "Nicolas.":"#8B16E5", "Nambourt.":"#FF0000" // Attention pas de virgule sur la dernière ligne }**               |
-| Champ du code icône       | C'est le champ que l'on choisit pour l'affichage de l'icône.                                                                                            |
-| Code icône                | Ce sont les icônes que l'on va afficher en fonction du champ code icône, les codes à utiliser viennent du site [Fontawesome](http://fontawesome.io/icons/). |
+<table>
+  <tr>
+    <th>Champs</th>
+    <th>Valeur</th>
+  </tr>
+  <tr>
+    <td>Titre</td>
+    <td>C'est le premier texte qui sera affiché sur l'agenda.</td>
+  </tr>
+  <tr>
+    <td>Description / Description 2 / Description 3</td>
+    <td>Idem que sur le point précédent, ce sont les champs que l'on veut voir sur l'agenda.</td>
+  </tr>
+  <tr>
+    <td>Date début</td>
+    <td>C'est le champ date de début de votre fiche.</td>
+  </tr>
+  <tr>
+    <td>Heure début</td>
+    <td>C'est le champ heure de début de votre fiche.</td>
+  </tr>
+  <tr>
+    <td>Date fin</td>
+    <td>C'est le champ date de fin de votre fiche.</td>
+  </tr>
+  <tr>
+    <td>Heure fin</td>
+    <td>C'est le champ heure de fin de votre fiche.</td>
+  </tr>
+  <tr>
+    <td>Table de collaboration</td>
+    <td>C'est la vue des collaborateurs que l'on veut afficher dans l'agenda.</td>
+  </tr>
+  <tr>
+    <td>Champ du code couleur</td>
+    <td>C'est le champ que l'on choisit pour appliquer les codes couleurs.</td>
+  </tr>
+  <tr>
+    <td>Code couleur</td>
+    <td>Il faut ici saisir le code couleur en <a href="https://fr.wikipedia.org/wiki/Liste_de_noms_de_couleur#Liste" target="_blank">hexadécimal</a>, exemple ci-dessous :<br><b>{ "Nicolas.":"#8B16E5", "Nambourt.":"#FF0000" // Attention pas de virgule sur la dernière ligne }</b></td>
+  </tr>
+  <tr>
+    <td>Champ du code icône</td>
+    <td>C'est le champ que l'on choisit pour l'affichage de l'icône.</td>
+  </tr>
+  <tr>
+    <td>Code icône</td>
+    <td>Ce sont les icônes que l'on va afficher en fonction du champ code icône, les codes à utiliser viennent du site <a href="http://fontawesome.io/icons/" target="_blank">Fontawesome</a>.</td>
+  </tr>
+</table>
 
 
 ## Graphique

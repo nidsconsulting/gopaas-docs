@@ -99,7 +99,8 @@ Remarque : Lors de la fusion d'une vue liée, le code de fusion du premier champ
 
 Pour inclure le premier champ d'une vue liée cliquer sur l'icône ![copie](../asset/copybtn.png)  dans le tableau des champs, puis collez-le dans le modèle de fusion. Répéter l’opération pour les autres champs de la vue liée.
 
-Exemple dans le modèle de fusion : 
+Exemple dans le modèle de fusion :
+
 | REF | Montant HT | Remise |
 |---|---|---|
 | `[facture_ligne.Pardéfaut.WLW4M.reference;block=tbs:row]` | `[facture_ligne.Pardéfaut.WLW4M.facture_ligne_montant_ht;frm='0 000,00']` | `[facture_ligne.Pardéfaut.WLW4M.remise_0;frm='0 000,00']` |
