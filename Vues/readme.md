@@ -171,6 +171,18 @@ Recherche / Remplace, suppression ou concaténation de plusieurs champs, ces fon
 
 ![screenshot](images/image29.png )
 
+Pour cela sélectionner plusieurs fiches dans une vue, puis ![capture](images/image24.png ) > Mettre à jour en masse :
+
+![capture](images/image48.png )
+
+Choisir le ou les champs à modifer :
+
+![capture](images/image49.png )
+
+Puis cliquer sur "Mettre à jour". Toutes les fiches sélectionnées ont été mises à jour avec les informations renseignées :
+
+![capture](images/image50.png )
+
 ## Agenda
 
 La vue agenda vous permet d'afficher par exemple les historiques directement dans un agenda.
@@ -197,6 +209,7 @@ Le paramétrage de la vue Agenda s'effectue dans l'onglet "Agenda". Dans chacune
 | Code couleur              | Il faut ici saisir le code couleur en [hexadécimal](https://fr.wikipedia.org/wiki/Liste_de_noms_de_couleur#Liste), exemple ci-dessous : <br> `{ "Nicolas.":"#8B16E5", "Nambourt.":"#FF0000" // Attention pas de virgule sur la dernière ligne }`               |
 | Champ du code icône       | C'est le champ que l'on choisit pour l'affichage de l'icône.                                                                                            |
 | Code icône                | Ce sont les icônes que l'on va afficher en fonction du champ code icône, les codes à utiliser viennent du site [Fontawesome](http://fontawesome.io/icons/). |
+
 
 ## Graphique
 
@@ -349,11 +362,11 @@ Une fois le mode modification activé, vous devez spécifier quels champs seront
 
 ### Fonctionnalités Clés
 
-- **Ajout** de fiches : Créez de nouvelles fiches directement depuis la vue, facilitant l'entrée de données sans quitter le contexte actuel.
+- **Ajout** de fiches : Créez de nouvelles fiches directement depuis la vue, facilitant l'entrée de données sans quitter le contexte actuel. <br>
 ![capture](images/image11.png )
 
--  **Modification** de plusieurs fiches : Editez plusieurs fiches en même temps. Cette fonction est particulièrement utile pour mettre à jour des données en masse ou corriger des informations sur plusieurs entrées rapidement.
+-  **Modification** de plusieurs fiches : Editez plusieurs fiches en même temps. Cette fonction est particulièrement utile pour mettre à jour des données en masse ou corriger des informations sur plusieurs entrées rapidement. <br>
 ![capture](images/image7.png )
 
-- **Enregistrement** : N’oubliez pas d’enregistrer les modifications apportées.
+- **Enregistrement** : N’oubliez pas d’enregistrer les modifications apportées. <br>
 ![capture](images/image10.png )
