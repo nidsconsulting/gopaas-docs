@@ -206,7 +206,7 @@ Le paramétrage de la vue Agenda s'effectue dans l'onglet "Agenda". Dans chacune
 | Heure fin                 | C'est le champ heure de fin de votre fiche.                                                                                                            |
 | Table de collaboration    | C'est la vue des collaborateurs que l'on veut afficher dans l'agenda.                                                                                   |
 | Champ du code couleur     | C'est le champ que l'on choisit pour appliquer les codes couleurs.                                                                                      |
-| Code couleur              | Il faut ici saisir le code couleur en [hexadécimal](https://fr.wikipedia.org/wiki/Liste_de_noms_de_couleur#Liste), exemple ci-dessous : <br> `{ "Nicolas.":"#8B16E5", "Nambourt.":"#FF0000" // Attention pas de virgule sur la dernière ligne }`               |
+| Code couleur              | Il faut ici saisir le code couleur en [hexadécimal](https://fr.wikipedia.org/wiki/Liste_de_noms_de_couleur#Liste), exemple ci-dessous : <br> **{ "Nicolas.":"#8B16E5", "Nambourt.":"#FF0000" // Attention pas de virgule sur la dernière ligne }**               |
 | Champ du code icône       | C'est le champ que l'on choisit pour l'affichage de l'icône.                                                                                            |
 | Code icône                | Ce sont les icônes que l'on va afficher en fonction du champ code icône, les codes à utiliser viennent du site [Fontawesome](http://fontawesome.io/icons/). |
 
