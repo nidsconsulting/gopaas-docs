@@ -182,7 +182,7 @@ Le paramétrage de la vue Agenda s'effectue dans l'onglet "Agenda". Dans chacune
 ![screenshot](images/image20.png )
 
 
-**Détails :**
+**Détails :** <br>
 ​​​​
 | Champs                    | Valeur                                                                                                                                                  |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
