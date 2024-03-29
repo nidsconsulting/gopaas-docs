@@ -45,7 +45,7 @@ Une fois renseigné, cliquer sur le bouton `Appliquer` pour continuer.
 Dans la section détails, cliquer sur le bouton `Ajouter` pour créer une nouvelle ligne de dashboard.
 
 
-![screenshot](images/image3.png)
+![capture](images/image3.png)
 
 
 Ci-dessous, la description des champs de l’onglet principal.
@@ -70,7 +70,7 @@ La largeur maximale est de “12”, la minimale est de “1”. 12 correspond �
 La somme totale des largeurs de vue ne peut pas excéder “12”.
 
 
-![screenshot](images/image4.png)
+![capture](images/image4.png)
 
 
 Cliquer sur le bouton `Enregistrer` pour conserver le paramétrage de la ligne de dashboard.
