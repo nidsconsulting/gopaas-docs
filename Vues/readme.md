@@ -12,7 +12,8 @@ Ajouter une nouvelle vue depuis le menu "Vue" puis cliquer sur le bouton "Ajoute
 
 Vous voilà sur la fiche de personnalisation des vues, elle se compose de plusieurs onglets, pour le moment cliquer sur l'onglet **Description** pour débuter le paramétrage.
 
-![screenshot](images/image16.png )
+![capture](images/image16.png )
+![capture](images/image46.png )
 
 Il est conseillé de renseigner un certain nombre de champs pour paramétrer correctement la vue :
 
@@ -42,7 +43,7 @@ Il est conseillé de renseigner un certain nombre de champs pour paramétrer cor
 | Permissions                  | Permet de gérer les permissions de la vue.                                                                            |
 | Description                  | Champ note pour la saisie d'une description de la vue.                                                                 |
 
-> Il est déconseillé de cocher toutes les options pour un soucis de performance lors du chargement de la vue._
+_Il est déconseillé de cocher toutes les options pour un soucis de performance lors du chargement de la vue._
 
 - Il est également possible de dupliquer la vue par défaut et de modifier les paramètres pour créer une nouvelle vue :
     * Depuis la vue par défaut cliquer sur ![alt_text](images/image5.png ) ->  ![alt_text](images/image18.png ) ->  Dupliquer, il suffit alors de modifier le nom de la vue puis de cliquer sur ![alt_text](images/image36.png ) pour commencer le paramétrage.
@@ -61,13 +62,13 @@ Nous allons maintenant passer à l'onglet **Champs**, c'est ici que vous allez s
 
 4. Les champs choisis pour apparaître dans la vue, l'ordre d'affichage peut-être modifié avec un glissé-déposé.
 
-> Pour ajouter ou supprimer un champ, il suffit de le sectionner et de le déplacer à droite ou à gauche à l'aide des flèches._
+_Pour ajouter ou supprimer un champ, il suffit de le sectionner et de le déplacer à droite ou à gauche à l'aide des flèches._
 
 ## Propriétés de la colonne
 
 A l'aide d'un double clic sur un des champs de la colonne de droite, vous accédez aux propriétés du champ dans la colonne. C'est ici que vous allez effectuer des actions ciblées sur le champ de votre vue comme par exemple, augmenter ou diminuer la largeur de la colonne ou encore l'alignement du champ.
 
-![screenshot](images/image21.png )
+![capture](images/image21.png )
 
 A l'ouverture de la fiche, un certain nombre de champs sont repris : 
 
@@ -87,7 +88,6 @@ D'autres champs sont renseignés par défaut mais peuvent être modifiés :
 | Masquer intitulé sur mobile  | Cocher l'option pour masquer l'intitulé sur le mobile.                                                                  |
 | Afficher en ligne sur mobile  | Cocher l'option pour afficher les données à l'horizontal. **NB** _Le mode mobile de l'utilisateur doit être "List"_          |
 | Autoriser modification  | Permet de modifier le champ lors de l'utilisation du mode EditView (se référer à la section "Fonctionnalités d'EditView")                                                                  |
-
 
 ## Ajouter des conditions
 
@@ -116,6 +116,7 @@ Via l'onglet mise en forme, il est possible d'effectuer des tris sur votre vue, 
 Dans l'onglet "Code source" apparaît la requête SQL de la vue.
 
 ![screenshot](images/image40.png )
+![screenshot](images/image47.png )
 
 **Détails :**
 
@@ -136,7 +137,7 @@ Le champ Script JS est utilisé pour surcharger le code dans le cas d'une vue li
 
 Le script JS peut afficher dans la vue liée un nouveau menu sur le bouton "Ajouter"
 
-![menu_ajouter](images/image8.png )
+![capture](images/image8.png )
 
 Détail pour la ligne "Appel sortant" : 
 ```javascript
