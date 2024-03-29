@@ -171,17 +171,84 @@ Recherche / Remplace, suppression ou concaténation de plusieurs champs, ces fon
 
 ![screenshot](images/image29.png )
 
-Pour cela sélectionner plusieurs fiches dans une vue, puis ![capture](images/image24.png ) > Mettre à jour en masse :
+L'outil de mise à jour en masse peux s'avérer très utile lorsque que vous souhaitez traiter rapidement un volume de donnée important.
+
+Il existe 4 fonctions :
+
+- Remplacement d'une valeur
+- Recherche / Remplace d'une valeur précise
+- Concaténation
+- Opération sur une valeur numérique
+
+Pour utiliser le module de mise à jour en masse, sélectionnez les fiches sur lesquelles vous souhaitez effectuer une mise à jour > Menu outil > Mettre à jour en masse.
 
 ![capture](images/image48.png )
 
-Choisir le ou les champs à modifer :
+**Remplacement**
 
-![capture](images/image49.png )
+Dans notre exemple nous allons remplacer la valeur d'une fiche compte de type "Prospect" à "Client". Recherchez le(s) champ(s) à mettre à jour, dans notre exemple ce sera le champ type
+Ajoutez simplement votre valeur dans le(s) champ(s) concerné(s) puis cliquez sur le bouton Mettre à jour.
 
-Puis cliquer sur "Mettre à jour". Toutes les fiches sélectionnées ont été mises à jour avec les informations renseignées :
+![capture](images/image51.png )
+
+**Recherche / Remplace**
+
+Dans notre exemple nous allons effectuer une mise à jour de permission. Nous souhaitons remplacer la permission nicolas par Jonathan.
+Renseigner le code suivant : \$\$[%note|replace|'nicolas'|'jonathan'%]
+
+Explication du code :
+
+- \$\$ : Déclaration de l'action
+- note : Nom du champ sur lequel effectuer l'opération
+- replace : Action de remplacement
+- nicolas : Valeur à rechercher
+- jonathan : Valeur de remplacement
+> NB : Pour recherche et supprimer un élement il suffit simplement de ne pas renseigner de valeur de remplacement :
+\$\$[%note|replace|'nicolas'|''%]
+
+​​​​​​**​Concaténation**
+
+Concaténation de plusieurs champs existants dans GoPaaS.
+
+Dans notre exemple nous allons concaténer les champs "adresse, cp, ville" dans un champ note
+Tapez le code suivant dans le champ note : \$\$[%adresse%] & " " & [%cp%] & " " & [%ville%]
+
+Explication du code :
+
+- $$ : Déclaration de l'action
+- [%champ de concat%]
+- & : Déclaration d'ajout d'une autre valeur
+- " " : Caractère permettant d'effectuer un espace entre les champs
+> NB : Il est possible d'ajouter d'autres caractères pour effectuer des séparation entre les champs ( " / ", " - ")
 
 ![capture](images/image50.png )
+
+**Opération sur une valeur numérique**
+
+Dans notre exemple nous allons soustraire 2 années au champ année d'une fiche.
+Tapez le code suivant dans le champ année de la liste : \$\$[%annee%] -2.
+
+Explication du code :
+
+- $$ : Déclaration de l'action
+- [%nom du champ qui subit l'opération%]
+- -2 : Opération à réaliser (+ ou -)
+
+Faites simplement varier le chiffre de fin en fonction de l'opération que vous souhaitez effectuer, -3, -4 ou alors +1, +3,....
+
+> NB : Ce type d'opération ne peut être réalisé que sur les champs de type nombre
+
+![capture](images/image52.png )
+
+**Supprimer les valeurs d'un champ**
+
+Utilisez simplement le code : $$null pour vider la ou les valeur(s) d'un champ.
+
+![capture](images/image53.png )
+
+Les listes déroulantes, les connexions, les champs de type date, nombre et heure définies dans le Designer sont disponibles pour les modifications en masse.
+
+![capture](images/image54.png )
 
 ## Agenda
 
@@ -192,7 +259,6 @@ La vue agenda vous permet d'afficher par exemple les historiques directement dan
 Le paramétrage de la vue Agenda s'effectue dans l'onglet "Agenda". Dans chacune des listes apparaît les champs que l'on a choisi dans l'onglet "Champs" de la vue.
 
 ![screenshot](images/image20.png )
-
 
 **Détails :** <br>
 ​​​​
