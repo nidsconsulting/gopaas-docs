@@ -18,7 +18,7 @@ Pour pouvoir utiliser un workflow sur une table, il y a deux paramètres à pren
 
 Pour créer un nouveau workflow, rendez vous dans la barre de navigation > Admin > Workflow.
 
-![screenshot](images/admWorkflow.png)
+![capture](images/admWorkflow.png)
 
 Cliquer sur `ajouter`.
 
