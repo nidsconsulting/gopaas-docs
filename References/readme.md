@@ -18,7 +18,7 @@ Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les emails`
 
 **Fiche Email**
 
-![Fiche email](images/image3_v2.png)
+![Fiche email](images/image3.png)
 
 | Champ            | Description                                     |
 |------------------|-------------------------------------------------|
@@ -45,11 +45,11 @@ Sur cette vue, vous retrouvez les messages que vous avez générés.
 
 Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les messages`, pour voir tous les messages de GoPaaS.
 
-<img src="images/image5.png" width="300">
+<img src="images/image5.png" alt="capture" width="400" />
 
 **Fiche message**
 
-<img src="images/image6.png" width="550">
+<img src="images/image6.png" alt="capture" width="550" />
 
 | Champ          | Description                               |
 |----------------|-------------------------------------------|
@@ -69,7 +69,7 @@ Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les message
 
 Cette table est utilisée pour les campagnes GoPaaS ou peut être utilisée sur une fiche avec un développement spécifique.
 
-![screenshot](images/image7.png)
+<img src="images/image7.png" alt="capture" width="900" />
 
 | Champ                   | Description                                         |
 |-------------------------|-----------------------------------------------------|
@@ -88,7 +88,7 @@ Cette table est utilisée pour les campagnes GoPaaS ou peut être utilisée sur 
 
 Les modèles PDF permette de positionner des champs GoPaaS sur une document PDF.
 
-![screenshot](images/image8.png)
+<img src="images/image8.png" alt="capture" width="800" />
 
 | Champ                   | Description                                         |
 |-------------------------|-----------------------------------------------------|
@@ -119,7 +119,7 @@ Ajouter des champs personnalisés dans un format JSON dans le champs `Corps`.
 ​​​​​​​Cliquer sur le bouton `Ajouter` pour créer un nouveau modèle.
 Afin d'enregistrer le modèle de lettre, il faut obligatoirement renseigner les champs suivants :
 
-![screenshot](images/image9.png)
+<img src="images/image9.png" alt="capture" width="900" />
 
 | Champ                        | Valeur                                             |
 |------------------------------|------------------------------------------------------------------------------------|
