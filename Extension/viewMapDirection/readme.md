@@ -4,7 +4,7 @@
 
 Importer le fichier "**viewMapDirection.json**":
 
-1. Télécharger le fichier **viewMapDirection.zip** et le décompresser.
+1. Télécharger le fichier [**viewMapDirection.zip**](https://drive.google.com/file/d/1YjNHlo_K545CIdG_o4y-r1vuYXklLbnc/view?usp=sharing) et le décompresser.
 
 2. **Menu → Admin → Transfer In**.
 

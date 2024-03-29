@@ -4,7 +4,7 @@
 
 Importer le fichier "**viewExportCompta.json**":
 
-1. Télécharger le fichier **viewExportCompta.zip** et le décompresser
+1. Télécharger le fichier [**viewExportCompta.zip**](https://drive.google.com/file/d/15LIbdrIvxBZ0gVHornt4NYgUDggxtQsq/view?usp=sharing) et le décompresser
 
 2. **Menu → Admin → Transfer In**
 

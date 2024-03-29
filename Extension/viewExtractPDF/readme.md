@@ -4,7 +4,7 @@
 
 Importer le fichier "**viewExtractPDF.json**":
 
-1. Télécharger le fichier **viewExtractPDF.zip** et le décompresser.
+1. Télécharger le fichier [**viewExtractPDF.zip**](https://drive.google.com/file/d/1BJHnV0t0yNKgFAfjbs7ZLXWVovdlE6eT/view?usp=sharing) et le décompresser.
 
 2. **Menu → Admin → Transfer In**.
 

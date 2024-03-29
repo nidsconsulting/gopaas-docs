@@ -4,7 +4,7 @@
 
 Installer l'extension "**dropfile**"
 
-1. Télécharger le fichier **dropfile.zip** et le décompresser.
+1. Télécharger le fichier [**dropfile.zip**](https://drive.google.com/file/d/1aP6j0Z8IApqICPZtgH-upbPno30IhDsc/view?usp=sharing) et le décompresser.
 
 2.  **Menu → Admin → Transfer In**.
 
