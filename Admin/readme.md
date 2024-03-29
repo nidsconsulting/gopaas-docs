@@ -4,7 +4,7 @@
 
 L'API REST GoPaaS permet aux applications GoPaaS de communiquer entre elles.
 
-![alt_text](images/image10.png "image_tooltip")
+![screenshot](images/image10.png)
 
 
 * Conditions sur les vues pour filtrer les données de transit
@@ -58,7 +58,7 @@ La fonction de configuration se compose de plusieurs onglets qui renferment des 
 Renseigner les informations relatives à la société, les coordonnées et le RIB.
 
 
-![alt_text](images/image11.png "image_tooltip")
+![screenshot](images/image11.png)
 
 #### Section Application
 
@@ -80,7 +80,6 @@ Renseigner les informations relatives à la société, les coordonnées et le RI
 
 ### Onglet Style
 
-
 * La section **Style général **permet de modifier le style de l'application, changer les couleurs, ajouter un favicon et modifier le titre de l'application.
 * La section **Page de login **permet de modifier le style sur la page de connexion à l'application.
 * La section **Bouton connexion **correspond à la personnalisation du bouton présent sur la page de connexion.
@@ -90,13 +89,12 @@ Il est possible de paramétrer la couleur des boutons :
 
 | **Type de bouton**         | **Style**                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------|
-| **Bouton par défaut**      | ![alt_text](images/image21.png) ou encore ![alt_text](images/image4.png)                       |
-| **Bouton principal**       | Bouton de type ![alt_text](images/image1.png)                                                 |
-| **Bouton info**            | Bouton de type ![alt_text](images/image15.png)                                                |
-| **Bouton Succès**          | Bouton de type ![alt_text](images/image9.png)                                                 |
-| **Bouton danger**          | Bouton de type ![alt_text](images/image20.png)                                                |
-| **Bouton avertissement**   | Bouton de type ![alt_text](images/image13.png)                                                |
-
+| **Bouton par défaut**      | ![capture](images/image21.png) ou encore ![capture](images/image4.png)                       |
+| **Bouton principal**       | Bouton de type ![capture](images/image1.png)                                                 |
+| **Bouton info**            | Bouton de type ![capture](images/image15.png)                                                |
+| **Bouton Succès**          | Bouton de type ![capture](images/image9.png)                                                 |
+| **Bouton danger**          | Bouton de type ![capture](images/image20.png)                                                |
+| **Bouton avertissement**   | Bouton de type ![capture](images/image13.png)                                                |
 
 
 Il est également possible de personnaliser les couleurs de la vue Pivot (Tableau croisé dynamique) via la section** Couleur vue pivot.**
@@ -135,7 +133,7 @@ Pour importer un dictionnaire utilisez le module d'import, pour créer des chaî
 Pour le faire manuellement cliquer sur Ajouter :
 
 
-![alt_text](images/image28.png "image_tooltip")
+![screenshot](images/image28.png)
 
 
 Plusieurs champs sont à renseigner pour enregistrer la traduction d'un caractère :
@@ -157,7 +155,7 @@ Sur cette vue vous pouvez créer vos extensions GoPaaS
 Saisir le nom de votre extension, une description et cocher la case pour l’activer
 
 
-![alt_text](images/image5.png "image_tooltip")
+![screenshot](images/image5.png)
 
 | **Onglet**    | **Champ**            |
 |---------------|----------------------|
@@ -170,9 +168,6 @@ Saisir le nom de votre extension, une description et cocher la case pour l’act
 > il faudra vous déconnecter et vous reconnecter de GoPaaS pour que l’extension soit chargée
 
 
-### 
-
-
 ## Groupes
 
 Le menu groupe permet de gérer les groupes d'utilisateurs, par défaut il existe 4 groupes : ADMIN, COMMERCIAL, TECHNIQUE et COMPTA.
@@ -180,12 +175,12 @@ Le menu groupe permet de gérer les groupes d'utilisateurs, par défaut il exist
 La notion de groupe est indispensable au paramétrage des permissions, ces différents groupes n'ont pas les mêmes droits.
 
 Le groupe sera alors associé à un ou plusieurs utilisateurs.
-![alt_text](images/image25.png "image_tooltip")
+![screenshot](images/image25.png)
 
 
 Pour créer un nouveau groupe cliquez sur **Ajouter**, puis renseigner le champ **Intitulé, **il correspond tout simplement au nom du groupe.
 
-![alt_text](images/image8.png "image_tooltip")
+![screenshot](images/image8.png)
 
 ### Section Utilisateur
 
@@ -204,13 +199,13 @@ Permet de voir la liste des membres du groupe
 Vous pouvez ici retrouver la liste de toutes les fiches historiques de navigation sur l’application.
 
 
-![alt_text](images/image7.png "image_tooltip")
+![screenshot](images/image7.png)
 
 
 Vous retrouverez sur la fiche les informations suivante
 
 
-![alt_text](images/image6.png "image_tooltip")
+![screenshot](images/image6.png)
 
 | Champ          | Description                      |
 |----------------|----------------------------------|
@@ -242,10 +237,9 @@ Vous retrouverez ici la liste de toutes les fiches supprimées et si nécessaire
 
 Le menu des Permissions permet de définir les droits sur les tables en fonction d'un groupe d'utilisateurs.
 
-​​​​​​Il est accessible depuis la barre de navigation >
-<img src="images/image17.png" height="30px"> > <img src="images/image19.png" height="30px">
+​​​​​​Il est accessible depuis la barre de navigation > <img src="images/image17.png" height="30px"> > <img src="images/image19.png" height="30px">
 
-![alt_text](images/image14.png "image_tooltip")
+![screenshot](images/image14.png)
 
 | **Champ**                  | **Valeur**                                                                                       |
 |----------------------------|-------------------------------------------------------------------------------------------------|
@@ -274,7 +268,7 @@ Dans la vue vous avez déjà accès à certaines informations comme l'heure, le 
 En effectuant un double clic sur une fiche, vous accédez à plus d'informations comme l'adresse IP de l'utilisateur, le nom de son navigateur ou encore le type d'OS utilisé.
 
 
-![alt_text](images/image24.png "image_tooltip")
+![screenshot](images/image24.png)
 
 
 ## Utilisateur
@@ -284,7 +278,7 @@ Le menu Utilisateur permet d'afficher la liste des utilisateurs de l'application
 Modifiez la fiche d'un utilisateur en double cliquant dessus ou ajouter un nouvel utilisateur cliquez sur **Ajouter**
 
 
-![alt_text](images/image27.png "image_tooltip")
+![screenshot](images/image27.png)
 
 
 ### Onglet principal
@@ -395,11 +389,11 @@ Pour Table et vues il y a plusieurs options possibles :
 
 Permet d’importer des éléments d’une autre application
 
+![capture](images/image26.png)
 
-![alt_text](images/image26.png "image_tooltip")
-| Champ    | Valeur                      |
+| Champ    | Valeur |
 |---------------------------|---------------------------------------------------|
 | Choisir un fichier | Sélectionner un JSON à importer |
-| Bouton Importer   | Lance l’import                 |
+| Bouton Importer   | Lance l'import  |
 
-> Pour l’import d’une table il faudra se rendre dans le Check application pour créer la table et les champs*
+> Pour l’import d’une table il faudra se rendre dans le Check application pour créer la table et les champs
