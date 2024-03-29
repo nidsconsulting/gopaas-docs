@@ -43,7 +43,7 @@ Il est conseillé de renseigner un certain nombre de champs pour paramétrer cor
 | Permissions                  | Permet de gérer les permissions de la vue.                                                                            |
 | Description                  | Champ note pour la saisie d'une description de la vue.                                                                 |
 
-_Il est déconseillé de cocher toutes les options pour un soucis de performance lors du chargement de la vue._
+> Il est déconseillé de cocher toutes les options pour un soucis de performance lors du chargement de la vue.
 
 - Il est également possible de dupliquer la vue par défaut et de modifier les paramètres pour créer une nouvelle vue :
     * Depuis la vue par défaut cliquer sur ![alt_text](images/image5.png ) ->  ![alt_text](images/image18.png ) ->  Dupliquer, il suffit alors de modifier le nom de la vue puis de cliquer sur ![alt_text](images/image36.png ) pour commencer le paramétrage.
@@ -62,7 +62,7 @@ Nous allons maintenant passer à l'onglet **Champs**, c'est ici que vous allez s
 
 4. Les champs choisis pour apparaître dans la vue, l'ordre d'affichage peut-être modifié avec un glissé-déposé.
 
-_Pour ajouter ou supprimer un champ, il suffit de le sectionner et de le déplacer à droite ou à gauche à l'aide des flèches._
+> Pour ajouter ou supprimer un champ, il suffit de le sectionner et de le déplacer à droite ou à gauche à l'aide des flèches.
 
 ## Propriétés de la colonne
 
@@ -133,7 +133,7 @@ Dans l'onglet "Code source" apparaît la requête SQL de la vue.
 
 Le champ Script JS est utilisé pour surcharger le code dans le cas d'une vue liée.
 
-![screenshot](images/image28.png )
+![capture](images/image28.png )
 
 Le script JS peut afficher dans la vue liée un nouveau menu sur le bouton "Ajouter"
 
@@ -202,13 +202,13 @@ Le paramétrage de la vue Agenda s'effectue dans l'onglet "Agenda". Dans chacune
 
 Vous pouvez ajouter une vue de type Graphique pour analyser par exemple vos affaires en cours.
 
-![screenshot](images/image25.png )
+![capture](images/image25.png )
 
-![screenshot](images/image39.jpg )
+![capture](images/image39.jpg )
 
 **Type graphique** : Choix du type de graphique.
 
-![screenshot](images/image12.png )
+![capture](images/image12.png )
 
 **Détails :**
 
@@ -240,7 +240,7 @@ La vue KanBan permet de changer le statut des actions rapidement à l'aide de gl
 
 ![screenshot](images/image1.jpg )
 
-![screenshot](images/image9.png )
+![capture](images/image9.png )
 
 1. Choix du champ pour regrouper les fiches.
 2. Chaîne JSON listant les valeurs de regroupement dans l'ordre souhaité.
@@ -253,32 +253,32 @@ Ou bien dans une fiche, généralement pour lister les enregistrements d’une t
 
 ![screenshot](images/image15.jpg )
 
-- Le bouton ![ajouter](images/image19.png ) permet d’ajouter une fiche dans la table sur laquelle porte la vue.
+- Le bouton ![capture](images/image19.png ) permet d’ajouter une fiche dans la table sur laquelle porte la vue.
 
-- Le bouton ![supprimer](images/image30.png ) sert à supprimer une ou plusieurs fiches dans la vue. Si la vue est du type Multi-sélection (voir plus loin), on peut sélectionner plusieurs fiches et les supprimer en une seule passe. Si la vue n’est pas du type Multi-sélection, le bouton - Supprimer sert uniquement à supprimer la fiche en surbrillance.
+- Le bouton ![capture](images/image30.png ) sert à supprimer une ou plusieurs fiches dans la vue. Si la vue est du type Multi-sélection (voir plus loin), on peut sélectionner plusieurs fiches et les supprimer en une seule passe. Si la vue n’est pas du type Multi-sélection, le bouton - Supprimer sert uniquement à supprimer la fiche en surbrillance.
 
-- Le menu ![outil](images/image18.png ) de la vue permet d'exporter vers csv, mettre à jour en masse et de fusionner des modèles de document. On peut y ajouter d'autres options en javascript.
+- Le menu ![capture](images/image18.png ) de la vue permet d'exporter vers csv, mettre à jour en masse et de fusionner des modèles de document. On peut y ajouter d'autres options en javascript.
 
-![menu_outil](images/image17.png )
+![capture](images/image17.png )
 
-![screenshot](images/image23.png )
+![capture](images/image23.png )
 
 - On saisit dans la zone Rechercher la ou les chaînes de caractères que l’on recherche. La zone « dans » permet de préciser sur quel champ la recherche doit s’effectuer. Par défaut, c’est l’option Tous qui est sélectionnée, c’est-à-dire que la recherche doit s’effectuer dans l’ensemble des champs présents dans la vue.
 
-- Le bouton ![rechercher](images/image14.png ) permet de lancer la recherche
+- Le bouton ![capture](images/image14.png ) permet de lancer la recherche
 
-- Le bouton ![filtre_avance](images/image42.png ) permet d'accéder à l'outil de recherche avancée, une nouvelle ligne apparaît en dessous
+- Le bouton ![capture](images/image42.png ) permet d'accéder à l'outil de recherche avancée, une nouvelle ligne apparaît en dessous
 
-![screenshot](images/image2.png )
+![capture](images/image2.png )
 
 On choisit le champ sur lequel on veut filtrer puis la condition.
 Là encore, n’apparaît dans la liste de champs que ceux présents dans la vue (y compris les champs invisibles). Pour ajouter une condition, cliquer sur le bouton plus. Quand on est satisfait de son filtre, on peut l’enregistrer. Cliquer sur la flèche du bouton "Filtrer".
 
-![alt_text](images/image3.png )
+![capture](images/image3.png )
 
 Sur la flèche bas du bouton filtre on retrouve les recherches sauvegardées.
 
-![alt_text](images/image44.png )
+![capture](images/image44.png )
 
 ## Fonctionnalités de ViewDesigner
 
@@ -297,26 +297,27 @@ Avec **ViewDesigner**, vous avez le contrôle total sur la présentation de vos 
 ### Accès au mode Designer
 
 1. Ouvrir la vue de données : Accédez à la vue de données que vous souhaitez personnaliser dans l'application GoPaaS.
-2. Activer ViewDesigner : Cliquez sur le bouton "**Designer**" situé généralement en haut à droite de la vue de données. La vue passera en mode édition, vous permettant de modifier la présentation des données. ![screenshot](images/image26.png )
+2. Activer ViewDesigner : Cliquez sur le bouton "**Designer**" situé généralement en haut à droite de la vue de données. La vue passera en mode édition, vous permettant de modifier la présentation des données.
+ ![capture](images/image26.png )
 
 ### Modification de l'emplacement des colonnes
 
 - **Glisser-Déposer :** Cliquez et maintenez la colonne que vous souhaitez déplacer, puis glissez-la à l'emplacement désiré. Relâchez le bouton de la souris pour confirmer le nouvel emplacement.
  
-![screenshot](images/image35.png )
+![capture](images/image35.png )
 
 ### Ajustement de la taille des colonnes
 
 - **Redimensionner :** Placez votre curseur sur le bord de la colonne que vous souhaitez ajuster. Le curseur se transformera en icône de redimensionnement. Cliquez et glissez pour ajuster la largeur de la colonne.
 
-![screenshot](images/image13.png )
+![capture](images/image13.png )
 
-![screenshot](images/image41.png )
+![capture](images/image41.png )
 
 ### Changement des titres des colonnes
 
 - **Éditer le titre :** Cliquez sur le bouton avec l’icône crayon de la colonne que vous souhaitez modifier. Saisissez le nouveau titre dans le champ éditable qui apparaît et validez votre saisie. Appuyez sur la touche Entrée pour valider.
-![screenshot](images/image37.png )
+![capture](images/image37.png )
 
 ### Sauvegarde des modifications
 
@@ -330,11 +331,11 @@ Avec **ViewDesigner**, vous avez le contrôle total sur la présentation de vos 
 
 1. Accès aux **Propriétés** de la Vue : Ouvrez les paramètres ou les propriétés de la vue où vous souhaitez utiliser **EditView**. 
 
-![alt_text](images/image22.png )
+![capture](images/image22.png )
 
 2. Activer **EditView** : Recherchez l'option "Afficher le mode modification" et cochez la case correspondante. Cette action active le mode d'édition pour la vue actuelle, permettant des modifications directes.
 
-![alt_text](images/image33.png )
+![capture](images/image33.png )
 
 ### Configurer les champs modifiables
 
@@ -342,17 +343,17 @@ Une fois le mode modification activé, vous devez spécifier quels champs seront
 
 1. Accéder aux **Propriétés** de chaque **champ** : Ouvrez les propriétés ou les paramètres de chaque champ présent dans la vue.
 2. Autoriser la modification : Pour chaque champ que vous souhaitez rendre modifiable, cochez la case "Autoriser modification". Si vous ne cochez pas cette option, le champ restera en lecture seule et ne pourra pas être édité directement depuis la vue.
-![alt_text](images/image4.png )
+![capture](images/image4.png )
 
-> L'alias du champ doit rester identique au nom du champ pour que les modifications fonctionnent correctement._
+> L'alias du champ doit rester identique au nom du champ pour que les modifications fonctionnent correctement.
 
 ### Fonctionnalités Clés
 
 - **Ajout** de fiches : Créez de nouvelles fiches directement depuis la vue, facilitant l'entrée de données sans quitter le contexte actuel.
-![alt_text](images/image11.png )
+![capture](images/image11.png )
 
 -  **Modification** de plusieurs fiches : Editez plusieurs fiches en même temps. Cette fonction est particulièrement utile pour mettre à jour des données en masse ou corriger des informations sur plusieurs entrées rapidement.
-![alt_text](images/image7.png )
+![capture](images/image7.png )
 
 - **Enregistrement** : N’oubliez pas d’enregistrer les modifications apportées.
-![alt_text](images/image10.png )
+![capture](images/image10.png )
