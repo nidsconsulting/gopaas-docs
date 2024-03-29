@@ -9,7 +9,7 @@ Dans cette rubrique, nous passons en revue l’ensemble des possibilités de per
 
 La plateforme GoPaaS vous permet d'ajouter de nouvelles tables afin de créer de nouvelles fonctionnalités liées à vos besoins et à l’'évolution de votre utilisation.
 
-Pour cela, rendez vous dans le menu personnalisation ![screenshot](images/image5.png ) -> Tables -> cliquer sur Ajouter.
+Pour cela, rendez vous dans le menu personnalisation ![capture](images/image5.png ) -> Tables -> cliquer sur Ajouter.
 
 ![screenshot](images/image4.png )
 
@@ -39,9 +39,9 @@ Chaque table est associée à un seul formulaire de saisie et de visualisation d
 
 Ces masques sont organisés sous forme d'onglets, chaque onglet contenant lui-même des sections et dans chaque section, des champs.
 
-A la création d'une nouvelle table, GoPaaS ajoute automatiquement 2 onglets, l'onglet **Principal** et l'onglet **Système**. Pour ajouter un nouvel onglet, passer par le FormDesigner puis cliquer sur le bouton ![screenshot](images/image3.png ).
+A la création d'une nouvelle table, GoPaaS ajoute automatiquement 2 onglets, l'onglet **Principal** et l'onglet **Système**. Pour ajouter un nouvel onglet, passer par le FormDesigner puis cliquer sur le bouton ![capture](images/image3.png ).
 
-![screenshot](images/image1.png )
+![capture](images/image1.png )
 
 Afin d'enregistrer un onglet en base de données, il faut renseigner obligatoirement certains champs :
 
@@ -117,7 +117,7 @@ Cliquez sur l'onglet **Script JS** pour avoir accès à l'éditeur de texte de l
 
 Cet onglet offre une manière flexible d'étendre et de personnaliser les fonctionnalités à travers l'écritures de scripts JavaScript directement dans le paramètrage de la table. Il vous permet de manipuler les données et le comportement du formulaire selon vos besoins spécifiques.
 
-![screenshot](images/image7.png )
+![capture](images/image7.png )
 
 Deux fonctions sont présentes par défaut dans l'éditeur :
 
