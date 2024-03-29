@@ -13,11 +13,12 @@ Sur cette vue, vous retrouvez les emails que vous avez créés.
 ![screenshot](images/image1.png)
 
 Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les emails`, pour voir tous les mails envoyés de GoPaaS.
-<img src="images/image2.png" width="300">
+
+![capture](images/image2.png)
 
 **Fiche Email**
 
-<img src="images/image3.png" width="550">
+![capture](images/image3.png)
 
 | Champ            | Description                                     |
 |------------------|-------------------------------------------------|
@@ -43,11 +44,12 @@ Sur cette vue, vous retrouvez les messages que vous avez générés.
 ![screenshot](images/image4.png)
 
 Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les messages`, pour voir tous les messages de GoPaaS.
-<img src="images/image5.png" width="300">
+
+![capture](images/image5.png)
 
 **Fiche message**
 
-<img src="images/image6.png" width="550">
+![capture](images/image6.png)
 
 | Champ          | Description                               |
 |----------------|-------------------------------------------|
@@ -67,7 +69,7 @@ Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les message
 
 Cette table est utilisée pour les campagnes GoPaaS ou peut être utilisée sur une fiche avec un développement spécifique.
 
-![screenshot](images/image7.png)
+![capture](images/image7.png)
 
 | Champ                   | Description                                         |
 |-------------------------|-----------------------------------------------------|
@@ -86,7 +88,8 @@ Cette table est utilisée pour les campagnes GoPaaS ou peut être utilisée sur 
 
 Les modèles PDF permette de positionner des champs GoPaaS sur une document PDF.
 
-![screenshot](images/image8.png)
+![capture](images/image8.png)
+
 
 | Champ                   | Description                                         |
 |-------------------------|-----------------------------------------------------|
@@ -117,7 +120,7 @@ Ajouter des champs personnalisés dans un format JSON dans le champs `Corps`.
 ​​​​​​​Cliquer sur le bouton `Ajouter` pour créer un nouveau modèle.
 Afin d'enregistrer le modèle de lettre, il faut obligatoirement renseigner les champs suivants :
 
-![screenshot](images/image9.png)
+![capture](images/image9.png)
 
 | Champ                        | Valeur                                             |
 |------------------------------|------------------------------------------------------------------------------------|
@@ -136,7 +139,7 @@ L'assistant GoPaaS permet de créer des modes opératoire étape par étape pour
 
 **Fiche Assistant**
 
-![screenshot](images/image10.png)
+![capture](images/image10.png)
 
 | Champ                        | Valeur                                             |
 |------------------------------|----------------------------------------------------|
@@ -145,7 +148,7 @@ L'assistant GoPaaS permet de créer des modes opératoire étape par étape pour
 
 **Fiche Etape**
 
-![screenshot](images/image11.png)
+![capture](images/image11.png)
 
 | Champ               | Valeur                                                                                     |
 |---------------------|--------------------------------------------------------------------------------------------|
@@ -160,7 +163,7 @@ L'assistant GoPaaS permet de créer des modes opératoire étape par étape pour
 
 Cliquez sur l'icone <img src="images/image13.png" width="25"> pour déclencher l'assistant.
 
-<img src="images/image12.png" width="450">
+![capture](images/image12.png)
 
 ### Dashboard
 
@@ -168,9 +171,9 @@ Pour créer un nouveau dashboard, rendez vous dans la barre de navigation > Réf
 
 Cliquer sur le bouton Ajouter.
 
-![screenshot](images/image14.png)
+![capture](images/image14.png)
 
-![screenshot](images/image15.png)
+![capture](images/image15.png)
 
 Ci-dessous, la description des champs de l’onglet principal.
 

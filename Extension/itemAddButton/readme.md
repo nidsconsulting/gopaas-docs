@@ -4,7 +4,7 @@
 
 Installer l'extension "**itemAddButton**"
 
-1. Télécharger le fichier **itemAddButton.zip** et le décompresser.
+1. Télécharger le fichier [**itemAddButton.zip**](https://drive.google.com/file/d/1EdW8NrYJRGLjFURw1Pgaw0wHl9wd6qyl/view?usp=sharing) et le décompresser.
 
 2.  **Menu → Admin → Transfer In**.
 

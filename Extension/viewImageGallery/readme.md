@@ -4,7 +4,7 @@
 
 Installer l'extension "**viewImageGallery**"
 
-1. Télécharger le fichier **viewImageGallery.zip** et le décompresser.
+1. Télécharger le fichier [**viewImageGallery.zip**](https://drive.google.com/file/d/1ViKYvZ2_jG3ff4F57iV-LcCB9BfdIOdo/view?usp=sharing) et le décompresser.
 
 2.  **Menu → Admin → Transfer In**.
 
