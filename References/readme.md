@@ -13,11 +13,12 @@ Sur cette vue, vous retrouvez les emails que vous avez créés.
 ![screenshot](images/image1.png)
 
 Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les emails`, pour voir tous les mails envoyés de GoPaaS.
-<img src="images/image2.png" width="300">
+
+![Fiche email](images/image2.png)
 
 **Fiche Email**
 
-<img src="images/image3.png" width="550">
+![Fiche email](images/image3_v2.png)
 
 | Champ            | Description                                     |
 |------------------|-------------------------------------------------|
@@ -43,6 +44,7 @@ Sur cette vue, vous retrouvez les messages que vous avez générés.
 ![screenshot](images/image4.png)
 
 Si vous avez un profil `Admin`, vous pouvez accéder à la vue `Tous les messages`, pour voir tous les messages de GoPaaS.
+
 <img src="images/image5.png" width="300">
 
 **Fiche message**
