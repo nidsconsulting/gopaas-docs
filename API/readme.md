@@ -38,6 +38,10 @@ Pour utiliser l'API GoPaaS, il licence ADMIN ou Utilisateur est nécessaire pour
 |---------------|-----------------|--------|
 | `HEAD`        | `bearer_token`  | String |
 | `HEAD (option)` | `advancedSearch` | String |
+| `HEAD (option)` | `onlyVisible` | String |
+| `HEAD (option)` | `columns` | String |
+| `HEAD (option)` | `page` | Number |
+| `HEAD (option)` | `rowPerPage` | Number |
 
 #### Response
 
@@ -58,14 +62,24 @@ Avec curl.
 
 - `{{bearer_token}}` est une chaîne
 
-- `{{advancedSearch}}` est une chaîne
+- `{{onlyVisible}}` est une chaîne
+
+- `{{columns}}` est une chaîne
+
+- `{{page}}` est un nombre entier
+
+- `{{rowPerPage}}` est un nombre entier
 
 ```php
 curl -X GET \
 {{URL}}/api/list/{{id}}/
 -H 'Authorization: Bearer {{bearer_token}}' \
 -H 'content-type: application/json' \
--H 'advancedSearch: nom|contain|NIDS|'
+-H 'advancedSearch: nom|contain|NIDS|' \
+-H 'onlyVisible: on' \
+-H 'colums: on' \
+-H 'page: 3' \
+-H 'rowPerPage: 10'
 ```
 
 ### item

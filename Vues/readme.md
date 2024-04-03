@@ -194,28 +194,28 @@ Ajoutez simplement votre valeur dans le(s) champ(s) concerné(s) puis cliquez su
 **Recherche / Remplace**
 
 Dans notre exemple nous allons effectuer une mise à jour de permission. Nous souhaitons remplacer la permission nicolas par Jonathan.
-Renseigner le code suivant : \$\$[%note|replace|'nicolas'|'jonathan'%]
+Renseigner le code suivant : $$[%note|replace|'nicolas'|'jonathan'%]
 
 Explication du code :
 
-- \$\$ : Déclaration de l'action
+- $$ : Déclaration de l'action
 - note : Nom du champ sur lequel effectuer l'opération
 - replace : Action de remplacement
 - nicolas : Valeur à rechercher
 - jonathan : Valeur de remplacement
 > NB : Pour recherche et supprimer un élement il suffit simplement de ne pas renseigner de valeur de remplacement :
-\$\$[%note|replace|'nicolas'|''%]
+$$[%note|replace|'nicolas'|''%]
 
 ​​​​​​**​Concaténation**
 
 Concaténation de plusieurs champs existants dans GoPaaS.
 
 Dans notre exemple nous allons concaténer les champs "adresse, cp, ville" dans un champ note
-Tapez le code suivant dans le champ note : \$\$[%adresse%] & " " & [%cp%] & " " & [%ville%]
+Tapez le code suivant dans le champ note : $$[%adresse%] & " " & [%cp%] & " " & [%ville%]
 
 Explication du code :
 
-- \$\$ : Déclaration de l'action
+- $$ : Déclaration de l'action
 - [%champ de concat%]
 - & : Déclaration d'ajout d'une autre valeur
 - " " : Caractère permettant d'effectuer un espace entre les champs
@@ -226,11 +226,11 @@ Explication du code :
 **Opération sur une valeur numérique**
 
 Dans notre exemple nous allons soustraire 2 années au champ année d'une fiche.
-Tapez le code suivant dans le champ année de la liste : \$\$[%annee%] -2.
+Tapez le code suivant dans le champ année de la liste : $$[%annee%] -2.
 
 Explication du code :
 
-- \$\$ : Déclaration de l'action
+- $$ : Déclaration de l'action
 - [%nom du champ qui subit l'opération%]
 - -2 : Opération à réaliser (+ ou -)
 
