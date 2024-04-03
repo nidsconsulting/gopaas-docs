@@ -215,7 +215,7 @@ Tapez le code suivant dans le champ note : \$\$[%adresse%] & " " & [%cp%] & " " 
 
 Explication du code :
 
-- $$ : Déclaration de l'action
+- \$\$ : Déclaration de l'action
 - [%champ de concat%]
 - & : Déclaration d'ajout d'une autre valeur
 - " " : Caractère permettant d'effectuer un espace entre les champs
@@ -230,7 +230,7 @@ Tapez le code suivant dans le champ année de la liste : \$\$[%annee%] -2.
 
 Explication du code :
 
-- $$ : Déclaration de l'action
+- \$\$ : Déclaration de l'action
 - [%nom du champ qui subit l'opération%]
 - -2 : Opération à réaliser (+ ou -)
 
@@ -414,7 +414,8 @@ Avec **ViewDesigner**, vous avez le contrôle total sur la présentation de vos 
 
 1. Ouvrir la vue de données : Accédez à la vue de données que vous souhaitez personnaliser dans l'application GoPaaS.
 2. Activer ViewDesigner : Cliquez sur le bouton "**Designer**" situé généralement en haut à droite de la vue de données. La vue passera en mode édition, vous permettant de modifier la présentation des données.
- ![capture](images/image26.png )
+
+![capture](images/image26.png )
 
 ### Modification de l'emplacement des colonnes
 
