@@ -34,14 +34,15 @@ Pour utiliser l'API GoPaaS, il licence ADMIN ou Utilisateur est nécessaire pour
 |--------|---------------------|
 | `GET`  | `api/list/{{id}}/`  |
 
-| Type          | Params          | Values |
-|---------------|-----------------|--------|
-| `HEAD`        | `bearer_token`  | String |
-| `HEAD (option)` | `advancedSearch` | String |
-| `HEAD (option)` | `onlyVisible` | String |
-| `HEAD (option)` | `columns` | String |
-| `HEAD (option)` | `page` | Number |
-| `HEAD (option)` | `rowPerPage` | Number |
+| Type          | Params          | Values | Description | 
+|---------------|-----------------|--------|-------------|
+| `HEAD`        | `bearer_token`  | String | |  
+| `HEAD (option)` | `advancedSearch` | String | Effectuer une recherche avancée sur une ou plusieurs colonnes. ex: `nom\|contain\|NIDS\|AND\|cp\|contain\|77420\|` |
+| `HEAD (option)` | `textSearch` | String | Rechercher une chaîne de caractère présente sur une des colonnes|
+| `HEAD (option)` | `onlyVisible` | String | Masquer les colonnes non visibles. valeur: `on`|
+| `HEAD (option)` | `columns` | String | Ajouter un objet `column` dans la réponse avec la liste des colonnes et de leurs paramètres|
+| `HEAD (option)` | `page` | Number | Numéro de page à afficher|
+| `HEAD (option)` | `rowPerPage` | Number | Nombre de fiches à afficher par page|
 
 #### Response
 
