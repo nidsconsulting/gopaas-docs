@@ -79,15 +79,15 @@ D'autres champs sont renseignés par défaut mais peuvent être modifiés :
 | Champ               | Signification                                                                                                           |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------|
 | Largeur             | Définir la largeur souhaitée.                                                                                           |
-| Format              | Par défaut, GoPaaS détecte le type de champ et renseigne la donnée automatiquement. Mais pour plus de personnalisation, il est possible de choisir un format SQL ou SQLNumber. |
-| SQL                 | Renseigner la commande SQL à condition d'avoir sélectionné le bon format préalablement.                                |
+| Format              | Par défaut, GoPaaS détecte le type de champ et renseigne la donnée automatiquement. Mais pour plus de personnalisation, il est possible de choisir un format parmi les options suivantes : <br> - Text <br> - Date <br> - Number <br> - HTML : permet d'inclure des balises HTML dnas le champ "Code"   <br> - Gauge : permet d'afficher une jauge d'avancement (%) en se basant sur un champ nombre ou une liste ayant des valeurs allant de 0 à 100. <br> - Rating : permet d'afficher une note sous forme d'étoiles en se basant sur un champ nombre ou une liste ayant des valeurs allant de 0 à 5.<br> - Smileys : permet d'afficher des emojis en se basant sur un champ nombre ou une liste ayant des valeurs allant de 0 à 5. <br> - SQL : permet d'exécuter une requête SQL dans le champ "Code".<br> - SQLNumber : permet d'exécuter une requête SQL dans le champ "Code" pour laquelle le résultat est un nombre. |
+| Code                 | Permet d'écrire des balises HTML ou des requêtes SQL, à condition d'avoir choisi le bon format.                                |
 | Alignement          | Définir l'alignement du champ dans la colonne (left, center ou right). Si aucune valeur n'est renseignée, la valeur par défaut est left.                                            |
 | Style             | Permet d'ajouter du style dans ma colonne. <br> Exemple : <br> ```[{"value": "Client", "style":"font-size:8px;background-color:#ff0000;color:#fff;font-weight:bold;"}, {"value": "Prospect", "style":"font-size:8px;background-color:green;color:#fff;font-weight:normal;"}]  ```                                                        |
 | Visible             | Décocher l'option pour masquer le champ dans la vue.                                                                    |
 | Masquer sur mobile  | Cocher l'option pour masquer le champ sur le mobile.                                                                  |
 | Masquer intitulé sur mobile  | Cocher l'option pour masquer l'intitulé sur le mobile.                                                                  |
-| Afficher en ligne sur mobile  | Cocher l'option pour afficher les données à l'horizontal. **NB** _Le mode mobile de l'utilisateur doit être "List"_          |
-| Autoriser modification  | Permet de modifier le champ lors de l'utilisation du mode EditView (se référer à la section "Fonctionnalités d'EditView")                                                                  |
+| Afficher en ligne sur mobile  | Cocher l'option pour afficher les données à l'horizontal. **NB** _Le mode mobile de l'utilisateur doit être "List"_.         |
+| Autoriser modification  | Permet de modifier le champ lors de l'utilisation du mode EditView (se référer à la section "Fonctionnalités d'EditView").                                                                  |
 
 ## Ajouter des conditions
 
