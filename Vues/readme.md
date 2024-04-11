@@ -377,11 +377,36 @@ Ou bien dans une fiche, généralement pour lister les enregistrements d’une t
 
 ![capture](images/image17.png )
 
+### Recherche plaintext
+
 ![capture](images/image23.png )
 
-- On saisit dans la zone Rechercher la ou les chaînes de caractères que l’on recherche. La zone « dans » permet de préciser sur quel champ la recherche doit s’effectuer. Par défaut, c’est l’option Tous qui est sélectionnée, c’est-à-dire que la recherche doit s’effectuer dans l’ensemble des champs présents dans la vue.
+- On saisit dans la zone Rechercher la ou les chaînes de caractères que l’on recherche. 
+
+Il est possible d'utiliser des opérateurs logiques (ET, OU, AND, OR) dans la barre de recherche afin d'afiner la recherche. Ces opérateurs logiques vont aller chercher les informations dans les données affichées dans la vue.
+
+| Opérateur | Description                                                                                                                     |
+|-----------|---------------------------------------------------------------------------------------------------------------------------------|
+| OR - OU      | Les opérateurs logique "OR" / "OU" permettent de rechercher des résultats contenant au moins l'un des termes spécifiés.                       |
+| AND - ET   | Les opérateurs logique "AND" / "ET" permettent de rechercher des résultats contenant tous les termes spécifiés. |
+
+**Exemple** :
+
+Je veux rechercher les fiches dont la ville est soit PARIS soit AMIENS
+
+![screenshot](images/image55.png )
+
+> On remarque que dans la deuxième ligne la ville n'est pas égale à PARIS ou AMIENS mais on retrouve la valeur "Paris" dans "Adresse1".
+
+Je veux rechercher les fiches dont la ville est Paris et le code postal 75008
+
+![screenshot](images/image56.png )
+
+La zone « dans » permet de préciser sur quel champ la recherche doit s’effectuer. Par défaut, c’est l’option Tous qui est sélectionnée, c’est-à-dire que la recherche doit s’effectuer dans l’ensemble des champs présents dans la vue. Une recherche utilisant les opérateurs logiques doit s'effectuer dans "Tous".
 
 - Le bouton ![capture](images/image14.png ) permet de lancer la recherche
+
+### Recherche avancée
 
 - Le bouton ![capture](images/image42.png ) permet d'accéder à l'outil de recherche avancée, une nouvelle ligne apparaît en dessous
 
