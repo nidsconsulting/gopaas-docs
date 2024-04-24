@@ -136,7 +136,7 @@ Pour le faire manuellement cliquer sur Ajouter :
 ![screenshot](images/image28.png)
 
 
-Plusieurs champs sont à renseigner pour enregistrer la traduction d'un caractère :
+Plusieurs champs sont à renseigner pour enregistrer la traduction :
 
 | **Champ** | Description                                   |
 |-------------------------|-------------------------------------------------------------------------------------------|
@@ -144,6 +144,7 @@ Plusieurs champs sont à renseigner pour enregistrer la traduction d'un caractè
 | **Type**                | Pour l'application, sélectionner systématiquement "application".                           |
 |                         | Inscrire ensuite la traduction du texte de référence dans les autres langues pour valider la traduction. |
 
+> il faudra vous déconnecter et vous reconnecter de GoPaaS pour que les nouvelles traductions soient chargées.
 
 ## Extension
 
