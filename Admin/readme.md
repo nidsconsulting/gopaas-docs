@@ -140,7 +140,7 @@ Plusieurs champs sont à renseigner pour enregistrer la traduction :
 
 | **Champ** | Description                                   |
 |-------------------------|-------------------------------------------------------------------------------------------|
-| **Texte de référence** | Il correspond au nom du champ dans la base de données.                                   |
+| **Texte de référence** | Il correspond a l'intitulé du champ.                                   |
 | **Type**                | Pour l'application, sélectionner systématiquement "application".                           |
 |                         | Inscrire ensuite la traduction du texte de référence dans les autres langues pour valider la traduction. |
 
