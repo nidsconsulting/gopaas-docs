@@ -118,6 +118,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Nom champ       | origine    |
 | Alias/Nom table connectée   | origine |
 | Intitulé   | Origine  |
+| Largeur intitulé   | 3 |
 | Valeur  | Réseau<br>Web<br>Fichier<br>Partenariat<br>Salon |
 
 ![screenshot](images/image21.png)
@@ -130,6 +131,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Nom champ       | telephone |
 | Alias/Nom table connectée   | telephone |
 | Intitulé   | Téléphone |
+| Largeur intitulé   | 3 |
 
 ![screenshot](images/image22.png)
 
@@ -141,6 +143,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Nom champ       | Nom du champ en base de données.           |
 | Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
 | Intitulé   | Nom du champ sur le formulaire           |
+| Largeur intitulé   | 3 |
 
 ![screenshot](images/image23.png)
 
@@ -152,6 +155,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Nom champ       | email  |
 | Alias/Nom table connectée   | email |
 | Intitulé   | Email |
+| Largeur intitulé   | 3 |
 
 ![screenshot](images/image24.png)
 
@@ -164,7 +168,17 @@ Voici un tableau avec une en-tête et 13 lignes :
 
 ### Agencer la vue "Par défaut"
 
+* Accédez au menu **Application** > **CRM** > **Compte**.
+![screenshot](images/image25.png)
 
+* Cliquez sur modifier la vue <img src="images/image26.png" width="28px" alt="capture"> pour personnaliser l'affichage.
+* Rendez-vous dans l'onglet **Champs**
+![screenshot](images/image27.png)
+* Dans la colonne de gauche, selectionnez les champs à afficher dans la vue. *Astuce : Vous pouvez sélectionner plusieurs champs simultanément en maintenant la touche CTRL enfoncée.*
+* Cliquez ensuite sur la flèche vers la droite <img src="images/image28.png" width="28px" alt="capture"> pour ajouter les champs sélectionnés à la vue.
+* Une fois terminé, cliquez sur **Enregistrer** pour appliquer les modifications.
+* Pour visualiser les changements, fermez la vue et rouvrez-la.
+![screenshot](images/image29.png)
 
 ### Création des Onglets
 
