@@ -65,14 +65,15 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Site web       | URL                           |
 | Email          | Email                         |
 
-* Champ de type : **Texte**
+* Détails d'une fiche champ
 
 | Nom des champs | Type                          |
 |----------------|-------------------------------|
-| Type            | Texte           |
+| Aide                    | Permet d'ajouter une aide pour l'utilisateur au survole du champ.                                                                        |
+| Type            | Plusieurs types de champs sont mis à disposition.         |
 | Nom champ       | Nom du champ en base de données.           |
-| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
-| Intitulé   | Nom du champ sur le formulaire           |
+| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. Dans le cas où le champ créé est de type connexion, il faut renseigner le nom de la table à connecter. |
+| Intitulé   | C'est le nom du champ dans l'application.   |
 | Largeur intitulé   | C'est l'espacement entre le titre du champ et le champ, il existe des valeurs prédéfinies allant de 1 à 12.           |
 | Alignement intitulé   | Permet de régler le positionnement de l'intitulé.          |
 | Masquer                 | Option permettant de masquer le champ.                                                                                                   |
@@ -81,46 +82,58 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Audit Trail             | Permet d'obtenir un historique sur les modifications apportées à ce champ.                                                                |
 | index                   | Permet d'indexer le champ en base de données.                                                                                             |
 | Données personnelles    | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
-| Données sensibles       | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
+| Données sensibles       | Permet de catégoriser ce champ au niveau RGPD.      
+
+
+* Exemple de création d'un champ de type : **Texte**
+
+| Nom des champs | Type                          |
+|----------------|-------------------------------|
+| Type            | Texte           |
+| Nom champ       | Nom |
+| Alias/Nom table connectée   | Nom |
+| Intitulé   | Nom |
+| Largeur intitulé   | 3 |
+| Obligatoire        | [x] |
 
 ![screenshot](images/image8.png)
 
-* Champ de type : **Connexion**
+* Exemple de création d'un champ de type : **Connexion**
 
 | Nom des champs | Type                          |
 |----------------|-------------------------------|
 | Type            | Connexion           |
-| Nom champ       | Nom du champ en base de données.           |
-| Alias/Nom table connectée   | Dans le cas où le champ créé est de type *connexion*, il faut renseigner le nom de la table à connecter.|
-| Intitulé   | Nom du champ sur le formulaire           |
-| index      | Permet d'indexer le champ en base de données. |
+| Nom champ       | gestion_par |
+| Alias/Nom table connectée   | utilisateur (table de connexion) |
+| Intitulé   | Gestion par  |
+| index      | [x] |
 
 ![screenshot](images/image20.png)
 
-* Champ de type : **Liste**
+* Exemple de création d'un champ de type : **Liste**
 
 | Nom des champs | Type                          |
 |----------------|-------------------------------|
 | Type            | Liste           |
-| Nom champ       | Nom du champ en base de données.           |
-| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
-| Intitulé   | Nom du champ sur le formulaire           |
-| Valeur                  | Les valeurs correspondent aux choix de la liste. Toutes les valeurs doivent être séparées par un retour à la ligne. |
+| Nom champ       | origine    |
+| Alias/Nom table connectée   | origine |
+| Intitulé   | Origine  |
+| Valeur  | Réseau<br>Web<br>Fichier<br>Partenariat<br>Salon |
 
 ![screenshot](images/image21.png)
 
-* Champ de type : **Téléphone**
+* Exemple de création d'un champ de type : **Téléphone**
 
 | Nom des champs | Type                          |
 |----------------|-------------------------------|
 | Type            | Téléphone           |
-| Nom champ       | Nom du champ en base de données.           |
-| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
-| Intitulé   | Nom du champ sur le formulaire           |
+| Nom champ       | telephone |
+| Alias/Nom table connectée   | telephone |
+| Intitulé   | Téléphone |
 
 ![screenshot](images/image22.png)
 
-* Champ de type : **URL**
+* Exemple de création d'un champ de type : **URL**
 
 | Nom des champs | Type                          |
 |----------------|-------------------------------|
@@ -131,14 +144,14 @@ Voici un tableau avec une en-tête et 13 lignes :
 
 ![screenshot](images/image23.png)
 
-* Champ de type : **Email**
+* Exemple de création d'un champ de type : **Email**
 
 | Nom des champs | Type                          |
 |----------------|-------------------------------|
 | Type            | Email           |
-| Nom champ       | Nom du champ en base de données.           |
-| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
-| Intitulé   | Nom du champ sur le formulaire           |
+| Nom champ       | email  |
+| Alias/Nom table connectée   | email |
+| Intitulé   | Email |
 
 ![screenshot](images/image24.png)
 
@@ -148,6 +161,9 @@ Voici un tableau avec une en-tête et 13 lignes :
 * Vous pouvez **glisser-déposer** les champs pour modifier leur ordre sur le formulaire.
 
 ![screenshot](images/image11.png)
+
+### Agencer la vue "Par défaut"
+
 
 
 ### Création des Onglets
