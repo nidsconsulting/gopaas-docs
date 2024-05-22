@@ -92,7 +92,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Type            | Texte           |
 | Nom champ       | Nom |
 | Alias/Nom table connectée   | Nom |
-| Intitulé   | Nom |
+| Intitulé   | Raison sociale |
 | Largeur intitulé   | 3 |
 | Obligatoire        | [x] |
 
