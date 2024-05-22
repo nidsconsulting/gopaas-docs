@@ -80,7 +80,7 @@ Afin d'enregistrer le champ en base de donnée, il faut renseigner obligatoireme
 | Ordre du champ           | Ordre du champ dans la colonne.                                                                    |
 | Type                     | Plusieurs types de champs sont mis à disposition.                                                    |
 | Nom du champ             | C'est le nom du champ en base de données.                                                           |
-| Alias/Nom table connectée| L'alias du champ doit être unique dans toute l'application. Dans le cas où le champ créé est de type *connexion*, il faut renseigner le nom de la table à connecter.|
+| Alias/Nom table connectée| L'alias du champ doit être unique dans toute la table. Dans le cas où le champ créé est de type *connexion*, il faut renseigner le nom de la table à connecter.|
 | Intitulé                 | C'est le nom du champ dans l'application.                                                           |
 
 > Les valeurs de nom du champ ne doivent pas contenir de majuscule, d'espace ou de caractères spéciaux_

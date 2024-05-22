@@ -6,48 +6,46 @@ Pour cela, rendez-vous dans le menu personnalisation ![capture](images/image5.pn
 
 ![screenshot](images/image1.jpeg)
 
-Afin d'enregistrer la table en base de données, il est nécessaire de renseigner deux champs obligatoires :
+Pour créer la table en base de données, nous allons renseigner 3 champs :
 
 | Champ    | Valeur                               |
 |----------|--------------------------------------|
 | Intitulé | Le nom de la table en base de données |
 | Alias    | Le nom de la table dans l'application |
+| Module    | Pour visualiser dans le menu **Application** |
 
-> Nous allons aussi renseigner le champ **Module** pour l'afficher dans le menu **Application**. Assurez-vous que votre groupe a bien accès à ce module en vérifiant dans la **barre de navigation** > <img src="images/image2.png" height="30px" alt="Admin"/> > **Groupes**.
+* Assurez-vous que votre **groupe** a bien accès à ce **module** en vérifiant dans la **barre de navigation** > <img src="images/image2.png" height="30px" alt="Admin"/> > **Groupes**.
 
-Dans mon cas, je fais partie du groupe **ADMIN**, j'ouvre donc la fiche du groupe **ADMIN** pour ajouter le module CRM.
+* Je fais partie du groupe **ADMIN**, j'ouvre donc la fiche du groupe **ADMIN** pour ajouter le module CRM.
 
 ![screenshot](images/image3.png)
 
-Vous pouvez maintenant enregistrer votre table **Compte**.
+* Vous pouvez maintenant enregistrer votre table **Compte**.
 
-> Pour avoir accès à la nouvelle table, il est nécessaire de vous déconnecter de GoPaaS et de vous reconnecter.
+* Pour avoir accès à la nouvelle table, il est nécessaire de vous déconnecter de GoPaaS et de vous reconnecter.
 
 ![screenshot](images/image4.png)
 
 ## FormDesigner
 
-Nous allons maintenant créer les champs de la table **Compte** et procéder à l'agencement.
+* Créer des champs de la table **Compte** et procéder à l'agencement.
 
-Pour cela, accédez au FormDesigner. Rendez-vous dans le menu personnalisation ![capture](images/image5.png) -> Tables -> et recherchez la table **Compte**, puis ouvrez-la.
+* Accédez au FormDesigner. Rendez-vous dans le menu personnalisation ![capture](images/image5.png) -> Tables -> et recherchez la table **Compte**, puis ouvrez-la.
 
 ![screenshot](images/image6.png)
 
-Ensuite, cliquez sur le menu Outil > FormDesigner.
+* cliquez sur le menu Outil > FormDesigner.
 
 ![screenshot](images/image7.png)
 
-Cliquez sur le bouton + sur la section **Default** pour ajouter un champ.
+* Cliquez sur le bouton + sur la section **Default** pour ajouter un champ.
 
 ![screenshot](images/image9.png)
 
-
 ###  Création des champs
-Pour créer un nouveau champ, remplissez les informations nécessaires et cliquez sur l'icône d'ajout ![screenshot](images/image12.png) pour ouvrir une nouvelle fiche de création de champ (Exemple `Création du champ Nom` ).
+* Cliquez sur l'icône d'ajout ![screenshot](images/image12.png) pour ouvrir une nouvelle fiche de création de champ.
 
-![screenshot](images/image8.png)
-
-####  Exemple de liste des champs à créer
+####  Liste des champs à créer
 
 Voici un tableau avec une en-tête et 13 lignes :
 
@@ -67,8 +65,87 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Site web       | URL                           |
 | Email          | Email                         |
 
+* Champ de type : **Texte**
+
+| Nom des champs | Type                          |
+|----------------|-------------------------------|
+| Type            | Texte           |
+| Nom champ       | Nom du champ en base de données.           |
+| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
+| Intitulé   | Nom du champ sur le formulaire           |
+| Largeur intitulé   | C'est l'espacement entre le titre du champ et le champ, il existe des valeurs prédéfinies allant de 1 à 12.           |
+| Alignement intitulé   | Permet de régler le positionnement de l'intitulé.          |
+| Masquer                 | Option permettant de masquer le champ.                                                                                                   |
+| Obligatoire             | Option permettant de rendre obligatoire le champ.                                                                                        |
+| Lecture seule           | Option permettant de rendre le champ insaisissable.                                                                                      |
+| Audit Trail             | Permet d'obtenir un historique sur les modifications apportées à ce champ.                                                                |
+| index                   | Permet d'indexer le champ en base de données.                                                                                             |
+| Données personnelles    | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
+| Données sensibles       | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
+
+![screenshot](images/image8.png)
+
+* Champ de type : **Connexion**
+
+| Nom des champs | Type                          |
+|----------------|-------------------------------|
+| Type            | Connexion           |
+| Nom champ       | Nom du champ en base de données.           |
+| Alias/Nom table connectée   | Dans le cas où le champ créé est de type *connexion*, il faut renseigner le nom de la table à connecter.|
+| Intitulé   | Nom du champ sur le formulaire           |
+| index      | Permet d'indexer le champ en base de données. |
+
+![screenshot](images/image20.png)
+
+* Champ de type : **Liste**
+
+| Nom des champs | Type                          |
+|----------------|-------------------------------|
+| Type            | Liste           |
+| Nom champ       | Nom du champ en base de données.           |
+| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
+| Intitulé   | Nom du champ sur le formulaire           |
+| Valeur                  | Les valeurs correspondent aux choix de la liste. Toutes les valeurs doivent être séparées par un retour à la ligne. |
+
+![screenshot](images/image21.png)
+
+* Champ de type : **Téléphone**
+
+| Nom des champs | Type                          |
+|----------------|-------------------------------|
+| Type            | Téléphone           |
+| Nom champ       | Nom du champ en base de données.           |
+| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
+| Intitulé   | Nom du champ sur le formulaire           |
+
+![screenshot](images/image22.png)
+
+* Champ de type : **URL**
+
+| Nom des champs | Type                          |
+|----------------|-------------------------------|
+| Type            | URL           |
+| Nom champ       | Nom du champ en base de données.           |
+| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
+| Intitulé   | Nom du champ sur le formulaire           |
+
+![screenshot](images/image23.png)
+
+* Champ de type : **Email**
+
+| Nom des champs | Type                          |
+|----------------|-------------------------------|
+| Type            | Email           |
+| Nom champ       | Nom du champ en base de données.           |
+| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
+| Intitulé   | Nom du champ sur le formulaire           |
+
+![screenshot](images/image24.png)
+
 #### Actualisation du FormDesigner
-Lorsque vous avez terminé la création des champs, cliquez sur le bouton ![capture](images/image10.png) pour actualiser le `FormDesigner` et voir les modifications appliquées.
+* Lorsque vous avez terminé la création des champs, cliquez sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
+
+* Vous pouvez **glisser-déposer** les champs pour modifier leur ordre sur le formulaire.
 
 ![screenshot](images/image11.png)
 
@@ -85,22 +162,22 @@ Lorsque vous avez terminé la création des champs, cliquez sur le bouton ![capt
 | Système `Par défault`  | 10                                            |
 
 #### Ajouter un Onglet
-Cliquez sur le bouton `+ Onglet` situé dans la barre supérieure du FormDesigner ![screenshot](images/image13.png).
+Cliquez sur le bouton `+ Onglet` situé dans la barre supérieure du FormDesigner ![screenshot](images/image13.PNG).
 
 Une fenêtre de configuration apparaîtra. Entrez le nom de votre nouvel onglet. Par exemple, vous pouvez nommer cet onglet `Actions`.
 
-![screenshot](images/image14.png)
+![screenshot](images/image14.PNG)
 
 #### Actualisez le FormDesigner
 Lorsque vous avez terminé la création des onglets, cliquez sur le bouton ![capture](images/image10.png) pour actualiser le `FormDesigner` et voir les modifications appliquées.
 
-![screenshot](images/image15.png)
+![screenshot](images/image15.PNG)
 
 ### Création des champs de type Vue
 
 Pour créer une vue liée dans une fiche, rendez vous sur dans votre onglet `Actions` et  suivez les étapes ci-dessous. Ces instructions vous guideront pour insérer une vue de la table souhaitée dans le FormDesigner de votre fiche compte et créer une nouvelle vue (Vous devez créer une nouvelle table nommé **actions**).
 
-![screenshot](images/image16.png)
+![screenshot](images/image16.PNG)
 
 #### Étape 1 : Créer une Nouvelle Vue
 
