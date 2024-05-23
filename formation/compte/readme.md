@@ -67,27 +67,27 @@ Voici un tableau avec une en-tête et 13 lignes :
 
 * Détails d'une fiche champ
 
-| Nom des champs | Type                          |
-|----------------|-------------------------------|
-| Aide                    | Permet d'ajouter une aide pour l'utilisateur au survole du champ.                                                                        |
-| Type            | Plusieurs types de champs sont mis à disposition.         |
-| Nom champ       | Nom du champ en base de données.           |
-| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. Dans le cas où le champ créé est de type connexion, il faut renseigner le nom de la table à connecter. |
-| Intitulé   | C'est le nom du champ dans l'application.   |
-| Largeur intitulé   | C'est l'espacement entre le titre du champ et le champ, il existe des valeurs prédéfinies allant de 1 à 12.           |
-| Alignement intitulé   | Permet de régler le positionnement de l'intitulé.          |
-| Masquer                 | Option permettant de masquer le champ.                                                                                                   |
-| Obligatoire             | Option permettant de rendre obligatoire le champ.                                                                                        |
-| Lecture seule           | Option permettant de rendre le champ insaisissable.                                                                                      |
-| Audit Trail             | Permet d'obtenir un historique sur les modifications apportées à ce champ.                                                                |
-| index                   | Permet d'indexer le champ en base de données.                                                                                             |
-| Données personnelles    | Permet de catégoriser ce champ au niveau RGPD.                                                                                            |
-| Données sensibles       | Permet de catégoriser ce champ au niveau RGPD.      
+| Nom des champs          | Valeur                                                                                                                                         |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aide                    | Permet d'ajouter une aide pour l'utilisateur au survol du champ.                                                                                |
+| Type                    | Plusieurs types de champs sont mis à disposition.                                                                                              |
+| Nom champ               | Nom du champ en base de données.                                                                                                               |
+| Alias/Nom table connectée | L'alias du champ doit être unique dans toute la table. Dans le cas où le champ créé est de type connexion, il faut renseigner le nom de la table à connecter. |
+| Intitulé                | C'est le nom du champ dans l'application.                                                                                                      |
+| Largeur intitulé        | C'est l'espacement entre le titre du champ et le champ, il existe des valeurs prédéfinies allant de 1 à 12.                                     |
+| Alignement intitulé     | Permet de régler le positionnement de l'intitulé.                                                                                              |
+| Masquer                 | Option permettant de masquer le champ.                                                                                                         |
+| Obligatoire             | Option permettant de rendre obligatoire le champ.                                                                                              |
+| Lecture seule           | Option permettant de rendre le champ insaisissable.                                                                                            |
+| Audit Trail             | Permet d'obtenir un historique sur les modifications apportées à ce champ.                                                                     |
+| Index                   | Permet d'indexer le champ en base de données.                                                                                                  |
+| Données personnelles    | Permet de catégoriser ce champ au niveau RGPD.                                                                                                 |
+| Données sensibles       | Permet de catégoriser ce champ au niveau RGPD.                                                                                                 |
 
 
 * Exemple de création d'un champ de type : **Texte**
 
-| Nom des champs | Type                          |
+| Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | Texte           |
 | Nom champ       | Nom |
@@ -100,7 +100,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 
 * Exemple de création d'un champ de type : **Connexion**
 
-| Nom des champs | Type                          |
+| Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | Connexion           |
 | Nom champ       | gestion_par |
@@ -112,7 +112,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 
 * Exemple de création d'un champ de type : **Liste**
 
-| Nom des champs | Type                          |
+| Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | Liste           |
 | Nom champ       | origine    |
@@ -125,7 +125,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 
 * Exemple de création d'un champ de type : **Téléphone**
 
-| Nom des champs | Type                          |
+| Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | Téléphone           |
 | Nom champ       | telephone |
@@ -137,7 +137,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 
 * Exemple de création d'un champ de type : **URL**
 
-| Nom des champs | Type                          |
+| Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | URL           |
 | Nom champ       | Nom du champ en base de données.           |
@@ -149,7 +149,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 
 * Exemple de création d'un champ de type : **Email**
 
-| Nom des champs | Type                          |
+| Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | Email           |
 | Nom champ       | email  |
@@ -182,9 +182,9 @@ Voici un tableau avec une en-tête et 13 lignes :
 
 ### Création des Onglets
 
-#### Exemple de liste des onglets à créer
+#### Liste des onglets à créer sur la table Compte
 
-| Nom des onglets        | Ordre `Correspond à l'emplacement de l'onglet`|
+| Nom des onglets        | Valeur |
 |------------------------|-----------------------------------------------|
 | Principal `Par défault`| 1                                             |
 | Actions                | 2                                             |
@@ -194,7 +194,13 @@ Voici un tableau avec une en-tête et 13 lignes :
 #### Ajouter un Onglet
 Cliquez sur le bouton `+ Onglet` situé dans la barre supérieure du FormDesigner ![screenshot](images/image13.PNG).
 
-Une fenêtre de configuration apparaîtra. Entrez le nom de votre nouvel onglet. Par exemple, vous pouvez nommer cet onglet `Actions`.
+Entrez l'intitulé, Label et Ordre de votre nouvel onglet.
+
+| Nom des champs        | Détail |
+|------------------------|-----------------------------------------------|
+| Intitulé | le nom doit être unique sur la table         |
+| Label    | Valeur qui s'affichera sur le formulaire     |
+| Ordre    | Ordre d'affichage de l'onglet                |
 
 ![screenshot](images/image14.PNG)
 
@@ -205,50 +211,68 @@ Lorsque vous avez terminé la création des onglets, cliquez sur le bouton ![cap
 
 ### Création des champs de type Vue
 
-Pour créer une vue liée dans une fiche, rendez vous sur dans votre onglet `Actions` et  suivez les étapes ci-dessous. Ces instructions vous guideront pour insérer une vue de la table souhaitée dans le FormDesigner de votre fiche compte et créer une nouvelle vue (Vous devez créer une nouvelle table nommé **actions**).
+Pour créer une vue liée dans une fiche, rendez vous sur dans votre onglet `Actions` et  suivez les étapes ci-dessous. Ces instructions vous guideront pour insérer une vue de la table souhaitée dans le FormDesigner de votre fiche compte et créer une nouvelle vue.
+> La table nommé `Action` doit avoit été créé au préalable.
 
 ![screenshot](images/image16.PNG)
 
 #### Étape 1 : Créer une Nouvelle Vue
 
-1. Accédez à la section des vues de votre application.
-   > Sur votre vue par défaut de la table **action** cliquez sur le menu des vues  ![screenshot](images/image17.jpg).
-2. Créez une nouvelle vue pour la table **Actions**. Nommons cette vue `LinkCompteActions`.
-   > ![screenshot](images/image18.jpg)
-3. Configurez la vue selon vos besoins (colonnes, filtres, etc.).
-   > Voici les colonnes (Les colonnes sont des champs disponibles sur la table) que de notre vue `LinkCompteActions` aura besoin. 
+* Se rendre sur la vue par défaut de la table `Action`
+* Cliquez sur le menu des vues ![screenshot](images/image17.jpg). 
+* Créez une nouvelle vue pour la table `Action`. Nommons cette vue `LinkCompteActions`.
 
-   > ![screenshot](images/image19.jpg)
+![screenshot](images/image18.jpg)
    
-   > Pour le filtre de votre vue, 
+* Ajouter les colonnes dans la vue selon vos besoins.
+   
+![screenshot](images/image19.png)
+   
+* Condition **(-TrigItemName-)** pour la connexion avec le `Compte`.
+> Le **(-TrigItemName-)** est renvoi la clé de la fiche `Action`.
 
-4. Sauvegardez la vue.
+![screenshot](images/image30.png)
 
-#### Étape 2 : Choisir une Vue
+* Sauvegardez la vue.
 
-1. Accédez à votre FormDesigner pour la fiche `Compte`.
-2. Cliquez sur le bouton **+** pour ajouter un nouveau champ.
+#### Étape 2 : Ajouter le champ de type `Vue` sur la table `Compte`
+
+* Accédez à votre FormDesigner de la table `Compte` et se rendre dans l'onglet `Actions`.
+* Cliquez sur le bouton `+` pour ajouter un nouveau champ.
+
+![screenshot](images/image31.png)
 
 #### Étape 3 : Configurer le Champ
 
-1. Dans le formulaire d'ajout de champ, choisissez le type **Vue**.
+| Nom des champs | Valeur                          |
+|----------------|-------------------------------|
+| Type            | Vue           |
+| Nom de la table | action (table à partir de laquelle vous souhaitez insérer la vue) |
+| Nom champ   | nom de la vue que vous avez créée `LinkCompteActions` |
 
-2. Sélectionnez la table à partir de laquelle vous souhaitez insérer la vue. Utilisez le champ de recherche pour trouver et sélectionner la table appropriée.
+![screenshot](images/image32.png)
 
-3. Entrez le nom de la vue que vous avez créée. Suivez la convention de nommage `LinkCompteActions`.
+#### Étape 4 : Agencer dans le `FormDesigner`
 
+* Il n'y a qu'un seul champ de type `Vue` dans notre onglet, nous allons donc changer le paramètre de cette section.
 
-#### Étape 4 : Insérer la Vue dans le FormDesigner
+![screenshot](images/image33.png)
 
-1. Revenez au FormDesigner de la fiche "Compte".
-2. Dans le champ de configuration du type **Vue**, entrez le nom de la vue `LinkCompteActions`.
+* Modifiez la `Section : Default` avec le bouton <img src="images/image26.png" width="28px" alt="capture">.
 
-   ![Création d'une Vue](file-eXM9qTAEN9dtB4UDTSorxaXY)
+* Passer le `Nb Colonne` sur 1.
+> Vous pouvez si vous le souhaitez changer les autres valeurs.
 
-3. Remplissez les autres champs nécessaires, tels que la section, la colonne, et l'ordre du champ.
-4. Configurez les options avancées comme **Masquer**, **Obligatoire**, **Lecture seule**, **Audit Trail**, etc., selon vos besoins.
+| Nom des champs | Valeur                          |
+|----------------|-------------------------------|
+| Intitulé            | Nom de la section |
+| Masquer titre | Si vous souhaitez afficher l'intitulé de la section, il faut décocher ce champ |
+| Ordre  | Ordre de la section dans l'onglet |
 
-#### Étape 5 : Sauvegarder et Actualiser
+![screenshot](images/image34.png)
 
-1. Une fois que vous avez configuré le champ, cliquez sur **Enregistrer** pour sauvegarder les modifications.
-2. Cliquez sur **Actualiser** pour appliquer les modifications et voir la vue liée dans votre fiche "Compte".
+#### Étape 5 : Actualiser le `FormDesigner`
+
+* Une fois que vous avez terminé, cliquez sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
+
+![screenshot](images/image35.png)
