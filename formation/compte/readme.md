@@ -34,16 +34,15 @@ Pour créer la table en base de données, nous allons renseigner 3 champs :
 
 ![screenshot](images/image6.png)
 
-* cliquez sur le menu Outil > FormDesigner.
+* Cliquez sur le menu Outil > FormDesigner.
 
 ![screenshot](images/image7.png)
 
-* Cliquez sur le bouton + sur la section **Default** pour ajouter un champ.
+* Cliquez sur le bouton ![screenshot](images/image12.png) de la **Section : Default** pour ajouter un champ.
 
 ![screenshot](images/image9.png)
 
 ###  Création des champs
-* Cliquez sur l'icône d'ajout ![screenshot](images/image12.png) pour ouvrir une nouvelle fiche de création de champ.
 
 ####  Liste des champs à créer
 
@@ -78,7 +77,7 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Alignement intitulé     | Permet de régler le positionnement de l'intitulé.                                                                                              |
 | Masquer                 | Option permettant de masquer le champ.                                                                                                         |
 | Obligatoire             | Option permettant de rendre obligatoire le champ.                                                                                              |
-| Lecture seule           | Option permettant de rendre le champ insaisissable.                                                                                            |
+| Lecture seule           | Option permettant de rendre le champ non éditable.         |
 | Audit Trail             | Permet d'obtenir un historique sur les modifications apportées à ce champ.                                                                     |
 | Index                   | Permet d'indexer le champ en base de données.                                                                                                  |
 | Données personnelles    | Permet de catégoriser ce champ au niveau RGPD.                                                                                                 |
@@ -140,9 +139,9 @@ Voici un tableau avec une en-tête et 13 lignes :
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | URL           |
-| Nom champ       | Nom du champ en base de données.           |
-| Alias/Nom table connectée   | L'alias du champ doit être unique dans toute la table. |
-| Intitulé   | Nom du champ sur le formulaire           |
+| Nom champ       | site_web |
+| Alias/Nom table connectée   | site_web |
+| Intitulé   | Site web |
 | Largeur intitulé   | 3 |
 
 ![screenshot](images/image23.png)
@@ -171,10 +170,11 @@ Voici un tableau avec une en-tête et 13 lignes :
 * Accédez au menu **Application** > **CRM** > **Compte**.
 ![screenshot](images/image25.png)
 
-* Cliquez sur modifier la vue <img src="images/image26.png" width="28px" alt="capture"> pour personnaliser l'affichage.
+* Cliquez sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour personnaliser la vue.
 * Rendez-vous dans l'onglet **Champs**
 ![screenshot](images/image27.png)
-* Dans la colonne de gauche, selectionnez les champs à afficher dans la vue. *Astuce : Vous pouvez sélectionner plusieurs champs simultanément en maintenant la touche CTRL enfoncée.*
+* Dans la colonne de gauche, selectionnez les champs à afficher dans la vue.
+    > *Astuce : Vous pouvez sélectionner plusieurs champs simultanément en maintenant la touche CTRL enfoncée.*
 * Cliquez ensuite sur la flèche vers la droite <img src="images/image28.png" width="28px" alt="capture"> pour ajouter les champs sélectionnés à la vue.
 * Une fois terminé, cliquez sur **Enregistrer** pour appliquer les modifications.
 * Pour visualiser les changements, fermez la vue et rouvrez-la.
@@ -211,8 +211,8 @@ Lorsque vous avez terminé la création des onglets, cliquez sur le bouton ![cap
 
 ### Création des champs de type Vue
 
-Pour créer une vue liée dans une fiche, rendez vous sur dans votre onglet `Actions` et  suivez les étapes ci-dessous. Ces instructions vous guideront pour insérer une vue de la table souhaitée dans le FormDesigner de votre fiche compte et créer une nouvelle vue.
-> La table nommé `Action` doit avoit été créé au préalable.
+Pour créer une vue liée dans une fiche, rendez vous dans votre onglet `Actions` et suivez les étapes ci-dessous. Ces instructions vous guideront pour insérer une vue de la table souhaitée dans le FormDesigner de votre fiche compte et créer une nouvelle vue.
+> La table nommée `Action` doit avoir été créée au préalable.
 
 ![screenshot](images/image16.PNG)
 
@@ -229,7 +229,7 @@ Pour créer une vue liée dans une fiche, rendez vous sur dans votre onglet `Act
 ![screenshot](images/image19.png)
    
 * Condition **(-TrigItemName-)** pour la connexion avec le `Compte`.
-> Le **(-TrigItemName-)** est renvoi la clé de la fiche `Action`.
+    > Le **(-TrigItemName-)** renvoie la clé de la fiche `Action`.
 
 ![screenshot](images/image30.png)
 
