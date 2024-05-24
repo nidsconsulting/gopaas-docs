@@ -324,3 +324,61 @@ Rendez vous dans votre onglet `Contacts` et suivez les étapes ci-dessous.
 * Une fois que vous avez terminé, cliquez sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
 
 ![screenshot](images/image45.png)
+
+### Création d'un champ de type Vue pour la table `Affaire`
+
+Rendez vous dans votre onglet `Affaires` et suivez les étapes ci-dessous.
+> La table nommée `Affaire` doit avoir été créée au préalable.
+
+![screenshot](images/image46.png)
+
+#### Créer une Nouvelle Vue liée  `Affaire`
+
+* Se rendre sur la vue par défaut de la table `Affaire`
+* Cliquez sur le menu des vues ![screenshot](images/image17.jpg). 
+* Créez une nouvelle vue pour la table `Affaire`. Nommons cette vue `LinkCompteAffaires`.
+
+![screenshot](images/image47.png)
+   
+* Ajouter les colonnes dans la vue selon vos besoins.
+   
+![screenshot](images/image48.png)
+   
+* Condition **(-TrigItemName-)** pour la connexion avec le `Compte`.
+    > Le **(-TrigItemName-)** renvoie la clé de la fiche `Affaire`.
+
+![screenshot](images/image49.png)
+
+* Sauvegardez la vue.
+
+#### Ajouter le champ de type `Vue` sur la table `Compte`
+
+* Accédez à votre FormDesigner de la table `Compte` et se rendre dans l'onglet `Affaires`.
+
+* Modifiez la `Section : Default` avec le bouton <img src="images/image26.png" width="28px" alt="capture">
+
+![screenshot](images/image50.png)
+
+* Mettre NB colonne a `1` et enregistrer la section.
+
+![screenshot](images/image51.png)
+
+* Cliquez sur le bouton `+` pour ajouter un nouveau champ.
+
+![screenshot](images/image53.png)
+
+#### Configurer le Champ
+
+| Nom des champs | Valeur                          |
+|----------------|-------------------------------|
+| Type            | Vue           |
+| Nom de la table | affaire (table à partir de laquelle vous souhaitez insérer la vue) |
+| Nom champ   | nom de la vue que vous avez créée `LinkCompteAffaires` |
+
+![screenshot](images/image52.png)
+
+#### Actualiser le `FormDesigner`
+
+* Une fois que vous avez terminé, cliquez sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
+
+![screenshot](images/image54.png)
