@@ -256,7 +256,7 @@ Cliquer sur votre onglet `Actions` dans votre FormDesigner.
     * Double-cliquer sur votre champ pour ouvrir la fiche de condition.
 
 
-# ---------------------------------A CONTINUER ICI -------------------------------------------------------
+# ---------------------------------A CONTINUER A APRTIR D'ICI -------------------------
     ![screenshot](images/image30.png)
 
 * Sauvegardez la vue.
