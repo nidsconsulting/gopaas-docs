@@ -51,16 +51,20 @@ A la connexion toutes la configuration de l'application est télécharger en loc
 > Si une modification de structure a lieu dans l'application principale, il faudra se déconnecter pour télécharger la nouvelle version de l'application
 
 ### Environnement
-* Un Dashboard Accueil s'affiche à la connexion
+* Dashboard
+  * Tous les Dashboards "Affichage au démarrage"
+
 * Les vues
    * Moteur de recherche "Plain text"
    * Colonnes standard sous forme d'étiquette
 
 * Les fiches
    * Tous les types de champs sont disponibles
-   
+> Renseigner les types et mettre leur caratéristique spécifique au Mobile
+> Ordre des onglets à vérifier
+
 * Barre de menu
-   * Bouton **Enregistrer** et bouton **Annuler**
+   * Bouton **Enregistrer** et bouton **Retour**
 
 ### ScriptJS
 * Comment faire avec les scriptJS existant ?
