@@ -53,6 +53,7 @@ A la connexion toutes la configuration de l'application est télécharger en loc
 ### Environnement
 * Dashboard
   * Tous les Dashboards "Affichage au démarrage"
+  * Ordre affichage
 
 * Les vues
    * Moteur de recherche "Plain text"
@@ -62,6 +63,7 @@ A la connexion toutes la configuration de l'application est télécharger en loc
    * Tous les types de champs sont disponibles
 > Renseigner les types et mettre leur caratéristique spécifique au Mobile
 > Ordre des onglets à vérifier
+> Masquer titre section si "Ne pas afficher" 
 
 * Barre de menu
    * Bouton **Enregistrer** et bouton **Retour**
