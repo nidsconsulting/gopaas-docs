@@ -2,43 +2,48 @@
 
 ## Création de la table compte
 
-Pour cela, rendez-vous dans le menu personnalisation ![capture](images/image5.png) -> Tables -> cliquez sur Ajouter.
+Dans le menu personnalisation ![capture](images/image5.png):
+- Cliquer sur le menu `Tables` pour afficher la vue avec la liste de toutes les tables.
+- Cliquer ensuite sur le bouton `Ajouter`.
 
 ![screenshot](images/image1.jpeg)
 
-Pour créer la table en base de données, nous allons renseigner 3 champs :
+Renseigner les champs suivant:
 
 | Champ    | Valeur                               |
 |----------|--------------------------------------|
 | Intitulé | Le nom de la table en base de données |
 | Alias    | Le nom de la table dans l'application |
-| Module    | Pour visualiser dans le menu **Application** |
+| Type    | Ex: **Application** |
+| Module    | Ex: **CRM** |
 
 * Assurez-vous que votre **groupe** a bien accès à ce **module** en vérifiant dans la **barre de navigation** > <img src="images/image2.png" height="30px" alt="Admin"/> > **Groupes**.
 
-* Je fais partie du groupe **ADMIN**, j'ouvre donc la fiche du groupe **ADMIN** pour ajouter le module CRM.
+* Si vous faites partie du groupe **ADMIN**, ouvrez la fiche du groupe **ADMIN** pour ajouter par exemple le module **CRM**.
 
 ![screenshot](images/image3.png)
 
-* Vous pouvez maintenant enregistrer votre table **Compte**.
+* Enregistrer la table **Compte**.
 
-* Pour avoir accès à la nouvelle table, il est nécessaire de vous déconnecter de GoPaaS et de vous reconnecter.
+* Pour ouvrir la nouvelle table, il est nécessaire de vous déconnecter de GoPaaS et de vous reconnecter.
 
 ![screenshot](images/image4.png)
 
 ## FormDesigner
 
-* Créer des champs de la table **Compte** et procéder à l'agencement.
+Le FormDesigner permet de créer des champs.
 
-* Accédez au FormDesigner. Rendez-vous dans le menu personnalisation ![capture](images/image5.png) -> Tables -> et recherchez la table **Compte**, puis ouvrez-la.
+Dans le menu personnalisation ![capture](images/image5.png):
+- Cliquer sur le menu `Tables` pour afficher la vue avec la liste de toutes les tables.
+- Rechercher la table **Compte** et double cliquer sur la fiche pour l'ouvrir.
 
 ![screenshot](images/image6.png)
 
-* Cliquez sur le menu Outil > FormDesigner.
+* Cliquer sur le menu `Outil` de la fiche puis `FormDesigner`.
 
 ![screenshot](images/image7.png)
 
-* Cliquez sur le bouton ![screenshot](images/image12.png) de la **Section : Default** pour ajouter un champ.
+* Cliquer sur le bouton ![screenshot](images/image12.png) de la **Section : Default** pour ajouter un champ.
 
 ![screenshot](images/image9.png)
 
