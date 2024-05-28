@@ -94,7 +94,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ### Exemples de création de champs
 
-#### Champ de type : **Texte**
+#### Champ de type `Texte`
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -107,7 +107,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image8.png)
 
-#### Champ de type : **Connexion**
+#### Champ de type `Connexion`
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -119,7 +119,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image20.png)
 
-#### Champ de type : **Liste**
+#### Champ de type `Liste`
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -132,7 +132,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image21.png)
 
-#### Champ de type : **Téléphone**
+#### Champ de type `Téléphone`
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -144,7 +144,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image22.png)
 
-#### Champ de type : **URL**
+#### Champ de type `URL`
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -156,7 +156,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image23.png)
 
-#### Champ de type : **Email**
+#### Champ de type `Email`
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -176,7 +176,7 @@ Voici un tableau avec les champs à créer et leur types :
     ![screenshot](images/image11.png)
 
 
-### Agencer la vue "Par défaut"
+### Agencer la vue `Par défaut`
 
 * Aller dans le menu **Application**
   * Ensuite, accéder au sous-menu **CRM**
@@ -200,13 +200,13 @@ Voici un tableau avec les champs à créer et leur types :
 
 #### Liste des onglets à créer sur la table Compte
 
-| Nom des onglets        | Valeur |
+| Nom des onglets        | Ordre |
 |------------------------|-----------------------------------------------|
-| Principal `Par défault`| 1                                             |
+| Principal `Par défaut`| 1                                             |
 | Actions                | 2                                             |
 | Contact                | 3                                             |
 | Affaires               | 4                                             |
-| Système `Par défault`  | 10                                            |
+| Système `Par défaut`  | 10                                            |
 
 #### Ajouter un Onglet
 
