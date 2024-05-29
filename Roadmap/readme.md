@@ -80,6 +80,279 @@ Dans cette version quelques modifications d'ergonomie:
 * La barre de navigation et la barre d'outils reste fixe durant la navigation
 *  Dans les vues les informations dans le pied page sont simplifiées pour plus de lisibilité
 
+## Eléments Ajouté ou Modifié 
+
+### Header & NavBar Left & Right
+
+- **Rendre le header fix** ✔
+
+    ```html
+        <!-- Avant -->
+        <header class="main-header">...</header>
+        <div class="content-wrapper" style="min-height: 706px;">...</div>
+
+
+
+        <!-- Après -->
+        <header class="main-header" style="position: fixed; width: 100%; top:-1px">...</header>
+        <!-- Juste après le Header on crèe une div Personnallisé -->
+        <div style="width:100%;height:50px;"></div>
+        <div class="content-wrapper" style="margin-left: 0px;">...</div>
+
+    ```
+
+- **Rendre la NavBar de Gauche** ✔
+
+    ```html
+        <!-- Avant -->
+        <aside class="main-sidebar">...</aside>
+
+        <!-- Après -->
+        <aside class="main-sidebar" style="position:fixed">...</aside>
+    ```
+
+- **Faire en sorte que au clique d'un élément dans la nav barre de gauche range tout le menu `MODE TABLETTE`** ❌
+
+    ```javaScript
+        var isList = $('.treeview-menu > li').has('ul').length > 0;
+        $('.sidebar > .sidebar-menu > .treeview > .treeview-menu > li > ul').find('a').on('click',  
+        function() {
+            $('.gopaas-toggle-left-sidebar ').click();
+        });
+        
+        $('.sidebar > .sidebar-menu > .treeview > .treeview-menu > li > a> span').on('click', function() {
+            if(!isList){
+                    $('.gopaas-toggle-left-sidebar ').click(); 
+            }
+        });
+    ```
+
+- **Rendre les Onglet de navigation sur GoPaaS fixe et la barre de recherche.** ❌
+
+
+    ```html
+        <!-- AVANT : Fixation des onglets GoPaaS -->
+        <ul class="tabs" style="height: 26.6667px;">
+
+
+        <!-- APRES : Fixation des onglets GoPaaS-->
+        <ul class="tabs" style="height: 27px;position: fixed;width: 100%;background-color: white;z-index: 1000;top: 52px;/* padding-top: 5px; */">
+
+        <!-- Ajustement et fixation de l'input de recherche  -->
+        <div class="container-fluid">
+        <!-- .container-fluid {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: fixed;
+            width: 94%;
+            background-color: white;
+            z-index: 500;
+            padding-top: 50px;
+            top: 48px;
+        } -->
+
+        <!-- Ajuster le tableau -->
+        <div class="panel datagrid" style="padding-top: 36px;">
+
+    ```
+
+    - **Correction** 👌
+
+        ```javaScript
+        // Barre de recherche
+        thisComponent.ui.find(".Viewbar_mobile > .container-fluid").css({"position" : "fixed", "width": "94%", "background-color": "white", "z-index": "500", "padding-top": "50px", "top": "48px"});
+        thisComponent.ui.find(".ViewDatagrid  > .datagrid").css({"padding-top:" : "36px"});
+
+        if(IS_TABLET){
+            // Onglet de navigation GoPaaS Mode Tablette
+            thisComponent.ui.find(".tabs-wrap > .tabs").css({"height": "27px","position": "fixed","width": "100%","background-color": "white","z-index": "1000","top": "52px", "padding-top":" 5px"});
+        }
+
+        ```
+
+
+
+### Dans la fiche GoPaaS
+
+-  **Entêtes fiche GoPaaS (Bouton save, menu outil, etc)** ✔
+
+    ```html
+        <!-- Avant -->
+        <form action="#" method="post" id="form44" class="form-horizontal">
+            <h3 style="margin-top:0px;margin-bottom:5px;color:#3c8dbc;">
+                <!--<img width="40px"src="asset/compte.png" />-->
+                <i class="fa fa-building" style="color:#3c8dbc;"></i>
+                &nbsp;<span class="trn">Account</span>
+            </h3>
+            <div class="row" style="margin-left:0px;margin-bottom:10px;text-align:center;">
+                <div class="col-xs-12 col-sm-12 col-lg-12" style="display: flex;">
+                    <!-- Liste des Boutons PAr default -->
+                </div>
+            </div>
+        </form>
+
+        
+        <!-- Après -->
+        <form action="#" method="post" id="form44" class="form-horizontal">
+        
+        <!-- Ajuster le titre de la fiche à la taille qu'il faut -->
+        <h3 style="margin-top: 0px; margin-bottom: 5px; color: rgb(60, 141, 188); font-size: 1.2rem; position: fixed; width: 100%; top: 51px; padding-top: 10px; padding-bottom: 10px; z-index: 1000; background-color: rgb(255, 255, 255);">...</h3>
+        
+        <!-- Ajustemente des bouton  -->
+        <div class="row" style="margin-left: 0px; margin-bottom: 10px; text-align: center; position: fixed; width: 100%; top: 80px; padding-bottom: 10px; z-index: 1000; background-color: rgb(255, 255, 255); border-bottom: 1px solid rgb(242, 242, 242);">
+            <div class="col-xs-12 col-sm-12 col-lg-12" style="display: flex;">
+                    <!-- Bouton Retour -->
+                    <span style="font-size: 3rem;margin-right: auto;color:#777;" onclick="gopaas.ui.closeActiveTab()"><i class="fal fa-arrow-circle-left gopaas-button-close"></i></span>
+
+                    <!-- Bouton Enregistré -->
+                    <button type="button" id="gopaas-button-save-and-close-compte" class="btn btn-primary btn-sm gopaas-button-save-and-close trn-title gopaas-theme-button" style="margin-right: 3px; height: fit-content; margin-top: auto; margin-bottom: auto;" ....>...</button>
+                </div>
+
+                <!-- Ajout de 3 <br> Après cette Div --> <br>x3
+        </div>
+        </form>
+    ```
+
+- **Ajustement du `DropDown Menu`** ✔
+
+    ```html
+        <!-- AVANT -->
+        <ul id="btn_action_menu" class="dropdown-menu" role="menu">
+
+        <!-- APRES -->
+        <ul id="btn_action_menu" class="dropdown-menu dropdown-menu-right" role="menu">
+        <!--
+        .dropdown-menu-right {
+            left: auto;
+            right: 0;
+        }
+        -->
+    ```
+
+- **Modification des `onglets` les placer en Bas de la page** ✔
+
+    ```html
+        <!-- AVANT -->
+        <ul class="replace nav nav-tabs" role="tablist" id="myTab_form42">
+            <li id="tab11" role="presentation" class="">
+                <a href="#form42_11" aria-controls="home" class="replace" role="tab" data-toggle="tab" aria-expanded="false">
+                    <span class="trn">Principal</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- APRES -->
+        <ul class="nav nav-tabs" role="tablist" id="myTab_form45" style="position: fixed; width: 100%; bottom: 0px; left: 0px; display: flex; z-index: 2000; overflow: scroll hidden; background-color: rgb(44, 59, 65); justify-content: center;">
+            <li id="tab11" role="presentation" class="active">
+                <a href="#form45_11" aria-controls="home" class="" role="tab" data-toggle="tab" style="border: none; padding: 10px 0px 15px; margin: 0px; width: 80px; background-color: rgb(44, 59, 65); text-align: center;">
+                    <p class="icon-nav" style="text-align:center;font-size:2rem;margin-bottom:0;">
+                        <i class="fal fa-home"></i>
+                    </p>
+                    <span class="trn" style="font-size: 1rem;">Principal</span> 
+                </a>
+            </li>
+        </ul>
+    ```
+
+    -  **Body de la fiche** ✔
+
+    ```html
+        <!-- AVANT -->
+        <div title="" class="panel-body panel-body-noheader panel-body-noborder" style="width: 388.667px;">
+
+
+        <!-- APRES -->
+        <div title="" class="panel-body panel-body-noheader panel-body-noborder" id="" style="width: 388.667px; padding-bottom: 50px;">
+    ```
+
+- **Afficher les colonnes des champs sur `Tablette` en col-sm-6.
+Toute les colonnes sur la tablette doivent affciher des champs en col-6 pour ne pas avoir 3-4 colonne sur une fiche.** ❌
+
+  Ce script ce décleche que sur la fiche.
+
+    ```javascript 
+            let item = $('.tab-pane > .row'); 
+        $('.tab-pane > .row').each(function() {
+            for (var i = 1; i <= 5; i++) {
+                console.log(item);
+                var oldClass = 'col-sm-' + i;
+                $(this).find('.' + oldClass).removeClass(oldClass).addClass('col-sm-6');
+            }
+        });
+    ```
+
+- **Au clique de l'icône profil de l'utilisateur, le nom de l'utilisateur ne s'affiche pas** ❌
+
+    ```html
+    <!-- AVANT -->
+    <p class="hidden-md hidden-xs">
+            admin 2 NiDS<br>Admin/ADMIN
+            <small>support@nids.fr</small>
+    </p>
+
+        <!-- APRES -->
+        <p class="">
+            admin 2 NiDS<br>Admin/ADMIN
+            <small>support@nids.fr</small>
+        </p>
+    ```
+
+- **Dans la fiche ajuster les Z-index, mettre ceux des entêtes à `1000` au lieu de `2000`.** ✔
+
+  Il existe aussi du code `JavaScript` à verfier dans la Qualif
+
+
+- **Vue liées dans une fiche**  ✔
+
+   Ici il faut juste masquer le `bouton Recherche`, c'est un script `JavaScript` qui est disponible dans Nids CRM Qualif.
+
+ - **Supprimer le text `0 fiche(s) trouvée(s)`** ❌
+
+
+## Erreur Mise à jour GoPaaS ❌
+
+- En mode `Material`et avec la nouvelle mise à jour du tableau GoPaaS, les boutons `Next`, `Back`, `Reload` et `Nb fiche` sont pas visibles.
+
+
+
+## Eléments ajoutés ✅
+
+- **Rendre le header Fixe** ✔
+    - Fichier modifié : `index.php`
+
+- **Rendre la naveBar de gauche fixe** ✔
+    - Fichier modifié : `index.php`
+
+- **Dans la fiche GoPaaS, ajuster les boutons (Enregistrer, annuler, etc) et les autres éléments de l'entête de la fiche.** ✔
+    - **Les boutons & onglets de la fiche** ✔
+        - Fichier modifié : `ItemGeneric.js`
+
+- **Sur Mobile fixer les onglets l'input de recherche**  ✔
+    - Fichié modifié : `ViewDatagrid.js`
+
+- **Afficher les infos du User dans le menu de l'utilisateur.** ✔
+    - Fichier modifié : `index.js`
+
+
+
+## Eléments non ajoutés ❌
+
+- **Sur Tablette fixer les onglets de Navigation GoPaaS & l'input de recherche**
+    - Fichié modifié : `onload.php` Pour les Onglets ✔
+    - Fichié modifié : `ViewDatagrid.js` Pour la barre de recherche ✔
+    - Fichié modifié : `IItemGeneric.js` Pour ajuster la taille de hauteur de la fiche (On ajoute un margin-top sur l'élément h3) ✔
+    
+
+- **Sur Tablette afficher les champ en 2 colonnes `col-sm-6`**
+    - Script supprimé, disponible sur la ligne `195` du ficher `readme.md`.
+    - Commentaire : En essayant d'appliquer celà l rendu est assez beau sur certaines fiches mais pas souvent sur toutes les fiches, tout dépend de la manière dont ils ont ajusté leur form designer par default. 
+
+- **Faire en sorte que au clique d'un élément dans la nav barre de gauche range tout le menu `MODE TABLETTE`** 
+
+- **Dans le corps d'une fiche, sur les input recherche des vues liées il y a l'icone de la loupe. `Mobile`**
+
 ### Paramétrage
 Pour passer à la version Mobile v2, il faut cocher la case à cocher **"Mobile v2"** dans la fiche de configuration GoPaaS
 
