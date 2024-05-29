@@ -80,12 +80,10 @@ Dans cette version quelques modifications d'ergonomie:
 * La barre de navigation et la barre d'outils reste fixe durant la navigation
 *  Dans les vues les informations dans le pied page sont simplifiées pour plus de lisibilité
 
-## Eléments Ajouté ou Modifié 
 
-### Header & NavBar Left & Right
-
+### Eléments du mode mobile
 - **Rendre le header fix** ✔
-
+    Fixation du header de l'application afin qu'il reste toujours visible en haut de la page, peu importe le défilement de la page.
     ```html
         <!-- Avant -->
         <header class="main-header">...</header>
@@ -95,14 +93,16 @@ Dans cette version quelques modifications d'ergonomie:
 
         <!-- Après -->
         <header class="main-header" style="position: fixed; width: 100%; top:-1px">...</header>
-        <!-- Juste après le Header on crèe une div Personnallisé -->
+        <!-- Juste après le Header on crèe une div Personnalisée -->
         <div style="width:100%;height:50px;"></div>
         <div class="content-wrapper" style="margin-left: 0px;">...</div>
 
     ```
+    <img src="images/Image1.gif" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
 
-- **Rendre la NavBar de Gauche** ✔
 
+- **Rendre la NavBar de Gauche Fixe** ✔
+    Fixation de la barre de navigation de gauche pour qu'elle reste fixe, quel que soit le déplacement de l'application.
     ```html
         <!-- Avant -->
         <aside class="main-sidebar">...</aside>
@@ -110,74 +110,11 @@ Dans cette version quelques modifications d'ergonomie:
         <!-- Après -->
         <aside class="main-sidebar" style="position:fixed">...</aside>
     ```
+    <img src="images/Image2.gif" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
 
-- **Faire en sorte que au clique d'un élément dans la nav barre de gauche range tout le menu `MODE TABLETTE`** ❌
-
-    ```javaScript
-        var isList = $('.treeview-menu > li').has('ul').length > 0;
-        $('.sidebar > .sidebar-menu > .treeview > .treeview-menu > li > ul').find('a').on('click',  
-        function() {
-            $('.gopaas-toggle-left-sidebar ').click();
-        });
-        
-        $('.sidebar > .sidebar-menu > .treeview > .treeview-menu > li > a> span').on('click', function() {
-            if(!isList){
-                    $('.gopaas-toggle-left-sidebar ').click(); 
-            }
-        });
-    ```
-
-- **Rendre les Onglet de navigation sur GoPaaS fixe et la barre de recherche.** ❌
-
-
-    ```html
-        <!-- AVANT : Fixation des onglets GoPaaS -->
-        <ul class="tabs" style="height: 26.6667px;">
-
-
-        <!-- APRES : Fixation des onglets GoPaaS-->
-        <ul class="tabs" style="height: 27px;position: fixed;width: 100%;background-color: white;z-index: 1000;top: 52px;/* padding-top: 5px; */">
-
-        <!-- Ajustement et fixation de l'input de recherche  -->
-        <div class="container-fluid">
-        <!-- .container-fluid {
-            margin-right: auto;
-            margin-left: auto;
-            padding-left: 15px;
-            padding-right: 15px;
-            position: fixed;
-            width: 94%;
-            background-color: white;
-            z-index: 500;
-            padding-top: 50px;
-            top: 48px;
-        } -->
-
-        <!-- Ajuster le tableau -->
-        <div class="panel datagrid" style="padding-top: 36px;">
-
-    ```
-
-    - **Correction** 👌
-
-        ```javaScript
-        // Barre de recherche
-        thisComponent.ui.find(".Viewbar_mobile > .container-fluid").css({"position" : "fixed", "width": "94%", "background-color": "white", "z-index": "500", "padding-top": "50px", "top": "48px"});
-        thisComponent.ui.find(".ViewDatagrid  > .datagrid").css({"padding-top:" : "36px"});
-
-        if(IS_TABLET){
-            // Onglet de navigation GoPaaS Mode Tablette
-            thisComponent.ui.find(".tabs-wrap > .tabs").css({"height": "27px","position": "fixed","width": "100%","background-color": "white","z-index": "1000","top": "52px", "padding-top":" 5px"});
-        }
-
-        ```
-
-
-
-### Dans la fiche GoPaaS
-
--  **Entêtes fiche GoPaaS (Bouton save, menu outil, etc)** ✔
-
+##### Dans la Fiche GoPaaS 📇
+- **Entêtes fiche GoPaaS (Bouton Save, Menu Outil, etc.)** ✔
+    Nous avons supprimé le bouton `Annuler` et `Appliquer`, apporté des modifications à la section qui gère les actions possibles sur la fiche.
     ```html
         <!-- Avant -->
         <form action="#" method="post" id="form44" class="form-horizontal">
@@ -214,24 +151,31 @@ Dans cette version quelques modifications d'ergonomie:
         </div>
         </form>
     ```
+    > **A noter** : Les modifications concernant la section qui gère les actions de la fiche sont assez nombreuses et difficiles à citer et afficher avec leurs lignes de code de style.
 
-- **Ajustement du `DropDown Menu`** ✔
+    <img src="images/Image4.jpg" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
 
+   - **Ajustement des boutons `Enregistrer`, `Outils`, etc**
+    Modification du `DropDown`du menu outil en le décalant plus à gauche.
     ```html
-        <!-- AVANT -->
-        <ul id="btn_action_menu" class="dropdown-menu" role="menu">
-
-        <!-- APRES -->
         <ul id="btn_action_menu" class="dropdown-menu dropdown-menu-right" role="menu">
-        <!--
-        .dropdown-menu-right {
-            left: auto;
-            right: 0;
-        }
-        -->
+		    <li>
+        
+            </li>
+        <ul> 
     ```
+    > Style `dropdown-menu-right`
+    ```css
+    .dropdown-menu-right {
+        left: auto;
+        right: 0;
+    }
+    ```
+    <img src="images/Image5.jpg" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
 
-- **Modification des `onglets` les placer en Bas de la page** ✔
+  
+  - **Modification des `onglets` les placer en Bas de la page** ✔
+    Suppression des onglets situés en haut de la fiche et repositionnement en bas avec un nouveau style pour une meilleure accessibilité.
 
     ```html
         <!-- AVANT -->
@@ -255,8 +199,10 @@ Dans cette version quelques modifications d'ergonomie:
             </li>
         </ul>
     ```
+    <img src="images/Image6.jpg" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
 
-    -  **Body de la fiche** ✔
+
+    -  **Ajuster tout le body de la fiche** ✔
 
     ```html
         <!-- AVANT -->
@@ -266,11 +212,116 @@ Dans cette version quelques modifications d'ergonomie:
         <!-- APRES -->
         <div title="" class="panel-body panel-body-noheader panel-body-noborder" id="" style="width: 388.667px; padding-bottom: 50px;">
     ```
+##### Sur les Vues GoPaaS 📁
+- **Ajustement de la section de recherche dans sur une vue**
 
-- **Afficher les colonnes des champs sur `Tablette` en col-sm-6.
-Toute les colonnes sur la tablette doivent affciher des champs en col-6 pour ne pas avoir 3-4 colonne sur une fiche.** ❌
+  ```html
+        <!-- Avant -->
+        <aside class="main-sidebar">...</aside>
 
-  Ce script ce décleche que sur la fiche.
+        <!-- Après -->
+        <aside class="main-sidebar" style="position:fixed">...</aside>
+    ```
+    <img src="images/Image3.jpg" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
+
+
+### Eléments corrigés 
+-  **Espace en trop entre le titre et la section de recherche sur les vues.** ❌
+<img src="images/Erreur1.gif" width ="40%" alt="Admin"/> 
+
+- **Correction** 
+  ```css
+    <!-- Avant -->
+    .element.style {
+    position: fixed;
+    width: 94%;
+    background-color: rgb(255, 255, 255);
+    z-index: 500;
+    padding-top: 20px;
+    top: 48px; <!--  Suppression -->
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+
+
+    <!-- Après -->
+    .element.style {
+    position: fixed;
+    width: 94%;
+    background-color: rgb(255, 255, 255);
+    z-index: 500;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+    ```
+
+- **Faire en sorte que au clique d'un élément dans la nav barre de gauche range tout le menu `MODE TABLETTE`** ❌
+
+    ```javaScript
+        var isList = $('.treeview-menu > li').has('ul').length > 0;
+        $('.sidebar > .sidebar-menu > .treeview > .treeview-menu > li > ul').find('a').on('click',  
+        function() {
+            $('.gopaas-toggle-left-sidebar ').click();
+        });
+        
+        $('.sidebar > .sidebar-menu > .treeview > .treeview-menu > li > a> span').on('click', function() {
+            if(!isList){
+                    $('.gopaas-toggle-left-sidebar ').click(); 
+            }
+        });
+    ```
+
+- **Rendre les Onglet de navigation sur GoPaaS fixe et la barre de recherche.** ❌
+
+    ```html
+        <!-- AVANT : Fixation des onglets GoPaaS -->
+        <ul class="tabs" style="height: 26.6667px;">
+
+
+        <!-- APRES : Fixation des onglets GoPaaS-->
+        <ul class="tabs" style="height: 27px;position: fixed;width: 100%;background-color: white;z-index: 1000;top: 52px;/* padding-top: 5px; */">
+
+        <!-- Ajustement et fixation de l'input de recherche  -->
+        <div class="container-fluid">
+        <!-- .container-fluid {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: fixed;
+            width: 94%;
+            background-color: white;
+            z-index: 500;
+            padding-top: 50px;
+            top: 48px;
+        } -->
+
+        <!-- Ajuster le tableau -->
+        <div class="panel datagrid" style="padding-top: 36px;">
+
+    ```
+
+- **Correction** ✔
+
+    ```javaScript
+        // Barre de recherche
+        thisComponent.ui.find(".Viewbar_mobile > .container-fluid").css({"position" : "fixed", "width": "94%", "background-color": "white", "z-index": "500", "padding-top": "50px", "top": "48px"});
+        thisComponent.ui.find(".ViewDatagrid  > .datagrid").css({"padding-top:" : "36px"});
+
+        if(IS_TABLET){
+            // Onglet de navigation GoPaaS Mode Tablette
+            thisComponent.ui.find(".tabs-wrap > .tabs").css({"height": "27px","position": "fixed","width": "100%","background-color": "white","z-index": "1000","top": "52px", "padding-top":" 5px"});
+        }
+
+    ```
+
+ - **Afficher les colonnes des champs sur `Tablette` en col-sm-6.**
+    Toute les colonnes sur la tablette doivent affciher des champs en col-6 pour ne pas avoir 3-4 colonne sur une fiche.** ❌
+
+    > Ce script ce décleche que sur la fiche.
 
     ```javascript 
             let item = $('.tab-pane > .row'); 
@@ -282,7 +333,6 @@ Toute les colonnes sur la tablette doivent affciher des champs en col-6 pour ne 
             }
         });
     ```
-
 - **Au clique de l'icône profil de l'utilisateur, le nom de l'utilisateur ne s'affiche pas** ❌
 
     ```html
@@ -299,10 +349,10 @@ Toute les colonnes sur la tablette doivent affciher des champs en col-6 pour ne 
         </p>
     ```
 
+
 - **Dans la fiche ajuster les Z-index, mettre ceux des entêtes à `1000` au lieu de `2000`.** ✔
 
   Il existe aussi du code `JavaScript` à verfier dans la Qualif
-
 
 - **Vue liées dans une fiche**  ✔
 
@@ -311,13 +361,11 @@ Toute les colonnes sur la tablette doivent affciher des champs en col-6 pour ne 
  - **Supprimer le text `0 fiche(s) trouvée(s)`** ❌
 
 
-## Erreur Mise à jour GoPaaS ❌
-
-- En mode `Material`et avec la nouvelle mise à jour du tableau GoPaaS, les boutons `Next`, `Back`, `Reload` et `Nb fiche` sont pas visibles.
+> -------------------------------------------------------------------------------------------------------
 
 
-
-## Eléments ajoutés ✅
+### Eléments ajoutés en PreProd✅. 
+##### Ces modifications étaient sur la base de qualif de `Impact`, mais elle y sont plus.
 
 - **Rendre le header Fixe** ✔
     - Fichier modifié : `index.php`
@@ -336,8 +384,7 @@ Toute les colonnes sur la tablette doivent affciher des champs en col-6 pour ne 
     - Fichier modifié : `index.js`
 
 
-
-## Eléments non ajoutés ❌
+#### Eléments non ajoutés en PreProd❌
 
 - **Sur Tablette fixer les onglets de Navigation GoPaaS & l'input de recherche**
     - Fichié modifié : `onload.php` Pour les Onglets ✔
@@ -352,6 +399,8 @@ Toute les colonnes sur la tablette doivent affciher des champs en col-6 pour ne 
 - **Faire en sorte que au clique d'un élément dans la nav barre de gauche range tout le menu `MODE TABLETTE`** 
 
 - **Dans le corps d'une fiche, sur les input recherche des vues liées il y a l'icone de la loupe. `Mobile`**
+
+> ----------------------------------------------------------------------------------------------------------------------
 
 ### Paramétrage
 Pour passer à la version Mobile v2, il faut cocher la case à cocher **"Mobile v2"** dans la fiche de configuration GoPaaS
