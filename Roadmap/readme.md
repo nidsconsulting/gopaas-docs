@@ -81,8 +81,8 @@ Dans cette version quelques modifications d'ergonomie:
 *  Dans les vues les informations dans le pied page sont simplifiées pour plus de lisibilité
 
 
-### Eléments du mode mobile
-- **Rendre le header fix** ✔
+### Eléments du mode mobile (Code de recherche `3.4.0`)
+- **Rendre la barre de navigation fix** `📁index.php` ✔ 
     Fixation du header de l'application afin qu'il reste toujours visible en haut de la page, peu importe le défilement de la page.
     ```html
         <!-- Avant -->
@@ -100,23 +100,23 @@ Dans cette version quelques modifications d'ergonomie:
     ```
     <img src="images/Image1.gif" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
     
-- **Afficher groupe et profil** de l'utilisateur
-class="hidden-md hidden-xs"
-   ```html
-            <!-- Avant -->
-		    <p class="hidden-md hidden-xs">
+- **Afficher groupe et profil de l'utilisateur** `📁index.php` ✔
+  
+     ```html
+        <!-- Avant -->
+		<p class="hidden-md hidden-xs">
 		      <?php echo Script::$user["prenom"]; ?> <?php echo Script::$user["nom"]; ?><br /><?php echo Script::$user["profil"]; ?>/<?php echo Script::$user["groupe"]; ?>
-		      <small><?php echo Script::$user["email"]; ?></small>
-		    </p>
+		    <small><?php echo Script::$user["email"]; ?></small>
+		</p>
 
-          <!-- Après -->
-          <p>
+        <!-- Après -->
+        <p>
             <?php echo Script::$user["prenom"]; ?> <?php echo Script::$user["nom"]; ?><br /><?php echo Script::$user["profil"]; ?>/<?php echo Script::$user["groupe"]; ?>
             <small><?php echo Script::$user["email"]; ?></small>
-		    </p>
+		</p>
     ```          
 
-- **Rendre la NavBar de Gauche Fixe** ✔
+- **Rendre la La barre d'outils de Gauche Fixe** `📁index.php` ✔
     Fixation de la barre de navigation de gauche pour qu'elle reste fixe, quel que soit le déplacement de l'application.
     ```html
         <!-- Avant -->
@@ -127,8 +127,52 @@ class="hidden-md hidden-xs"
     ```
     <img src="images/Image2.gif" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
 
+- **Ajouter la fermeture automatique de La barre de personnalisation de droite** `📁include/onload.php` ✔
+  Au click d'un élément sur la barre de de personnalisation de droite, le menu se range automatiquement.
+
+  ```javaScript
+        // Le script est faut en JS
+  ```
+
+##### Sur les Vues GoPaaS 📁
+- **Rendre de la section de recherche fixe** `📁../ViewDatagrid.js` ❌
+    Rechercher dans le le fichier correspondant, pour mettre les classes le style en `JavaScript`.
+    Il faudrais juste prendre les `styles`des fichiers html pour les ajouter en en `JavaScript`.
+
+    ```html
+        <!-- AVANT -->
+        <div class="Viewbar_mobile gopaas-component Viewbar" style="padding-bottom:15px;">
+            <div class="container-fluid">
+            <!-- recherche simple et recherche par champ -->
+                <form class="Searchbar_mobile  gopaas-component Searchbar" action="#" method="post" style="display:flex;width: 100%">
+                
+
+                </form>
+            </div>
+        </div>
+
+        <!-- APRES -->
+        <div class="Viewbar_mobile gopaas-component Viewbar" style="padding-bottom:15px;">
+            <div class="container-fluid" style="position: fixed; width: 94%; background-color: rgb(255, 255, 255); z-index: 500; padding-top: 20px; top: 48px; padding-left: 10px; padding-right: 10px;">
+                <!-- recherche simple et recherche par champ -->
+                <form class="Searchbar_mobile gopaas-component Searchbar" action="#" method="post" style="display:flex;width: 100%">
+                    .........
+                </form>
+            </div>
+        </div>
+    ```
+
+    <img src="images/Image7.gif" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
+
+- **Supprimer les informations qui se trouve dans le footer de la vue** `📁../ViewDatagrid.js` ❌
+  - Suppression du texte : `6515 fiche(s) trouvée(s)`.
+  - Suppression des boutons : `Next` & `Back`.
+  
+   <img src="images/Image8.jpg" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
+
+   
 ##### Dans la Fiche GoPaaS 📇
-- **Entêtes fiche GoPaaS (Bouton Save, Menu Outil, etc.)** ✔
+- **Entêtes fiche GoPaaS (Bouton Save, Menu Outil, etc.)** ❌
     Nous avons supprimé le bouton `Annuler` et `Appliquer`, apporté des modifications à la section qui gère les actions possibles sur la fiche.
     ```html
         <!-- Avant -->
@@ -227,18 +271,6 @@ class="hidden-md hidden-xs"
         <!-- APRES -->
         <div title="" class="panel-body panel-body-noheader panel-body-noborder" id="" style="width: 388.667px; padding-bottom: 50px;">
     ```
-##### Sur les Vues GoPaaS 📁
-- **Ajustement de la section de recherche dans sur une vue**
-
-  ```html
-        <!-- Avant -->
-        <aside class="main-sidebar">...</aside>
-
-        <!-- Après -->
-        <aside class="main-sidebar" style="position:fixed">...</aside>
-    ```
-    <img src="images/Image3.jpg" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
-
 
 ### Eléments corrigés 
 -  **Espace en trop entre le titre et la section de recherche sur les vues.** ❌
