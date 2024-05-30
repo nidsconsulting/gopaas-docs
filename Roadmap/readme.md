@@ -99,7 +99,22 @@ Dans cette version quelques modifications d'ergonomie:
 
     ```
     <img src="images/Image1.gif" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
+    
+- **Afficher groupe et profil** de l'utilisateur
+class="hidden-md hidden-xs"
+   ```html
+            <!-- Avant -->
+		    <p class="hidden-md hidden-xs">
+		      <?php echo Script::$user["prenom"]; ?> <?php echo Script::$user["nom"]; ?><br /><?php echo Script::$user["profil"]; ?>/<?php echo Script::$user["groupe"]; ?>
+		      <small><?php echo Script::$user["email"]; ?></small>
+		    </p>
 
+          <!-- Après -->
+          <p>
+            <?php echo Script::$user["prenom"]; ?> <?php echo Script::$user["nom"]; ?><br /><?php echo Script::$user["profil"]; ?>/<?php echo Script::$user["groupe"]; ?>
+            <small><?php echo Script::$user["email"]; ?></small>
+		    </p>
+    ```          
 
 - **Rendre la NavBar de Gauche Fixe** ✔
     Fixation de la barre de navigation de gauche pour qu'elle reste fixe, quel que soit le déplacement de l'application.
