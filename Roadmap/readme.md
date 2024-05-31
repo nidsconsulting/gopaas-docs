@@ -133,6 +133,16 @@ Dans cette version quelques modifications d'ergonomie:
   ```javaScript
         // Le script est faut en JS
   ```
+-  **Ajouter la fermeture automatique de La barre de navigation de gauche** `📁include/onload.php` ❌
+    Il ne ferme pas automatiquement lorsque par exemple on clique juste dans les éléments de Admin.
+    ```javaScript
+            $('.sidebar > .sidebar-menu > .treeview > .treeview-menu > li > ul').find('a').on('click', function() {
+        if (!$('body').hasClass('sidebar-collapse')) {
+            $('.gopaas-toggle-left-sidebar').click();
+        }
+    });
+    ```
+
 
 ##### Sur les Vues GoPaaS 📁
 - **Rendre de la section de recherche fixe** `📁../ViewDatagrid.js` ❌
@@ -164,7 +174,7 @@ Dans cette version quelques modifications d'ergonomie:
 
     <img src="images/Image7.gif" width="40%" alt="Hearder Top" style="border-radius: 2rem;"/> 
 
-- **Supprimer les informations qui se trouve dans le footer de la vue** `📁../ViewDatagrid.js` ❌
+- **Supprimer les informations qui se trouvent dans le footer de la vue** `📁../ViewDatagrid.js` ❌
   - Suppression du texte : `6515 fiche(s) trouvée(s)`.
   - Suppression des boutons : `Next` & `Back`.
   
@@ -278,30 +288,6 @@ Dans cette version quelques modifications d'ergonomie:
 
 - **Correction** 
   ```css
-    <!-- Avant -->
-    .element.style {
-    position: fixed;
-    width: 94%;
-    background-color: rgb(255, 255, 255);
-    z-index: 500;
-    padding-top: 20px;
-    top: 48px; <!--  Suppression -->
-    padding-left: 10px;
-    padding-right: 10px;
-    }
-
-
-
-    <!-- Après -->
-    .element.style {
-    position: fixed;
-    width: 94%;
-    background-color: rgb(255, 255, 255);
-    z-index: 500;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    }
 
     ```
 
