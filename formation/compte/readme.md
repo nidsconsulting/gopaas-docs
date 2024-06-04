@@ -15,7 +15,7 @@ Renseigner les champs suivant:
 | Intitulé | Le nom de la table en base de données |
 | Alias    | Le nom de la table dans l'application |
 | Champs à afficher dans connexion    | Le nom du champ de la table compte qui sera affiché dans les champs de connexion présents sur d'autre tables |
-| Icone    | Icone [Font Awesome](https://fontawesome.com/) qui permet de styliser la table  |
+| Icone    | Icone [Font Awesome](https://fontawesome.com/) qui permet de personnaliser la table  |
 | Type    | Ex: **Application** |
 | Module    | Ex: **CRM** |
 
@@ -49,7 +49,11 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 ###  Création des champs
 
--  Une fois dans le FormDesigner, cliquer sur le bouton <img src="images/image12.png" height="30px" alt="Ajout Champ"/> pour ajouter un nouveau champ.
+Le FormDesigner est composé de plusieurs éléments
+- Onglet > Contient des sections
+- Section > Contient des colonnes
+- Colonnes > Contient de 1 à 4 champs
+- cliquer sur le bouton <img src="images/image12.png" height="30px" alt="Ajout Champ"/> pour ajouter un nouveau champ.
 
     ![screenshot](images/image9.png)
 
