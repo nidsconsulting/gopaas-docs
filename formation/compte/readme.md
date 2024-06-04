@@ -14,7 +14,8 @@ Renseigner les champs suivant:
 |----------|--------------------------------------|
 | Intitulé | Le nom de la table en base de données |
 | Alias    | Le nom de la table dans l'application |
-| Champs à afficher dans connexion    | le nom du champ de la table compte qui sera affiché dans les champs de connexion présents sur d'autre tables |
+| Champs à afficher dans connexion    | Le nom du champ de la table compte qui sera affiché dans les champs de connexion présents sur d'autre tables |
+| Icone    | Icone [Font Awesome](https://fontawesome.com/) qui permet de styliser la table  |
 | Type    | Ex: **Application** |
 | Module    | Ex: **CRM** |
 
