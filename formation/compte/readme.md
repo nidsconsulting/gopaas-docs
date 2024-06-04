@@ -49,11 +49,11 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 ###  Création des champs
 
-Le FormDesigner est composé de plusieurs éléments
-- Onglet > Contient des sections
-- Section > Contient des colonnes
-- Colonnes > Contient de 1 à 4 champs
-- cliquer sur le bouton <img src="images/image12.png" height="30px" alt="Ajout Champ"/> pour ajouter un nouveau champ.
+Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
+
+- Les Onglets contiennent des sections
+- Les Sections contiennent 1 à 4 colonnes
+- cliquer sur l'un des boutons <img src="images/image12.png" height="30px" alt="Ajout Champ"/> pour ajouter un nouveau champ.
 
     ![screenshot](images/image9.png)
 
@@ -97,14 +97,14 @@ Voici un tableau avec les champs à créer et leur types :
 | Données sensibles       | Catégoriser le champ comme contenant des données sensibles (RGPD).                                                                                                  |
 
 
-### Exemples de création de champs
+### Création de champs
 
-#### Champ de type `Texte`
+#### Création du champ `nom` (type *Texte*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | Texte           |
-| Nom champ       | Nom |
+| Nom champ       | nom |
 | Alias/Nom table connectée   | Nom |
 | Intitulé   | Raison sociale |
 | Largeur intitulé   | 3 |
@@ -112,19 +112,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image8.png)
 
-#### Champ de type `Connexion`
-
-| Nom des champs | Valeur                          |
-|----------------|-------------------------------|
-| Type            | Connexion           |
-| Nom champ       | gestion_par |
-| Alias/Nom table connectée   | utilisateur (table de connexion) |
-| Intitulé   | Gestion par  |
-| index      | [x] |
-
-![screenshot](images/image20.png)
-
-#### Champ de type `Liste`
+#### Création du champ `origine` (type *Liste*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -137,7 +125,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image21.png)
 
-#### Champ de type `Téléphone`
+#### Création du champ `telephone` (type *Téléphone*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -149,7 +137,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image22.png)
 
-#### Champ de type `URL`
+#### Création du champ `site_web` (type *URL*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -161,7 +149,7 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image23.png)
 
-#### Champ de type `Email`
+#### Création du champ `email` (type *Email*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -172,6 +160,18 @@ Voici un tableau avec les champs à créer et leur types :
 | Largeur intitulé   | 3 |
 
 ![screenshot](images/image24.png)
+
+#### Création du champ `gestion_par` (type *Connexion*)
+
+| Nom des champs | Valeur                          |
+|----------------|-------------------------------|
+| Type            | Connexion           |
+| Nom champ       | gestion_par |
+| Alias/Nom table connectée   | utilisateur (table de connexion) |
+| Intitulé   | Gestion par  |
+| index      | [x] |
+
+![screenshot](images/image20.png)
 
 Lorsque le champ est paramétré, cliquer sur **Enregistrer**.
 
