@@ -14,7 +14,7 @@ Renseigner les champs suivant:
 |----------|--------------------------------------|
 | Intitulé | Le nom de la table en base de données |
 | Alias    | Le nom de la table dans l'application |
-| Champs à afficher dans connexion    | le nom du champ de la table qui sera visible dans le champ de connexion |
+| Champs à afficher dans connexion    | le nom du champ de la table compte qui sera affiché dans les champs de connexion présents sur d'autre tables |
 | Type    | Ex: **Application** |
 | Module    | Ex: **CRM** |
 
@@ -48,7 +48,7 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 ###  Création des champs
 
--  Une fois dans FormDesigner, cliquer sur le bouton <img src="images/image12.png" height="30px" alt="Ajout Champ"/> pour ajouter un nouveau champ.
+-  Une fois dans le FormDesigner, cliquer sur le bouton <img src="images/image12.png" height="30px" alt="Ajout Champ"/> pour ajouter un nouveau champ.
 
     ![screenshot](images/image9.png)
 
@@ -168,6 +168,8 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image24.png)
 
+Lorsque le champ est paramétré, cliquer sur **Enregistrer**.
+
 ### Actualisation du FormDesigner
 - Cliquer sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications apportées.
 
@@ -184,226 +186,14 @@ Voici un tableau avec les champs à créer et leur types :
 
     ![screenshot](images/image25.png)
 
-* Cliquer sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour aux paramettre de la vue pour pouvoir la personnaliser.
+* Cliquer sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue pour pouvoir la personnaliser.
 * Accéder à l'onglet `Champs` pour voir la liste des champs de votre table **Compte**.
 
     ![screenshot](images/image27.png)
-* Dans la colonne de gauche, vous avez la liste de champs disponibles. Sélectionner les champs que vous souhaitez afficher dans la vue.
-  > *Astuce : Vous pouvez sélectionner plusieurs champs simultanément en maintenant la touche CTRL enfoncée.*
-* Après avoir sélectionné les champs désirés, cliquer sur la flèche vers la droite <img src="images/image28.png" width="28px" alt="capture"> pour les ajouter à la vue.
-* Une fois que vous avez ajouté tous les champs nécessaires, cliquer sur le bouton **Enregistrer** pour appliquer les modifications à votre vue.
-* Pour voir les changements effectués, fermer la vue actuelle et rouvrez là.
+* Dans la colonne de gauche se trouve la liste des champs disponibles. Sélectionner les champs souhaités pour les afficher dans la vue.
+  > *Astuce : Sélectionner plusieurs champs simultanément en maintenant la touche CTRL enfoncée.*
+* Après avoir sélectionné les champs désirés, cliquer sur la flèche  <img src="images/image28.png" width="28px" alt="capture"> pour les ajouter à la vue.
+* Une fois tous les champs nécessaires ajoutés, cliquer sur le bouton **Enregistrer** pour appliquer les modifications à la vue.
+* Pour voir les changements effectués, fermer la vue actuelle et la rouvrir.
 
     ![screenshot](images/image29.png)
-
-### Création des Onglets
-
-#### Liste des onglets à créer sur la table Compte
-
-| Nom des onglets        | Ordre |
-|------------------------|-----------------------------------------------|
-| Principal `Par défaut`| 1                                             |
-| Actions                | 2                                             |
-| Contact                | 3                                             |
-| Affaires               | 4                                             |
-| Système `Par défaut`  | 10                                            |
-
-#### Ajouter un Onglet
-
-* Cliquer sur le bouton `+ Onglet` situé dans la barre supérieure du FormDesigner ![screenshot](images/image13.PNG).
-
-* Entrer l'intitulé, Label et Ordre de votre nouvel onglet.
-
-| Nom des champs        | Description                        |
-|------------------------|-----------------------------------------------|
-| Intitulé | Le nom doit être unique sur la table.        |
-| Label    | Le texte qui apparaîtra sur le formulaire.   |
-| Ordre    | La position de l'onglet dans l'affichage.       |
-
-![screenshot](images/image14.PNG)
-
-#### Actualisez le FormDesigner
-* Une fois la création des onglets terminée, cliquer sur le bouton ![capture](images/image10.png) pour actualiser le FormDesigner et visualiser les modifications.
-
-    ![screenshot](images/image15.PNG)
-
-### Création d'un champ de type Vue pour la table `Action`
-
-Cliquer sur votre onglet `Actions` dans votre FormDesigner.
->*Info : La table nommée `Action` doit avoir été créée au préalable.*
-    
-![screenshot](images/image16.PNG)
-
-#### Créer une nouvelle Vue liée  `Action`
-
-* Accéder à la vue par défaut de la table `Action`.
-* Cliquer sur le bouton ![screenshot](images/image17.jpg) pour ouvrir le menu des vues. 
-* Cliquer sur le bouton <img src="images/image55.jpg" width="125px" alt="Menu des vues"> pour ajouter une nouvelle vue. 
-* En créant cette nouvelle vue pour la table `Action`, nommer là `LinkCompteActions`.
-
-    ![screenshot](images/image18.jpg)
-   
-* Ajouter les champs pour qu'ils soient visible dans la vue.
-    - `Date`, `Heure début`, `Intitule`, `Nature`, `Type`, `Statut`
-
-    ![screenshot](images/image19.png)
-   
-* Définisser la condition **(-TrigItemName-)** pour la connexion avec la table `Compte`. 
-    * Cliquer sur l'onglet `Condition`.
-    * Sélectionner le champ `Compte`, ce champ servira de condition pour la table `Compte`.
-    * Cliquer sur le bouton <img src="images/image28.png" width="28px" alt="capture"> pour mettre votre champ de condtion sur la liste des champs de condtion le champ.
-    <img src="images/image56.jpg" width="100%" alt="capture">
-    * Double-cliquer sur votre champ pour ouvrir la fiche de condition.
-
-
-# ---------------------------------A CONTINUER A APRTIR D'ICI -------------------------
-    ![screenshot](images/image30.png)
-
-* Sauvegardez la vue.
-
-#### Ajouter le champ de type `Vue` sur la table `Compte`
-
-* Accédez à votre FormDesigner de la table `Compte` et se rendre dans l'onglet `Actions`.
-* Modifiez la `Section : Default` avec le bouton <img src="images/image26.png" width="28px" alt="capture">
-
-![screenshot](images/image31.png)
-
-* Mettre NB colonne a `1` et enregistrer la section.
-
-![screenshot](images/image34.png)
-
-* Cliquez sur le bouton `+` pour ajouter un nouveau champ.
-
-![screenshot](images/image44.png)
-
-#### Configurer le Champ
-
-| Nom des champs | Valeur                          |
-|----------------|-------------------------------|
-| Type            | Vue           |
-| Nom de la table | action (table à partir de laquelle vous souhaitez insérer la vue) |
-| Nom champ   | nom de la vue que vous avez créée `LinkCompteActions` |
-
-![screenshot](images/image32.png)
-
-#### Actualiser le `FormDesigner`
-
-* Une fois que vous avez terminé, cliquez sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
-
-![screenshot](images/image35.png)
-
-### Création d'un champ de type Vue pour la table `Contact`
-
-Rendez vous dans votre onglet `Contacts` et suivez les étapes ci-dessous.
-> La table nommée `Contact` doit avoir été créée au préalable.
-
-![screenshot](images/image36.png)
-
-#### Créer une Nouvelle Vue liée  `Contact`
-
-* Se rendre sur la vue par défaut de la table `Contact`
-* Cliquez sur le menu des vues ![screenshot](images/image17.jpg). 
-* Créez une nouvelle vue pour la table `Contact`. Nommons cette vue `LinkCompteContacts`.
-
-![screenshot](images/image37.png)
-   
-* Ajouter les colonnes dans la vue selon vos besoins.
-   
-![screenshot](images/image38.png)
-   
-* Condition **(-TrigItemName-)** pour la connexion avec le `Compte`.
-    > Le **(-TrigItemName-)** renvoie la clé de la fiche `Contact`.
-
-![screenshot](images/image39.png)
-
-* Sauvegardez la vue.
-
-#### Ajouter le champ de type `Vue` sur la table `Compte`
-
-* Accédez à votre FormDesigner de la table `Compte` et se rendre dans l'onglet `Contacts`.
-
-* Modifiez la `Section : Default` avec le bouton <img src="images/image26.png" width="28px" alt="capture">
-
-![screenshot](images/image41.png)
-
-* Mettre NB colonne a `1` et enregistrer la section.
-
-![screenshot](images/image40.png)
-
-* Cliquez sur le bouton `+` pour ajouter un nouveau champ.
-
-![screenshot](images/image42.png)
-
-#### Configurer le Champ
-
-| Nom des champs | Valeur                          |
-|----------------|-------------------------------|
-| Type            | Vue           |
-| Nom de la table | contact (table à partir de laquelle vous souhaitez insérer la vue) |
-| Nom champ   | nom de la vue que vous avez créée `LinkCompteContacts` |
-
-![screenshot](images/image43.png)
-
-#### Actualiser le `FormDesigner`
-
-* Une fois que vous avez terminé, cliquez sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
-
-![screenshot](images/image45.png)
-
-### Création d'un champ de type Vue pour la table `Affaire`
-
-Rendez vous dans votre onglet `Affaires` et suivez les étapes ci-dessous.
-> La table nommée `Affaire` doit avoir été créée au préalable.
-
-![screenshot](images/image46.png)
-
-#### Créer une Nouvelle Vue liée  `Affaire`
-
-* Se rendre sur la vue par défaut de la table `Affaire`
-* Cliquez sur le menu des vues ![screenshot](images/image17.jpg). 
-* Créez une nouvelle vue pour la table `Affaire`. Nommons cette vue `LinkCompteAffaires`.
-
-![screenshot](images/image47.png)
-   
-* Ajouter les colonnes dans la vue selon vos besoins.
-   
-![screenshot](images/image48.png)
-   
-* Condition **(-TrigItemName-)** pour la connexion avec le `Compte`.
-    > Le **(-TrigItemName-)** renvoie la clé de la fiche `Affaire`.
-
-![screenshot](images/image49.png)
-
-* Sauvegardez la vue.
-
-#### Ajouter le champ de type `Vue` sur la table `Compte`
-
-* Accédez à votre FormDesigner de la table `Compte` et se rendre dans l'onglet `Affaires`.
-
-* Modifiez la `Section : Default` avec le bouton <img src="images/image26.png" width="28px" alt="capture">
-
-![screenshot](images/image50.png)
-
-* Mettre NB colonne a `1` et enregistrer la section.
-
-![screenshot](images/image51.png)
-
-* Cliquez sur le bouton `+` pour ajouter un nouveau champ.
-
-![screenshot](images/image53.png)
-
-#### Configurer le Champ
-
-| Nom des champs | Valeur                          |
-|----------------|-------------------------------|
-| Type            | Vue           |
-| Nom de la table | affaire (table à partir de laquelle vous souhaitez insérer la vue) |
-| Nom champ   | nom de la vue que vous avez créée `LinkCompteAffaires` |
-
-![screenshot](images/image52.png)
-
-#### Actualiser le `FormDesigner`
-
-* Une fois que vous avez terminé, cliquez sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
-
-![screenshot](images/image54.png)
