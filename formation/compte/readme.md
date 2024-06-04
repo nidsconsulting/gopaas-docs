@@ -57,46 +57,6 @@ Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
 
     ![screenshot](images/image9.png)
 
-####  Liste des champs à créer
-
-Voici un tableau avec les champs à créer et leur types :
-
-| Nom des champs | Type                          |
-|----------------|-------------------------------|
-| Nom            | Texte `Obligatoire`           |
-| Adresse1       | Texte                         |
-| Adresse2       | Texte                         |
-| CP             | Texte `Obligatoire`           |
-| Ville          | Texte `Obligatoire`           |
-| Pays           | Texte `Obligatoire`           |
-| Gestion par    | Connexion `Table utilisateur` |
-| Type           | Liste<br>Valeur de la liste :<br>- Client<br>- Prospect |
-| Origine        | Liste<br>Valeur de la liste :<br>- Réseau<br>- Web<br>- Fichier<br>- Partenariat<br>- Salon  |
-| Téléphone      | Téléphone                     |
-| Fax            | Téléphone                     |
-| Site web       | URL                           |
-| Email          | Email                         |
-
-### Détails d'une fiche champ
-
-| Nom des champs          | Description|
-|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Aide                    | Ajouter une aide contextuelle pour l'utilisateur au survol du champ.                                                                                |
-| Type                    | Choisir le type de champ parmi les options disponibles.                                                                                              |
-| Nom champ               | Nom du champ dans la base de données.                                                                                                               |
-| Alias/Nom table connectée | L'alias du champ doit être unique dans toute la table. Dans le cas où le champ créé serait de type connexion, il faut renseigner le nom de la table à connecter. |
-| Intitulé                | Nom du champ tel qu'il apparaît dans l'application.                                                                                                      |
-| Largeur intitulé        | Espacement entre le titre du champ et le champ lui-même, valeurs prédéfinies de 1 à 12.                                     |
-| Alignement intitulé     | Positionnement de l'intitulé par rapport au champ.                                                                                             |
-| Masquer                 | Option permettant de masquer le champ.                                                                                                         |
-| Obligatoire             | Option permettant de rendre obligatoire le champ.                                                                                              |
-| Lecture seule           | Option permettant de rendre le champ non modifiable par l'utilisateur.         |
-| Audit Trail             | Suivre un historique sur les modifications apportées à ce champ.                                                                     |
-| Index                   | Indexer le champ dans la base de données.                                                                                                  |
-| Données personnelles    | Catégoriser le champ comme contenant des données personnelles (RGPD).                                                                                                |
-| Données sensibles       | Catégoriser le champ comme contenant des données sensibles (RGPD).                                                                                                  |
-
-
 ### Création de champs
 
 #### Création du champ `nom` (type *Texte*)
@@ -173,7 +133,44 @@ Voici un tableau avec les champs à créer et leur types :
 
 ![screenshot](images/image20.png)
 
-Lorsque le champ est paramétré, cliquer sur **Enregistrer**.
+####  Liste des champs à créer
+
+Voici un tableau avec les champs à créer et leur types :
+
+| Nom des champs | Type                          |
+|----------------|-------------------------------|
+| Nom            | Texte `Obligatoire`           |
+| Adresse1       | Texte                         |
+| Adresse2       | Texte                         |
+| CP             | Texte `Obligatoire`           |
+| Ville          | Texte `Obligatoire`           |
+| Pays           | Texte `Obligatoire`           |
+| Gestion par    | Connexion `Table utilisateur` |
+| Type           | Liste<br>Valeur de la liste :<br>- Client<br>- Prospect |
+| Origine        | Liste<br>Valeur de la liste :<br>- Réseau<br>- Web<br>- Fichier<br>- Partenariat<br>- Salon  |
+| Téléphone      | Téléphone                     |
+| Fax            | Téléphone                     |
+| Site web       | URL                           |
+| Email          | Email                         |
+
+### Détails d'une fiche champ
+
+| Nom des champs          | Description|
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aide                    | Ajouter une aide contextuelle pour l'utilisateur au survol du champ.                                                                                |
+| Type                    | Choisir le type de champ parmi les options disponibles.                                                                                              |
+| Nom champ               | Nom du champ dans la base de données.                                                                                                               |
+| Alias/Nom table connectée | L'alias du champ doit être unique dans toute la table. Dans le cas où le champ créé serait de type connexion, il faut renseigner le nom de la table à connecter. |
+| Intitulé                | Nom du champ tel qu'il apparaît dans l'application.                                                                                                      |
+| Largeur intitulé        | Espacement entre le titre du champ et le champ lui-même, valeurs prédéfinies de 1 à 12.                                     |
+| Alignement intitulé     | Positionnement de l'intitulé par rapport au champ.                                                                                             |
+| Masquer                 | Option permettant de masquer le champ.                                                                                                         |
+| Obligatoire             | Option permettant de rendre obligatoire le champ.                                                                                              |
+| Lecture seule           | Option permettant de rendre le champ non modifiable par l'utilisateur.         |
+| Audit Trail             | Suivre un historique sur les modifications apportées à ce champ.                                                                     |
+| Index                   | Indexer le champ dans la base de données.                                                                                                  |
+| Données personnelles    | Catégoriser le champ comme contenant des données personnelles (RGPD).                                                                                                |
+| Données sensibles       | Catégoriser le champ comme contenant des données sensibles (RGPD).                                                                                                  |
 
 ### Actualisation du FormDesigner
 - Cliquer sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications apportées.
@@ -185,20 +182,18 @@ Lorsque le champ est paramétré, cliquer sur **Enregistrer**.
 
 ### Agencer la vue `Par défaut`
 
-* Aller dans le menu **Application**
-  * Ensuite, accéder au sous-menu **CRM**
-      * Puis, sélectionner **Compte**
+* Dans le menu **Application** > cliquer sur le sous-menu **CRM** > et cliquer sur **Compte**
 
     ![screenshot](images/image25.png)
 
 * Cliquer sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue pour pouvoir la personnaliser.
-* Accéder à l'onglet `Champs` pour voir la liste des champs de votre table **Compte**.
+* Cliquer sur l'onglet `Champs` pour voir la liste des champs de la table **Compte**.
 
     ![screenshot](images/image27.png)
-* Dans la colonne de gauche se trouve la liste des champs disponibles. Sélectionner les champs souhaités pour les afficher dans la vue.
+* Dans la colonne de gauche se trouve la liste des champs disponibles. Sélectionner les champs à afficher dans la vue.
   > *Astuce : Sélectionner plusieurs champs simultanément en maintenant la touche CTRL enfoncée.*
-* Après avoir sélectionné les champs désirés, cliquer sur la flèche  <img src="images/image28.png" width="28px" alt="capture"> pour les ajouter à la vue.
-* Une fois tous les champs nécessaires ajoutés, cliquer sur le bouton **Enregistrer** pour appliquer les modifications à la vue.
-* Pour voir les changements effectués, fermer la vue actuelle et la rouvrir.
+* Après avoir sélectionné les champs désirés, cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour les ajouter.
+* Une fois tous les champs ajoutés, cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
+* Pour voir les changements effectués, fermer la vue actuelle et la ré-ouvrir.
 
     ![screenshot](images/image29.png)
