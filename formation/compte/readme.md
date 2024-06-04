@@ -51,15 +51,15 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
 
-- Les Onglets contiennent des sections
-- Les Sections contiennent 1 à 4 colonnes
-- cliquer sur l'un des boutons <img src="images/image12.png" height="30px" alt="Ajout Champ"/> pour ajouter un nouveau champ.
+- Les Onglets contiennent des sections.
+- Les Sections contiennent 1 à 4 colonnes.
+- Cliquer sur l'un des boutons <img src="images/image12.png" height="30px" alt="Ajout Champ"/> pour ajouter un nouveau champ dans une colonne.
 
     ![screenshot](images/image9.png)
 
-### Création de champs
+### Création des champs
 
-#### Création du champ `nom` (type *Texte*)
+#### Création d'un champ `nom` (type *Texte*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -72,7 +72,7 @@ Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
 
 ![screenshot](images/image8.png)
 
-#### Création du champ `origine` (type *Liste*)
+#### Création d'un champ `origine` (type *Liste*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -85,7 +85,7 @@ Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
 
 ![screenshot](images/image21.png)
 
-#### Création du champ `telephone` (type *Téléphone*)
+#### Création d'un champ `telephone` (type *Téléphone*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -97,7 +97,7 @@ Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
 
 ![screenshot](images/image22.png)
 
-#### Création du champ `site_web` (type *URL*)
+#### Création d'un champ `site_web` (type *URL*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -109,7 +109,7 @@ Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
 
 ![screenshot](images/image23.png)
 
-#### Création du champ `email` (type *Email*)
+#### Création d'un champ `email` (type *Email*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -121,7 +121,7 @@ Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
 
 ![screenshot](images/image24.png)
 
-#### Création du champ `gestion_par` (type *Connexion*)
+#### Création d'un champ `gestion_par` (type *Connexion*)
 
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
@@ -133,9 +133,9 @@ Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
 
 ![screenshot](images/image20.png)
 
-####  Liste des champs à créer
+####  Liste des autres champs à créer
 
-Voici un tableau avec les champs à créer et leur types :
+Voici un tableau avec les champs de la table `Compte` à créer et leur types :
 
 | Nom des champs | Type                          |
 |----------------|-------------------------------|
@@ -153,9 +153,9 @@ Voici un tableau avec les champs à créer et leur types :
 | Site web       | URL                           |
 | Email          | Email                         |
 
-### Détails d'une fiche champ
+### Options d'un champ
 
-| Nom des champs          | Description|
+| Option        | Description|
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Aide                    | Ajouter une aide contextuelle pour l'utilisateur au survol du champ.                                                                                |
 | Type                    | Choisir le type de champ parmi les options disponibles.                                                                                              |
@@ -187,13 +187,13 @@ Voici un tableau avec les champs à créer et leur types :
     ![screenshot](images/image25.png)
 
 * Cliquer sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue pour pouvoir la personnaliser.
-* Cliquer sur l'onglet `Champs` pour voir la liste des champs de la table **Compte**.
+* Cliquer sur l'onglet `Champs` pour voir la liste des champs de la table **Compte** dans la colonne de gauche.
 
     ![screenshot](images/image27.png)
-* Dans la colonne de gauche se trouve la liste des champs disponibles. Sélectionner les champs à afficher dans la vue.
+* Sélectionner les champs à afficher dans la vue.
   > *Astuce : Sélectionner plusieurs champs simultanément en maintenant la touche CTRL enfoncée.*
-* Après avoir sélectionné les champs désirés, cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour les ajouter.
-* Une fois tous les champs ajoutés, cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
+* Après avoir sélectionné les champs, cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour les ajouter.
+* Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
 * Pour voir les changements effectués, fermer la vue actuelle et la ré-ouvrir.
 
     ![screenshot](images/image29.png)
