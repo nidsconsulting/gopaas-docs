@@ -184,9 +184,9 @@ Voici un tableau avec les champs de la table `Contact` à créer et leur types :
 
 * Dans le menu **Application** > cliquer sur le sous-menu **CRM** > et cliquer sur **Contact**
 
-    ![screenshot](images/image4.png)
+    ![screenshot](images/image41.png)
 
-* Cliquer sur l'icône de modification <img src="images/image5.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue pour pouvoir la personnaliser.
+* Cliquer sur l'icône de modification <img src="images/image40.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue pour pouvoir la personnaliser.
 * Cliquer sur l'onglet `Champs` pour voir la liste des champs de la table **Contact** dans la colonne de gauche.
 
     ![screenshot](images/image18.png)
@@ -203,9 +203,9 @@ Voici un tableau avec les champs de la table `Contact` à créer et leur types :
 
 ### Création de la vue liée
 
-Pour afficher les `contacts` sur le `compte`, créer une vue liée.
+Pour afficher les **Contacts** sur le **Compte**, créer une vue liée.
 
-- Pour cela, ouvrir la vue "Par défaut" des `contacts` et cliquer sur <img src="images/image26.png" width="28px" alt="capture">
+- Pour cela, ouvrir la vue "Par défaut" des **Contacts** et cliquer sur <img src="images/image26.png" width="28px" alt="capture">
 
 ![screenshot](images/image38.jpeg)
 
@@ -213,14 +213,14 @@ Pour afficher les `contacts` sur le `compte`, créer une vue liée.
 
 ![screenshot](images/image21.png)
 
-- Renommer la nouvelle vue `LinkCompteActions`
+- Renommer la nouvelle vue **LinkCompteActions**
 
 ![screenshot](images/image22.png)
 
 - Cliquer sur l'onglet `Conditions` pour établir la connexion avec la table `Compte`.
-- Sélectionner le champ `compte` puis cliquer sur la flèche <img src="images/image19.png" width="28px" alt="capture"> pour ajouter le champ dans les conditions de la vue.
+- Sélectionner le champ **compte** puis cliquer sur la flèche <img src="images/image19.png" width="28px" alt="capture"> pour ajouter le champ dans les conditions de la vue.
   
-  ![screenshot](images/image23.png)
+![screenshot](images/image23.png)
 
 - Ouvrir la condition, puis ajouter la valeur **(-TrigItemName-)** et enregistrer la fiche.
   
@@ -300,5 +300,3 @@ Dans le menu personnalisation ![capture](images/image5.png):
 ![screenshot](images/image36.png)
 
 ![screenshot](images/image37.png)
-
-

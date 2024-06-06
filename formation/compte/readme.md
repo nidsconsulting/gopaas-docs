@@ -49,15 +49,13 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 ###  Création des champs
 
-Nous avons dans une fiche dans GoPaaS, des onglets, des sections et des colonnes
+Nous avons dans une fiche GoPaaS, des onglets, des sections et des colonnes.
 
 - Les Onglets contiennent des sections.
 - Les Sections contiennent 1 à 4 colonnes.
 - Cliquer sur l'un des boutons <img src="images/image12.png" height="30px" alt="Ajout Champ"/> pour ajouter un nouveau champ dans une colonne.
 
     ![screenshot](images/image9.png)
-
-### Création des champs
 
 #### Création d'un champ `nom` (type *Texte*)
 

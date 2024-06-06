@@ -219,3 +219,103 @@ Voici un tableau avec les champs de la table `Affaire` à créer et leur types :
 * Pour voir les changements effectués, fermer la vue actuelle et la ré-ouvrir.
 
     ![screenshot](images/image29.png)
+
+## Vue liée
+
+### Création de la vue liée
+
+Pour afficher les **Affaires** sur le **Compte**, créer une vue liée.
+
+* Pour cela, ouvrir la vue "Par défaut" des **Affaires** et cliquer sur <img src="images/image26.png" width="28px" alt="capture">
+
+![screenshot](images/image51.jpeg).
+
+* Dans le menu outil, cliquer sur **Dupliquer**.
+
+![screenshot](images/image42.png).
+
+* Renommer la nouvelle vue **LinkCompteAffaires**
+
+![screenshot](images/image43.png)
+
+* Cliquer sur l'onglet `Conditions` pour établir la connexion avec la table `Compte`.
+
+* Sélectionner le champ **compte** puis cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour ajouter le champ dans les conditions de la vue.
+![screenshot](images/image44.png)
+
+- Ouvrir la condition, puis ajouter la valeur **(-TrigItemName-)** et enregistrer la fiche.
+  
+![screenshot](images/image45.png)
+
+![screenshot](images/image46.png)
+
+- Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
+  
+### Ajouter l'onglet dans la table **Compte**
+
+Dans le menu personnalisation ![capture](images/image5.png):
+- Cliquer sur le menu `Tables` pour afficher la vue avec la liste de toutes les tables.
+- Rechercher la table **Compte** et double cliquer sur la fiche pour l'ouvrir.
+
+    ![screenshot](images/image47.png)
+
+#### Ouvrir le FormDesigner
+- Cliquer sur le menu `Outil` de la fiche puis `FormDesigner`.
+- Dans le menu qui apparaît cliquer sur **FormDesigner**.
+
+    ![screenshot](images/image48.png)
+
+- Cliquer sur le bouton <img src="images/image13.PNG"  width="60px" alt="capture"> pour ajouter un nouvel onglet.
+
+![screenshot](images/image49.png)
+
+- Renseigner l'intitulé, le label et l'ordre du nouvel onglet.
+
+| Nom des champs        | Description                        |
+|------------------------|-----------------------------------------------|
+| Intitulé | Le nom doit être unique sur la table.        |
+| Label    | Le texte qui apparaîtra sur le formulaire.   |
+| Ordre    | La position de l'onglet dans l'affichage.       |
+
+![screenshot](images/image52.png)
+
+- Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
+- Une fois la création de l'onglets terminée, cliquer sur le bouton ![capture](images/image10.png) pour actualiser le FormDesigner et visualiser les modifications.
+
+### Ajouter le champ de type **Vue**
+
+- Cliquer sur le nouvel onglet  `Affaire`
+
+![screenshot](images/image53.png)
+
+* Modifiez la `Section : Default` avec le bouton <img src="images/image26.png" width="28px" alt="capture">
+
+![screenshot](images/image54.png)
+
+* Mettre NB colonne a `1`, Ordre à `1` et enregistrer la section.
+
+- Une fois la modification de la section terminée, cliquer sur le bouton ![capture](images/image10.png) pour actualiser le FormDesigner et visualiser les modifications.
+
+* Cliquez sur le bouton `+` pour ajouter un nouveau champ.
+
+![screenshot](images/image55.png)
+
+#### Configurer le Champ
+
+| Nom des champs | Valeur                          |
+|----------------|-------------------------------|
+| Type            | Vue           |
+| Nom de la table | contact (table à partir de laquelle vous souhaitez insérer la vue) |
+| Nom champ   | nom de la vue que vous avez créée `LinkCompteContacts` |
+
+![screenshot](images/image56.png)
+
+- Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
+
+#### Actualiser le `FormDesigner`
+
+* Une fois que vous avez terminé, cliquez sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
+
+![screenshot](images/image57.png)
+
+![screenshot](images/image58.png)
