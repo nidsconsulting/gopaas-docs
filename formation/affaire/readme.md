@@ -241,6 +241,7 @@ Pour afficher les **Affaires** sur le **Compte**, créer une vue liée.
 * Cliquer sur l'onglet `Conditions` pour établir la connexion avec la table `Compte`.
 
 * Sélectionner le champ **compte** puis cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour ajouter le champ dans les conditions de la vue.
+
 ![screenshot](images/image44.png)
 
 - Ouvrir la condition, puis ajouter la valeur **(-TrigItemName-)** et enregistrer la fiche.
