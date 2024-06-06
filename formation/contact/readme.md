@@ -203,9 +203,9 @@ Voici un tableau avec les champs de la table `Contact` à créer et leur types :
 
 ### Création de la vue liée
 
-Pour afficher les **Contacts** sur le **Compte**, créer une vue liée.
-
-- Pour cela, ouvrir la vue "Par défaut" des **Contacts** et cliquer sur <img src="images/image26.png" width="28px" alt="capture">
+Pour afficher les **Contacts** liés au **Compte**, il faut créer une vue liée. Pour celà on peut utiliser une vue existante et la dupliquer.
+- Ouvrir la vue "Par défaut" des **Contacts** 
+- Cliquer sur <img src="images/image26.png" width="28px" alt="capture">
 
 ![screenshot](images/image38.jpeg)
 
@@ -213,16 +213,24 @@ Pour afficher les **Contacts** sur le **Compte**, créer une vue liée.
 
 ![screenshot](images/image21.png)
 
-- Renommer la nouvelle vue **LinkCompteActions**
+- Renommer la nouvelle vue avec la convention de nommage suivante:
+  - Link pour indiquer que c'est une vue liée
+  - `Compte` est le nom de la tabvle parent
+  - `Contacts` est la table liée avezc les fiches enfant)
+  - Soit dans ce cas `linkCompteContacts`
+
+> TODO: changer Screenshot avec linkCompteContacts
 
 ![screenshot](images/image22.png)
 
-- Cliquer sur l'onglet `Conditions` pour établir la connexion avec la table `Compte`.
+Pour afficher seulement les contacts du compte, il faut créer une condition sur le champ de connexion `compte`.
+
+- Cliquer sur l'onglet `Conditions`.
 - Sélectionner le champ **compte** puis cliquer sur la flèche <img src="images/image19.png" width="28px" alt="capture"> pour ajouter le champ dans les conditions de la vue.
   
 ![screenshot](images/image23.png)
 
-- Ouvrir la condition, puis ajouter la valeur **(-TrigItemName-)** et enregistrer la fiche.
+- Ouvrir la condition, puis renseigner le mot-clé **(-TrigItemName-)** et enregistrer la fiche.
   
 ![screenshot](images/image24.png)
 
@@ -230,7 +238,7 @@ Pour afficher les **Contacts** sur le **Compte**, créer une vue liée.
 
 - Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
   
-### Ajouter l'onglet dans la table **Compte**
+### Ajouter la vue liée linkCompteContacts dans un onglet de la table **Compte**
 
 Dans le menu personnalisation ![capture](images/image5.png):
 - Cliquer sur le menu `Tables` pour afficher la vue avec la liste de toutes les tables.
@@ -250,6 +258,8 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 - Renseigner l'intitulé, le label et l'ordre du nouvel onglet.
 
+> TODO: Mettre les valeurs dans le tableau
+
 | Nom des champs        | Description                        |
 |------------------------|-----------------------------------------------|
 | Intitulé | Le nom doit être unique sur la table.        |
@@ -263,21 +273,23 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 
 
-### Ajouter le champ de type **Vue**
+### Ajouter un champ de type **Vue**
 
 - Cliquer sur le nouvel onglet  `Contact`
 
 ![screenshot](images/image33.png)
 
-* Modifiez la `Section : Default` avec le bouton <img src="images/image26.png" width="28px" alt="capture">
+* Modifier la `Section : Default` avec le bouton <img src="images/image26.png" width="28px" alt="capture">
 
 ![screenshot](images/image31.png)
 
-* Mettre NB colonne a `1`, Ordre à `1` et enregistrer la section.
+* Mettre NB colonne a `1`, Ordre à `1`.
 
-- Une fois la modification de la section terminée, cliquer sur le bouton ![capture](images/image16.png) pour actualiser le FormDesigner et visualiser les modifications.
+* Cliquer sur le bouton Enregistrer pour appliquer les modifications.
 
-* Cliquez sur le bouton `+` pour ajouter un nouveau champ.
+- Cliquer sur le bouton ![capture](images/image16.png) pour actualiser le FormDesigner et visualiser les modifications.
+
+* Cliquer sur le bouton `+` pour ajouter un nouveau champ.
 
 ![screenshot](images/image34.png)
 
@@ -295,8 +307,10 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 #### Actualiser le `FormDesigner`
 
-* Une fois que vous avez terminé, cliquez sur le bouton ![capture](images/image16.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
+* Cliquer sur le bouton ![capture](images/image16.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
 
 ![screenshot](images/image36.png)
+
+- Ouvrir la vue par défaut des comptes et ouvrir une fiche `compte` pour voir le résultat.
 
 ![screenshot](images/image37.png)
