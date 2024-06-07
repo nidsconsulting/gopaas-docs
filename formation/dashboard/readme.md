@@ -2,8 +2,6 @@
 
 ## Création du dashboard Accueil
 
-> TODO: revoir introduction
-
 Le dashboard centralise les informations des tables Compte, Contact, Affaire et Action sous forme de widgets. Cela permet une visualisation simplifiée et un accès rapide aux données essentielles de l'application. Lors de l'ouverture d'un widget, la vue par défaut de la table correspondante est affichée.
 
 - Cliquer dans le menu **Références** > **Paramètre** > **Dashboard** pour ouvrir la vue des dashboards.
