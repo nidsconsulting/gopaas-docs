@@ -186,7 +186,7 @@ Voici un tableau avec les champs de la table `Contact` à créer et leur types :
 
     ![screenshot](images/image41.png)
 
-* Cliquer sur l'icône de modification <img src="images/image40.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue pour pouvoir la personnaliser.
+* Cliquer sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue pour pouvoir la personnaliser.
 * Cliquer sur l'onglet `Champs` pour voir la liste des champs de la table **Contact** dans la colonne de gauche.
 
     ![screenshot](images/image18.png)
@@ -218,8 +218,6 @@ Pour afficher les **Contacts** liés au **Compte**, il faut créer une vue liée
   - `Compte` est le nom de la tabvle parent
   - `Contacts` est la table liée avezc les fiches enfant)
   - Soit dans ce cas `linkCompteContacts`
-
-> TODO: changer Screenshot avec linkCompteContacts
 
 ![screenshot](images/image22.png)
 
@@ -258,20 +256,16 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 - Renseigner l'intitulé, le label et l'ordre du nouvel onglet.
 
-> TODO: Mettre les valeurs dans le tableau
-
 | Nom des champs        | Description                        |
-|------------------------|-----------------------------------------------|
-| Intitulé | Le nom doit être unique sur la table.        |
-| Label    | Le texte qui apparaîtra sur le formulaire.   |
-| Ordre    | La position de l'onglet dans l'affichage.       |
+|-----------------------|------------------------------------|
+| Intitulé | Contact        |
+| Label    | Contact        |
+| Ordre    | 2              |
 
 ![screenshot](images/image39.png)
 
 - Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
 - Une fois la création de l'onglets terminée, cliquer sur le bouton ![capture](images/image16.png) pour actualiser le FormDesigner et visualiser les modifications.
-
-
 
 ### Ajouter un champ de type **Vue**
 
