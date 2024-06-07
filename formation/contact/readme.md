@@ -204,7 +204,7 @@ Voici un tableau avec les champs de la table `Contact` à créer et leur types :
 ### Création de la vue liée
 
 Pour afficher les **Contacts** liés au **Compte**, il faut créer une vue liée. Pour celà on peut utiliser une vue existante et la dupliquer.
-- Ouvrir la vue "Par défaut" des **Contacts** 
+- Ouvrir la vue "Par défaut" des **Contacts**.
 - Cliquer sur <img src="images/image26.png" width="28px" alt="capture">
 
 ![screenshot](images/image38.jpeg)
@@ -215,7 +215,7 @@ Pour afficher les **Contacts** liés au **Compte**, il faut créer une vue liée
 
 - Renommer la nouvelle vue avec la convention de nommage suivante:
   - Link pour indiquer que c'est une vue liée
-  - `Compte` est le nom de la tabvle parent
+  - `Compte` est le nom de la table parent
   - `Contacts` est la table liée avezc les fiches enfant)
   - Soit dans ce cas `linkCompteContacts`
 
