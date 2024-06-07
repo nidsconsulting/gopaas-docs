@@ -183,9 +183,6 @@ curl -X POST \
 ```
 
 
-> Si aucune cle {{key}} n’est spécifiée alors une nouvelle fiche sera crée.
-
-
 ## oAuth2
 
 OAuth 2.0 est un protocole standard de délégation d'autorisation pour la sécurisation des accès aux API. Il permet aux applications  externe d'obtenir un accès limité à GoPaaS sans avoir accès aux mots de passe.
@@ -375,8 +372,6 @@ curl -X POST \
 “date_closed”:”2017-07-31”
 }]'
 ```
-
-> Si aucune cle {{key}} n’est spécifiée alors une nouvelle fiche sera crée.
 
 ## Restricition IP
 
