@@ -2,18 +2,22 @@
 
 ## Création du dashboard Accueil
 
+> TODO: revoir introduction
+
+Pour afficher un accès aux vues des tables compte, contact, affaire et action, il faut créer un dashboard avec des widgets de type icône qui ouvriront les vues par défaut.
+
 - Cliquer dans le menu **Références** > **Paramètre** > **Dashboard** pour ouvrir la vue des dashboards.
 
 ![screenshot](images/image1.png)
 
-- Cliquer sur ajouter.
+- Cliquer sur le bouton `Ajouter`.
 
 | Champs | Valeur |
 |-----------|-----------|
 | Intitulé   | Nom du dashboard  |
 | Permission   | Liste des groupes ayant accès au dashboard  |
 | Regroupement  | Regroupe le dashboard dans un dossier du menu `Dashboard`  |
-| Afficher au démarrage   | Affiche le dashboard lors de la connexion de l'utilisateur (fonctionne avec le champ suivant)  |
+| Afficher au démarrage   | Affiche le dashboard lors de la connexion de l'utilisateur (fonctionne avec le `Pour le(s) groupe(s)`)  |
 | Pour le(s) groupe(s)   | Liste des groupes pour lesquelles le dashboard s'affichera au démarrage  |
 | Afficher bouton Fullscreen  | Permet d'afficher un bouton pour passer le dashboard en plein écran  |
 
@@ -27,7 +31,8 @@ Cocher le groupe qui aura acès au dashboard puis cliquer sur la flèche <img sr
 
 ![screenshot](images/image2.png)
 
-- Cliquer sur le bouton **Appliquer**  de la ligne de dashboard pour appliquer les modifications avant de cliquer sur le bouton **Ajouter** de la section `Détails`.
+- Cliquer sur le bouton **Appliquer** pour enregistrer le Dashboard et pouvoir créer une ligne de dashboard.
+- Cliquer sur le bouton **Ajouter** de la section `Détails` pour ajouter une ligne de dashboard.
 
 | Champs | Valeur |
 |-----------|-----------|
@@ -40,19 +45,21 @@ Cocher le groupe qui aura acès au dashboard puis cliquer sur la flèche <img sr
 | Largeur | Permet de sélectionner la largeur que prendra le **Widget** dans la ligne de dashboard |
 
 - Cliquer sur l'icone <img src="images/image3.png" width="28px" alt="capture"> du champ **view1**.
-- Chercher **compte** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton <img src="images/image6.png" width="28px" alt="capture">.
+- Chercher la table **compte** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton <img src="images/image6.png" width="28px" alt="capture">.
   
 ![screenshot](images/image7.png)
 
 - Cliquer sur l'icone <img src="images/image3.png" width="28px" alt="capture"> du champ **view2**.
-- Chercher **contact** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton <img src="images/image6.png" width="28px" alt="capture">.
+- Chercher la table **contact** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton <img src="images/image6.png" width="28px" alt="capture">.
   
 ![screenshot](images/image8.png)
 
 - Cliquer sur l'icone <img src="images/image3.png" width="28px" alt="capture"> du champ **view3**.
-- Chercher **affaire** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton <img src="images/image6.png" width="28px" alt="capture">.
+- Chercher la table **affaire** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton <img src="images/image6.png" width="28px" alt="capture">.
   
 ![screenshot](images/image9.png)
+
+> TODO: Manque la partie ACTION attention screenshot
 
 - Sélectionner une largeur 3 pour chaque Icone
 
@@ -63,7 +70,7 @@ Cocher le groupe qui aura acès au dashboard puis cliquer sur la flèche <img sr
 ![screenshot](images/image11.png)
 
 - Cliquer sur le bouton **Enregistrer** pour appliquer les modifications du dashboard.
-- Rafraichir l'application.
+- Actualiser l'application.
 
 Pour modifier les icones des widgets, cliquer sur <img src="images/image12.png" width="28px" alt="capture">.
 
@@ -73,12 +80,14 @@ Pour modifier les icones des widgets, cliquer sur <img src="images/image12.png" 
 
 ![screenshot](images/image14.png)
 
-Icone **Compte** : fas fa-building fa-5x
-Icone **Contact** : fas fa-address-card fa-5x
-Icone **Affaire** : fas fa-suitcase fa-5x
+Icone **Compte** : `fas fa-building fa-5x`
+
+Icone **Contact** : `fas fa-address-card fa-5x`
+
+Icone **Affaire** : `fas fa-suitcase fa-5x`
 
 - Cliquer sur le bouton **Enregistrer** pour appliquer les modifications de la vue.
 
-- Rafraichir le dahsboard en cliquant sur le bouton <img src="images/image15.png" width="28px" alt="capture">.
+- Actualiser le dahsboard en cliquant sur le bouton <img src="images/image15.png" width="28px" alt="capture"> pour voir le résultat.
 
 ![screenshot](images/image16.png)
