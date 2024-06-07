@@ -214,10 +214,10 @@ Pour afficher les **Contacts** liés au **Compte**, il faut créer une vue liée
 ![screenshot](images/image21.png)
 
 - Renommer la nouvelle vue avec la convention de nommage suivante:
-  - Link pour indiquer que c'est une vue liée
-  - `Compte` est le nom de la table parent
-  - `Contacts` est la table liée avezc les fiches enfant)
-  - Soit dans ce cas `linkCompteContacts`
+  - Link pour indiquer que c'est une vue liée.
+  - `Compte` est le nom de la table parent.
+  - `Contacts` est la table liée avec les fiches enfants).
+  - Soit dans ce cas `linkCompteContacts`.
 
 ![screenshot](images/image22.png)
 

@@ -182,9 +182,9 @@ Voici un tableau avec les champs de la table `Action` à créer et leur types :
 
 ### Création de la vue liée
 
-Pour afficher les **Actions** sur le **Compte**, créer une vue liée.
-
-* Pour cela, ouvrir la vue "Par défaut" des **Actions** et cliquer sur <img src="images/image26.png" width="28px" alt="capture">
+Pour afficher les **Actions** liés au **Compte**, il faut créer une vue liée. Pour celà on peut utiliser une vue existante et la dupliquer.
+- Ouvrir la vue "Par défaut" des **Actions**.
+- Cliquer sur <img src="images/image26.png" width="28px" alt="capture">
 
 ![screenshot](images/image51.jpeg).
 
@@ -192,16 +192,22 @@ Pour afficher les **Actions** sur le **Compte**, créer une vue liée.
 
 ![screenshot](images/image42.png)
 
-* Renommer la nouvelle vue **LinkCompteActions**
+- Renommer la nouvelle vue avec la convention de nommage suivante:
+  - Link pour indiquer que c'est une vue liée.
+  - `Compte` est le nom de la table parent.
+  - `Actions` est la table liée avec les fiches enfants).
+  - Soit dans ce cas `LinkCompteActions`.
 
 ![screenshot](images/image43.png)
 
-* Cliquer sur l'onglet `Conditions` pour établir la connexion avec la table `Compte`.
+Pour afficher seulement les actions du compte, il faut créer une condition sur le champ de connexion `compte`.
 
-* Sélectionner le champ **compte** puis cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour ajouter le champ dans les conditions de la vue.
+- Cliquer sur l'onglet `Conditions`.
+- Sélectionner le champ **compte** puis cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour ajouter le champ dans les conditions de la vue.
+
 ![screenshot](images/image44.png)
 
-- Ouvrir la condition, puis ajouter la valeur **(-TrigItemName-)** et enregistrer la fiche.
+- Ouvrir la condition, puis renseigner le mot-clé **(-TrigItemName-)** et enregistrer la fiche.
   
 ![screenshot](images/image45.png)
 
@@ -209,7 +215,7 @@ Pour afficher les **Actions** sur le **Compte**, créer une vue liée.
 
 - Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
   
-### Ajouter l'onglet dans la table **Compte**
+### Ajouter la vue liée linkCompteActions dans un onglet de la table **Compte**
 
 Dans le menu personnalisation ![capture](images/image5.png):
 - Cliquer sur le menu `Tables` pour afficher la vue avec la liste de toutes les tables.
@@ -231,9 +237,9 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 | Nom des champs        | Description                        |
 |------------------------|-----------------------------------------------|
-| Intitulé | Le nom doit être unique sur la table.        |
-| Label    | Le texte qui apparaîtra sur le formulaire.   |
-| Ordre    | La position de l'onglet dans l'affichage.       |
+| Intitulé | Action        |
+| Label    | Action   |
+| Ordre    | 4       |
 
 ![screenshot](images/image52.png)
 
@@ -250,11 +256,11 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 ![screenshot](images/image54.png)
 
-* Mettre NB colonne a `1`, Ordre à `1` et enregistrer la section.
+* Mettre NB colonne a `1`, Ordre à `1`.
+* Cliquer sur le bouton Enregistrer pour appliquer les modifications.
+- Cliquer sur le bouton ![capture](images/image10.png) pour actualiser le FormDesigner et visualiser les modifications.
 
-- Une fois la modification de la section terminée, cliquer sur le bouton ![capture](images/image10.png) pour actualiser le FormDesigner et visualiser les modifications.
-
-* Cliquez sur le bouton `+` pour ajouter un nouveau champ.
+* Cliquer sur le bouton `+` pour ajouter un nouveau champ.
 
 ![screenshot](images/image55.png)
 
@@ -272,8 +278,10 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 #### Actualiser le `FormDesigner`
 
-* Une fois que vous avez terminé, cliquez sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
+* Cliquer sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
 
 ![screenshot](images/image57.png)
+
+* Ouvrir la vue par défaut des comptes et ouvrir une fiche `compte` pour voir le résultat.
 
 ![screenshot](images/image58.png)
