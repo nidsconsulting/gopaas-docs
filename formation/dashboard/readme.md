@@ -42,6 +42,8 @@ Cocher le groupe qui aura acès au dashboard puis cliquer sur la flèche <img sr
 | View  | Permet de sélectionner une vue de type **Graphique** qui apparaitra dans le dashboard  |
 | Largeur | Permet de sélectionner la largeur que prendra le **Widget** dans la ligne de dashboard |
 
+![screenshot](images/image18.png)
+
 - Cliquer sur l'icone <img src="images/image3.png" width="28px" alt="capture"> du champ **view1**.
 - Chercher la table **compte** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton <img src="images/image6.png" width="28px" alt="capture">.
   
