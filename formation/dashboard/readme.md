@@ -4,7 +4,7 @@
 
 > TODO: revoir introduction
 
-Pour afficher un accès aux vues des tables compte, contact, affaire et action, il faut créer un dashboard avec des widgets de type icône qui ouvriront les vues par défaut.
+Le dashboard centralise les informations des tables Compte, Contact, Affaire et Action sous forme de widgets. Cela permet une visualisation simplifiée et un accès rapide aux données essentielles de l'application. Lors de l'ouverture d'un widget, la vue par défaut de la table correspondante est affichée.
 
 - Cliquer dans le menu **Références** > **Paramètre** > **Dashboard** pour ouvrir la vue des dashboards.
 
@@ -59,9 +59,13 @@ Cocher le groupe qui aura acès au dashboard puis cliquer sur la flèche <img sr
   
 ![screenshot](images/image9.png)
 
-> TODO: Manque la partie ACTION attention screenshot
+- Cliquer sur l'icone <img src="images/image3.png" width="28px" alt="capture"> du champ **view4**.
+- Chercher la table **action** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton <img src="images/image6.png" width="28px" alt="capture">.
 
-- Sélectionner une largeur 3 pour chaque Icone
+![screenshot](images/image17.png)
+
+
+- Sélectionner une largeur 3 pour chaque Icone.
 
 ![screenshot](images/image10.png)
 
@@ -85,6 +89,8 @@ Icone **Compte** : `fas fa-building fa-5x`
 Icone **Contact** : `fas fa-address-card fa-5x`
 
 Icone **Affaire** : `fas fa-suitcase fa-5x`
+
+Icone **Action** : `fas fa-file-signature fa-5x`
 
 - Cliquer sur le bouton **Enregistrer** pour appliquer les modifications de la vue.
 
