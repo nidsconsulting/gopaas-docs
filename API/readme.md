@@ -163,7 +163,7 @@ Avec curl.
 curl -X POST \
 
   {{URL}}/api/items/{{tableName}}/
--H "Authorization: Bearer {{access_token}}" \
+-H "Authorization: Bearer {{bearer_token}}" \
 -H 'content-type: application/json' \
 -d '[{
 "cle": "{{key}}",
@@ -181,7 +181,35 @@ curl -X POST \
 “date_closed”:”2017-07-31”
 }]'
 ```
+### file
+| Method | URL                 |
+|--------|---------------------|
+| `POST`  | `api/file/tableName/`  |
 
+| Type          | Params          | Values |
+|---------------|-----------------|--------|
+| `HEAD`        | `bearer_token`  | String |
+| `POST`        | `file`          | file   |
+
+#### Exemple
+
+Avec curl.
+
+- `{{URL}}` URL de  l’application
+
+- `{{file}}` Fichier à envoyer
+
+- `{{bearer_token}}` est une chaîne
+
+- `{{tableName}}` est une chaîne avec le nom de la table
+
+```php
+curl -X POST \
+
+  {{URL}}/api/file/{{tableName}}/
+-H "Authorization: Bearer {{bearer_token}}" \
+--form 'file=@"{file}"'
+```
 
 ## oAuth2
 
@@ -354,7 +382,7 @@ curl -X POST \
 curl -X POST \
 
   {{URL}}/api/items/{{tableName}}/
--H "Authorization: Bearer {{access_token}}" \
+-H "Authorization: Bearer {{bearer_token}}" \
 -H 'content-type: application/json' \
 -d '[{
 "cle": "{{key}}",
