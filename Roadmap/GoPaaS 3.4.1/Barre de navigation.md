@@ -44,4 +44,14 @@
                 }
             }
         });
+
+        // Ajustement par rapport au mobile
+        if(IS_MOBILE){  
+            $('.content-wrapper').css({
+                'all': 'unset'
+            });
+            $('.tabs-panels').css({
+                'background-color': '#ecf0f5 !important',
+            });
+        }
     ```
