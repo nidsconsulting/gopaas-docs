@@ -73,3 +73,22 @@
         // Faudrais aussi ajouter les icones.
     }
 ```
+
+- **Ajuster le bouton menu outil**
+```javaScript
+    if(IS_MOBILE){
+        $('form > div > div').find('.dropdown-menu').css({
+            "position": "fixed",
+            "bottom": "0px",
+            "margin-top": "100%",
+            "z-index": "2002",
+            "display": "none",
+            "float": "none", 
+            "min-width": "100%"
+        });
+        $('form > div > div > div > .dropdown-menu > li').find('a').css({
+            "padding": "7px 20px"
+        });
+    }
+```
+ 
