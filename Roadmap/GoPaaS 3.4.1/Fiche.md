@@ -92,22 +92,24 @@
     });
 
     // Pour déclencher la transition, vous pouvez changer la valeur de `bottom`
-     $('form > div > div > div').find('#btn_action_menu').on('click', function() {
+    $('form > div > div > div').find('#btn_action_menu').on('click', function() {
         $(this).css('bottom', '100%');
     });
-     $('form > div > div > div').find('#btn_action').on('click', function() {
-            var isExpanded = $(this).attr('aria-expanded') === 'true';
-        
-            if (isExpanded) {
-                $('.tab-content').css('opacity', '0.5');
-            } else {
-                $('.tab-content').css('opacity', '1');
-            }
+
+    $('form > div > div > div > .#btn_action_menu > li').find('a').css({
+        "padding": "7px 20px"
     });
+    //  $('form > div > div > div').find('#btn_action').on('click', function() {
+    //         var isExpanded = $(this).attr('aria-expanded') === 'true';
+        
+    //         if (isExpanded) {
+    //             $('.tab-content').css('opacity', '0.5');
+    //         } else {
+    //             $('.tab-content').css('opacity', '1');
+    //         }
+    // });
 
 
-        $('form > div > div > div > .#btn_action_menu > li').find('a').css({
-            "padding": "7px 20px"
-        });
+
     }
 ```
