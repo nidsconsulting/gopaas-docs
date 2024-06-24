@@ -8,6 +8,8 @@ Sinon on peut se baser sur cette class : `tabs-header tabs-header-plain tabs-hea
 
 - **Fixer les onglets sur PC et les faire apparaitre de façon automatique**
 
+<img src="../images/Image10.gif" alt="Hearder Top" style="border-radius: 0.3rem;"/> 
+
 ```javaScript
         if (!IS_MOBILE) { // SI c'est PC
             $('.tabs-wrap > .tabs').css({
