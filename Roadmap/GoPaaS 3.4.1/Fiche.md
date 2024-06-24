@@ -77,18 +77,37 @@
 - **Ajuster le bouton menu outil**
 ```javaScript
     if(IS_MOBILE){
-        $('form > div > div').find('.dropdown-menu').css({
-            "position": "fixed",
-            "bottom": "0px",
-            "margin-top": "100%",
-            "z-index": "2002",
-            "display": "none",
-            "float": "none", 
-            "min-width": "100%"
-        });
-        $('form > div > div > div > .dropdown-menu > li').find('a').css({
+       $('form > div > div > div').find('#btn_action_menu').css({
+        "position": "fixed",
+        "bottom": "0",
+        "margin-top": "100%",
+        "z-index": "1000",
+        "width": "100%",
+        "padding": "10px",
+        "border-bottom": "none",
+        "border-left": "none",
+        "border-right": "none",
+        "border-radius": "0",
+        "transition": "bottom 0.5s ease-in-out"
+    });
+
+    // Pour déclencher la transition, vous pouvez changer la valeur de `bottom`
+     $('form > div > div > div').find('#btn_action_menu').on('click', function() {
+        $(this).css('bottom', '100%');
+    });
+     $('form > div > div > div').find('#btn_action').on('click', function() {
+            var isExpanded = $(this).attr('aria-expanded') === 'true';
+        
+            if (isExpanded) {
+                $('.tab-content').css('opacity', '0.5');
+            } else {
+                $('.tab-content').css('opacity', '1');
+            }
+    });
+
+
+        $('form > div > div > div > .#btn_action_menu > li').find('a').css({
             "padding": "7px 20px"
         });
     }
 ```
- 
