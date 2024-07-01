@@ -82,7 +82,7 @@ Dans cette version quelques modifications d'ergonomie:
 
 
 ### Eléments du mode mobile (Code de recherche `3.4.0`)
-- **Rendre la barre de navigation fix** `📁index.php` ✔ 
+- **Rendre la barre d'outils fix** `📁index.php` ✔ 
     Fixation du header de l'application afin qu'il reste toujours visible en haut de la page, peu importe le défilement de la page.
     ```html
         <!-- Avant -->
@@ -116,7 +116,7 @@ Dans cette version quelques modifications d'ergonomie:
 		</p>
     ```          
 
-- **Rendre la La barre d'outils de Gauche Fixe** `📁index.php` ✔
+- **Rendre la La barre de navigation Fixe** `📁index.php` ✔
     Fixation de la barre de navigation de gauche pour qu'elle reste fixe, quel que soit le déplacement de l'application.
     ```html
         <!-- Avant -->
