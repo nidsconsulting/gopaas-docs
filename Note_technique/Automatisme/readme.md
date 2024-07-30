@@ -1,111 +1,67 @@
-# Paramétrage du Workflow
+
+# Comment créer un automatisme dans GoPaaS ?
 
 ## Description
 
-Le paramétrage du workflow permet de définir et de gérer les processus automatisés au sein de l'application.
+La fonctionnalité "Automatisme" permet de déclencher des actions automatiquement lors de l'enregistrement ou de la modification d'une fiche. Elle offre la possibilité de mettre à jour une fiche existante, de créer une nouvelle fiche ou d'envoyer un email sans intervention manuelle. Cela optimise les processus en automatisant des tâches répétitives, comme envoyer un email de bienvenue lors de l'ajout d'un nouveau contact, notifier un client après la mise à jour de sa commande, ou mettre à jour une fiche associée en réponse à des modifications. Cette automatisation assure une gestion efficace et cohérente des données.
 
 ### Bénéfices attendus
-- **Automatisation des Processus :** Permet l'automatisation des tâches répétitives.
-- **Efficacité Améliorée :** Améliore l'efficacité en assurant que les étapes du processus sont suivies de manière cohérente.
-- **Personnalisation :** Offre la possibilité de créer des workflows sur mesure adaptés aux besoins spécifiques de l'organisation.
+- ***Gain de Temps :*** Réduire les tâches manuelles répétitives en automatisant les processus, permettant aux équipes de se concentrer sur des tâches à plus forte valeur ajoutée.
+- ***Réduction des Erreurs :*** Minimiser les risques d'erreurs humaines en automatisant les mises à jour.
+- ***Réactivité Améliorée :*** Assurer une réponse rapide aux événements importants grâce à des déclenchements automatiques, comme l'envoi immédiat d'emails de notification.
+- ***Optimisation des Processus :*** Simplifier et améliorer l'efficacité des processus opérationnels par l'automatisation des tâches courantes.
 
-### Instructions pour le Paramétrage
+### Exemple
 
-1. **Accéder au Menu de Configuration**
-   - Rendez-vous dans le menu de gauche sous **(admin)**.
-   - Cliquez sur **Workflow**.
+| **Champ**                      | **Description**                                                                                      |
+|--------------------------------|------------------------------------------------------------------------------------------------------|
+| **Nom**                        | Nom de l'automatisme pour identification. Par exemple, "Notification CA > 10 000€".                 |
+| **Actif**                      | Indiquer si l'automatisme est actif. Doit être coché pour que l'automatisme fonctionne.             |
+| **Description**                | Description détaillée de l'automatisme. Par exemple, "Envoie un email lorsque le chiffre d'affaires d'une fiche affaire dépasse 10 000€". |
+| **Ordre**                      | Position de l'automatisme par rapport aux autres automatisations. Peut être "1" si c'est le premier dans l'ordre de traitement. |
+| **Déclencheur**                | L'événement qui déclenche l'automatisme. Sera "Enregistrement de fiche".                             |
+|           | **Type** : Type d'automatisme. Sélectionner "Enregistrement de fiche" pour déclencher l'action lors de la création ou de la modification d'une fiche.<br> **Mode** : Spécifie quand l'automatisme doit être exécuté. Choisir "Création et Modification" pour couvrir les deux scénarios.<br> **Table** : La table dans laquelle l'automatisme doit être appliqué. Sera "Affaire" pour les fiches affaires. |
+| **Filtre**                     | Condition pour que l'automatisme se déclenche. Par exemple, "CA supérieur ou égal à 10 000€".                        |
 
-2. **Ajouter un Nouveau Workflow**
-   - Cliquez sur **Ajouter**.
+### Configuration des Actions
 
-3. **Configurer les Champs du Workflow**
+Cliquer sur "Ajouter".
 
-   | **Champ**                | **Description**                                                                                       |
-   |--------------------------|-------------------------------------------------------------------------------------------------------|
-   | **Intitulé**             | Nom du workflow.                                                                                      |
-   | **Table**                | Table sur laquelle le workflow sera appliqué.                                                         |
-   | **Champ pour les étapes**| Champ qui définira les différentes étapes du workflow.                                                |
-   | **Champ pour les commentaires** | Champ permettant d'ajouter des commentaires à chaque étape du workflow.                        |
-   | **Actif**                | Indiquer si le workflow est actif ou non.                                                             |
-   | **Description**          | Description détaillée du workflow et de son objectif.                                                 |
+| **Champ** | **Description** |
+|-----------|-----------------|
+| **Actif** | Indique si l'action est activée. Si "Oui", l'action sera exécutée selon la configuration. |
+| **Ordre** | Détermine l'ordre dans lequel les actions seront exécutées. Par exemple, l'action avec l'ordre "1" sera exécutée avant l'action avec l'ordre "2". |
+| **Type**  | Spécifie le type d'action à réaliser. Les types d'actions peuvent inclure la création ou la mise à jour d'éléments. |
+| **Table** | Indique la table sur laquelle l'action doit être effectuée. Cela pourrait être une table spécifique comme "action". |
 
-4. **Appliquer les Modifications**
-   - Cliquez sur le bouton **Appliquer** pour enregistrer les modifications.
+#### Exemple d'Actions dans le cas d'un envoi d'email.
 
-5. **Ajouter des Étapes au Workflow**
-   - Dans la section **Étapes**, cliquez sur le bouton **Ajouter**.
+1. **Action 1**
+   - **Actif** : Oui
+   - **Ordre** : 1
+   - **Type** : Email
 
-6. **Configurer les Champs d'une Étape**
+### Configuration de l'Email
 
-   | **Champ**                         | **Description**                                                                                       |
-   |-----------------------------------|-------------------------------------------------------------------------------------------------------|
-   | **Ordre**                         | Ordre de l'étape au sein du workflow.                                                                 |
-   | **Étape**                         | Statut sur lequel le bouton doit s'afficher.                                                          |
-   | **Champs obligatoires**           | Champs qui doivent être obligatoirement remplis lors du clic sur le bouton **Validation**.            |
-   | **Nom du bouton**                 | Nom du bouton pour cette étape.                                                                       |
-   | **Étape déclencheur**             | Statut intermédiaire qui se met en place au clic sur le bouton.                                       |
-   | **Étape suivante à renseigner**   | Statut suivant à renseigner.                                                                          |
+| **Champ**       | **Description**                                                                                      |
+|-----------------|------------------------------------------------------------------------------------------------------|
+| **De**          | Adresse email de l'expéditeur. Cette adresse apparaît comme celle qui envoie le message.             |
+| **À**           | Adresse email du destinataire principal. Le message sera envoyé à cette adresse.                     |
+| **CC**          | Adresse(s) email des destinataires en copie carbone. Les personnes en CC recevront une copie de l'email. |
+| **Objet**       | Sujet de l'email. Résume brièvement le contenu du message pour le destinataire.                       |
+| **Message**     | Contenu principal de l'email. C'est le texte que le destinataire lira dans le corps du message.       |
+| **Fichier joint** | Option pour joindre des fichiers à l'email. Permet de transmettre des documents supplémentaires avec le message. |
+| **Format**      | Format de l'email. Spécifie le type d'email (Texte ou HTML).|
 
-   - Le champ **"Champs obligatoires"** doit être rempli avec la structure suivante :
+#### Exemple de Configuration d'Email
 
-     ```json
-     [
-         {"name":"CHAMP_UN"},
-         {"name":"CHAMP_DEUX"},
-         {"name":"CHAMP_TROIS"},
-         ...
-     ]
-     ```
-
-7. **Intégrer le Workflow à la table**
-   - Une fois le workflow terminé, accédez au script JavaScript de la table concernée.
-   - Insérez la ligne suivante dans le script JS :
-
-     ```javascript
-     gopaas.util.loadWorkflow(thisComponent, "TABLE_NAME");
-     ```
-
-     - Remplacez `"TABLE_NAME"` par le nom de la table appropriée.
-
-8. **Création de l'Automatisme lié à l'Étape**
-   - Accédez au menu de droite et sélectionnez **Automatisation**.
-   - Cliquez sur **Ajouter**.
-
-   | **Champ**     | **Description**                                                     |
-   |---------------|---------------------------------------------------------------------|
-   | **Nom**       | WF - ACTION_NAME                                                    |
-   | **Actif**     | Indiquez si l'automatisme est actif ou non.                         |
-   | **Description** | Fournissez une description de l'automatisme.                      |
-   | **Ordre**     | Indiquez l'ordre dans lequel l'automatisme doit être exécuté.       |
-   | **Type**      | Enregistrement de fiche                                             |
-   | **Mode**      | Modification                                                        |
-   | **Table**     | Nom de votre table ou vous exécutez le workflow (exemple: dossier)  |
-
-   - Enfin après avoir configuré l'automatisme, cliquez sur **Appliquer**.
-
-9. **Configurer les Actions du Workflow**
-   - Cliquer sur le bouton **Ajouter** dans la section **Actions**.
-
-   | **Champ**     | **Description**                                   |
-   |---------------|---------------------------------------------------|
-   | **Actif**     | 1                                                 |
-   | **Ordre**     | 1                                                 |
-   | **Type**      | Modifier fiche                                    |
-
-   - Dans le champ **Type**, sélectionnez **Modifier fiche**.
-   - Dans le champ **Statut**, entrez la nouvelle valeur pour le champ statut.
-   - Enregistrez la fiche.
-
-   - En parallèle, il est également possible d'ajouter une fiche action pour historiser l'événement. Pour ce faire, cliquez à nouveau sur **Ajouter** et sélectionnez **Ajouter fiche** dans le type.
-
-     | **Champ**      | **Description**                                                                 |
-     |----------------|---------------------------------------------------------------------------------|
-     | **Type**       | Ajouter fiche                                                                   |
-     | **Table**      | Sélectionnez la table cible, dans notre cas, ce sera la table **Action**.       |
-     | **Valeur**     | Remplissez les champs souhaités dans la section **Valeur**.                     |
-
-   - **PS :** Assurez-vous de connecter cette fiche enfant à la fiche parent pour une bonne traçabilité.
+- **De** : example@domaine.com
+- **À** : destinataire@domaine.com
+- **CC** : copie1@domaine.com, copie2@domaine.com
+- **Objet** : Notification de Chiffre d'Affaires Élevé
+- **Message** : Bonjour, <br> Nous vous informons que le chiffre d'affaires de la fiche affaire a dépassé 10 000€. Merci de vérifier les détails. <br> Cordialement, <br> L'équipe.
+- **Fichier joint** : ["[%fichier_joint_1%]","[%fichier_joint_2%]"]
+- **Format** : HTML
 
 ### Conclusion
-
-Une fois les workflows, leurs étapes, les automatismes et les actions correctement configurés, ainsi que les fiches d'action ajoutées pour l'historisation, votre application sera capable de gérer des processus automatisés de manière fluide et efficace. Assurez-vous que toutes les étapes, transitions, automatismes, actions, et fiches d'action sont correctement définis pour garantir un fonctionnement optimal.
+Les automatismes sont essentiels pour moderniser et optimiser les processus d'entreprise. Ils libèrent du temps en automatisant les tâches répétitives, permettent aux employés de se concentrer sur des activités à plus forte valeur ajoutée, et réduisent les erreurs humaines.
