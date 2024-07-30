@@ -63,5 +63,9 @@ Cliquer sur "Ajouter".
 - **Fichier joint** : ["[%fichier_joint_1%]","[%fichier_joint_2%]"]
 - **Format** : HTML
 
+il est également possible de fusionner des informations dans un email, grâce au bouton "Insérer champ" :
+
+![Exemple](images/image.png)
+
 ### Conclusion
 Les automatismes sont essentiels pour moderniser et optimiser les processus d'entreprise. Ils libèrent du temps en automatisant les tâches répétitives, permettent aux employés de se concentrer sur des activités à plus forte valeur ajoutée, et réduisent les erreurs humaines.
