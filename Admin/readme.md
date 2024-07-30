@@ -425,14 +425,15 @@ Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On ut
 1. Après avoir installée l'application "Google Authenticator", connectez-vous à votre compte Google.
 2. Sur votre profil GoPaaS accédez à la section "2FA Authenticator".
 
-![screenshot](images/image31.png)
-![screenshot](images/image29.png)
+<img src="images/image31.png" width="350">
+<br>
+<img src="images/image29.png" width="500">
 
 3. Activez cette fonctionnalité et cliquez sur "Générer code secret" pour obtenir un QR Code.
 4. Ouvrez Google Authenticator, appuyez sur le "+" en bas à droite, puis sélectionnez "Scanner un code QR".
 5. Scannez le code QR affiché sur GoPaaS pour ajouter un 2FA à votre profil et obtenir un code unique qui se régénère toutes les 30 secondes.
 
-![screenshot](images/image30.png)
+<img src="images/image30.png" width="500">
 
 6. Enregistrez votre fiche utilisateur.
 
@@ -447,13 +448,14 @@ Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On ut
 1. Après avoir installé l'application "Microsoft Authenticator", connectez-vous à votre compte Microsoft.
 2. Rendez-vous sur votre profil GoPaaS et accédez à la section "2FA Authenticator".
 
-![screenshot](images/image31.png)
-![screenshot](images/image29.png)
+<img src="images/image31.png" width="350">
+<br>
+<img src="images/image29.png" width="500">
 
 3. Activez cette fonctionnalité et cliquez sur "Générer code secret" pour obtenir un QR Code.
 4. Ouvrez Microsoft Authenticator, appuyez sur le "+" en haut à droite, puis choisissez "Autre (Google, Facebook, etc.)".
 5. Scannez le code QR affiché sur GoPaaS pour ajouter un 2FA à votre profil et obtenir un code unique qui se régénère toutes les 30 secondes.
 
-![screenshot](images/image30.png)
+<img src="images/image30.png" width="500">
 
 6. Enregistrez votre fiche utilisateur.
