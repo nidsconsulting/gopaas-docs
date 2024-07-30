@@ -14,23 +14,23 @@ La gestion des permissions permet de définir et de contrôler les droits d'acc�
 
 | **Champ**           | **Description**                                                                 |
 |---------------------|---------------------------------------------------------------------------------|
-| **Table**            | Table de la permission à configurer. |
-| **Type**            | Type de la permission à configurer, pour gérer les accès. |
-| **Champ à utiliser** | Champ de la table utilisé pour les permissions. |
-| **Partage**         | Type de partage des données. |
+| **Table**           | Table de la permission à configurer.                                            |
+| **Type**            | Type de la permission à configurer, pour gérer les accès.                       |
+| **Champ à utiliser**| Champ de la table utilisé pour les permissions.                                 |
+| **Partage**         | Type de partage des données.                                                    |
 
 ### Détails des permissions
 
 | **Permission**       | **Groupes Autorisés**                                                                 |
-|----------------------|--------------------------------------------------------------------------------------|
-| **Création**         | Groupes spécifiés pour autoriser la création de données. |
-| **Lecture**          | Groupes spécifiés pour autoriser la lecture des données. |
-| **Lecture Sélective** | Groupes spécifiés pour la lecture sélective en fonction d'un groupe. |
-| **Modification**     | Groupes spécifiés pour autoriser la modification des données. |
-| **Modification Sélective** | Groupes spécifiés pour la modification sélective en fonction d'un groupe. |
-| **Suppression**      | Groupes spécifiés pour autoriser la suppression des données. |
-| **Suppression Sélective** | Groupes spécifiés pour la suppression sélective en fonction d'un groupe. |
-| **Autres**           | Autres permissions comme l'import, l'export et la modification en masse. |
+|----------------------|---------------------------------------------------------------------------------------|
+| **Création**         | Groupes spécifiés pour autoriser la création de données.                              |
+| **Lecture**          | Groupes spécifiés pour autoriser la lecture des données.                              |
+| **Lecture Sélective** | Groupes spécifiés pour la lecture sélective en fonction d'un groupe.                 |
+| **Modification**     | Groupes spécifiés pour autoriser la modification des données.                         |
+| **Modification Sélective** | Groupes spécifiés pour la modification sélective en fonction d'un groupe.       |
+| **Suppression**      | Groupes spécifiés pour autoriser la suppression des données.                          |
+| **Suppression Sélective** | Groupes spécifiés pour la suppression sélective en fonction d'un groupe.         |
+| **Autres**           | Autres permissions comme l'import, l'export et la modification en masse.              |
 
 ### Exemple de Configuration des Permissions sur la table société
 
