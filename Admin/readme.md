@@ -426,7 +426,7 @@ Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On ut
 2. Sur votre profil GoPaaS accédez à la section "2FA Authenticator".
 
 <img src="images/image31.png" width="350">
-
+<br>
 <img src="images/image29.png" width="500">
 
 3. Activez cette fonctionnalité et cliquez sur "Générer code secret" pour obtenir un QR Code.
@@ -449,7 +449,7 @@ Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On ut
 2. Rendez-vous sur votre profil GoPaaS et accédez à la section "2FA Authenticator".
 
 <img src="images/image31.png" width="350">
-
+<br>
 <img src="images/image29.png" width="500">
 
 3. Activez cette fonctionnalité et cliquez sur "Générer code secret" pour obtenir un QR Code.
