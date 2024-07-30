@@ -1,8 +1,8 @@
-# Comment géréer des permissions dans GoPaaS ?
+# Comment gérer des permissions dans GoPaaS ?
 
 ## Description
 
-La gestion des permissions permet de définir et de contrôler les droits d'accès en fonction des attributs des utilisateurs. Cette approche assure que les utilisateurs ont accès uniquement aux informations spécifique à leur rôle, ce qui améliore la sécurité et la pertinence des données traitées.
+La gestion des permissions permet de définir et de contrôler les droits d'accès en fonction des attributs des utilisateurs. Cette approche assure que les utilisateurs ont accès uniquement aux informations spécifiques à leur rôle, ce qui améliore la sécurité et la pertinence des données traitées.
 
 ### Bénéfices attendus
 - ***Sécurité Accrue :*** Limite l'accès aux informations sensibles, réduisant les risques de divulgation non autorisée.
@@ -34,12 +34,29 @@ La gestion des permissions permet de définir et de contrôler les droits d'acc�
 
 ### Exemple de Configuration des Permissions sur la table société
 
+Vous disposez de commerciaux dont les clients sont répartis par région, et vous souhaitez que chaque commercial puisse uniquement consulter et modifier les fiches de clients situés dans sa propre région.
+
+Pour cela, créez des groupes (est, ouest, nord et sud). Voici comment créer les groupes :
+
+1. Allez dans **Admin** (menu de gauche) puis sur **Groupes**.
+2. Cliquez sur **Ajouter** et renseignez le champ **Intitulé** avec les valeurs suivantes : **est**, **ouest**, **nord**, **sud**.
+
+Dans la section **Permissions** :
+
+- **Module(s)** : Sélectionnez le(s) module(s) disponible(s) pour le groupe, par exemple : CRM, VENTES, ...
+- **Accès rapide** : Cochez la case si le groupe peut y accéder.
+- **Dashboard** : Cochez la case si le groupe peut y accéder.
+- **Référence** : Cochez la case si le groupe peut y accéder.
+- **Ajout rapide** : Cochez la case si le groupe peut y accéder.
+
+Dans la fiche permission, il faut lier le ou les groupe(s) aux possibilités souhaiter :
+
 | **Champ**          | **Description**                                                                                       |
 |--------------------|-------------------------------------------------------------------------------------------------------|
 | **Table**          | Spécifiez ici la table ou les données concernées, ici société.                                        |
 | **Type**           | "Group" pour configurer les accès par région.                                                         |
 | **Champ à utiliser** | Attribut régional pour la gestion des permissions, ici champ "région".                              |
-| **Partage**        | "Public" pour définir l'accès en fonction gu groupe.                                                  |
+| **Partage**        | "Public" pour définir l'accès en fonction du groupe.                                                  |
 | **Lecture Sélective** | Groupes ayant accès en lecture : EST, OUEST, SUD, NORD                                             |
 | **Modification Sélective** | Groupes ayant la possibilité de modification : EST, OUEST, SUD, NORD                          |
 
