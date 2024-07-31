@@ -408,14 +408,14 @@ Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On ut
 - Protège contre les accès non autorisés même en cas de violation du mot de passe.
 - Ajoute une couche supplémentaire de protection.
 
-## Pré-requis
+### Pré-requis
 
 - Installer une application d'authentification sur votre mobile ou PC.
 
 
 ### Applications mobile
 
-## Configuration avec Google Authenticator
+#### Configuration avec Google Authenticator
 
 | Plateforme | Télécharger                           |
 |------------|---------------------------------------|
@@ -437,7 +437,7 @@ Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On ut
 
 6. Enregistrez votre fiche utilisateur.
 
-## Configuration avec Microsoft Authenticator
+#### Configuration avec Microsoft Authenticator
 
 | Plateforme | Télécharger                           |
 |------------|---------------------------------------|
