@@ -12,7 +12,7 @@ Le paramétrage du workflow permet de définir et de gérer les processus automa
 ### Instructions pour le Paramétrage
 
 1. **Accéder au Menu de Configuration**
-   - Rendez-vous dans le menu de gauche sous **(admin)**.
+   - Rendez-vous dans la barre de navigation > Admin > Workflow.
    - Cliquez sur **Workflow**.
 
 2. **Ajouter un Nouveau Workflow**
@@ -28,6 +28,9 @@ Le paramétrage du workflow permet de définir et de gérer les processus automa
    | **Champ pour les commentaires** | Champ permettant d'ajouter des commentaires à chaque étape du workflow.                        |
    | **Actif**                | Indiquer si le workflow est actif ou non.                                                             |
    | **Description**          | Description détaillée du workflow et de son objectif.                                                 |
+
+   #### Exemple :
+   ![Exemple](images/image1.png)
 
 4. **Appliquer les Modifications**
    - Cliquez sur le bouton **Appliquer** pour enregistrer les modifications.
@@ -56,6 +59,8 @@ Le paramétrage du workflow permet de définir et de gérer les processus automa
          ...
      ]
      ```
+     #### Exemple :
+     ![Exemple](images/image2.png)
 
 7. **Intégrer le Workflow avec le Script JavaScript**
    - Une fois le workflow terminé, accédez au script JavaScript de la table concernée.
@@ -79,11 +84,15 @@ Le paramétrage du workflow permet de définir et de gérer les processus automa
    | **Ordre**     | Indiquez l'ordre dans lequel l'automatisme doit être exécuté.      |
    | **Type**      | Enregistrement de fiche                                            |
    | **Mode**      | Modification                                                       |
-   | **Table**     | Nom de votre table ou vous exécutez le workflow (exemple: dossier) |
+   | **Table**     | Nom de votre table ou vous exécutez le workflow (exemple: devis)   |
+   | **Section Filtre** | Témoin ou se déclenche l'étape, dans notre cas l'étape se déclenche au statut "Devis en cours de réalisation"   |
+
+   #### Exemple :
+   ![Exemple](images/image3.png) 
 
    - Enfin après avoir configuré l'automatisme, Cliquer sur **Appliquer**.
 
-9. **Configurer les Actions du Workflow**
+9. **Configurer les Actions de l'automatisme**
    - Cliquer sur le bouton **Ajouter** dans la section **Actions**.
 
    | **Champ**     | **Description**                                          |
@@ -104,7 +113,10 @@ Le paramétrage du workflow permet de définir et de gérer les processus automa
      | **Table**      | Sélectionnez la table cible, dans notre cas, ce sera la table **Action**.  |
      | **Valeur**     | Remplissez les champs souhaités dans la section **Valeur**.                |
 
-   - **PS :** Assurez-vous de connecter cette fiche enfant à la fiche parent, en remplissant le champ connexion avec :
+     #### Exemple :
+     ![Exemple](images/image4.png)
+
+     - **PS :** Assurez-vous de connecter cette fiche enfant à la fiche parent, en remplissant le champ connexion avec :
      ```json
      [%cle%]
      ```
