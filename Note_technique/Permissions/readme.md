@@ -1,3 +1,4 @@
+
 # Comment gérer des permissions dans GoPaaS ?
 
 ## Description
@@ -10,55 +11,105 @@ La gestion des permissions permet de définir et de contrôler les droits d'acc�
 - ***Pertinence des Informations :*** Assure que les utilisateurs accèdent uniquement aux données qui leur sont pertinentes.
 - ***Adaptabilité :*** Permet d'ajuster les droits d'accès selon les besoins spécifiques.
 
-### Configuration des Permissions
+### Exemple de Configuration des Permissions sur la table compte
 
-| **Champ**           | **Description**                                                                 |
-|---------------------|---------------------------------------------------------------------------------|
-| **Table**           | Table de la permission à configurer.                                            |
-| **Type**            | Type de la permission à configurer, pour gérer les accès.                       |
-| **Champ à utiliser**| Champ de la table utilisé pour les permissions.                                 |
-| **Partage**         | Type de partage des données.                                                    |
+Vous disposez de commerciaux dont les clients sont répartis par région, et vous souhaitez que chaque commercial puisse uniquement consulter et modifier les fiches comptes situés dans sa propre région.
 
-### Détails des permissions
+### Étape 1 : Création des groupes
 
-| **Permission**       | **Groupes Autorisés**                                                                 |
-|----------------------|---------------------------------------------------------------------------------------|
-| **Création**         | Groupes spécifiés pour autoriser la création de données.                              |
-| **Lecture**          | Groupes spécifiés pour autoriser la lecture des données.                              |
-| **Lecture Sélective** | Groupes spécifiés pour la lecture sélective en fonction d'un groupe.                 |
-| **Modification**     | Groupes spécifiés pour autoriser la modification des données.                         |
-| **Modification Sélective** | Groupes spécifiés pour la modification sélective en fonction d'un groupe.       |
-| **Suppression**      | Groupes spécifiés pour autoriser la suppression des données.                          |
-| **Suppression Sélective** | Groupes spécifiés pour la suppression sélective en fonction d'un groupe.         |
-| **Autres**           | Autres permissions comme l'import, l'export et la modification en masse.              |
+1. **Accéder au menu Admin :**
+   - Allez dans **Admin** (menu de gauche).
+   - Cliquez sur **Groupes**.
 
-### Exemple de Configuration des Permissions sur la table société
+2. **Créer les groupes :**
+   - Cliquez sur **Ajouter**.
+   - Remplissez le champ **Intitulé** avec les noms des groupes : **EST**, **OUEST**, **NORD**, **SUD**.
+   - Dans la section **Permissions** :
 
-Vous disposez de commerciaux dont les clients sont répartis par région, et vous souhaitez que chaque commercial puisse uniquement consulter et modifier les fiches de clients situés dans sa propre région.
+        - **Module(s)** : Sélectionnez le(s) module(s) disponible(s) pour le groupe, par exemple : CRM.
+        - **Accès rapide** : Cochez la case si le groupe peut y accéder.
+        - **Dashboard** : Cochez la case si le groupe peut y accéder.
+        - **Référence** : Cochez la case si le groupe peut y accéder.
+        - **Ajout rapide** : Cochez la case si le groupe peut y accéder.
 
-Pour cela, créez des groupes (est, ouest, nord et sud). Voici comment créer les groupes :
+   - Cliquez sur **Enregistrer**.
 
-1. Allez dans **Admin** (menu de gauche) puis sur **Groupes**.
-2. Cliquez sur **Ajouter** et renseignez le champ **Intitulé** avec les valeurs suivantes : **est**, **ouest**, **nord**, **sud**.
+   - Répétez cette opération pour les quatre groupes.
 
-Dans la section **Permissions** :
+   ![Images](images/VUE_GROUPE_DISPONIBLE.png)
 
-- **Module(s)** : Sélectionnez le(s) module(s) disponible(s) pour le groupe, par exemple : CRM, VENTES, ...
-- **Accès rapide** : Cochez la case si le groupe peut y accéder.
-- **Dashboard** : Cochez la case si le groupe peut y accéder.
-- **Référence** : Cochez la case si le groupe peut y accéder.
-- **Ajout rapide** : Cochez la case si le groupe peut y accéder.
+### Étape 2 : Attribution des groupes aux utilisateurs
 
-Dans la fiche permission, il faut lier le ou les groupe(s) aux possibilités souhaiter :
+1. **Accéder au menu Utilisateur :**
+   - Allez dans **Admin** (menu de gauche).
+   - Cliquez sur **Utilisateur**.
 
-| **Champ**          | **Description**                                                                                       |
-|--------------------|-------------------------------------------------------------------------------------------------------|
-| **Table**          | Spécifiez ici la table ou les données concernées, ici société.                                        |
-| **Type**           | "Group" pour configurer les accès par région.                                                         |
-| **Champ à utiliser** | Attribut régional pour la gestion des permissions, ici champ "région".                              |
-| **Partage**        | "Public" pour définir l'accès en fonction du groupe.                                                  |
-| **Lecture Sélective** | Groupes ayant accès en lecture : EST, OUEST, SUD, NORD                                             |
-| **Modification Sélective** | Groupes ayant la possibilité de modification : EST, OUEST, SUD, NORD                          |
+2. **Associer les utilisateurs aux groupes :**
+   - Pour chaque utilisateur concerné, double-cliquez sur l'utilisateur.
+   - Dans la section **Groupe** (multi-connexion), associez le groupe approprié (NORD, SUD, EST, OUEST).
+
+   ![Images](images/VUE_UTILISATEUR_GROUPE.png)
+
+   - Enregistrez la fiche utilisateur.
+   - Assurez-vous d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
+
+### Étape 3 : Modification des fiches comptes
+
+1. **Accéder aux comptes :**
+   - Allez dans **Applications** (menu de gauche), puis dans le sous-menu **CRM** puis cliquer sur **Comptes**.
+   - Double-cliquez sur chaque fiche compte à modifier (au minimum quatre fiches comptes).
+
+2. **Associer les permissions :**
+   - Sur les fiches **Comptes**, vous devez posséder un champ, permettant de gérer les permissions, dans notre cas nous le nomerons **Permission** et pointera vers la table **Groupe** et de type multi-connexion.
+   - Renseignez le champ **Permission** (multi-connexion), en sélectionnant le groupe approprié (NORD, EST, OUEST, SUD).
+
+   ![Images](images/EXEMPLE_COMPTE_SELECTION_PERMISSION.png)
+
+   - Enregistrez chaque fiche compte.
+
+### Étape 4 : Création des permissions pour la fiche compte
+
+1. **Accéder au menu Permissions :**
+   - Allez dans **Admin** (menu de gauche).
+   - Cliquez sur **Permissions**.
+
+2. **Ajouter les permissions :**
+   - Cliquez sur **Ajouter**.
+   - Remplissez les champs comme suit :
+
+| **Champ**             | **Valeur**                        |
+|-----------------------|-----------------------------------|
+| **Table**             | compte                            |
+| **Type**              | Group                             |
+| **Champ à utiliser**  | permission                        |
+| **Partage**           | Public                            |
+| **Création**          | SUD, ADMIN, NORD, EST, OUEST      |
+| **Lecture**           | ADMIN                             |
+| **Lecture sélective** | SUD, ADMIN, NORD, EST, OUEST      |
+| **Modification sélective** | SUD, ADMIN, NORD, EST, OUEST |
+| **Suppression sélective** | ADMIN                         |
+| **Import**            | SUD, ADMIN, NORD, EST, OUEST      |
+| **Export**            | ADMIN                             |
+| **Modification en masse** | SUD, ADMIN, NORD, EST, OUEST  |
+
+![Images](images/VUE_PERMISSION_COMPTE.png)
+
+3. **Enregistrer les permissions :**
+   - Cliquez sur **Enregistrer**.
+
+### Étape 5 : Se déconnecter et se reconnecter
+
+1. **Actualisation des permissions :**
+   - Déconnectez-vous de votre session.
+   - Demandez aux utilisateurs concernés de se déconnecter et de se reconnecter pour que les nouvelles permissions soient prises en compte.
+
+### Résultat
+
+- Depuis une session région **SUD** :
+![Images](images/EXEMPLE_VUE_RESULTAT_USER.png)
+
+- Depuis une session **ADMIN** :
+![Images](images/EXEMPLE_VUE_RESULTAT_ADMIN.png)
 
 ### Conclusion
 
