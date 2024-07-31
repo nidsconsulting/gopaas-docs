@@ -3,7 +3,7 @@
 
 ## Description
 
-Le paramétrage de l'affichage de ViewMap permet de visualiser les adresses sur une carte en utilisant les coordonnées géographiques (latitude et longitude).
+Le paramétrage de ViewMap permet de visualiser les adresses sur une carte en utilisant les coordonnées géographiques (latitude et longitude).
 
 ### Bénéfices attendus
 - ***Visualisation Géographique :*** Permet de visualiser les adresses sur une carte, facilitant ainsi l'analyse géographique.
@@ -12,12 +12,8 @@ Le paramétrage de l'affichage de ViewMap permet de visualiser les adresses sur 
 
 ### Instructions pour le Paramétrage
 
-1. **Ouvrir votre vue**
-   - Sélectionnez à une vue des comptes ou contacts.
-
-2. **Configurer les Champs de la Vue**
-   - Activer la multi-sélection sur la vue.
-   - Ajoutez les champs suivants à la vue :
+1. **Sélectionner une vue**
+   - Sélectionnez une vue comportants les champs suivants :
 
    | **Champ**           | **Description**                                      |
    |---------------------|------------------------------------------------------|
@@ -27,10 +23,14 @@ Le paramétrage de l'affichage de ViewMap permet de visualiser les adresses sur 
    | **Latitude**        | Latitude (coordonnée géographique). |
    | **Longitude**       | Longitude (coordonnée géographique). |
 
+2. **Configurer les Champs de la Vue**
+   - Activer la multi-sélection sur la vue.
+
    - Récupérer le nom de la vue ainsi que le nom de la table (compte ou contact, par exemple) pour l'insérer dans le code ci-dessous à la place de **"NOM_TABLE"** & **"NOM_VUE_FILTRE"**.
 
-4. **Intégrer le Script JavaScript**
+3. **Intégrer le JavaScript**
    - Ajoutez le code suivant dans le script de la vue :
+   - Remplacer **"NOM_TABLE"** & **"NOM_VUE_FILTRE"** par le nom de votre table et le nom de votre vue.
 
 ```javascript
 async function onLoad_view[ID_VUE](datagrid){
@@ -79,7 +79,7 @@ async function onLoad_view[ID_VUE](datagrid){
   }
 }
 ```
-### Résultat
+### Résultat attendu
 
 ![Carte](images/vue2.png)
 ![Carte](images/vue.png)
