@@ -7,82 +7,38 @@ Le paramétrage de ViewMap permet de visualiser les adresses sur une carte en ut
 
 ### Bénéfices attendus
 - ***Visualisation Géographique :*** Permet de visualiser les adresses sur une carte, facilitant ainsi l'analyse géographique.
-- ***Accessibilité :*** Ajoute une option pratique dans le menu outil pour afficher rapidement les données sur une carte.
-- ***Interaction Simplifiée :*** Facilite l'interaction avec les données en utilisant des coordonnées géographiques précises.
+- ***Accessibilité :*** Ajoute une option pratique dans le menu outil de la vue pour afficher rapidement les données sur une carte.
 
 ### Instructions pour le Paramétrage
 
-1. **Sélectionner une vue**
-   - Sélectionnez une vue comportants les champs suivants :
+1. **Paramétrer la vue**
+   - Dans votre vue, ajouter les champs suivants :
 
    | **Champ**           | **Description**                                      |
    |---------------------|------------------------------------------------------|
-   | **Adresse**         | Adresse.                         |
-   | **cp**              | Code postal.                     |
-   | **Ville**           | Ville.                           |
-   | **Latitude**        | Latitude (coordonnée géographique). |
-   | **Longitude**       | Longitude (coordonnée géographique). |
+   | **Adresse**         | Adresse. (Avec l'alias **adresse**)                  |
+   | **Cp**              | Code postal. (Avec l'alias **cp**)                   |
+   | **Ville**           | Ville.          (Avec l'alias **ville**)             |
+   | **Latitude**        | Latitude (coordonnée géographique).      (Avec l'alias **latitude**)  |
+   | **Longitude**       | Longitude (coordonnée géographique).     (Avec l'alias **longitude**) |
 
-2. **Configurer les Champs de la Vue**
-   - Activer la multi-sélection sur la vue.
-
-   - Récupérer le nom de la vue ainsi que le nom de la table (compte ou contact, par exemple) pour l'insérer dans le code ci-dessous à la place de **"NOM_TABLE"** & **"NOM_VUE_FILTRE"**.
-
-3. **Intégrer le JavaScript**
+2. **Intégrer le JavaScript**
    - Ajoutez le code suivant dans le script de la vue :
-   - Remplacer **"NOM_TABLE"** & **"NOM_VUE_FILTRE"** par le nom de votre table et le nom de votre vue.
-
-```javascript
-async function onLoad_view[ID_VUE](datagrid){
-  var thisComponent = this;
-
-  var viewbar = Component.find("Viewbar", this);
-  viewbar.addTool('Afficher sur une carte', await openMap);
-
-  async function openMap() {
-    var destinations = [];
-    var rows = thisComponent.getAllSelectedRow();
-
-    if (Number(rows.length) !== 1) {
-      gopaas.dialog.notifyWarning("Merci de sélectionner une fiche");
-    } else {
-      destinations = [];
-      let coord = [rows[0].latitude, rows[0].longitude];
-      let dpt = rows[0].cp.substr(0, 2);
-      let pays = rows[0].pays;
-
-      if (dpt === '' || pays === '') {
-        gopaas.dialog.warning("Code postal ou Pays non renseigné, merci de vérifier votre fiche Compte");
-        return false;
+      ```javascript
+      function onLoad_view[ID_VIEW](datagrid){
+          var viewbar = Component.find("Viewbar", this);
+          viewbar.addTool("<i class='fas fa-map'></i>   <span class='trn'>Afficher la carte</span>", openMap);
       }
 
-      let items = await $.get('webservice/view/list-item.php', {
-        tableName: "NOM_TABLE",
-        viewName: "NOM_VUE_FILTRE",
-        advancedSearch: "cp|start|" + dpt + "|;pays|equal|" + pays + "|AND"
-      });
-
-      var nbLigne = items.rows.length;
-
-      for (let i = 0; i < nbLigne; i++) {
-        destinations.push({
-          adresse: items.rows[i].adresse,
-          cp: items.rows[i].cp,
-          ville: items.rows[i].ville,
-          cle: items.rows[i].cle,
-          latitude: items.rows[i].latitude,
-          longitude: items.rows[i].longitude,
-        });
+      function openMap(){
+          ViewMap.open("[TABLE_NAME]", "[VIEW_NAME]");
       }
-      ViewMap.open("NOM_TABLE", "NOM_VUE_FILTRE", destinations, coord);
-    }
-  }
-}
-```
+      ```
+    - Remplacer **"TABLE_NAME"** & **"VIEW_NAME"** par le nom de votre table et le nom de votre vue où est situé votre code.
+
 ### Résultat attendu
 
-![Carte](images/vue2.png)
-![Carte](images/vue.png)
+![Carte](images/map.png)
 
 ### Conclusion
 
