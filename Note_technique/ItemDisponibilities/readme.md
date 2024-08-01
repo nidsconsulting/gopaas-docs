@@ -90,7 +90,7 @@ Pour personnaliser la fiche avec du code JavaScript :
 
 Pour importer l'extension ItemDisponibilities :
 
-1. **Télécharger et Importer l'Extension**
+1. **Télécharger et Importer l'extension**
    - [Télécharger l'extension](https://www.gopaas.fr/help/Extension/)
    - Rendez-vous dans le menu **admin** (menu de gauche).
    - Cliquez sur **Transfer in**.
@@ -103,14 +103,14 @@ Pour finaliser l'installation :
 - **Vider le Cache** : Assurez-vous de vider le cache de votre navigateur.
 - **Se Reconnecter** : Reconnectez-vous à votre application pour appliquer les modifications.
 
-   #### Résultat attendu :
-   - Affichage de la section permettant de rechercher le meilleur intervenant :
+#### Résultat attendu :
+- Affichage de la section permettant de rechercher le meilleur intervenant :
 
-   ![image](images/image5.png)
+![image](images/image5.png)
 
-   - Interface de la sélection du meilleur créneau :
+- Interface de la sélection du meilleur créneau :
 
-   ![image](images/image4.png)
+![image](images/image4.png)
 
 ### Conclusion
 
