@@ -25,7 +25,10 @@ Vous accéderez à l'interface de configuration du Dashboard.
 | **Afficher bouton Fullscreen** | Permet d'afficher un bouton pour passer le dashboard en plein écran                                     |
 
 Pour sélectionner un groupe dans les permissions, cliquer sur l'icone ![screenshot](images/image3.png).
-Cocher le groupe qui aura acès au dashboard puis cliquer sur la flèche ![screenshot](images/image4.png).
+
+![1724227885621](images/image01.png)
+
+Cocher le groupe qui aura accès au dashboard puis cliquer sur la flèche ![screenshot](images/image4.png).
 
 ![screenshot](images/image5.png)
 
@@ -34,11 +37,13 @@ Cocher le groupe qui aura acès au dashboard puis cliquer sur la flèche ![scree
 
 ![screenshot](images/image30.png)
 
+> ***Remarque :** "Afficher au démarrage", "Pour le(s) groupe(s)" et "Afficher bouton Fullscreen" sont des paramètres optionnels.*
+
 5. Cliquer sur le bouton **Ajouter** de la section `Détails` pour ajouter une ligne de dashboard.
 
 ![screenshot](images/image2.png)
 
-6. L'interface Dashboard Line, vous permet d'ajouter de nouvelles lignes sur le Dashboard et d'y insérer des widgets, graphiques, et autres éléments visuels.
+6. L'interface Dashboard Line, vous permet d'ajouter de nouvelles lignes sur le Dashboard et d'y insérer des widgets.
 
 ![screenshot](images/image18.png)
 
