@@ -1,180 +1,455 @@
-# Dashboard
+# Admin
 
-## Création du dashboard Accueil
+## API Rest
 
-Le dashboard centralise les informations des tables Compte, Contact, Affaire et Action sous forme de widgets.
+L'API REST GoPaaS permet aux applications GoPaaS de communiquer entre elles.
 
-Cela permet une visualisation simplifiée et un accès rapide aux données essentielles de l'application. Lors de l'ouverture d'un widget, la vue par défaut de la table correspondante est affichée.
-
-1. Cliquer dans le menu **Références** > **Paramètre** > **Dashboard** pour ouvrir la vue des dashboards.
-2. Cliquer sur le bouton `Ajouter`.
-
-![screenshot](images/image1.png)
-
-Vous accéderez à l'interface de configuration du Dashboard.
-
-![1724227885621](images/image0.png)
-
-| Champs                               | Valeur                                                                                                   |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| **Intitulé**                  | Nom du dashboard                                                                                         |
-| **Permission**                 | Liste des groupes ayant accès au dashboard                                                              |
-| **Regroupement**               | Regroupe le dashboard dans un dossier du menu `Dashboard`                                              |
-| **Afficher au démarrage**     | Affiche le dashboard lors de la connexion de l'utilisateur (fonctionne avec le `Pour le(s) groupe(s)`) |
-| **Pour le(s) groupe(s)**       | Liste des groupes pour lesquelles le dashboard s'affichera au démarrage                                 |
-| **Afficher bouton Fullscreen** | Permet d'afficher un bouton pour passer le dashboard en plein écran                                     |
-
-Pour sélectionner un groupe dans les permissions, cliquer sur l'icone ![screenshot](images/image3.png).
-
-![1724227885621](images/image01.png)
-
-Cocher le groupe qui aura accès au dashboard puis cliquer sur la flèche ![screenshot](images/image4.png).
-
-![screenshot](images/image5.png)
-
-3. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
-4. Cliquer sur le bouton **Appliquer** pour enregistrer le Dashboard et pouvoir créer une ligne de dashboard.
-
-![screenshot](images/image30.png)
-
-> ***Remarque :** "Afficher au démarrage", "Pour le(s) groupe(s)" et "Afficher bouton Fullscreen" sont des paramètres optionnels.*
-
-5. Cliquer sur le bouton **Ajouter** de la section `Détails` pour ajouter une ligne de dashboard.
-
-![screenshot](images/image2.png)
-
-6. L'interface Dashboard Line, vous permet d'ajouter de nouvelles lignes sur le Dashboard et d'y insérer des widgets.
-
-![screenshot](images/image18.png)
-
-| Champs                      | Valeur                                                                                       |
-| --------------------------- | -------------------------------------------------------------------------------------------- |
-| **Dashboard**         | Dashboard auquel est relié la ligne de dashboard                                            |
-| **Intitulé**         | Nom de la ligne de dashboard                                                                 |
-| **Ordre**             | Ordre d'affichage de la ligne                                                                |
-| **Options avancées** | Affiche l'onglet `HTML` qui permet de personnaliser plus en détail la ligne de dashboard  |
-| **Description**       | Description de la ligne de dashboard                                                         |
-| **View**              | Permet de sélectionner une vue de type**Graphique** qui apparaitra dans le dashboard  |
-| **Largeur**           | Permet de sélectionner la largeur que prendra le**Widget** dans la ligne de dashboard |
-
-7. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view1**.
-8. Chercher la table **compte** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
-
-![screenshot](images/image7.png)
-
-9. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view2**.
-10. Chercher la table **contact** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
-
-![screenshot](images/image8.png)
-
-11. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view3**.
-12. Chercher la table **affaire** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
-
-![screenshot](images/image9.png)
-
-13. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view4**.
-14. Chercher la table **action** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
-
-![screenshot](images/image17.png)
-
-15. Sélectionner une largeur 3 pour chaque Icone.
+![screenshot](images/apirest.png)
 
 ![screenshot](images/image10.png)
 
-16. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications de la ligne.
+* Conditions sur les vues pour filtrer les données de transit
+* Gestion des destinations
+* Mappage via JSON
+* Jeton d'identification
+* Echange de données type texte, image ou fichier
+* Déclenchement via automatisme
 
-![screenshot](images/image11.png)
+## Audit trail
 
-17. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications du dashboard.
-18. Actualiser l'application.
+L'audit trail permet de visualiser les modifications qui ont été faites dans les fiches de l'application.
 
-Pour modifier les icones des widgets, cliquer sur  ![screenshot](images/image12.png).
+Le suivi de ces modifications est à activer dans les champs d'une table en cochant "Audit Trail" de l'onglet "Autre".
 
-![screenshot](images/image13.png)
-
-19. Cliquer sur l'onglet **Graphique** puis modifier le champ **Icône du widget** par une icone [Font Awesome](https://fontawesome.com/).
-
-![screenshot](images/image14.png)
-
-Icone **Compte** : `fas fa-building fa-5x`
-
-Icone **Contact** : `fas fa-address-card fa-5x`
-
-Icone **Affaire** : `fas fa-suitcase fa-5x`
-
-Icone **Action** : `fas fa-file-signature fa-5x`
-
-20. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications de la vue.
-21. Actualiser le dahsboard en cliquant sur le bouton ![screenshot](images/image15.png) pour voir le résultat.
+![screenshot](images/audittrail.png)
 
 ![screenshot](images/image16.png)
 
-# Webreport
+> _Ne pas oublier d'activer l'audit trail dans les champs d'une table en cochant "Audit Trail" dans l'onglet Principal._
 
-## Description
+| **Champ**       | Description                                        |
+| --------------------- | -------------------------------------------------- |
+| **Table**       | C'est la table reliée à cette fiche Audit trail. |
+| **Date**        | Date de la modification.                           |
+| **Utilisateur** | L'utilisateur qui a effectué la modification.     |
+| **Fiche**       | La fiche qui est auditée.                         |
+| **Heure**       | Heure de modification                              |
+| **Etat avant**  | État de la fiche avant la modification.           |
+| **Etat après** | État de la fiche après modification.             |
 
-WebReport est un outil graphique qui vous permet d'obtenir une vue d'ensemble claire et détaillée des données sélectionnées, avec des options de calcul avancées pour une analyse approfondie et précise.
+## Configuration
 
-## Création d'un Webreport
+La fiche de configuration permet de personnaliser le style de l'application en y adaptant les couleurs et l'image de l'entreprise.
 
-Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé un Dashboard existant.
+On retrouve également les coordonnées de l'entreprise et les éléments comptables.
 
-1. Modifier le dasboard en cliquant sur ![screenshot](images/image12.png)
-2. Une fois sur l'interface, ajouter une **nouvelle ligne de Dashboard**.
+La fonction de configuration se compose de plusieurs onglets qui renferment des sections, l'accès se fait uniquement depuis la barre de navigation.
 
-![screenshot](images/image31.png)
+![screenshot](images/configuration.png)
 
-3. Donner un Nom à cette nouvelle ligne plus cliquer sur le bouton **« Appliquer »** pour sauvegarder la fiche sans la fermer.
+### Onglet Principal
+
+#### Section Société
+
+Renseigner les informations relatives à la société, les coordonnées et le RIB.
+
+![screenshot](images/image11.png)
+
+#### Section Application
+
+| Champ                              | Description                                                                                                                               |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Durée d'inactivité**     | Permet de définir la durée maximale d'inactivité durant laquelle la session est ouverte. (Valeur à définir en secondes)              |
+| **Activer gestion du token** | Un Token peut être utilisé pour authentifier les utilisateurs dans des applications externes ou via une API.                            |
+| **Activer corbeille**        | Permet d’activer la corbeille sur votre application, les fiches envoyées dans la corbeille se retrouvent dans le menu Admin > Corbeille |
+| **Activer historique**       | Vous permet d’activer l’historique de navigation                                                                                        |
+
+#### Autres sections
+
+| **Champ**                | Description                                                                                          |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Serveur SMTP**         | Vous permet de paramétrer un serveur SMTP qui sera utilisé pour l’envoi des emails depuis GoPaaS. |
+| **Docusign**             | Authentification sur l’API Docusign                                                                 |
+| **Yousign**              | Authentification sur l’API Yousign                                                                  |
+| **SSO (Single Sign-On)** | Permet d'accéder à GoPaaS avec l’authentification Google                                          |
+| **Google API Key**       | Clé API Google MAP                                                                                  |
+
+### Onglet Style
+
+![screenshot](images/image001.png)
+
+* La section **Style général** permet de modifier le style de l'application, changer les couleurs, ajouter un favicon et modifier le titre de l'application.
+* La section **Page de login** permet de modifier le style sur la page de connexion à l'application.
+* La section **Bouton connexion** correspond à la personnalisation du bouton présent sur la page de connexion.
+
+Il est possible de paramétrer la couleur des boutons :
+
+| **Type de bouton**       | **Style**                                                    |
+| ------------------------------ | ------------------------------------------------------------------ |
+| **Bouton par défaut**   | ![capture](images/image21.png) ou encore ![capture](images/image4.png) |
+| **Bouton principal**     | Bouton de type![capture](images/image1.png)                          |
+| **Bouton info**          | Bouton de type![capture](images/image15.png)                         |
+| **Bouton Succès**       | Bouton de type![capture](images/image9.png)                          |
+| **Bouton danger**        | Bouton de type![capture](images/image20.png)                         |
+| **Bouton avertissement** | Bouton de type![capture](images/image13.png)                         |
+
+Il est également possible de personnaliser les couleurs de la vue Pivot (Tableau croisé dynamique) via la section** Couleur vue pivot.**
+
+> Pour le paramétrage des couleurs, veuillez renseigner une valeur au format : **#FFFFFF**.
+
+### Onglet Script
+
+![screenshot](images/image01.png)
+
+Ajouter un script à cet emplacement pour des paramétrages spécifiques comme :
+
+* Redimensionnement des photos
+* Paramétrage du mode offline
+* Ou autre fonction personnalisé qui pourra être appelé de toutes l'application
+
+### Onglet Archivage emails
+
+Vous permet de paramétrer l’archivage email dans GoPaaS.
 
 ![screenshot](images/image32.png)
 
-4. Cocher la case **« Options avancées »** pour affiche l’onglet **« Html »** puis l’ouvrir.
+| **Champ**                  | Description                                                                   |
+| -------------------------------- | ----------------------------------------------------------------------------- |
+| **Table**                  | Table où archiver les emails                                                 |
+| **Date**                   | Champ sur lequel enregistrer la date                                          |
+| **Expéditeur**            | Champ sur lequel connecter l’expéditeur (retrouve le contact avec l'émail) |
+| **Destinataires(s)**       | Champ sur lequel enregistrer le ou les destinataires                          |
+| **Sujet**                  | Champ sur lequel enregistrer le sujet                                         |
+| **Corps du message**       | Champ sur lequel enregistrer le message                                       |
+| **Pièce(s) jointe(s)**    | Champ sur lequel enregistrer les PJ (génère un zip si plusieurs PJ)         |
+| **Identifiant de l'email** | Champ d’identification unique de l’email                                    |
 
-![screenshot](images/image33.png)
+## Dictionnaire
 
-5. Dans le menu outil, cliquer sur l’option  **« Ajouter un WebReport »**.
+Vous pouvez importer un dictionnaire afin de bénéficier de l'application dans votre langue. Vous pouvez également créer des chaînes de caractères manuellement.
 
-![screenshot](images/image34.png)
+Pour importer un dictionnaire utilisez le module d'import, pour créer des chaînes de caractères cliquez sur Admin depuis la barre de navigation puis Dictionnaire.
 
-6. Cette option permet d’insérer dans le champ **« Html »** le script pour appeler le composant WebReport.
+![screenshot](images/dictionnaire.png)
 
-![screenshot](images/image35.png)
+Pour le faire manuellement cliquer sur Ajouter :
 
-7. Les paramètres du script insérés devront être modifiés pour appeler une source de données existante ( **vue** ).
-8. Rechercher la ligne suivante **« `var viewKey = "A_RENSEIGNER"` »** et remplacer la chaine **« A_RENSEIGNER »** par la **« cle »** de la vue avec la source de données souhaités. Par exemple  **« var viewKey = "Par défaut Affaire" »**.
+![screenshot](images/image28.png)
 
-![screenshot](images/image36.png)
+Plusieurs champs sont à renseigner pour enregistrer la traduction :
 
-9. **Enregistrer** la ligne de dashboard et ouvrir le Dashboard pour afficher le WebReport avec la configuration par défaut.
+| **Champ**                | Description                                                                                                |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| **Texte de référence** | Il correspond a l'intitulé du champ.                                                                      |
+| **Type**                 | Pour l'application, sélectionner systématiquement "application".                                         |
+|                                | Inscrire ensuite la traduction du texte de référence dans les autres langues pour valider la traduction. |
 
-![screenshot](images/image37.png)
+> il faudra vous déconnecter et vous reconnecter de GoPaaS pour que les nouvelles traductions soient chargées.
 
-10. Cliquer sur la **flèche diagonale** en haut à droite du pivot pour modifier le WebReport en ajoutant des champs dans les lignes, colonnes, filtres, et valeurs.
+## Extension
 
-![screenshot](images/image38.png)
+Sur cette vue vous pouvez créer vos extensions GoPaaS.
 
-![screenshot](images/image39.png)
+![screenshot](images/extension.png)
 
-11. Configurer le WebReport selon les besoins puis cliquer sur le bouton **« Enr. »** pour afficher la nouvelle configuration du WebReport au  **format JSON**.
+### Onglet principal
 
-![screenshot](images/image40.png)
+Saisir le nom de votre extension, une description et cocher la case pour l’activer
 
-12. Cette configuration devra être **copié** afin de l'insérer dans le champ Html de la ligne de dashboard.
+![screenshot](images/image5.png)
 
-![screenshot](images/image41.png)
+| **Onglet**    | **Champ**             |
+| ------------------- | --------------------------- |
+| **Script JS** | Code javascript             |
+| **HTML**      | Code HTML                   |
+| **CSS**       | Feuille de style            |
+| **PHP**       | Cet onglet n’est pas actif |
 
-13. Ouvrir la ligne de dashboard puis l’onglet Html.
+> ***Remarque :** Il faudra vous déconnecter et vous reconnecter de GoPaaS pour que l’extension soit chargée*
 
-![screenshot](images/image42.png)
+## Groupes
 
-![screenshot](images/image43.png)
+Le menu groupe permet de gérer les groupes d'utilisateurs, par défaut il existe 4 groupes : **ADMIN, COMMERCIAL, TECHNIQUE et COMPTA.**
 
-14. **Coller** pour remplacer la nouvelle configuration au format JSON entre les balises de commentaires ==Début== et ==Fin==.
+La notion de groupe est indispensable au paramétrage des permissions, ces différents groupes n'ont pas les mêmes droits.
 
-![screenshot](images/image44.png)
+Le groupe sera alors associé à un ou plusieurs utilisateurs.
 
-15. Cliquer sur le bouton **« Enregistrer »** pour sauvegarder dans la nouvelle configuration du WebReport.
+![screenshot](images/groupes.png)
 
-![screenshot](images/image45.png)
+![screenshot](images/image25.png)
 
-> Dans le champ Html, il est possible de modifier la configuration du WebReport en ajoutant ou modifiant les propriétés des objets  **slice** ,  **options** , **conditions** et  **formats** .
+Pour créer un nouveau groupe cliquez sur **Ajouter**, puis renseigner le champ **Intitulé** il correspond tout simplement au nom du groupe.
+
+![screenshot](images/image8.png)
+
+### Section Utilisateur
+
+Permet de voir la liste des membres du groupe.
+
+### Section Permission
+
+* *Module(s)* : Permet de donner l’accès aux modules, séparés par une virgule.
+* *Accès rapide* : Rend disponible les `Accès rapide` dans la barre de navigation.
+* *Dashboard* : Rend disponible les `Dashboard` dans la barre de navigation.
+* *Référence* : Rend disponible le menu des `Références` dans la barre de navigation.
+* *Ajout rapide* : Rend disponible l'`Ajout rapide` dans la barre d'outils.
+
+## History (historique)
+
+Vous pouvez ici retrouver la liste de toutes les fiches historiques de navigation sur l’application.
+
+![screenshot](images/history.png)
+
+![screenshot](images/image7.png)
+
+Vous retrouverez sur la fiche les informations suivante
+
+![screenshot](images/image6.png)
+
+| Champ                 | Description                    |
+| --------------------- | ------------------------------ |
+| **Date**        | Date de l’historique          |
+| **Time**        | Heure de l’historique         |
+| **Utilisateur** | Utilisateur concerné          |
+| **Name**        | Nom de la fiche ou vue ouverte |
+| **Type**        | Item (fiche) ou view (vue)     |
+| **Tablename**   | Table concernée               |
+| **Keyvalue**    | Clé de la fiche ou vue        |
+
+## Corbeille
+
+Vous retrouverez ici la liste de toutes les fiches supprimées et si nécessaire les restaurer.
+
+![screenshot](images/corbeille.png)
+
+![screenshot](images/image22.png)
+
+| Champ                      | Description                             |
+| -------------------------- | --------------------------------------- |
+| **Table Name**       | Nom de la table                         |
+| **Item ID**          | ID de la fiche supprimé                |
+| **Item Key**         | Clé de la fiche supprimé              |
+| **Data**             | JSON contenant toute la fiche           |
+| **Bouton Restaurer** | Bouton permettant de restaurer la fiche |
+
+## Permissions
+
+Le menu des Permissions permet de définir les droits sur les tables en fonction d'un groupe d'utilisateurs.
+
+![screenshot](images/permissions.png)
+
+![screenshot](images/image14.png)
+
+| **Champ**                   | **Valeur**                                                                                      |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Table**                   | Choix de la table pour les permissions                                                                |
+| **Type**                    | En fonction du type de permission (User ou Group)                                                     |
+| **Champ à utiliser**       | Champ permettant de réaliser la permission.                                                          |
+| **Partage**                 | En fonction de la portabilité du partage.                                                            |
+| **Creation**                | Donner les droits pour la création de fiche.                                                         |
+| **Lecture**                 | Donner les droits en lecture sur toutes les fiches.                                                   |
+| **Lecture sélective**      | Donner les droits en lecture sur les fiches du groupe dont l'utilisateur fait partie.                 |
+| **Modification**            | Donner les droits pour la modification de fiche.                                                      |
+| **Modification sélective** | Donner les droits en modification sur les fiches du groupe dont l'utilisateur fait partie.            |
+| **Suppression**             | Donner les droits pour la suppression sur toutes les fiches.                                          |
+| **Suppression sélective**  | Donner les droits en suppression sur les fiches du groupe dont l'utilisateur fait partie.             |
+| **Import**                  | Donner les droits pour importer des fiches depuis un fichier csv.                                     |
+| **Export**                  | Donner les droits pour exporter la vue au format csv.                                                 |
+| **Modification en masse**   | Donner les droits pour la mise à jour en masse des données (la vue doit être en multi-sélection). |
+
+## Sessions
+
+Le menu **Sessions** permet d'afficher la liste des sessions utilisateurs des applications GoPaaS.
+
+Dans la vue vous avez déjà accès à certaines informations comme l'heure, le statut ou encore la durée de connexion en secondes.
+
+![screenshot](images/sessions.png)
+
+En effectuant un double clic sur une fiche, vous accédez à plus d'informations comme l'adresse IP de l'utilisateur, le nom de son navigateur ou encore le type d'OS utilisé.
+
+![screenshot](images/image24.png)
+
+## Utilisateur
+
+Le menu Utilisateur permet d'afficher la liste des utilisateurs de l'application. L'administrateur peut créer ou modifier les profils des utilisateurs.
+
+![screenshot](images/utilisateur.png)
+
+Modifiez la fiche d'un utilisateur en double cliquant dessus ou ajouter un nouvel utilisateur cliquez sur **Ajouter**
+
+![screenshot](images/image27.png)
+
+### Onglet principal
+
+#### Section par défaut
+
+Il est conseillé de renseigner un certain nombre de champ pour enregistrer la fiche :
+
+| Champ                         | Valeur                                                                                                                               |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Nom**                      | Nom de l'utilisateur.                                                                                                                |
+| **Prénom**                  | Prénom de l'utilisateur.                                                                                                            |
+| **Téléphone**              | Numéro de téléphone.                                                                                                              |
+| **Email**                    | Email de l'utilisateur.                                                                                                              |
+| **Login**                    | Login de l'utilisateur, il sera utilisé à chaque connexion à l'application. Une fois créé, le Login ne peut pas être modifié. |
+| **Profil**                   | Choisir le profil de l'utilisateur (Admin, User, Guest).                                                                             |
+| **Groupe**                   | Définir le groupe de l'utilisateur en cliquant sur la loupe.                                                                        |
+| **Réduire menu navigation** | Cocher l'option permet de minimiser la barre de navigation à l'ouverture de l'application.                                          |
+| **Image profil**             | Image ou photo de profil.                                                                                                            |
+| **Actif**                    | Cocher pour rendre actif l’utilisateur.                                                                                             |
+| **Initiales**                | Renseigner les initiales.                                                                                                            |
+| **Signature**                | En renseignant la signature de l'utilisateur, elle sera reprise lors des envois d'email depuis GoPaaS.                               |
+| **Langue**                   | Choix de la langue sur GoPaaS.                                                                                                       |
+| **Masquer**                  | Ne pas rendre visible dans la vue : “Connexion sans user masqué”.                                                                 |
+| **Thème**                   | Choix du thème GoPaaS.                                                                                                              |
+
+#### Section Google authenticator
+
+| Champ       | Valeur                                                                                                                                                                                             |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Activer     | Activer Google Authenticator pour améliorer la sécurité au sein de l'application avec la validation en 2 étapes.<br />Cocher l'option Activer puis cliquer sur ![screenshot](images/image2.png) |
+| Code Secret | Et ensuite le renseigner ou de scanner le Qr code via l'application mobile (Google authenticator) installée sur votre smartphone.<br />![screenshot](images/image12.png)                            |
+
+#### Section API KEY
+
+| Champ                 | Valeur                                                                 |
+| --------------------- | ---------------------------------------------------------------------- |
+| Bearer token          | Générer votre token                                                  |
+| IP Authorized Address | Lister les IP autorisées à utiliser le token (fortement recommandé) |
+
+#### Section OAuth2.0
+
+| Champs            | Valeur                                                                                                                                                                                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Grant Type`    | `Client Credentials`                                                                                                                                                                                                                                  |
+| `Client ID`     | Le Client ID est un identifiant public unique attribué à une application cliente lors de son enregistrement auprès du serveur d'autorisation de GoPaaS dans le cadre du protocole OAuth 2.0                                                          |
+| `Client Secret` | Le Client Secret est une chaîne de caractères secrète utilisée dans le protocole OAuth 2.0, servant à authentifier l'identité d'une application cliente auprès du serveur d'autorisation, en complément de l'identifiant de client (Client ID). |
+| `Expires in`    | La durée d'expiration du token (Expire In), qui indique à l'application combien de temps le token sera valide.                                                                                                                                        |
+
+#### Section SSO (Single Sign-On)
+
+| Champ    | Valeur                                       |
+| -------- | -------------------------------------------- |
+| Username | Votre email google pour la connexion via SSO |
+
+### Onglet Email sortant
+
+Vue des emails que vous avez envoyé depuis GoPaaS
+
+### Onglet Session
+
+Vue de l’historiques de vos sessions GoPaaS
+
+### Onglet Webmail
+
+Vous pouvez ici ajouter un compte mail qui sera disponible dans la barre de navigation > Admin > Webmail
+
+![screenshot](images/image3.png)
+
+![screenshot](images/image18.png)
+
+| Champ             | Valeur                                                    |
+| ----------------- | --------------------------------------------------------- |
+| **Utilisateur**  | Utilisateur qui accède à ce webmail                     |
+| **Hote**         | Adresse du serveur d’email                               |
+| **Identifiant**  | Identifiant email                                         |
+| **Mot de passe** | Mot de passe email                                        |
+| **Port**         | Port de connexion au serveur d’email                     |
+| **Folder**       | Dossier où télécharger les emails, par défaut : INBOX |
+| **Flags IMAP**   | Flags IMAP, laisser la valeur par défaut                 |
+
+## Transfer out
+
+La fiche **transfer out** permet de sauvegarder différents éléments d’une application au format Json pour ensuite l’importer dans une autre application.
+
+![screenshot](images/transfertout.png)
+
+Liste des transferts possible : Tables et vues, Dashboards, Rules (automatismes), Modèles import, Workflows, Extensions, Api Rest et Assistant
+
+Pour Table et vues il y a plusieurs options possibles :
+
+![screenshot](images/image23.png)
+
+| Champ                                         | Valeur                                               |
+| --------------------------------------------- | ---------------------------------------------------- |
+| **Sélectionner une table**             | Choix de la table à exporter                        |
+| **Designer**                            | Exporte toute la partie FormDesigner                 |
+| **Scripts**                             | Exporte les champs script JS, class JS et script PHP |
+| **Permissions**                         | Exporte les permissions                              |
+| **Toutes les vues**                     | Exporte toutes les vues                              |
+| **Sélectionnez une ou plusieurs vues** | Permet de choisir les vues à exporter               |
+
+## Transfer In
+
+Permet d’importer des éléments d’une autre application.
+
+![screenshot](images/transfertin.png)
+
+![capture](images/image26.png)
+
+| Champ                        | Valeur                            |
+| ---------------------------- | --------------------------------- |
+| **Choisir un fichier** | Sélectionner un JSON à importer |
+| **Bouton Importer**    | Lance l'import                    |
+
+> Pour l’import d’une table il faudra se rendre dans le Check application pour créer la table et les champs
+
+## 2FA Authenticator
+
+Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On utilise une application mobile qui génère des codes de vérification temporaires et qui seront utiliséq en complément du mot de passe pour renforcer la sécurité des accès aux applications GoPaaS.
+
+### Avantages
+
+- Protège contre les accès non autorisés même en cas de violation du mot de passe.
+- Ajoute une couche supplémentaire de protection.
+
+### Pré-requis
+
+- Installer une application d'authentification sur votre mobile ou PC.
+
+### Applications mobile
+
+#### Configuration avec Google Authenticator
+
+| Plateforme   | Télécharger                                                                                                                              |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **iOS**     | [Google Authenticator on App Store](https://apps.apple.com/fr/app/google-authenticator/id388497605)                                           |
+| **Android** | [Google Authenticator on Google Play Store](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=fr&pli=1) |
+
+1. Après avoir installée l'application "Google Authenticator", connectez-vous à votre compte Google.
+2. Sur votre profil GoPaaS accédez à la section "2FA Authenticator".
+
+![screenshot](images/image31.png)
+
+![screenshot](images/image29.png)
+
+3. Activez cette fonctionnalité et cliquez sur "Générer code secret" pour obtenir un QR Code.
+4. Ouvrez Google Authenticator, appuyez sur le "+" en bas à droite, puis sélectionnez "Scanner un code QR".
+5. Scannez le code QR affiché sur GoPaaS pour ajouter un 2FA à votre profil et obtenir un code unique qui se régénère toutes les 30 secondes.
+
+![screenshot](images/image30.png)
+
+6. Enregistrez votre fiche utilisateur.
+
+#### Configuration avec Microsoft Authenticator
+
+| Plateforme   | Télécharger                                                                                                            |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| **iOS**     | [Microsoft Authenticator on App Store](https://apps.apple.com/fr/app/microsoft-authenticator/id983156458)                   |
+| **Android** | [Microsoft Authenticator on Google Play Store](https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=fr) |
+
+1. Après avoir installé l'application "Microsoft Authenticator", connectez-vous à votre compte Microsoft.
+2. Rendez-vous sur votre profil GoPaaS et accédez à la section "2FA Authenticator".
+
+![screenshot](images/image31.png)
+
+![screenshot](images/image29.png)
+
+3. Activez cette fonctionnalité et cliquez sur "Générer code secret" pour obtenir un QR Code.
+4. Ouvrez Microsoft Authenticator, appuyez sur le "+" en haut à droite, puis choisissez "Autre (Google, Facebook, etc.)".
+5. Scannez le code QR affiché sur GoPaaS pour ajouter un 2FA à votre profil et obtenir un code unique qui se régénère toutes les 30 secondes.
+
+![screenshot](images/image30.png)
+
+6. Enregistrez votre fiche utilisateur.
