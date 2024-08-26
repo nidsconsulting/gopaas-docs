@@ -1,180 +1,192 @@
-# Dashboard
+# Workflow
+GoPaaS est équipé d'un designer de workflow intuitif qui vous permet de modéliser et d'automatiser vos processus métier en quelques clics. Grâce à cet outil, vous pouvez facilement définir des étapes, assigner des actions, et orchestrer des flux de travail complexes pour améliorer l'efficacité et la cohérence dans vos opérations quotidiennes.
 
-## Création du dashboard Accueil
+## Objectifs
+Dans cette formation, vous apprendrez à créer un workflow de gestion de congé dans GoPaaS. Ce workflow automatisera l'ensemble du processus de demande de congé, depuis la soumission par l'employé jusqu'à l'approbation par le manager. Vous configurerez les étapes clés, telles que la soumission de la demande, la validation ou le refus par le responsable, et la notification de la décision à l'employé
+## Pré-requis
+Pour pouvoir utiliser un workflow sur une table, il y a deux paramètres à prendre en compte.
 
-Le dashboard centralise les informations des tables Compte, Contact, Affaire et Action sous forme de widgets.
+* Il est impératif de définir un champ "Étape" pour superviser les diverses phases du workflow. Ce champ doit être obligatoire et configuré exclusivement en format liste en mode lecture seule.
 
-Cela permet une visualisation simplifiée et un accès rapide aux données essentielles de l'application. Lors de l'ouverture d'un widget, la vue par défaut de la table correspondante est affichée.
+* Il serait pertinent de spécifier un champ "Commentaires workflow" de type "mémo", avec un accès en lecture seule, pour enregistrer les commentaires en cas de rejet. Ce champ reste facultatif.
 
-1. Cliquer dans le menu **Références** > **Paramètre** > **Dashboard** pour ouvrir la vue des dashboards.
-2. Cliquer sur le bouton `Ajouter`.
+## Création de la table
 
-![screenshot](images/image1.png)
+Dans le menu de personnalisation ![capture](images/image5.png):
+- Cliquer sur le menu `Tables` pour afficher la vue avec la liste de toutes les tables.
+- Cliquer ensuite sur le bouton `Ajouter`.
 
-Vous accéderez à l'interface de configuration du Dashboard.
+Renseigner les champs suivant:
 
-![1724227885621](images/image0.png)
+| Champ    | Valeur                               |
+|----------|--------------------------------------|
+| Intitulé | demande_conge |
+| Alias    | Demande de congé |
+| Champs à afficher dans connexion    | cle |
+| Icone    | Icone [Font Awesome](https://fontawesome.com/) qui permet de personnaliser la table  |
+| Type    | **Application** |
+| Module    | **CRM** |
 
-| Champs                               | Valeur                                                                                                   |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| **Intitulé**                  | Nom du dashboard                                                                                         |
-| **Permission**                 | Liste des groupes ayant accès au dashboard                                                              |
-| **Regroupement**               | Regroupe le dashboard dans un dossier du menu `Dashboard`                                              |
-| **Afficher au démarrage**     | Affiche le dashboard lors de la connexion de l'utilisateur (fonctionne avec le `Pour le(s) groupe(s)`) |
-| **Pour le(s) groupe(s)**       | Liste des groupes pour lesquelles le dashboard s'affichera au démarrage                                 |
-| **Afficher bouton Fullscreen** | Permet d'afficher un bouton pour passer le dashboard en plein écran                                     |
+* Enregistrer la table **Demande de congé**.
 
-Pour sélectionner un groupe dans les permissions, cliquer sur l'icone ![screenshot](images/image3.png).
+* Pour ouvrir la nouvelle table, il est nécessaire de vous déconnecter de GoPaaS et de vous reconnecter.
 
-![1724227885621](images/image01.png)
+### Création des champs
 
-Cocher le groupe qui aura accès au dashboard puis cliquer sur la flèche ![screenshot](images/image4.png).
+ ![screenshot](images/image1.png)
 
-![screenshot](images/image5.png)
+Utilisez le formdesigner pour créer les nouveaux champs, il est accessbible depuis le menu `outil` de la table demande de congé.
 
-3. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
-4. Cliquer sur le bouton **Appliquer** pour enregistrer le Dashboard et pouvoir créer une ligne de dashboard.
+Ajoutez les champs suivants : 
 
-![screenshot](images/image30.png)
+| Nom des champs | Type                          |
+|----------------|-------------------------------|
+| Date de début          | Date `Obligatoire`           |
+| Date de fin       | Date `Obligatoire`                        |
+| Nombre de jour       | Nombre `Obligatoire`                         |
+| Type       | Liste<br>Valeur de la liste :<br>- Payé<br>- Sans solde<br>- Arrêt maladie<br>- Maternité / Paternité<br>- Formation                     |
+| Commentaire             | Memo           |
+| Commentaire de refus          | Memo  `Lecture seule`          |
+| Statut           | Liste `Lecture seule`<br>Valeur de la liste :<br>- Nouvelle<br>- A valider<br>- Validée<br>- Refusée       |
+| Utilisateur    | Connexion `Table utilisateur` |
+| Date de demande    | Date |
+| Date de réponse    | Date |
 
-> ***Remarque :** "Afficher au démarrage", "Pour le(s) groupe(s)" et "Afficher bouton Fullscreen" sont des paramètres optionnels.*
 
-5. Cliquer sur le bouton **Ajouter** de la section `Détails` pour ajouter une ligne de dashboard.
+## Création du workflow
 
-![screenshot](images/image2.png)
+Pour créer un nouveau workflow, rendez vous dans la barre de navigation > Admin > Workflow.
+Cliquer sur `ajouter`.
 
-6. L'interface Dashboard Line, vous permet d'ajouter de nouvelles lignes sur le Dashboard et d'y insérer des widgets.
+ ![screenshot](images/image2.png)
 
-![screenshot](images/image18.png)
+ Renseignez les champs de l'onglet principal
 
-| Champs                      | Valeur                                                                                       |
-| --------------------------- | -------------------------------------------------------------------------------------------- |
-| **Dashboard**         | Dashboard auquel est relié la ligne de dashboard                                            |
-| **Intitulé**         | Nom de la ligne de dashboard                                                                 |
-| **Ordre**             | Ordre d'affichage de la ligne                                                                |
-| **Options avancées** | Affiche l'onglet `HTML` qui permet de personnaliser plus en détail la ligne de dashboard  |
-| **Description**       | Description de la ligne de dashboard                                                         |
-| **View**              | Permet de sélectionner une vue de type**Graphique** qui apparaitra dans le dashboard  |
-| **Largeur**           | Permet de sélectionner la largeur que prendra le**Widget** dans la ligne de dashboard |
+| Champ                      | Description                                   |
+|----------------------------|-----------------------------------------------|
+| Intitulé                   | Demande de congé                               |
+| Table                      | Sélectionnez la table **demande de congé**                              |
+| Champ pour les étapes      |  statut       |                          |
+| Champ pour les commentaires| commentaire_refus |
+| Actif                      | Cocher la case              |
+| Description                | Processus de demande de congé            |
 
-7. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view1**.
-8. Chercher la table **compte** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
+Une fois renseigné, cliquer sur `appliquer` pour continuer.
+
+ ### Définir les étapes du workflow
+
+ ![screenshot](images/image3.png)
+
+ Ce workflow sera composé de 2 étapes : 
+ - Envoi de la demande
+ - Réponse à la demande
+
+ #### Envoi de la demande
+ Pour créer cette étape de workflow, cliquer sur le bouton `Ajouter` dans la vue liée des étapes.
+
+![screenshot](images/image4.png)
+
+ Renseignez les champs de l'onglet principal
+
+| Champ                      | Description                                   |
+|----------------------------|-----------------------------------------------|
+| Ordre                   | 1                               |
+| Etape                      | Nouvelle                              |
+| Champs obligatoires                      | [{"name":"type"},{"name":"date_debut"},{"name":"date_fin"}]                              |
+| Nom du bouton    |  Envoyer ma demande       |                          |
+| Etape déclencheur | Envoi en cours|
+| Etape suivante à renseigner                      | Demande envoyée             |
+
+Cliquez sur `Enregistrer`
+
+ #### Réponse à la demande
+ Répéter l'opération précédente en renseigant les champs suivants
+
+ ![screenshot](images/image5.png)
+
+| Champ                      | Description                                   |
+|----------------------------|-----------------------------------------------|
+| Ordre                   | 2                               |
+| Etape                      | A valider                             |
+| **Bouton Valider**
+| Nom du bouton    |  Valider       |                          |
+| Etape déclencheur | Validation en cours|
+| Etape suivante à renseigner                      | Demande Validée  
+| **Bouton Refuser**
+| Nom du bouton    |  Refuser       |                          |
+| Etape déclencheur | Refus en cours|
+| Etape suivante à renseigner                      | Demande Refusée  
+
+
+Cliquez sur `Enregistrer`
+
+## Ajout des automatismes
+
+Afin de déclencher correctement le workflow il faut utiliser un automatisme spécifique pour chacune des étapes du processus.
+
+Le workflow contient deux étapes avec une étape à 2 choix. Il est donc nécessaire de créer 3 étapes minimum.
+- Automatisme d'envoi de la demande
+- Automatisme de validation de la demande
+- Automatisme de refus de la demande
+
+Rendez-vous dans le menu paramétrage en haut à droite de l’écran > Automatisation puis cliquez sur ajouter pour créer un nouvel automatisme.
+
+Cliquez sur `Ajouter` pour créer une nouvelle fiche et renseigner les champs de l'onglet principal.
+
+![screenshot](images/image6.png)
+
+| Champ                      | Description                                   |
+|----------------------------|-----------------------------------------------|
+| Nom                   | WF - Demande de congé - Nouvelle                               |
+| Actif                      | 1                              |
+| Description                      |                               |
+| Ordre    |  1      |                          |
+
+Cliquez sur `Enregistrer` puis ouvrez de nouveau la fiche pour ajouter le paramétrage.
 
 ![screenshot](images/image7.png)
 
-9. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view2**.
-10. Chercher la table **contact** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
+### Déclencheur
+| Champ                      | Description                                   |
+|----------------------------|-----------------------------------------------|
+| Type                   | Enregistrement de fiche                               |
+| Mode                      | Création et Modification                             |
+| Table                      |Demande de congé                               |
+
+### Filtre
+| Champ                      | Description                                   |
+|----------------------------|-----------------------------------------------|
+| Statut                   | Envoi en cours                              |
+
+### Action
+#### Email
+Dans la vue liée des actions, cliquez sur `Ajouter` pour créer une nouvelle action puis sélectionnez le type **Email**.
 
 ![screenshot](images/image8.png)
+Renseignez les champs suivant
+| Champ                      | Description                                   |
+|----------------------------|-----------------------------------------------|
+| De                   | Adresse de l'expéditeur (noreply@gopaas.fr)
+| À                   | Adresse du destinataire (rh@conge.fr)
+| CC                   | Destinataire en copie
+| Objet                   | Nouvelle demande de congé
+| Message                   | Bonjour, une nouvelle demande de congé est en attente de validation. Date de début : [%date_debut%] Date de fin : [%date_fin%]Nb de jour : [%nombre_jour%]
+| Fichier joint                   | 
+| Format                   | HTML
+> Le format doit impérativement être en HTML
 
-11. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view3**.
-12. Chercher la table **affaire** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
+Cliquez sur `Enregistrer`
+#### Update item
+Dans la vue liée des actions, cliquez sur `Ajouter` pour créer une nouvelle action puis sélectionnez le type **Modifier fiche**.
 
 ![screenshot](images/image9.png)
+ 
+ Dans la section **Valeurs**, renseignez les champs suivants
+ 
+ | Champ                      | Description                                   |
+|----------------------------|-----------------------------------------------|
+| Date de demande                  | $$curdate() - Ce code indique la date du jour
+| À                   | Adresse du destinataire (rh@conge.fr)
+| Statut                   | A valider
 
-13. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view4**.
-14. Chercher la table **action** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
-
-![screenshot](images/image17.png)
-
-15. Sélectionner une largeur 3 pour chaque Icone.
-
-![screenshot](images/image10.png)
-
-16. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications de la ligne.
-
-![screenshot](images/image11.png)
-
-17. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications du dashboard.
-18. Actualiser l'application.
-
-Pour modifier les icones des widgets, cliquer sur  ![screenshot](images/image12.png).
-
-![screenshot](images/image13.png)
-
-19. Cliquer sur l'onglet **Graphique** puis modifier le champ **Icône du widget** par une icone [Font Awesome](https://fontawesome.com/).
-
-![screenshot](images/image14.png)
-
-Icone **Compte** : `fas fa-building fa-5x`
-
-Icone **Contact** : `fas fa-address-card fa-5x`
-
-Icone **Affaire** : `fas fa-suitcase fa-5x`
-
-Icone **Action** : `fas fa-file-signature fa-5x`
-
-20. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications de la vue.
-21. Actualiser le dahsboard en cliquant sur le bouton ![screenshot](images/image15.png) pour voir le résultat.
-
-![screenshot](images/image16.png)
-
-# Webreport
-
-## Description
-
-WebReport est un outil graphique qui vous permet d'obtenir une vue d'ensemble claire et détaillée des données sélectionnées, avec des options de calcul avancées pour une analyse approfondie et précise.
-
-## Création d'un Webreport
-
-Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé un Dashboard existant.
-
-1. Modifier le dasboard en cliquant sur ![screenshot](images/image12.png)
-2. Une fois sur l'interface, ajouter une **nouvelle ligne de Dashboard**.
-
-![screenshot](images/image31.png)
-
-3. Donner un Nom à cette nouvelle ligne plus cliquer sur le bouton **« Appliquer »** pour sauvegarder la fiche sans la fermer.
-
-![screenshot](images/image32.png)
-
-4. Cocher la case **« Options avancées »** pour affiche l’onglet **« Html »** puis l’ouvrir.
-
-![screenshot](images/image33.png)
-
-5. Dans le menu outil, cliquer sur l’option  **« Ajouter un WebReport »**.
-
-![screenshot](images/image34.png)
-
-6. Cette option permet d’insérer dans le champ **« Html »** le script pour appeler le composant WebReport.
-
-![screenshot](images/image35.png)
-
-7. Les paramètres du script insérés devront être modifiés pour appeler une source de données existante ( **vue** ).
-8. Rechercher la ligne suivante **« `var viewKey = "A_RENSEIGNER"` »** et remplacer la chaine **« A_RENSEIGNER »** par la **« cle »** de la vue avec la source de données souhaités. Par exemple  **« var viewKey = "Par défaut Affaire" »**.
-
-![screenshot](images/image36.png)
-
-9. **Enregistrer** la ligne de dashboard et ouvrir le Dashboard pour afficher le WebReport avec la configuration par défaut.
-
-![screenshot](images/image37.png)
-
-10. Cliquer sur la **flèche diagonale** en haut à droite du pivot pour modifier le WebReport en ajoutant des champs dans les lignes, colonnes, filtres, et valeurs.
-
-![screenshot](images/image38.png)
-
-![screenshot](images/image39.png)
-
-11. Configurer le WebReport selon les besoins puis cliquer sur le bouton **« Enr. »** pour afficher la nouvelle configuration du WebReport au  **format JSON**.
-
-![screenshot](images/image40.png)
-
-12. Cette configuration devra être **copié** afin de l'insérer dans le champ Html de la ligne de dashboard.
-
-![screenshot](images/image41.png)
-
-13. Ouvrir la ligne de dashboard puis l’onglet Html.
-
-![screenshot](images/image42.png)
-
-![screenshot](images/image43.png)
-
-14. **Coller** pour remplacer la nouvelle configuration au format JSON entre les balises de commentaires ==Début== et ==Fin==.
-
-![screenshot](images/image44.png)
-
-15. Cliquer sur le bouton **« Enregistrer »** pour sauvegarder dans la nouvelle configuration du WebReport.
-
-![screenshot](images/image45.png)
-
-> Dans le champ Html, il est possible de modifier la configuration du WebReport en ajoutant ou modifiant les propriétés des objets  **slice** ,  **options** , **conditions** et  **formats** .
+Cliquez sur `Enregistrer`
