@@ -22,8 +22,9 @@ thisComponent.setValue("cle", cle);
 De facon général, la mise en place de clef de fait automatiquement dans la fonction onSave :
 
 ```
-function onSave_compte(){
+async function onSave_compte(){
     var thisComponent = this;
+
     if(thisComponent.isNew()){
         var cle = Date.now() + "_" +gsUser;
         thisComponent.setValue("cle", cle);
@@ -41,7 +42,7 @@ thisComponent.getValue("NOM_CHAMP");
 Exemple :
 
 ```
-function onSave_compte(){
+async function onSave_compte(){
     var thisComponent = this;
 
     var compte = thisComponent.getValue("compte");
@@ -58,7 +59,7 @@ thisComponent.setValue("NOM_CHAMP","VALEUR");
 Exemple :
 
 ```
-function onSave_compte(){
+async function onSave_compte(){
     var thisComponent = this;
 
     thisComponent.setValue("statut","Nouveau");
@@ -78,29 +79,39 @@ gopaas.webservice.updateItem("NOM_TABLE", "new", {
     creation_par: UTILISATEUR['cle'],
     gestion_par: UTILISATEUR['cle'],
 }).done(function(done){
-
+    // Ajouter une nouvelle action à la suite du done.
 });
 ```
 
 Exemple :
 
+Dans notre cas nous allons créer une fiche action lors de l'enregistrement de la fiche compte, uniquement si cette dernière est nouvelle.
+
 ```
-function onSave_compte(){
+async function onSave_compte(){
     var thisComponent = this;
 
-    var cle_compte = Date.now() + "_" +gsUser;
+    if(thisComponent.isNew()){
+        var cle_action = Date.now() + "_" +gsUser;
 
-    gopaas.webservice.updateItem("compte", "new", {
-        cle: cle_compte,
-        type: "Client",
-        ...
-        date_creation: gopaas.date.dateSql(),
-        heure_creation: gopaas.date.time(),
-        creation_par: UTILISATEUR['cle'],
-        gestion_par: UTILISATEUR['cle'],
-    }).done(function(done){
-        gopaas.dialog.success("Nouveau compte cré !");
-    });
+        await gopaas.webservice.updateItem("action", "new", {
+            cle: cle_action,
+            compte: thisComponent.getValue("cle"),
+            type: "Note",
+            note: "Création de la fiche compte le " + gopaas.date.dateFr() + ", par " + gsUser + ".",
+            date_debut: gopaas.date.dateSql(),
+            heure_debut: gopaas.date.time(),
+            date_fin: gopaas.date.dateSql(),
+            heure_fin: gopaas.date.time(),
+            ...
+            date_creation: gopaas.date.dateSql(),
+            heure_creation: gopaas.date.time(),
+            creation_par: UTILISATEUR['cle'],
+            gestion_par: UTILISATEUR['cle'],
+        }).done(function(done){
+            gopaas.dialog.success("Nouvelle action crée !");
+        });
+    } 
 }
 ```
 
@@ -112,7 +123,7 @@ thisComponent.setConnectionValue("NOM_CHAMP","NOM_TABLE","VALEUR");
 
 Exemple :
 ```
-function onSave_compte(){
+async function onSave_compte(){
     var thisComponent = this;
 
     thisComponent.setConnectionValue("compte","compte","CLEF_1");
