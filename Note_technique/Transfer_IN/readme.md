@@ -14,7 +14,7 @@ La fonctionnalité **Transfer In** permet d'importer des configurations au forma
    - Cliquez sur **Choisir un fichier** pour sélectionner le fichier JSON contenant les configurations à importer.
 
 3. **Lancer le transfert :**
-   - Cliquez sur le bouton **Transférer** pour lancer l'importation des configurations.
+   - Cliquez sur le bouton **Importer** pour lancer l'importation des configurations.
 
 ### Étape 2 : Rebuild des Templates
 
