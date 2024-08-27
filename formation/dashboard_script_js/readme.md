@@ -55,12 +55,19 @@ Exemple :
 
 ### Masquer des éléments
 
-```
+Dans les paramètres du dashboard, onglet "Script JS", ajouter le script suivant :
 
+```
+    thisComponent.ui.find('.lineXX_viewX').hide();
 ```
 
 Exemple :
 
+Pour trouver la classe du widget à masquer, il est nécessaire d'inspecter le dashboard.
 ```
+function onLoad_dashboard18(){
+    var thisComponent = this;
 
+    thisComponent.ui.find('.line73_view6').hide();
+}
 ```
