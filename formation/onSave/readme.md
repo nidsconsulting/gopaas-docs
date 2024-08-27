@@ -9,37 +9,112 @@ Le thème abordé est l'utilisation de fonctions pour assigner, récupérer et g
 
 La création de la clé d'une fiche se crée de la façon suivante :
 
-![Images](images/CLE_ONE.png)
+```
+var cle = Date.now() + "_" +gsUser;
+```
 
 Enfin il est nécessaire d'insérer la valeur générée dans le champ clef de notre fiche :
 
-![Images](images/CLE_TWO.png)
+```
+thisComponent.setValue("cle", cle);
+```
 
 De facon général, la mise en place de clef de fait automatiquement dans la fonction onSave :
 
-![Images](images/CLE.png)
+```
+function onSave_compte(){
+    var thisComponent = this;
+    if(thisComponent.isNew()){
+        var cle = Date.now() + "_" +gsUser;
+        thisComponent.setValue("cle", cle);
+    }
+    return true;
+}
+```
 
 ### Fonctionnalité getValue
 
-![Images](images/getValue.png)
+```
+thisComponent.getValue("NOM_CHAMP");
+```
 
 Exemple :
-![Images](images/getValue_exemple.png)
+
+```
+function onSave_compte(){
+    var thisComponent = this;
+
+    var compte = thisComponent.getValue("compte");
+    console.log(compte);
+}
+```
 
 ### Fonctionnalité setValue
 
-![Images](images/setValue.png)
+```
+thisComponent.setValue("NOM_CHAMP","VALEUR");
+```
 
 Exemple :
-![Images](images/setValue_exemple.png)
+
+```
+function onSave_compte(){
+    var thisComponent = this;
+
+    thisComponent.setValue("statut","Nouveau");
+}
+```
 
 ### Fonctionnalité addItem
 
-![Images](images/addItem.png)
+```
+gopaas.webservice.updateItem("NOM_TABLE", "new", {
+    CLEF: VALEUR,
+    CLEF: VALEUR,
+    CLEF: VALEUR,
+    ...
+    date_creation: gopaas.date.dateSql(),
+    heure_creation: gopaas.date.time(),
+    creation_par: UTILISATEUR['cle'],
+    gestion_par: UTILISATEUR['cle'],
+}).done(function(done){
+
+});
+```
+
+Exemple :
+
+```
+function onSave_compte(){
+    var thisComponent = this;
+
+    var cle_compte = Date.now() + "_" +gsUser;
+
+    gopaas.webservice.updateItem("compte", "new", {
+        cle: cle_compte,
+        type: "Client",
+        ...
+        date_creation: gopaas.date.dateSql(),
+        heure_creation: gopaas.date.time(),
+        creation_par: UTILISATEUR['cle'],
+        gestion_par: UTILISATEUR['cle'],
+    }).done(function(done){
+        gopaas.dialog.success("Nouveau compte cré !");
+    });
+}
+```
 
 ### Fonctionnalité setConnectionValue
 
-![Images](images/setConnectionValue.png)
+```
+thisComponent.setConnectionValue("NOM_CHAMP","NOM_TABLE","VALEUR");
+```
 
 Exemple :
-![Images](images/setConnectionValue_exemple.png)
+```
+function onSave_compte(){
+    var thisComponent = this;
+
+    thisComponent.setConnectionValue("compte","compte","CLEF_1");
+}
+```
