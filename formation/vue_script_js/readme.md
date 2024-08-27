@@ -43,6 +43,9 @@ function NOM_FONCTION(){
 
 Dans les propriétés de la vue, cocher la case "multi-sélection".
 
+Pour trouver une icône : [fontawesome](https://fontawesome.com/v5/search)
+Pour trouver une couleur en hexadécimal : [htmlcolorcodes](https://htmlcolorcodes.com/fr/)
+
 ```
 function onLoad_viewID_VIEW(datagrid){
   var thisComponent=this;
