@@ -36,6 +36,12 @@ GoPaaS propose une fonctionnalité permettant de générer un guide de prise en 
    - Vous pouvez ajouter de l'aide spécifique pour chaque champ de la table. Cela permet aux utilisateurs de mieux comprendre l'utilisation de chaque champ lors de la saisie de données.
    - Remplissez le champ **Aide** de chaque fiche champ avec des informations utiles.
 
+### Résultat 
+
+![Exemple d'Interface](images/1.png)
+
+![Exemple d'Interface](images/2.png)
+
 ### Conclusion
 
 En configurant la documentation et l'aide intégrée de GoPaaS, vous facilitez la prise en main de votre application par les utilisateurs. L'accès au guide personnalisé et la personnalisation des informations d'aide sur les tables et les champs permettent de fournir des explications claires et précises aux utilisateurs, améliorant ainsi leur expérience globale avec l'application.
