@@ -87,7 +87,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 | **Lecture**           | ADMIN                             |
 | **Lecture sélective** | SUD, ADMIN, NORD, EST, OUEST      |
 | **Modification sélective** | SUD, ADMIN, NORD, EST, OUEST |
-| **Suppression sélective** | ADMIN                         |
+| **Suppression** | ADMIN                         |
 | **Import**            | SUD, ADMIN, NORD, EST, OUEST      |
 | **Export**            | ADMIN                             |
 | **Modification en masse** | SUD, ADMIN, NORD, EST, OUEST  |
@@ -108,7 +108,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 - Depuis une session région **SUD** :
 ![Images](images/EXEMPLE_VUE_RESULTAT_USER.png)
 
-- Depuis une session **ADMIN** :
+- Depuis une session **GESTIONNAIRE** :
 ![Images](images/EXEMPLE_VUE_RESULTAT_ADMIN.png)
 
 ### Conclusion
