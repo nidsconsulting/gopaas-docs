@@ -95,3 +95,7 @@ $.get("webservice/item/get-item.php", {
   thisComponent.setConnectionValue('CHAMP_CONNEXION_EMAIL_TEMPLATE', 'email_template', "");
 });
 ```
+
+### Conclusion
+
+La création et l'utilisation de modèles d'email avec fusion dans GoPaaS permettent de personnaliser efficacement vos communications par email en intégrant des données dynamiques. En suivant les étapes ci-dessus, vous pouvez configurer, personnaliser et envoyer des emails de manière automatisée et ciblée.
