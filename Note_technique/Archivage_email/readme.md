@@ -27,12 +27,12 @@ Créer un automatisme qui va télécharger les emails reçus dans une boite gén
 
 ### Pré-requis
 
-- Un compte IMAP actif
+- Un compte IMAP actif.
 
-- Autoriser une application externe à se connecter ce compte IMAP
+- Autoriser une application externe à se connecter à ce compte IMAP.
 
 ### Créer un automatisme
-Cet automatisme va permettre de télécharger tous les emails d'une boîte IMAP
+Cet automatisme va permettre de télécharger tous les emails d'une boîte IMAP.
 - **Intégration avec le CRM:** Discussion sur les aspects techniques et les configurations requises pour intégrer l'archivage des emails.
 
 ### Formation et adoption
