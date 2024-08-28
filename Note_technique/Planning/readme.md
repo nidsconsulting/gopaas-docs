@@ -1,9 +1,9 @@
 
-# Comment créer un agenda dans GoPaaS ?
+# Comment créer un planning dans GoPaaS ?
 
 ## Description
 
-La création d'un agenda permet de gérer et de visualiser des événements ou des tâches sous forme de calendrier pour différents collaborateurs. Cette fonctionnalité est utile pour organiser les actions des utilisateurs et suivre les événements au sein d'une équipe.
+La création d'un planning permet de gérer et de visualiser des événements ou des tâches sous forme de planning pour différents collaborateurs. Cette fonctionnalité est utile pour organiser les actions des utilisateurs et suivre les événements au sein d'une équipe.
 
 ### Étape 1 : Création des tables
 
@@ -26,12 +26,12 @@ La création d'un agenda permet de gérer et de visualiser des événements ou d
 
 ### Étape 2 : Création des vues
 
-1. **Vue Collaborateur Agenda** :
-   - Créez une vue pour la table **Collaborateur** nommée **Collaborateur Agenda**.
-   - Incluez tous les champs de la table **Collaborateur** dans cette vue.
+1. **Vue Collaborateur Planning** :
+   - Créez une vue pour la table **Collaborateur** nommée **Collaborateur Planning**.
+   - Incluez les champs **actif**, **Nom** et **Prénom** de la table **Collaborateur** dans cette vue.
    - Enregistrez la vue.
 
-2. **Vue Agenda Collaborateur** :
+2. **Vue Planning** :
    - Dupliquez la vue par défaut de la table **Action**, qui contient les champs précédemment créés.
    - Changez le type de la vue dupliquée en **Agenda**.
    - Dans l'onglet **Agenda**, réalisez les correspondances suivantes :
@@ -41,7 +41,8 @@ La création d'un agenda permet de gérer et de visualiser des événements ou d
      - **Date fin** : correspond au champ `Date fin`
      - **Heure fin** : correspond au champ `Heure fin`
      - **Description** : correspond au champ `Description`
-     - **Table de collaboration** : correspond à la vue `Collaborateur Agenda`
+     - **Table de collaboration** : correspond à la vue `Collaborateur Planning`
+     - **Afficher comme un planning** : A cocher.
 
         Exemple de la configuration :
         ![Exemple d'Interface](images/images.png)
@@ -49,7 +50,6 @@ La création d'un agenda permet de gérer et de visualiser des événements ou d
 ### Étape 3 : Configuration additionnelle
 
 - Activez ou désactivez les options dans l'onglet **Agenda** selon vos besoins :
-  - Affichage en planning
   - Format vertical
   - Masquer les week-ends
   - Afficher les numéros de semaine
@@ -61,4 +61,4 @@ La création d'un agenda permet de gérer et de visualiser des événements ou d
 
 ### Conclusion
 
-Une fois ces étapes réalisées, votre vue **Agenda** sera prête à afficher et gérer les actions de vos collaborateurs sous forme de calendrier.
+Une fois ces étapes réalisées, votre vue **Planning** sera prête à afficher et gérer les actions de vos collaborateurs sous forme de planning.
