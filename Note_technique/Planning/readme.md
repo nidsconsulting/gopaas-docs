@@ -26,9 +26,9 @@ La création d'un planning permet de gérer et de visualiser des événements ou
 
 ### Étape 2 : Création des vues
 
-1. **Vue Collaborateur Planning** :
-   - Créez une vue pour la table **Collaborateur** nommée **Collaborateur Planning**.
-   - Incluez les champs **actif**, **Nom** et **Prénom** de la table **Collaborateur** dans cette vue.
+1. **Vue Collaborateur Planning :** :
+   - Créez une vue pour la table Collaborateur et nommez-la Collaborateur Planning.
+   - Ajoutez les champs Actif, Nom, et Prénom de la table Collaborateur dans cette vue.
    - Enregistrez la vue.
 
 2. **Vue Planning** :
