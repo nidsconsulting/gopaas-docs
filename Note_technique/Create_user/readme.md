@@ -37,3 +37,4 @@ Créer un utilisateur sur GoPaaS permet de gérer les accès et les autorisation
 
 - Depuis la vue des utilisateurs, sélectionnez l'utilisateur concerné avec la case à cocher.
 - Enfin cliquez sur "Outil", puis sur "Regénérer mot de passe".
+- À la suite de cela un email sera envoyé à l'email renseigné dans le champ **Email**.
