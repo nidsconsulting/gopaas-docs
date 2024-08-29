@@ -1,42 +1,69 @@
-# Comment archiver un email envoyé à un contact dans GoPaaS ?
+## Archivage des Emails sur GoPaaS
 
-# Description
-Avec l'évolution constante de la communication digitale, l'email reste un outil essentiel dans la gestion de la relation client. Cependant, gérer efficacement ces interactions peut devenir un défi sans les outils adéquats. L'archivage des emails dans un système CRM représente une solution à ces défis.
-Cette note vise à expliquer les bénéfices de l'intégration d'une fonction d'archivage des emails envoyés aux clients dans notre système CRM.
-Sans système d'archivage, nous faisons face à des difficultés telles que le suivi inefficace des interactions et la perte d'informations cruciales.
+L'archivage des emails sur GoPaaS nécessite la création d'un automatisme dans l'application. Voici les étapes à suivre pour mettre en place cette fonctionnalité :
 
-### Bénéfices attendus
-- ***Traçabilité et Historique Complet***: Conserver un historique complet des échanges pour un suivi facile des interactions client.
+### Étape 1 : Créer un Automatisme
 
-- ***Amélioration de la Collaboration***: Permettre un accès facile aux archives d'emails pour améliorer la collaboration interne.
+1. **Accéder au menu Automatisation :**
+   - Depuis le menu de droite, cliquez sur **Automatisation**.
+   - Cliquez sur le bouton **Ajouter** pour créer un nouvel automatisme.
+   - Donnez-lui un nom, par exemple **T.Archivage email**, puis cliquez sur **Enregistrer**.
 
-- ***Analyse et Rapport***:  Utiliser les données des emails archivés pour analyser les tendances et optimiser les communications.
+2. **Réouvrir l'automatisme :**
+   - Une fois enregistré, rouvrez l'automatisme.
+   - **Cochez la case** **Actif** pour activer l'automatisme.
 
-- ***Conformité et Sécurité***: Assurer la conformité légale et la sécurité des données échangées.
+### Étape 2 : Configurer le Déclencheur
 
-- ***Optimisation des processus:*** Simplification et accélération des processus de vente et de support grâce à un accès rapide à l'information.
+Dans la section **Déclencheur** :
+   - **Type** : Sélectionnez **Timer**.
+   - **Fréquence** : Choisissez la fréquence d'exécution (par exemple **X minutes**).
+   - **Minutes** : Indiquez la fréquence en minutes (par exemple **1 minute**).
+   - **Table** : Sélectionnez la table qui recevra les emails archivés, nommée dans cet exemple **archivage_email**.
+    Exemple :
+    ![Exemple d'Interface](images/config1.png)
 
-- ***Amélioration de l'expérience client:*** Un meilleur suivi des communications améliore significativement la satisfaction client.
+### Étape 3 : Configuration de l'Action
 
-## Solution
+1. **Appliquer les modifications :**
+   - Avant de créer l'action, cliquez sur le bouton **Appliquer** en haut de la page pour sauvegarder la configuration.
 
-Créer un automatisme qui va télécharger les emails reçus dans une boite générique (ex: crm@gopaas.net). Une fiche d'archivage sera créée avec le contenu des emails et leurs pièces jointes. Cette fiche d'archivage sera liée au contact destinataire.
+2. **Ajouter une Action :**
+   - Dans la section **Action**, cliquez sur **Ajouter** pour créer une nouvelle action.
+   - Remplissez les champs suivants :
+     - **Type** : Sélectionnez **Importer les emails**.
+     - **Table** : Sélectionnez la table dans laquelle les emails seront archivés, par exemple **Action commerciale**.
+     - **Hôte** : Indiquez l'hôte de votre serveur email (ex. : `imap.google.com` pour une adresse Gmail).
+     - **Login** : Saisissez votre adresse email.
+     - **Password** : Entrez votre mot de passe de messagerie (celui-ci sera masqué après saisie).
+     - **Champ ID** : Saisissez un champ dans votre table pour contenir l'ID de l'email, par exemple **id_email**.
+     - **Port** : Entrez le port utilisé, généralement **993**.
+     - **Flags** : Indiquez les options, comme `/imap/ssl/novalidate-cert`.
+     - **Folder** : Précisez le dossier de réception des emails, généralement **INBOX**.
+     - **Days** : Définissez le nombre de jours à récupérer (ex. : **1 jour** pour récupérer les emails reçus ce jour).
+    Exemple :
+    ![Exemple d'Interface](images/config2.png)
 
-> Si plusieurs pièces jointes, toutes les pièces seront dans un fichier .zip compressé.
-> La fiche d'archivage sera liée au contact destinataire si l'email de ce contact existe dans la base de données de contacts
+### Étape 4 : Mapper les Champs
 
-### Pré-requis
+Dans la section **Valeur**, mappez les champs suivants avec les fonctions correspondantes pour associer les données des emails aux bons emplacements dans la fiche d'archivage :
 
-- Un compte IMAP actif.
+- `[%from%]` : Expéditeur
+- `[%body%]` : Corps du message
+- `[%attachment%]` : Pièce jointe
+- `[%to%]` : Destinataire
+- `[%date%]` : Date de réception de l'email
+- `[%subject%]` : Sujet du mail
+Exemple :
+![Exemple d'Interface](images/config3.png)
 
-- Autoriser une application externe à se connecter à ce compte IMAP.
+### Étape 5 : Utiliser des Fonctions Système
 
-### Créer un automatisme
-Cet automatisme va permettre de télécharger tous les emails d'une boîte IMAP.
-- **Intégration avec le CRM:** Discussion sur les aspects techniques et les configurations requises pour intégrer l'archivage des emails.
+Utilisez les fonctions suivantes pour renseigner automatiquement la date et l'heure de création de l'enregistrement dans les champs système **Date création** et **Heure création** :
+- **$$CURDATE()** : Renseigne la date de création.
+- **$$CURTIME()** : Renseigne l'heure de création.
 
-### Formation et adoption
-- Définissez une stratégie pour former les utilisateurs et encourager l'adoption du système d'archivage.
+Ces champs système existent déjà sur la table, il n'est donc pas nécessaire de les créer, mais nécessaire de les renseigner dans la section valeur.
 
 ### Conclusion
-En résumé, l'intégration d'une fonction d'archivage des emails dans votre SI présente de multiples avantages, allant de l'amélioration de la traçabilité des communications à une meilleure collaboration interne et une optimisation des processus d'affaires. L'implémentation de cette fonctionnalité est une étape clé vers une gestion plus efficace de la relation client.
+Avec ces étapes, vous avez mis en place un système d'archivage automatisé des emails sur GoPaaS. Les emails reçus seront automatiquement enregistrés dans la table spécifiée avec les informations clés, telles que l'expéditeur, le corps du message, les pièces jointes, etc., facilitant ainsi leur gestion et leur consultation future.
