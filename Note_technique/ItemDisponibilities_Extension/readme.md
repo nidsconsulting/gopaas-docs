@@ -30,7 +30,7 @@ Pour ajouter les champs nécessaires à la table maître :
 
 #### 2. Insertion du Code
 
-Pour personnaliser la fiche avec du code JavaScript :
+Pour personnaliser la fiche avec du code JavaScript, nous allons ajouter un bouton `Rechercher`.
 
 1. **Accéder au Menu Personnalisation**
    - Allez dans le menu **outil** de la fiche.
