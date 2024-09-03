@@ -8,9 +8,13 @@ L'assistant sur GoPaaS permet d'accompagner l'utilisateur à travers différente
 
 1. **Accéder au menu** :
    - Dans le menu de gauche, allez dans **RÉFÉRENCES** puis dans le sous-menu **PARAMÈTRE** et enfin cliquez sur **ASSISTANT**.
+   
+      <img src="./images/image.png" width="30%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 2. **Ajouter un nouvel assistant** :
    - Cliquez sur le bouton **Ajouter** pour créer un nouvel assistant.
+
+      <img src="./images/image1.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 ### Étape 2 : Configurer l'assistant
 
@@ -19,6 +23,8 @@ L'assistant sur GoPaaS permet d'accompagner l'utilisateur à travers différente
 
 2. **Appliquer la configuration** :
    - Cliquez sur le bouton **Appliquer** pour enregistrer les paramètres de base.
+
+   <img src="./images/image2.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 ### Étape 3 : Ajouter des étapes à l'assistant
 
@@ -36,6 +42,8 @@ L'assistant sur GoPaaS permet d'accompagner l'utilisateur à travers différente
 3. **Enregistrer l'étape** :
    - Après avoir configuré votre première étape, enregistrez-la. Répétez cette opération pour toutes les étapes nécessaires.
 
+      <img src="./images/image3.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
+
 ## 2. Utilisation d'un assistant
 
 ### Étape 1 : Accéder à l'interface d'assistance
@@ -45,6 +53,10 @@ L'assistant sur GoPaaS permet d'accompagner l'utilisateur à travers différente
 
 2. **Lancer l'assistant** :
    - Pour démarrer l'assistant, cliquez sur l'icône **baguette magique**. L'assistant commencera alors à guider l'utilisateur étape par étape à travers le processus défini.
+      
+      <img src="./images/image4.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
+
+      <img src="./images/image5.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 ### Conclusion
 
