@@ -26,7 +26,7 @@ La fonctionnalité **Transfer Out** dans GoPaaS permet d'extraire les configurat
 3. **Lancer le transfert :**
    - Cliquez sur le bouton **Transfer** pour générer et télécharger le fichier JSON contenant les configurations sélectionnées.
 
-<img src="./images/image1.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/> 
+   <img src="./images/image1.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/> 
 
 ### Étape 2 : Exportation des Dashboards
 
@@ -35,6 +35,8 @@ La fonctionnalité **Transfer Out** dans GoPaaS permet d'extraire les configurat
 
 2. **Lancer le transfert :**
    - Cliquez sur **Transfer** pour exporter le dashboard au format JSON.
+   
+   <img src="./images/image3.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/> 
 
 ### Étape 3 : Exportation des Règles (Rules)
 
@@ -44,6 +46,8 @@ La fonctionnalité **Transfer Out** dans GoPaaS permet d'extraire les configurat
 2. **Lancer le transfert :**
    - Cliquez sur **Transfer** pour obtenir le fichier JSON de la règle sélectionnée.
 
+   <img src="./images/image4.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/> 
+
 ### Étape 4 : Exportation des Modèles d'Import
 
 1. **Sélectionner un modèle d'import :**
@@ -51,6 +55,8 @@ La fonctionnalité **Transfer Out** dans GoPaaS permet d'extraire les configurat
 
 2. **Lancer le transfert :**
    - Cliquez sur **Transfer** pour générer le fichier JSON du modèle d'import.
+
+   <img src="./images/image2.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/> 
 
 ### Étape 5 : Exportation des Workflows
 
@@ -60,6 +66,8 @@ La fonctionnalité **Transfer Out** dans GoPaaS permet d'extraire les configurat
 2. **Lancer le transfert :**
    - Cliquez sur **Transfer** pour obtenir le fichier JSON du workflow sélectionné.
 
+   <img src="./images/image5.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
+
 ### Étape 6 : Exportation des Extensions
 
 1. **Sélectionner une extension :**
@@ -67,6 +75,8 @@ La fonctionnalité **Transfer Out** dans GoPaaS permet d'extraire les configurat
 
 2. **Lancer le transfert :**
    - Cliquez sur **Transfer** pour exporter l'extension au format JSON.
+
+   <img src="./images/image6.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 ### Conclusion
 

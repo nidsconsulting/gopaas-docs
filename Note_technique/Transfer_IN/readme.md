@@ -35,11 +35,13 @@ La fonctionnalité **Transfer In** permet d'importer des configurations au forma
    - Cliquez sur l'onglet **Tables**.
    - Si des tables sont absentes de la base de données, cliquez sur l'icône de la clé à molette correspondant à la table manquante pour la créer.
 
+   <img src="./images/image3.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/> 
+
 3. **Vérification des Champs :**
    - Si vous avez ajouté des champs à une table, allez dans l'onglet **Champs du designer absents de la base de données**.
    - Cliquez sur l'icône de la clé à molette pour ajouter les champs manquants à la base de données.
 
-
+   <img src="./images/image4.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/> 
 
 ### Étape 4 : Déconnexion et Reconnexion
 
