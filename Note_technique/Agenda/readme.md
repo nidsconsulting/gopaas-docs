@@ -24,6 +24,44 @@ La création d'un agenda permet de gérer et de visualiser des événements ou d
    - `Téléphone` (texte)
    - `Utilisateur` (connexion vers la table utilisateur)
 
+### Instructions détaillées
+
+1. **Accéder au menu des Tables :**
+   - Cliquez sur les **engrenages** situés en haut à droite de l'interface pour ouvrir le menu personnalisé.
+   - Dans ce menu, sélectionnez l'option **Tables**.
+
+      <img src="./images/image1.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+2. **Créer une nouvelle Table :**
+   - Appuyez sur le bouton **Ajouter** pour créer une nouvelle table.
+
+      <img src="./images/image2.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+
+   - Remplissez le champ **Intitulé** avec le nom de votre table (par exemple, **Action** ou **Collaborateur**).
+   - Sélectionnez le **Type** approprié pour chaque champ.
+   - Une fois terminé, cliquez sur **Enregistrer**.
+         
+      <img src="./images/image4.png" width="80%" alt="Hearder Top" style="border-radius: 2px;"/>
+
+3. **Déconnexion et reconnexion :**
+   - Après avoir créé la table, déconnectez-vous et reconnectez-vous à l'application pour assurer que les modifications sont bien prises en compte.
+
+         <img src="./images/image3.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+
+4. **Ouvrir et configurer les champs de la Table :**
+   - Accédez à nouveau à la liste de vos tables et recherchez la table que vous venez de créer.
+   - Ouvrez cette table en cliquant dessus.
+   - Cliquez sur le menu **Outil** et sélectionnez **Form Designer** pour configurer les champs de la table.
+   - Pour chaque champ que vous devez créer, cliquez sur le bouton **+** dans la section de votre choix, puis remplissez le formulaire avec les informations appropriées (type de champ, nom, etc.).
+
+5. **Créer la table `Collaborateur` avant de créer le champ de connexion `Collaborateur` :**
+   - Avant de créer le champ de connexion **Collaborateur** dans la table **Action**, vous devez d'abord créer la table **Collaborateur**.
+   - Suivez le même processus décrit ci-dessus pour créer la table **Collaborateur** et ses champs.
+
+6. **Configurer les champs dans `Collaborateur` :**
+   - Dans la table **Collaborateur**, utilisez également le **Form Designer** pour ajouter les champs spécifiques (comme **Nom**, **Prénom**, **Email**, etc.).
+   - Pour le champ **Utilisateur**, configurez-le en tant que champ de connexion vers la table **Utilisateur** déjà existante dans votre système.
+
 ### Étape 2 : Création des vues
 
 1. **Vue Collaborateur Agenda** :
