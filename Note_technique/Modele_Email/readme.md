@@ -162,7 +162,6 @@ $.get("webservice/item/get-item.php", {
 
          var tableName = result.table;
          var itemId = thisComponent.ui.find('#ID_' + tableName).val();
-	     console.log(tableName);
 
          $.getJSON("webservice/emailing/merge-template.php", {
            cle: cleTemplate,
