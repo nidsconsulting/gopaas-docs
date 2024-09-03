@@ -11,8 +11,7 @@ Les WebReports dans GoPaaS sont des tableaux croisés dynamiques permettant d'an
    - Dupliquez cette vue et nommez-la : **WR - Analyse Facture**.
 
 2. **Changer le type de la vue :**
-   - Passez la vue en mode **WebReport**.
-   - Pour cela, changez le type dans le champ **Type** de la vue en sélectionnant **WebReport**.
+   - Pour cela, sélectionnez **WebReport** dans le champ **Type** de la vue.
 
 ### Étape 2 : Configurer la vue WebReport
 

@@ -11,8 +11,13 @@ La fonctionnalité **Versionning** dans GoPaaS permet de gérer les versions de 
    - Allez dans le menu **Admin** (menu de gauche).
    - Cliquez sur **Versionning**.
 
+   <img src="./images/image.png" width="40%" alt="Hearder Top" style="border-radius: 5px;"/>
+   
 2. **Vue des Versions :**
    - Vous verrez un historique des versions précédentes, avec des informations sur les mises à jour passées.
+
+   <img src="./images/image1.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
+
 
 ### Étape 2 : Déclarer une nouvelle version
 
@@ -26,6 +31,8 @@ La fonctionnalité **Versionning** dans GoPaaS permet de gérer les versions de 
 
 3. **Enregistrer la nouvelle version :**
    - Cliquez sur **Enregistrer** pour valider la création de la nouvelle version.
+
+   <img src="./images/image2.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 ### Étape 3 : Message pour les utilisateurs
 
