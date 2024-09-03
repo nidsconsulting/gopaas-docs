@@ -191,7 +191,7 @@ $.get("webservice/item/get-item.php", {
      var thisComponent = this;
      thisComponent.ui.find('#template_email').on('change', function() {
        // Récupération de la clef du modèle d'email depuis une connexion située sur la fiche action.
-       var cleTemplate = $(this).val();
+       var cleTemplate = thisComponent.getValue('template_email');
 
        $.get("webservice/item/get-item.php", {
          tableName: "email_template",
