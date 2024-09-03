@@ -9,7 +9,7 @@ L'assistant sur GoPaaS permet d'accompagner l'utilisateur à travers différente
 1. **Accéder au menu** :
    - Dans le menu de gauche, allez dans **RÉFÉRENCES** puis dans le sous-menu **PARAMÈTRE** et enfin cliquez sur **ASSISTANT**.
    
-      <img src="./images/image.png" width="30%" alt="Hearder Top" style="border-radius: 5px;"/>
+      <img src="./images/image.png" width="20%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 2. **Ajouter un nouvel assistant** :
    - Cliquez sur le bouton **Ajouter** pour créer un nouvel assistant.
