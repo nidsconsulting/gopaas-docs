@@ -37,21 +37,25 @@ La création d'un agenda permet de gérer et de visualiser des événements ou d
 
       <img src="./images/image2.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
 
-   - Remplissez le champ **Intitulé** avec le nom de votre table (par exemple, **Action** ou **Collaborateur**).
+   - Remplissez le champ **Intitulé** avec le nom de votre table (par exemple, **Action**).
    - Sélectionnez le **Type** approprié pour chaque champ.
    - Une fois terminé, cliquez sur **Enregistrer**.
          
-      <img src="./images/image4.png" width="80%" alt="Hearder Top" style="border-radius: 2px;"/>
+      <img src="./images/image3.png" width="80%" alt="Hearder Top" style="border-radius: 2px;"/>
 
 3. **Déconnexion et reconnexion :**
    - Après avoir créé la table, déconnectez-vous et reconnectez-vous à l'application pour assurer que les modifications sont bien prises en compte.
 
-         <img src="./images/image3.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+      <img src="./images/image4.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 4. **Ouvrir et configurer les champs de la Table :**
    - Accédez à nouveau à la liste de vos tables et recherchez la table que vous venez de créer.
-   - Ouvrez cette table en cliquant dessus.
+   - Ouvrez cette table en *double cliquant* dessus.
+           <img src="./images/image5.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+
    - Cliquez sur le menu **Outil** et sélectionnez **Form Designer** pour configurer les champs de la table.
+            <img src="./images/image6.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+
    - Pour chaque champ que vous devez créer, cliquez sur le bouton **+** dans la section de votre choix, puis remplissez le formulaire avec les informations appropriées (type de champ, nom, etc.).
 
 5. **Créer la table `Collaborateur` avant de créer le champ de connexion `Collaborateur` :**
