@@ -56,7 +56,9 @@ La création d'un agenda permet de gérer et de visualiser des événements ou d
    - Cliquez sur le menu **Outil** et sélectionnez **Form Designer** pour configurer les champs de la table.
             <img src="./images/image6.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
 
-   - Pour chaque champ que vous devez créer, cliquez sur le bouton **+** dans la section de votre choix, puis remplissez le formulaire avec les informations appropriées (type de champ, nom, etc.).
+   - Pour chaque champ que vous devez créer, cliquez sur le bouton <img src="./images/image8.png" width="3%" alt="Hearder Top" style="border-radius: 5px;"/> dans la section de votre choix, puis remplissez le formulaire avec les informations appropriées (type de champ, nom, etc.).      
+         <img src="./images/image7.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+
 
 5. **Créer la table `Collaborateur` avant de créer le champ de connexion `Collaborateur` :**
    - Avant de créer le champ de connexion **Collaborateur** dans la table **Action**, vous devez d'abord créer la table **Collaborateur**.
