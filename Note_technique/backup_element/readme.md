@@ -2,18 +2,21 @@
 
 Il est possible de restaurer une fiche qui a été supprimée par erreur dans GoPaaS. Voici les étapes pour la récupérer.
 
-### Étape 1 : Accéder à la Corbeille
+### Étape 1 : Activer à la Corbeille
 
-1. **Accéder au menu de la Corbeille :**
-   - Dans le menu de gauche, cliquez sur **ADMIN**.
-   - Sélectionnez ensuite l'option **Corbeille**.
+1. **Acitver la Corbeille GoPaaS :**
+   - Rendez-vous dans la barre de navigation > Admin > Configuration.
+   - Cocher "Activer corbeille".
 
+      ![image](images/3.png)
 ### Étape 2 : Sélectionner la Fiche à Restaurer
 
 1. **Rechercher votre fiche supprimée :**
+   - Rendez-vous dans la barre de navigation > Admin > Corbeille.
    - Parcourez la liste des fiches dans la corbeille et trouvez celle que vous souhaitez restaurer.
-   - Double-cliquez sur la fiche pour la sélectionner.
+   - Double-cliquez sur la fiche pour l'ouvrir.
 
+      ![image](images/2.png) 
 ### Étape 3 : Restaurer la Fiche
 
 1. **Restaurer la fiche :**
