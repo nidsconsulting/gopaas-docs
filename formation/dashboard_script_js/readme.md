@@ -53,21 +53,36 @@ Exemple :
 </div>
 ```
 
+Résultat :
+
+![Exemple d'Interface](images/1.png)
+
+A noter :
+
+Il est nécessaire que la valeur contenue dans le champ "name" soit présente dans tous les widgets à filtrer.
+
 ### Masquer des éléments
 
 Dans les paramètres du dashboard, onglet "Script JS", ajouter le script suivant :
 
 ```
-    thisComponent.ui.find('.lineXX_viewX').hide();
+    thisComponent.ui.find('.lineX_viewX').hide();
 ```
 
 Exemple :
 
 Pour trouver la classe du widget à masquer, il est nécessaire d'inspecter le dashboard.
+
+Dans notre exemple, nous avons inspecté le premier widget du tableau de bord "Affaires en cours" et constaté qu'il occupe la position : line4_view1.
+
+![Exemple d'Interface](images/2.png)
+
+Résultat :
+
 ```
 function onLoad_dashboard18(){
     var thisComponent = this;
 
-    thisComponent.ui.find('.line73_view6').hide();
+    thisComponent.ui.find('.line4_view1').hide();
 }
 ```
