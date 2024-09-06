@@ -219,7 +219,6 @@ function onLoad_view847(datagrid) {
 
   return true;
 }
-
 ```
 
 ## A noter : 
