@@ -5,8 +5,8 @@ Changer votre mot de passe sur GoPaaS est une étape simple mais essentielle pou
 ### Étape 1 : Accéder à la Section Profil
 
 1. **Accéder à votre profil :**
-   - Cliquez sur votre nom ou votre avatar situé en haut à droite de l'interface.
-   - Sélectionnez l'option **Mot de passe** dans le menu déroulant.
+   - Cliquez sur votre profil en haut à droite de l'interface.
+   - Dans le menu déroulant, sélectionnez l'option **Mot de passe**.
 
         ![image](images/2.png)
 
