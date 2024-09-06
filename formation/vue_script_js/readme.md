@@ -7,9 +7,6 @@ Le thème abordé est la personnalisation des vues, avec la gestion des menus, l
 
 ### Menu outil
 
-Pour trouver une icône : [fontawesome](https://fontawesome.com/v5/search)
-Pour trouver une couleur en hexadécimal : [htmlcolorcodes](https://htmlcolorcodes.com/fr/)
-
 ```
 function onLoad_viewID_VIEW(datagrid){
   var thisComponent = this;
@@ -42,9 +39,6 @@ function NOM_FONCTION(){
 ### Sélection multiple
 
 Dans les propriétés de la vue, cocher la case "multi-sélection".
-
-Pour trouver une icône : [fontawesome](https://fontawesome.com/v5/search)
-Pour trouver une couleur en hexadécimal : [htmlcolorcodes](https://htmlcolorcodes.com/fr/)
 
 ```
 function onLoad_viewID_VIEW(datagrid){
@@ -181,3 +175,54 @@ function onLoad_view942(datagrid) {
 
 }
 ```
+
+### Ajouter des options à côté du bouton "Ajouter" (Vue liée uniquement)
+
+Dans les propriétés de la vue, onglet "Script JS", insérer le code suivant :
+
+```
+function onLoad_viewID_VIEW(datagrid) {
+  var itemComponent = Component.find("Item", this);
+  var thisComponent = this;
+
+  var vb = this.ui.find(".Viewbar").data("component");
+
+  vb.addAddButton("Nom du bouton", null, {
+    fiedName: "value", 
+    fiedName: "value", 
+    ...
+  });
+
+  return true;
+}
+
+```
+
+Exemple :
+
+```
+function onLoad_view847(datagrid) {
+  var itemComponent = Component.find("Item", this);
+  var thisComponent = this;
+
+  var vb = this.ui.find(".Viewbar").data("component");
+
+  vb.addAddButton("Appel sortant", null, {
+    type: "Appel sortant", 
+    objet: "Commercial", 
+    statut: "En cours", 
+    compte: itemComponent.getValue('compte'), 
+    contact: itemComponent.getValue('contact'), 
+    date_debut: gopaas.date.addDateMySQL(0), 
+    heure_debut: gopaas.date.time()
+  });
+
+  return true;
+}
+
+```
+
+## A noter : 
+
+Pour trouver une icône : [fontawesome](https://fontawesome.com/v5/search)
+Pour trouver une couleur en hexadécimal : [htmlcolorcodes](https://htmlcolorcodes.com/fr/)
