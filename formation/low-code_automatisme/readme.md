@@ -126,3 +126,15 @@ Au total de sept actions sont disponibles dans GoPaaS.
 | **Importer les emails** | Exécuter une tâche d’import d’email                         |
 
 A l’image des conditions, plusieurs actions peuvent être cumulées dans une seule automatisation.
+
+## A savoir
+
+Ajouter ces options supplémentaires dans les champs de fusion pour formater un champ.
+
+| Méthode                                       | Description                                                         | Exemple                         |
+|-----------------------------------------------|---------------------------------------------------------------------|---------------------------------|
+| **Date FR vers Date SQL (Y-m-d)**              | Convertit une date du format FR au format SQL (Y-m-d).                | [%datefrtosql/date_client%]     |
+| **1ère lettre en majuscule**                   | Met la première lettre d'un texte en majuscule.                      | [%ucfirst/nom_contact%]         |
+| **Nombre avec aucun chiffre après la virgule** | Formate un nombre sans chiffres après la virgule.                     | [%number0/ca%]                  |
+| **Nombre avec 1 chiffre après la virgule**     | Formate un nombre avec un chiffre après la virgule.                  | [%number1/ca%]                  |
+| **Nombre avec 2 chiffres après la virgule**    | Formate un nombre avec deux chiffres après la virgule.               | [%number2/ca%]                  |
