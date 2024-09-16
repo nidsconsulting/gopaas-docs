@@ -46,6 +46,7 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
 1. Dans l'interface du Form Designer, cliquez sur le bouton **+ Onglet**.
 
    ![Ajouter un onglet](images/1724160860507.png)
+   
 2. Remplissez le formulaire suivant :
 
    ![Remplir le formulaire de l'onglet](images/1724160905545.png)
