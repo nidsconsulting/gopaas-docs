@@ -2,7 +2,7 @@
 
 ## Les fiches
 
-Quand vous saisissez des données dans une catégorie vous créez un nouvel enregistrement, ou ce que GoPaaS appelle une fiche. Par exemple, dans la table Contact figure la fiche Dupont, avec son nom, son adresse et un certain nombre d’informations le concernant.
+Quand vous saisissez des données dans une catégorie vous créez un nouvel enregistrement, ou ce que GoPaaS appelle une fiche. Par exemple, dans la table Compte figure le nom, l'adresse et un certain nombre d’informations la concernant.
 
 ![screenshot](images/image11.png "Ecran principal")
 
@@ -13,11 +13,11 @@ Pour visualiser les données saisies dans la base, GoPaaS met à votre dispositi
 #### Les filtres avancés
 ![screenshot](images/image2.png "Ecran principal")
 
-Pour activer la fonction filtre avancé sur une vue, cliquez sur ![[Bouton]](images/image3.png) puis sélectionnez la colonne sur laquelle effectuer la première condition, choisir l'opérateur et la valeur recherchée.
+Pour activer la fonction filtre avancé sur une vue, cliquez sur ![[Bouton]](images/image3.png){: style="width: 40px;"} puis sélectionnez la colonne sur laquelle effectuer la première condition, choisir l'opérateur et la valeur recherchée.
 
-Il est possible de cummuler plusieurs conditions en cliquant sur le bouton ![Bouton](images/image5.png)
+Il est possible de cummuler plusieurs conditions en cliquant sur le bouton ![Bouton](images/image5.png){: style="width: 40px;"}
 
-Cliquez sur le bouton ![Bouton](images/image4.png) pour lancer la recherche
+Cliquez sur le bouton ![Bouton](images/image4.png){: style="width: 100px;"} pour lancer la recherche
 
 Cliquez sur le bouton à droite du bouton pour enregistrer la recherche sur la vue.
 ### Agenda
@@ -37,7 +37,7 @@ En déplaçant les cartes d'une colonne à l'autre, vous pouvez facilement ident
 Dans une application CRM, une vue liée des contacts associés à un compte client permet de visualiser tous les contacts rattachés à ce client spécifique. Cette vue facilite la gestion des relations client en centralisant toutes les données liées à un client en un seul endroit.
 
 ## Les connexions
-Cette classification des données par table aurait bien peu d'intérêt si GoPaaS ne permettait de les relier entre elles et de respecter ainsi les associations que vous faites tout naturellement, dans votre esprit, entre différents types d'information. Telle note concerne tel projet et doit être communiquée à telle personne. Une telle réunion prend place dans telle salle, avec tels collaborateurs, et mobilise telles ressources. Dans GoPaaS ces liens s'appellent des connexions ; elles vous permettent de lier les informations entre elles et donc de ne les saisir qu'une fois, de les retrouver facilement, ou encore de naviguer rapidement dans votre base ; GoPaaS vous permettra d'en rajouter ou d'en supprimer librement.
+
 ### Connexion simple
 
 ![screenshot](images/image9.png "Ecran principal")
