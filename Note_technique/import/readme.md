@@ -60,6 +60,10 @@ L'import des données permet de gagner du temps en important rapidement des donn
 
       <img src="./images/image7.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
+## Résultat
+
+   <img src="./images/image8.png" width="40%" alt="Hearder Top" style="border-radius: 5px;"/>
+
 ### Conclusion
 
 L'import des données dans GoPaaS permet d'automatiser et d'accélérer les processus d'importation de données, en particulier pour des modifications à grande échelle. Grâce à la possibilité de sauvegarder des modèles d'import, vous pouvez réutiliser et ajuster vos configurations pour de futurs imports.
