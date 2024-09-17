@@ -96,19 +96,11 @@ $.get("webservice/item/get-item.php", {
 
 #### Instructions pour utiliser le modèle d'email dans une fiche action :
 
-1. **Création du champ `Template email` :** : 
-   - Direction la liste des tables de votre application et recherché la table "action".
-      <img src="./images/image14.png" width="30%" alt="Hearder Top" style="border-radius: 5px;"/>
-
-   - Cliquez sur le **Form Designer** en utilisant le menu **Outil**.
-      <img src="./images/image5.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
-   
-   - Après avoir ouvert le Form Designer, cliquez sur le bouton **+** dans la section de votre choix.
-      <img src="./images/image6.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
-   
+1. **Création du champ `Template email` :** 
    - Configurez ce champ avec le **Type** "Connexion" (avec affichage en mode liste ou pas, selon votre préférence).
    
    - Enregistrez votre fiche.
+      <br>
      <img src="./images/image7.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 2. **Ajout de champs supplémentaires :**
@@ -124,29 +116,20 @@ $.get("webservice/item/get-item.php", {
 
       <img src="./images/image10.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
-3. **Rafraîchissement du Form Designer :**
-   - Après avoir enregistré, cliquez sur le bouton  <img src="./images/image12.png" width="4%" alt="Hearder Top" style="border-radius: 2px;"/> pour rafraîchir le Form Designer.
-
-      <img src="./images/image11.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
-
-   - Ensuite, sélectionnez **Rebuild templates** dans le menu pour reconstruire les templates.
-   
-      <img src="./images/image13.png" width="30%" alt="Hearder Top" style="border-radius: 5px;"/>
-
-4. **Personnalisation du Script JS :**
+3. **Personnalisation du Script JS :**
    - Fermez le Form Designer et rouvrez la fiche de votre table action.
    - Accédez à l'onglet **Script JS** pour insérer le script JavaScript précédemment fourni.
-   - **Important** : Ce script doit être adapté selon que vous avez coché ou non l'affichage en mode liste pour le champ `template_email`.
+   - **Important** : Ce script doit être adapté selon que vous avez coché ou non l'affichage en mode liste pour le champ `email_template`.
 
       <img src="./images/image15.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
-5. **Script pour détection du changement (mode liste activé) :**
-   - Si vous avez coché l'affichage en **mode liste**, ajoutez ce script pour détecter les changements dans le champ `template_email` :
+4. **Script pour détection du changement (mode liste activé) :**
+   - Si vous avez coché l'affichage en **mode liste**, ajoutez ce script pour détecter les changements dans le champ `email_template` :
 
    ```javascript
    function onLoad_action() {
      var thisComponent = this;
-     thisComponent.ui.find('#select_template_email').on('change', function() {
+     thisComponent.ui.find('#select_email_template').on('change', function() {
        // Récupération de la clef du modèle d'email depuis une connexion située sur la fiche action.
        var cleTemplate = $(this).val();
 
@@ -173,7 +156,7 @@ $.get("webservice/item/get-item.php", {
            thisComponent.ui.find('#cke_note .cke_wysiwyg_frame').contents().find("html >body").html(data.message);
          });
          // On vide le champ connexion après avoir fusioné le modèle.
-         thisComponent.setConnectionValue('template_email', 'email_template', "");
+         thisComponent.setConnectionValue('email_template', 'email_template', "");
        });
 
      }); 
@@ -182,15 +165,15 @@ $.get("webservice/item/get-item.php", {
    }
    ```
 
-6. **Script pour détection du changement (mode liste non activé) :**
+5. **Script pour détection du changement (mode liste non activé) :**
    - Si vous n'avez pas coché l'affichage en mode liste, utilisez le script suivant :
 
    ```javascript
    function onLoad_action() {
      var thisComponent = this;
-     thisComponent.ui.find('#template_email').on('change', function() {
+     thisComponent.ui.find('#email_template').on('change', function() {
        // Récupération de la clef du modèle d'email depuis une connexion située sur la fiche action.
-       var cleTemplate = thisComponent.getValue('template_email');
+       var cleTemplate = thisComponent.getValue('email_template');
 
        $.get("webservice/item/get-item.php", {
          tableName: "email_template",
@@ -216,7 +199,7 @@ $.get("webservice/item/get-item.php", {
            thisComponent.ui.find('#cke_note .cke_wysiwyg_frame').contents().find("html >body").html(data.message);
          });
          // On vide le champ connexion après avoir fusioné le modèle.
-         thisComponent.setConnectionValue('template_email', 'email_template', "");
+         thisComponent.setConnectionValue('email_template', 'email_template', "");
        });
 
      }); 
