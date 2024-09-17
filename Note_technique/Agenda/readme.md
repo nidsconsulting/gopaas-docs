@@ -37,7 +37,7 @@ Pour commencer, il vous faut créer les deux tables avec les champs mentionnés.
 
   - Ouvrez votre vue par défaut et accédez aux paramètres de la vue en cliquant sur le bouton en forme d'engrenage <img src="./images/image13.png" width="1.8%" alt="Bouton engrenage" style="border-radius: 5px;"/> en haut à droite.
   
-    <img src="./images/image15.png" width="100%" alt="Accès aux paramètres de la vue" style="border-radius: 5px;"/>
+    <img src="./images/image15.png" width="100%" alt="Accès aux paramètres de la vue" style="border-radius: 15px;"/>
 
    - Une fois dans les paramètres de la vue, cliquez sur le menu **Outil** et sélectionnez **Dupliquer**.
       
