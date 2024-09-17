@@ -24,7 +24,7 @@ La fonctionnalité **Transfer In** permet d'importer des configurations au forma
 1. **Accéder au menu Rebuild Templates :**
    - Une fois le fichier importé, allez dans le menu de droite et cliquez sur **Rebuild Templates** pour rafraîchir les modèles utilisés par le système.
    
-   <img src="./images/image1.png" width="50%" alt="Hearder Top" style="border-radius: 5px;"/> 
+   <img src="./images/image1.png" width="20%" alt="Hearder Top" style="border-radius: 5px;"/> 
 
 ### Étape 3 : Vérification des Tables et des Champs
 

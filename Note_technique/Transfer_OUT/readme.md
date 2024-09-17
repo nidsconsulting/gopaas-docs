@@ -15,7 +15,7 @@ La fonctionnalité **Transfer Out** dans GoPaaS permet d'extraire les configurat
 1. **Accéder à Transfer Out :**
    - Allez dans le menu **Transfer Out** (accessible depuis le menu de gauche, sous "Admin").
    
-   <img src="./images/image.png" width="50%" alt="Hearder Top" style="border-radius: 5px;"/> 
+   <img src="./images/image.png" width="20%" alt="Hearder Top" style="border-radius: 5px;"/> 
 
 2. **Sélection des éléments à exporter :**
    - **Tables et Vues** : Sélectionnez une table spécifique et cochez "Toutes les vues" pour exporter l'ensemble des vues disponibles.
