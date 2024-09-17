@@ -26,82 +26,73 @@ La création d'un agenda permet de gérer et de visualiser des événements ou d
 
 ### Instructions détaillées
 
-1. **Accéder au menu des Tables :**
-   - Cliquez sur les **engrenages** situés en haut à droite de l'interface pour ouvrir le menu personnalisé.
-   - Dans ce menu, sélectionnez l'option **Tables**.
+Pour commencer, il vous faut créer les deux tables avec les champs mentionnés. Assurez-vous que les champs **Collaborateur** et **Utilisateur** pointent correctement vers leurs tables respectives. Il est important que ces champs soient de type 'connexion' afin de créer les relations nécessaires entre les tables.
 
-      <img src="./images/image1.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+## Étape 2 : Création des vues
+
+### Vue Collaborateur agenda (Table `Collaborateur`) :
+
+- **Dupliquer la vue existante :**
+  Dupliquez la vue par défaut de la table **Collaborateur**, qui contient les champs que vous avez créés précédemment. Cela vous permettra de conserver la structure tout en modifiant les paramètres nécessaires pour l'agenda.
+
+  - Ouvrez votre vue par défaut et accédez aux paramètres de la vue en cliquant sur le bouton en forme d'engrenage <img src="./images/image13.png" width="1.8%" alt="Bouton engrenage" style="border-radius: 5px;"/> en haut à droite.
+  
+    <img src="./images/image15.png" width="100%" alt="Accès aux paramètres de la vue" style="border-radius: 5px;"/>
+
+   - Une fois dans les paramètres de la vue, cliquez sur le menu **Outil** et sélectionnez **Dupliquer**.
       
-2. **Créer une nouvelle Table :**
-   - Appuyez sur le bouton **Ajouter** pour créer une nouvelle table.
+      <img src="./images/image10.png" width="100%" alt="Duplication de la vue Collaborateur" style="border-radius: 5px;"/>
 
-      <img src="./images/image2.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+- **Personnalisation de la vue :**
+  Dans la vue dupliquée, personnalisez les colonnes à afficher et ajustez l'affichage en fonction de vos besoins. Vous pouvez ajouter des filtres ou des conditions pour mieux organiser l'affichage des collaborateurs.
 
-   - Remplissez le champ **Intitulé** avec le nom de votre table (par exemple, **Action**).
-   - Sélectionnez le **Type** approprié pour chaque champ.
-   - Une fois terminé, cliquez sur **Enregistrer**.
-         
-      <img src="./images/image3.png" width="80%" alt="Hearder Top" style="border-radius: 2px;"/>
+   <img src="./images/image11.png" width="100%" alt="Personnalisation des colonnes dans la vue Collaborateur" style="border-radius: 5px;"/>
 
-3. **Déconnexion et reconnexion :**
-   - Après avoir créé la table, déconnectez-vous et reconnectez-vous à l'application pour assurer que les modifications sont bien prises en compte.
+### Vue Agenda action collaborateur :
 
-      <img src="./images/image4.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+- **Dupliquer la vue existante :**
+  Dupliquez la vue par défaut de la table **Action**, qui contient les champs que vous avez créés. Cette vue sera utilisée pour un affichage sous forme de calendrier.
 
-4. **Ouvrir et configurer les champs de la Table :**
-   - Accédez à nouveau à la liste de vos tables et recherchez la table que vous venez de créer.
-   - Ouvrez cette table en *double cliquant* dessus.
-           <img src="./images/image5.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+  - Ouvrez votre vue par défaut et accédez aux paramètres de la vue en cliquant sur le bouton en forme d'engrenage <img src="./images/image13.png" width="1.8%" alt="Bouton engrenage" style="border-radius: 5px;"/> en haut à droite.
+  
+    <img src="./images/image12.png" width="100%" alt="Accès aux paramètres de la vue" style="border-radius: 5px;"/>
 
-   - Cliquez sur le menu **Outil** et sélectionnez **Form Designer** pour configurer les champs de la table.
-            <img src="./images/image6.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
-
-   - Pour chaque champ que vous devez créer, cliquez sur le bouton <img src="./images/image8.png" width="3%" alt="Hearder Top" style="border-radius: 5px;"/> dans la section de votre choix, puis remplissez le formulaire avec les informations appropriées (type de champ, nom, etc.).      
-         <img src="./images/image7.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
+   - Une fois dans les paramètres de la vue, cliquez sur le menu **Outil** et sélectionnez **Dupliquer**.
+      
+      <img src="./images/image14.png" width="100%" alt="Menu Outil pour dupliquer la vue" style="border-radius: 5px;"/>
 
 
-5. **Créer la table `Collaborateur` avant de créer le champ de connexion `Collaborateur` :**
-   - Avant de créer le champ de connexion **Collaborateur** dans la table **Action**, vous devez d'abord créer la table **Collaborateur**.
-   - Suivez le même processus décrit ci-dessus pour créer la table **Collaborateur** et ses champs.
+- **Changer le type de vue :**
+  - Après avoir dupliqué la vue, nommez-la **Agenda action collaborateur** et changez son type pour **Agenda**. Cela permettra d'afficher les actions et événements sous forme de calendrier interactif.
 
-6. **Configurer les champs dans `Collaborateur` :**
-   - Dans la table **Collaborateur**, utilisez également le **Form Designer** pour ajouter les champs spécifiques (comme **Nom**, **Prénom**, **Email**, etc.).
-   - Pour le champ **Utilisateur**, configurez-le en tant que champ de connexion vers la table **Utilisateur** déjà existante dans votre système.
+      <img src="./images/image9.png" width="100%" alt="Modification du type de vue en Agenda" style="border-radius: 5px;"/>
 
-### Étape 2 : Création des vues
 
-1. **Vue Collaborateur Agenda** :
-   - Créez une vue pour la table **Collaborateur** nommée **Collaborateur Agenda**.
-   - Incluez tous les champs de la table **Collaborateur** dans cette vue.
-   - Enregistrez la vue.
+- **Configuration des champs :**
+  Accédez à l'onglet **Agenda** et configurez les champs comme suit :
+    - **Titre** : Sélectionnez le champ **Intitulé**. Ce champ sera utilisé comme le titre de chaque événement dans l’agenda.
+    - **Date début** : Sélectionnez le champ **Date début** pour définir quand chaque événement commence.
+    - **Heure début** : Sélectionnez le champ **Heure début** pour préciser l'heure de début de chaque événement.
+    - **Date fin** : Sélectionnez le champ **Date fin** pour indiquer quand chaque événement se termine.
+    - **Heure fin** : Sélectionnez le champ **Heure fin** pour préciser l'heure de fin.
+    - **Description** : Sélectionnez le champ **Description** pour afficher les détails supplémentaires de chaque événement.
+    -  **Afficher comme un planning** : Cochez cette case si vous souhaitez afficher l’agenda sous forme de planning.
+    - **Format vertical** : Cochez cette case si vous préférez un affichage vertical du calendrier.
+    - **Masquer le week-end** : Cochez cette case si vous ne souhaitez pas afficher les événements durant le week-end.
+    - **Afficher numéro de semaine** : Activez cette option si vous voulez que les numéros de semaine s'affichent sur l'agenda.
 
-2. **Vue Agenda Collaborateur** :
-   - Dupliquez la vue par défaut de la table **Action**, qui contient les champs précédemment créés.
-   - Changez le type de la vue dupliquée en **Agenda**.
-   - Dans l'onglet **Agenda**, réalisez les correspondances suivantes :
-     - **Titre** : correspond au champ `Intitulé`
-     - **Date début** : correspond au champ `Date début`
-     - **Heure début** : correspond au champ `Heure début`
-     - **Date fin** : correspond au champ `Date fin`
-     - **Heure fin** : correspond au champ `Heure fin`
-     - **Description** : correspond au champ `Description`
-     - **Table de collaboration** : correspond à la vue `Collaborateur Agenda`
-
-        Exemple de la configuration :
-        ![Exemple d'Interface](images/images.png)
-
-### Étape 3 : Configuration additionnelle
-
-- Activez ou désactivez les options dans l'onglet **Agenda** selon vos besoins :
-  - Affichage en planning
-  - Format vertical
-  - Masquer les week-ends
-  - Afficher les numéros de semaine
-- Configurez les bornes horaires (par exemple : de 08:00 à 17:00).
-- Nommez et enregistrez la vue.
+  - **Table de collaboration :**
+  Sélectionnez **Collaborateur Agenda** pour lier chaque action ou événement à un collaborateur spécifique. Cela permet de visualiser quel collaborateur est impliqué dans chaque action sur l'agenda.
+     
+      <img src="./images/images.png" width="100%" alt="configuration des champs dans l'onglet Agenda" style="border-radius: 5px;"/>
 
 ### Résultat
+
+Ouvrez la vue que vous avez créée pour visualiser les actions sous forme d'agenda.
+Vous devriez maintenant voir vos événements et tâches organisés de manière claire et intuitive, comme dans l'exemple ci-dessous.
+
 ![Exemple d'Interface](images/resultat.png)
+
 
 ### Conclusion
 
