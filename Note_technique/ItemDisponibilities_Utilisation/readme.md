@@ -5,7 +5,7 @@
 L'extension **ItemDisponibilities** permet d'optimiser la gestion des rendez-vous en facilitant la planification et la gestion des ressources disponibles. Ce guide décrit comment utiliser cette extension pour trouver les meilleurs créneaux horaires et ressources disponibles.
 
 ### Prérequis
-- L'extension **ItemDisponibilities** doit être installée et configurée conformément aux instructions du [guide d'installation](lien_vers_la_doc_d'installation).
+- L'extension **ItemDisponibilities** doit être installée et configurée conformément aux instructions du [guide d'installation](https://github.com/nidsconsulting/gopaas-docs/tree/main/Note_technique/ItemDisponibilities_Extension).
 - Les droits d'accès à la fiche des rendez-vous et aux fonctionnalités de planification sont requis.
 
 ## Accès à la Fonctionnalité de Planification
