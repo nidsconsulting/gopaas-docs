@@ -1,9 +1,19 @@
-
 # Comment gérer le versionning dans GoPaaS ?
 
 ## Description
 
 La fonctionnalité **Versionning** dans GoPaaS permet de gérer les versions de l'application et d'afficher un message aux utilisateurs pour leur demander de vider leur cache. Cela garantit que les utilisateurs récupèrent la dernière version de l'application après une mise à jour importante.
+
+### Avant de commencer : Importer l'extension et la table
+
+Avant de pouvoir accéder au module de versionning, il est nécessaire d'importer l'extension et la table nécessaires.
+
+1. **Importer l'extension et la table :**
+   - Allez dans le menu **Admin** (menu de gauche).
+   - Cliquez sur **Transfer In** sous l'onglet **ADMIN**.
+   
+2. **Importer les fichiers :**
+   - Importez les fichiers JSON requis un par un en les sélectionnant depuis votre système. Il s'agit de deux fichiers à importer à télécharger [ICI](https://www.gopaas.fr/).
 
 ### Étape 1 : Accéder au menu Versionning
 
@@ -11,13 +21,12 @@ La fonctionnalité **Versionning** dans GoPaaS permet de gérer les versions de 
    - Allez dans le menu **Admin** (menu de gauche).
    - Cliquez sur **Versionning**.
 
-   <img src="./images/image.png" width="20%" alt="Hearder Top" style="border-radius: 5px;"/>
-   
+   ![Hearder Top](./images/image.png)
+
 2. **Vue des Versions :**
    - Vous verrez un historique des versions précédentes, avec des informations sur les mises à jour passées.
 
-   <img src="./images/image1.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
-
+   ![Hearder Top](./images/image1.png)
 
 ### Étape 2 : Déclarer une nouvelle version
 
@@ -32,7 +41,7 @@ La fonctionnalité **Versionning** dans GoPaaS permet de gérer les versions de 
 3. **Enregistrer la nouvelle version :**
    - Cliquez sur **Enregistrer** pour valider la création de la nouvelle version.
 
-   <img src="./images/image2.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
+   ![Hearder Top](./images/image2.png)
 
 ### Étape 3 : Message pour les utilisateurs
 
