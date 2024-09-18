@@ -11,7 +11,7 @@ GoPaaS propose une fonctionnalité permettant de générer un guide de prise en 
 
 2. **Exemple d'URL :**
    - Si l'URL de votre application est : `https://votre-app.gopaas.net/index.php`
-   - Remplacez-la par : `https://votre-app.gopaas.net/webservice/help/#`
+   - Remplacez-la par : `https://votre-app.gopaas.net/webservice/help/`
 
    Cela vous permettra d'accéder à la page d'aide personnalisée de votre application.
 
@@ -20,12 +20,20 @@ GoPaaS propose une fonctionnalité permettant de générer un guide de prise en 
 1. **Accéder à la personnalisation de l'aide :**
    - Rendez-vous sur une table spécifique dans votre application.
    - Cliquez sur le menu **Outil**, puis sélectionnez **Personnaliser**.
-   - Allez dans l'onglet **Aide** pour configurer les différentes options d'aide.
+   - Dans la partie **Description**, vous pouvez ajouter une note permettant de contextualiser l'utilité  de la table.
+
+      ![Exemple d'Interface](images/3.png)
+
+   - Ensuite allez dans l'onglet **Aide** pour configurer les différentes options d'aide.
+
+   <br>
 
 2. **Configurer les champs d'aide :**
    - **À l'ouverture :** Saisissez ici l'aide ou les instructions à l'ouverture de la table.
    - **À l'enregistrement :** Ajoutez ici des informations ou des conseils lors de l'enregistrement d'une fiche.
    - **Menu Outil :** Décrivez les options spécifiques du menu **Outil** disponibles pour cette table. Cela peut inclure des conseils ou des explications sur les fonctionnalités.
+
+      ![Exemple d'Interface](images/4.png)
 
 ### Étape 3 : Documenter les champs d'une table
 
@@ -35,6 +43,8 @@ GoPaaS propose une fonctionnalité permettant de générer un guide de prise en 
 2. **Documenter les champs :**
    - Vous pouvez ajouter de l'aide spécifique pour chaque champ de la table. Cela permet aux utilisateurs de mieux comprendre l'utilisation de chaque champ lors de la saisie de données.
    - Remplissez le champ **Aide** de chaque fiche champ avec des informations utiles.
+
+      ![Exemple d'Interface](images/5.png)
 
 ### Résultat 
 
