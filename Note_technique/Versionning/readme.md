@@ -13,7 +13,7 @@ Avant de pouvoir accéder au module de versionning, il est nécessaire d'importe
    - Cliquez sur **Transfer In** sous l'onglet **ADMIN**.
    
 2. **Importer les fichiers :**
-   - Importez les fichiers JSON requis un par un en les sélectionnant depuis votre système. Il s'agit de deux fichiers à importer à télécharger [ICI](https://www.gopaas.fr/).
+   - Importez les fichiers JSON requis un par un en les sélectionnant depuis votre système. Il s'agit de deux fichiers à importer à télécharger [ICI](https://drive.google.com/file/d/1_QcZ1tiHdVX5xQBaVmQkmEARi0yrLWgQ/view).
 
 ### Étape 1 : Accéder au menu Versionning
 
