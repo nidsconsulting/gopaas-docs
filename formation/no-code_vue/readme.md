@@ -2,7 +2,7 @@
 
 ## Description
 
-Les vues sont des représentations sous forme de tableaux des données présentes dans la base de données. Chaque vue est constituée de colonnes et de valeurs reflétant les informations stockées.
+Pour visualiser les données saisies dans la base, GoPaaS met à votre disposition un ensemble de vues entièrement personnalisables. Ces vues peuvent se présenter sous forme de tableau, liste, agenda, graphique ou encore widget.
 
 ## Créer une vue
 
