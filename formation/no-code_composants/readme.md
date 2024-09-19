@@ -13,11 +13,11 @@ Pour visualiser les données saisies dans la base, GoPaaS met à votre dispositi
 #### Les filtres avancés
 ![screenshot](images/image2.png "Ecran principal")
 
-Pour activer la fonction filtre avancé sur une vue, cliquez sur ![[Bouton]](images/image3.png){: style="width: 40px;"} puis sélectionnez la colonne sur laquelle effectuer la première condition, choisir l'opérateur et la valeur recherchée.
+Pour activer la fonction filtre avancé sur une vue, cliquez sur <img src="images/image3.png" width="30"> puis sélectionnez la colonne sur laquelle effectuer la première condition, choisir l'opérateur et la valeur recherchée.
 
-Il est possible de cummuler plusieurs conditions en cliquant sur le bouton ![Bouton](images/image5.png){: style="width: 40px;"}
+Il est possible de cummuler plusieurs conditions en cliquant sur le bouton <img src="images/image5.png" width="30">
 
-Cliquez sur le bouton ![Bouton](images/image4.png){: style="width: 100px;"} pour lancer la recherche
+Cliquez sur le bouton <img src="images/image4.png" width="80"> pour lancer la recherche
 
 Cliquez sur le bouton à droite du bouton pour enregistrer la recherche sur la vue.
 ### Agenda
