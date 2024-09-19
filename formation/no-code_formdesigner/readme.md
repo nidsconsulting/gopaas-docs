@@ -43,7 +43,7 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
 
 ### Ajouter un onglet
 
-1. Dans l'interface du Form Designer, cliquez sur le bouton **+ Onglet**.
+1. Dans l'interface du Form Designer, cliquez sur le bouton `+ Onglet`.
 
    ![Ajouter un onglet](images/1724160860507.png)
    
@@ -53,10 +53,10 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
 
    | Champ               | Description                                      |
    | ------------------- | ------------------------------------------------ |
-   | **Intitulé** | Nom du champ en base                             |
+   | **Intitulé** | Nom du champ en base de données                           |
    | **Label**     | Étiquette visible pour l'onglet                 |
    | **Table**     | Nom de la table dans laquelle l'onglet se trouve |
-   | **Ordre**     | Ordre de l'onglet sur la table                   |
+   | **Ordre**     | Ordre de l'onglet sur la fiche                  |
 3. Une fois le formulaire enregistré, cliquez sur le bouton de mise à jour pour actualiser l'interface du designer et voir apparaître les modifications.
 
    ![Mise à jour du designer](images/1724161011935.png)
@@ -100,9 +100,9 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
    | **Section**                    | Section dans laquelle le champ sera affiché                                                                                                                                     |
    | **Colonne**                    | Définir le numéro de colonne, une section peut contenir au maximum 3 colonnes                                                                                                  |
    | **Ordre champ**                | Ordre du champ dans la colonne                                                                                                                                                   |
-   | **Type**                       | Plusieurs types de champs sont mis à disposition                                                                                                                                |
+   | **Type**                       | Typologie de champ disponible                                                                                                     |
    | **Nom champ**                  | Nom du champ en base de données                                                                                                                                                 |
-   | **Alias/Nom Table connectée** | L'alias du champ doit être unique dans toute l'application<br />Dans le cas où le champ créé est de type *connexion* , il faut renseigner le nom de la table à connecter |
+   | **Alias/Nom Table connectée** | Nom de l'alias du champ ou nom de la table connecté dans la cadre d'un champ type connexion |
    | **Intitulé**                  | Nom du champ dans l'application.                                                                                                                                                 |
    | **Largeur intitulé**          | Largeur du label du champ                                                                                                                                                        |
    | **Alignement intitulé**       | Alignement du label (ex : Gauche, Droite, Centre)                                                                                                                                |
@@ -120,7 +120,7 @@ Pour gérer les vues associées à une table, suivez ces étapes :
 1. Rendez-vous dans les paramètres de la table de votre choix, ouvrez le menu **Outil**, puis cliquez sur **Ouvrir/gérer les vues**.
 
    ![Ouvrir/gérer les vues](images/1724162129686.png)
-2. Vous arriverez sur cette interface avec trois vues par défaut.
+2. Vous retrouvez toutes les vues de la table.
 
    ![Interface des vues par défaut](images/1724161824579.png)
 3. En sélectionnant la vue **Par défaut** et en cliquant sur **Ouvrir une vue**, vous accéderez à la vue par défaut de la table sélectionnée.
