@@ -18,7 +18,7 @@ Vous arriverez alors sur la fiche de personnalisation des vues, composée de plu
 
 ![1724163720069](images/1724163720069.png)
 
-Pour configurer correctement la vue, il est recommandé de renseigner les champs suivants :
+Renseignez les champs suivants :
 
 | Champ                                            | Description                                                                                                                                  |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,16 +48,16 @@ Pour configurer correctement la vue, il est recommandé de renseigner les champs
 
 ## Agencer les champs
 
-1. Ensuite, rendez-vous dans l'onglet **Champs** pour sélectionner les champs que vous souhaitez voir apparaître dans votre vue.
+1. Rendez-vous dans l'onglet **Champs** pour sélectionner les champs que vous souhaitez voir apparaître dans votre vue.
 
 ![screenshot](images/image27.png)
 
-1. La liste des tables affiche toutes les tables disponibles dans l'application.
-2. Les champs de la table sélectionnée apparaissent ici.
+1. La liste des tables disponibles dans l'application.
+2. Liste des champs de la table sélectionnée.
 3. Utilisez les flèches pour ajouter un champ à la vue (flèche de droite) ou pour le retirer (flèche de gauche).
 4. Les champs sélectionnés pour la vue. Vous pouvez réorganiser l'ordre d'affichage par glisser-déposer.
 
-> **Astuce :** Pour ajouter ou retirer un champ, sélectionnez-le et déplacez-le à l'aide des flèches.
+> **Astuce :** Il est possible de sélectionner plusieurs champs en utilisant le raccourci CTRL + CLIC.
 
 ## Propriétés de la colonne
 
@@ -93,20 +93,22 @@ Vous pouvez également personnaliser les propriétés suivantes :
 
 ![screenshot](images/image43.png)
 
-1. La liste des tables affiche toutes les tables disponibles dans l'application.
-2. Les champs de la table sélectionnée apparaissent ici.
+1. La liste des tables disponibles dans l'application.
+2. Liste des champs de la table sélectionnée.
 3. Utilisez les flèches pour ajouter un champ (flèche de droite) ou le retirer (flèche de gauche).
 4. Les champs sélectionnés pour les conditions.
 
 ## Trier et mettre en forme
 
-Dans l'onglet **Mise en forme**, vous pouvez trier les données de votre vue, par exemple pour organiser des actions par statut ou trier des comptes par ordre alphabétique.
+Dans l'onglet **Mise en forme**, vous pouvez trier les données de votre vue, par exemple pour regrouper des actions par statut ou trier des comptes par ordre alphabétique.
 
 ![screenshot](images/image38.png)
 
 1. Utilisez les tris (de 1 à 5) pour classer les enregistrements en fonction des champs sélectionnés dans l'onglet Champs.
-2. Choisissez l'ordre croissant ou décroissant.
+2. Choisissez l'ordre croissant (ASC) ou décroissant (DESC).
 3. Sélectionnez le champ pour effectuer le regroupement.
+
+**NB :** Une option est disponible pour condenser le regroupement à l'ouverture de la vue.
 
 ## Dupliquer une vue
 
@@ -118,4 +120,4 @@ Depuis la vue par défaut, cliquez sur ![alt_text](images/image5.png) -> ![alt_t
 
 ![1724164167318](images/1724164167318.png)
 
-Modifiez ensuite le nom de la nouvelle vue, puis cliquez sur ![alt_text](images/image36.png) pour commencer le paramétrage.
+Modifiez ensuite le nom de la nouvelle vue, puis cliquez sur `Appliquer` pour commencer le paramétrage.
