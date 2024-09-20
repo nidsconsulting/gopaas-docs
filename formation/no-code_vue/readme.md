@@ -14,7 +14,7 @@ Les vues peuvent être adaptées pour répondre à des besoins spécifiques, tel
 
 Vous arriverez alors sur la fiche de personnalisation des vues, composée de plusieurs onglets.
 
-1. Commencez par cliquer sur l'onglet `Description` pour initialiser le paramétrage.
+2. Commencez par initialiser le paramétrage.
 
 ![1724163720069](images/1724163720069.png)
 
@@ -23,7 +23,7 @@ Renseignez les champs suivants :
 | Champ                                            | Description                                                                                                                                  |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Intitulé**                              | Nom de la vue.                                                                                                                               |
-| **Table**                                  | Table SQL à laquelle la vue est connectée.                                                                                                 |
+| **Table**                                  | Table à laquelle la vue est connectée.                                                                                                 |
 | **Type**                                   | Type de vue : Tableau, Agenda, Graphique, WebReport, Pivot, Kanban.                                                                          |
 | **Rapport**                                | Indiquer si la vue doit être affichée dans un rapport.                                                                                     |
 | **Afficher dans les accès rapide**        | Permet d'afficher la vue dans l'Accès rapide ![acces_rapide](https://gopaas.fr/help/docs/Vues/images/image34.png) de la barre de navigation. |
@@ -67,17 +67,14 @@ En double-cliquant sur un des champs dans la colonne de droite, vous accéderez 
 
 ![capture](images/image21.png)
 
-Les champs suivants sont disponibles par défaut :
-
-- **Table**
-- **Champ**
-- **Alias**
-- **Intitulé**
-
 Vous pouvez également personnaliser les propriétés suivantes :
 
 | Champ                                  | Description                                                                                                                                                                                                                                                   |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Table**                      | Nom de la table en base de données.                                                                                                                                                                                             |
+| **Champ**                      | Nom du champ en base de données.                                                                                                                                                                                             |
+| **Alias**                      | Alias de la colonne. (Modifiable)                                                                                                                                                                                                                            |
+| **Intitulé**                      | Intiulé de la colonne dans la vue. (Modifiable)                                                                                                                                                                                                                           |
 | **Largeur**                      | Définir la largeur de la colonne.                                                                                                                                                                                                                            |
 | **Format**                       | Personnalisez le format du champ. Les options incluent Texte, Date, Nombre, HTML, Gauge, Rating, Smileys, SQL, et SQLNumber.                                                                                                                                  |
 | **Code**                         | Utilisez ce champ pour inclure des balises HTML ou des requêtes SQL, en fonction du format sélectionné.                                                                                                                                                    |
