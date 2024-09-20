@@ -23,10 +23,10 @@ Nous allons mettre en place des permissions sur la table compte permettant la cr
 
 1. **Accéder au menu Admin :**
    - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur **Groupes**.
+   - Cliquez sur `Groupes`.
 
 2. **Créer le groupe :**
-   - Cliquez sur **Ajouter**.
+   - Cliquez sur `Ajouter`.
    - Remplissez le champ **Intitulé** avec le nom du groupe : **COMMERCIAL**.
    - Dans la section **Permissions** :
 
@@ -36,13 +36,13 @@ Nous allons mettre en place des permissions sur la table compte permettant la cr
         - **Référence** : Cochez la case si le groupe peut y accéder.
         - **Ajout rapide** : Cochez la case si le groupe peut y accéder.
 
-   - Cliquez sur **Enregistrer**.
+   - Cliquez sur `Enregistrer`.
 
 ### Étape 2 : Attribution des groupes aux utilisateurs
 
 1. **Accéder au menu Utilisateur :**
    - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur **Utilisateur**.
+   - Cliquez sur `Utilisateur`.
 
 2. **Associer les utilisateurs aux groupes :**
    - Pour chaque utilisateur concerné, double-cliquez sur l'utilisateur.
@@ -54,10 +54,10 @@ Nous allons mettre en place des permissions sur la table compte permettant la cr
 
 1. **Accéder au menu Permissions :**
    - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur **Permissions**.
+   - Cliquez sur `Permissions`.
 
 2. **Ajouter les permissions :**
-   - Cliquez sur **Ajouter**.
+   - Cliquez sur `Ajouter`.
    - Remplissez les champs comme suit :
 
 | **Champ**                 | **Valeur**                        |
@@ -75,7 +75,7 @@ Nous allons mettre en place des permissions sur la table compte permettant la cr
 | **Modification en masse** | ADMIN                             |
 
 3. **Enregistrer les permissions :**
-   - Cliquez sur **Enregistrer**.
+   - Cliquez sur `Enregistrer`.
 
 ### Étape 4 : Se déconnecter et se reconnecter
 
@@ -97,10 +97,10 @@ Nous allons mettre en place des permissions sur la table contact permettant la c
 
 1. **Accéder au menu Admin :**
    - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur **Groupes**.
+   - Cliquez sur `Groupes`.
 
 2. **Créer le groupe :**
-   - Cliquez sur **Ajouter**.
+   - Cliquez sur `Ajouter`.
    - Remplissez le champ **Intitulé** avec le nom du groupe : **COMMERCIAL**.
    - Dans la section **Permissions** :
 
@@ -110,13 +110,13 @@ Nous allons mettre en place des permissions sur la table contact permettant la c
         - **Référence** : Cochez la case si le groupe peut y accéder.
         - **Ajout rapide** : Cochez la case si le groupe peut y accéder.
 
-   - Cliquez sur **Enregistrer**.
+   - Cliquez sur `Enregistrer`.
 
 ### Étape 2 : Attribution des groupes aux utilisateurs
 
 1. **Accéder au menu Utilisateur :**
    - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur **Utilisateur**.
+   - Cliquez sur `Utilisateur`.
 
 2. **Associer les utilisateurs aux groupes :**
    - Pour chaque utilisateur concerné, double-cliquez sur l'utilisateur.
@@ -128,10 +128,10 @@ Nous allons mettre en place des permissions sur la table contact permettant la c
 
 1. **Accéder au menu Permissions :**
    - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur **Permissions**.
+   - Cliquez sur `Permissions`.
 
 2. **Ajouter les permissions :**
-   - Cliquez sur **Ajouter**.
+   - Cliquez sur `Ajouter`.
    - Remplissez les champs comme suit :
 
 | **Champ**                 | **Valeur**                        |
@@ -149,7 +149,7 @@ Nous allons mettre en place des permissions sur la table contact permettant la c
 | **Modification en masse** | ADMIN                             |
 
 3. **Enregistrer les permissions :**
-   - Cliquez sur **Enregistrer**.
+   - Cliquez sur `Enregistrer`.
 
 ### Étape 4 : Se déconnecter et se reconnecter
 
@@ -190,10 +190,10 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 
 1. **Accéder au menu Admin :**
    - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur **Groupes**.
+   - Cliquez sur `Groupes`.
 
 2. **Créer les groupes :**
-   - Cliquez sur **Ajouter**.
+   - Cliquez sur `Ajouter`.
    - Remplissez le champ **Intitulé** avec les noms des groupes : **EST**, **OUEST**, **NORD**, **SUD**.
    - Dans la section **Permissions** :
 
@@ -203,7 +203,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
         - **Référence** : Cochez la case si le groupe peut y accéder.
         - **Ajout rapide** : Cochez la case si le groupe peut y accéder.
 
-   - Cliquez sur **Enregistrer**.
+   - Cliquez sur `Enregistrer`.
 
    - Répétez cette opération pour les quatre groupes.
 
@@ -213,7 +213,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 
 1. **Accéder au menu Utilisateur :**
    - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur **Utilisateur**.
+   - Cliquez sur `Utilisateur`.
 
 2. **Associer les utilisateurs aux groupes :**
    - Pour chaque utilisateur concerné, double-cliquez sur l'utilisateur.
@@ -227,7 +227,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 ### Étape 3 : Modification des fiches comptes
 
 1. **Accéder aux comptes :**
-   - Allez dans **Applications** (menu de gauche), puis dans le sous-menu **CRM** puis cliquer sur **Comptes**.
+   - Allez dans **Applications** (menu de gauche), puis dans le sous-menu **CRM** puis cliquer sur `Comptes`.
    - Double-cliquez sur chaque fiche compte à modifier (au minimum quatre fiches comptes).
 
 2. **Associer les permissions :**
@@ -242,10 +242,10 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 
 1. **Accéder au menu Permissions :**
    - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur **Permissions**.
+   - Cliquez sur `Permissions`.
 
 2. **Ajouter les permissions :**
-   - Cliquez sur **Ajouter**.
+   - Cliquez sur `Ajouter`.
    - Remplissez les champs comme suit :
 
 | **Champ**             | **Valeur**                        |
@@ -266,7 +266,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 ![Images](images3/VUE_PERMISSION_COMPTE.png)
 
 3. **Enregistrer les permissions :**
-   - Cliquez sur **Enregistrer**.
+   - Cliquez sur `Enregistrer`.
 
 ### Étape 5 : Se déconnecter et se reconnecter
 

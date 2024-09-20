@@ -32,14 +32,14 @@ Cocher le groupe qui aura accès au dashboard puis cliquer sur la flèche ![scre
 
 ![screenshot](images/image5.png)
 
-3. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
-4. Cliquer sur le bouton **Appliquer** pour enregistrer le Dashboard et pouvoir créer une ligne de dashboard.
+3. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications.
+4. Cliquer sur le bouton `Appliquer` pour enregistrer le Dashboard et pouvoir créer une ligne de dashboard.
 
 ![screenshot](images/image30.png)
 
 > ***Remarque :** "Afficher au démarrage", "Pour le(s) groupe(s)" et "Afficher bouton Fullscreen" sont des paramètres optionnels.*
 
-5. Cliquer sur le bouton **Ajouter** de la section `Détails` pour ajouter une ligne de dashboard.
+5. Cliquer sur le bouton `Ajouter` de la section `Détails` pour ajouter une ligne de dashboard.
 
 ![screenshot](images/image2.png)
 
@@ -81,11 +81,11 @@ Cocher le groupe qui aura accès au dashboard puis cliquer sur la flèche ![scre
 
 ![screenshot](images/image10.png)
 
-16. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications de la ligne.
+16. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications de la ligne.
 
 ![screenshot](images/image11.png)
 
-17. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications du dashboard.
+17. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications du dashboard.
 18. Actualiser l'application.
 
 Pour modifier les icones des widgets, cliquer sur  ![screenshot](images/image12.png).
@@ -104,7 +104,7 @@ Icone **Affaire** : `fas fa-suitcase fa-5x`
 
 Icone **Action** : `fas fa-file-signature fa-5x`
 
-20. Cliquer sur le bouton **Enregistrer** pour appliquer les modifications de la vue.
+20. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications de la vue.
 21. Actualiser le dahsboard en cliquant sur le bouton ![screenshot](images/image15.png) pour voir le résultat.
 
 ![screenshot](images/image16.png)
@@ -124,7 +124,7 @@ Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé
 
 ![screenshot](images/image31.png)
 
-3. Donner un Nom à cette nouvelle ligne plus cliquer sur le bouton **« Appliquer »** pour sauvegarder la fiche sans la fermer.
+3. Donner un Nom à cette nouvelle ligne plus cliquer sur le bouton `Appliquer` pour sauvegarder la fiche sans la fermer.
 
 ![screenshot](images/image32.png)
 
@@ -132,7 +132,7 @@ Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé
 
 ![screenshot](images/image33.png)
 
-5. Dans le menu outil, cliquer sur l’option  **« Ajouter un WebReport »**.
+5. Dans le menu outil, cliquer sur l’option  `Ajouter un WebReport`.
 
 ![screenshot](images/image34.png)
 
@@ -155,7 +155,7 @@ Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé
 
 ![screenshot](images/image39.png)
 
-11. Configurer le WebReport selon les besoins puis cliquer sur le bouton **« Enr. »** pour afficher la nouvelle configuration du WebReport au  **format JSON**.
+11. Configurer le WebReport selon les besoins puis cliquer sur le bouton `Enr.` pour afficher la nouvelle configuration du WebReport au  **format JSON**.
 
 ![screenshot](images/image40.png)
 
@@ -173,7 +173,7 @@ Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé
 
 ![screenshot](images/image44.png)
 
-15. Cliquer sur le bouton **« Enregistrer »** pour sauvegarder dans la nouvelle configuration du WebReport.
+15. Cliquer sur le bouton `Enregistrer` pour sauvegarder dans la nouvelle configuration du WebReport.
 
 ![screenshot](images/image45.png)
 

@@ -4,7 +4,7 @@
 
 Les automatisations permettent à GoPaaS d'accomplir des tâches répétitives ou routinières, telles que l’envoi d’un email quotidien à 9 heures contenant les tâches de la journée, ou encore des tâches plus complexes, comme l’envoi d’un email à un commercial responsable d’un compte pour lequel un technicien a signalé un incident important ou critique.
 
-Dans le menu de personnalisation de l'application, cliquez sur "Automatisation" pour accéder à cette fonctionnalité.
+Dans le menu de personnalisation de l'application, cliquez sur `Automatisation` pour accéder à cette fonctionnalité.
 
 ![alt_text](images/image0.png)
 
@@ -20,7 +20,7 @@ Une automatisation est une série d’instructions que GoPaaS exécute automatiq
 
 Lors de l'enregistrement d'une nouvelle affaire avec un CA > 10 000€, envoyez un email à mgooriah@nids.fr.
 
-Pour ce faire, cliquez sur le bouton "Ajouter" pour créer une nouvelle fiche.
+Pour ce faire, cliquez sur le bouton `Ajouter` pour créer une nouvelle fiche.
 
 ![screenshot](images/image3.png)
 
@@ -33,7 +33,7 @@ Pour ce faire, cliquez sur le bouton "Ajouter" pour créer une nouvelle fiche.
 | **Description** | Description de l'automatisation                                       |
 | **Ordre**       | Ordre d'apparition dans la vue                                        |
 
-Une fois les champs remplis, cliquez sur le bouton "Enregistrer" pour sauvegarder.
+Une fois les champs remplis, cliquez sur le bouton `Enregistrer` pour sauvegarder.
 
 ![screenshot](images/image5.png)
 
@@ -70,7 +70,7 @@ Ensuite, dans la section "Filtre", sélectionnez le champ "CA" avec la condition
 
 ![screenshot](images/image11.png)
 
-Dans la section "Action", cliquez sur "Ajouter" pour créer une nouvelle action.
+Dans la section "Action", cliquez sur `Ajouter` pour créer une nouvelle action.
 
 ![screenshot](images/image12.png)
 

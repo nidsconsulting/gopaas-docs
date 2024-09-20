@@ -8,7 +8,7 @@ L'exportation, quant à elle, offre la possibilité d'extraire les données pré
 
 ## Importer un fichier
 
-1. Dans le menu personnalisation de l'application  ![alt_text](images/Image1.png) cliquer sur importer un fichier.
+1. Dans le menu personnalisation de l'application  ![alt_text](images/Image1.png) cliquer sur `importer un fichier`.
 
 ![alt_text](images/Image0.png)
 

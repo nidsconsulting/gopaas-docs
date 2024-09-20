@@ -69,7 +69,6 @@ Dans cette liste sont regroupées les principales fonctions d’administration d
 
 ![Bouton](images/Image14.png) Ce bouton permet de synchroniser des données du mode hors connexion. Les boutons indiquent "Synchro IN" pour importer des données, "Synchro OUT" pour exporter des données, "Sauvegarder" pour enregistrer les données actuelles, "Restaurer" pour revenir à un état antérieur des données, et "Switch" pour changer de mode ou de profil. C'est un outil pratique pour gérer des données lorsqu'on n'a pas accès à Internet.
 
-
 ## La barre de personnalisation
 
 GoPaaS est personnalisable et peut être adapté pour répondre aux besoins d’une entreprise ou d’un utilisateur individuel. Il permet de recréer dans une base les associations que vous faites naturellement entre les différents types d’informations qui vous parviennent.
@@ -109,7 +108,6 @@ Retrouvez la liste de toutes les classes JS  de votre application.
 GoPaaS permet l'injection de code JavaScript pour personnaliser l'interface utilisateur, offrant ainsi une grande flexibilité dans l'adaptation de l'application aux besoins spécifiques de l'entreprise. 
 
 En complément, GoPaaS propose un système de classes JavaScript, conçu pour structurer et organiser le développement. Ce système de classes simplifie la gestion du code, améliore la réutilisabilité des composants, et facilite la maintenance des personnalisations.
-
 
 ### Modèle d'import
 Retrouvez tous les modèles d'import de votre application

@@ -14,7 +14,7 @@ Les vues peuvent être adaptées pour répondre à des besoins spécifiques, tel
 
 Vous arriverez alors sur la fiche de personnalisation des vues, composée de plusieurs onglets.
 
-1. Commencez par cliquer sur l'onglet **Description** pour initialiser le paramétrage.
+1. Commencez par cliquer sur l'onglet `Description` pour initialiser le paramétrage.
 
 ![1724163720069](images/1724163720069.png)
 

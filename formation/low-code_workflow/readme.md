@@ -132,7 +132,7 @@ Le workflow contient deux étapes avec une étape à 2 choix. Il est donc néces
 - Automatisme de validation de la demande
 - Automatisme de refus de la demande
 
-Rendez-vous dans le menu paramétrage en haut à droite de l’écran > Automatisation puis cliquez sur ajouter pour créer un nouvel automatisme.
+Rendez-vous dans le menu paramétrage en haut à droite de l’écran > Automatisation puis cliquez sur `Ajouter` pour créer un nouvel automatisme.
 
 Cliquez sur `Ajouter` pour créer une nouvelle fiche et renseigner les champs de l'onglet principal.
 
@@ -192,4 +192,4 @@ Dans la vue liée des actions, cliquez sur `Ajouter` pour créer une nouvelle ac
 | À                   | Adresse du destinataire (rh@conge.fr)
 | Statut                   | A valider
 
-Cliquez sur `Enregistrer`
+Cliquez sur `Enregistrer`.

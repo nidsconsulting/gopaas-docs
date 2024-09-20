@@ -72,7 +72,7 @@ Renseigner les informations relatives à la société, les coordonnées et le RI
 | **Docusign**             | Authentification sur l’API Docusign                                                                 |
 | **Yousign**              | Authentification sur l’API Yousign                                                                  |
 | **SSO (Single Sign-On)** | Permet d'accéder à GoPaaS avec l’authentification Google                                          |
-| **Google API Key**       | Clé API Google MAP                                                                                  |
+| **Google API Key**       | Clé API Google                                                                                  |
 
 ### Onglet Style
 
@@ -132,7 +132,7 @@ Pour importer un dictionnaire utilisez le module d'import, pour créer des chaî
 
 ![screenshot](images/dictionnaire.png)
 
-Pour le faire manuellement cliquer sur Ajouter :
+Pour le faire manuellement cliquer sur `Ajouter` :
 
 ![screenshot](images/image28.png)
 
@@ -179,7 +179,7 @@ Le groupe sera alors associé à un ou plusieurs utilisateurs.
 
 ![screenshot](images/image25.png)
 
-Pour créer un nouveau groupe cliquez sur **Ajouter**, puis renseigner le champ **Intitulé** il correspond tout simplement au nom du groupe.
+Pour créer un nouveau groupe cliquez sur `Ajouter`, puis renseigner le champ **Intitulé** il correspond tout simplement au nom du groupe.
 
 ![screenshot](images/image8.png)
 
