@@ -6,6 +6,8 @@ Quand vous saisissez des données dans une catégorie vous créez un nouvel enre
 
 ![screenshot](images/image11.png "Ecran principal")
 
+Dans cette interface, un onglet regroupe des informations liées à un thème spécifique. Chaque onglet peut contenir plusieurs sections, qui organisent les données par catégories. À l'intérieur de chaque section, on trouve plusieurs champs, où l'utilisateur peut saisir ou consulter des informations précises.
+
 ## Les vues
 Pour visualiser les données saisies dans la base, GoPaaS met à votre disposition un ensemble de vues entièrement personnalisables. Ces vues peuvent se présenter sous forme de tableau, liste, agenda, graphique ou encore widget. Elles sont créées à partir d’une seule table mais peuvent afficher des informations issues d’autres tables grâce aux connexions (voir ci-après). Elles peuvent être triées, filtrées et sauvegardées sous des noms différents. Les vues liées, enfin, permettent de regrouper plusieurs vues dans un onglet d’une fiche. C’est un moyen très puissant de visualiser rapidement un ensemble d’informations liées.
 ### Tableau
