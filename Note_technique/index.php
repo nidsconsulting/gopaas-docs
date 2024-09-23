@@ -70,23 +70,23 @@
                 <img src="../asset/question.png" width="30px"/>&nbsp;&nbsp;GoPaaS Note
               </div>
 
-              <div class="chapter" onclick="window.location.href='index.php?rub=Archivage_Email'">Archivage email</div>
+              <div class="chapter" onclick="window.location.href='index.php?rub=Archivage_email'">Archivage email</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Offline'">Mode hors connexioin</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Agenda'">Agenda</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Aide'">Aide</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Assistant'">Assistant</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Automatisme'">Automatisme</div>
-              <div class="chapter" onclick="window.location.href='index.php?rub=Backup_Element'">Restaurer un élément</div>
-              <div class="chapter" onclick="window.location.href='index.php?rub=Create_User'">Créer un utilisateur</div>
+              <div class="chapter" onclick="window.location.href='index.php?rub=Backup_element'">Restaurer un élément</div>
+              <div class="chapter" onclick="window.location.href='index.php?rub=Create_user'">Créer un utilisateur</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Draw_JS'">DrawJS</div>
-              <div class="chapter" onclick="window.location.href='index.php?rub=Import'">Import</div>
+              <div class="chapter" onclick="window.location.href='index.php?rub=import'">Import</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=ItemDisponibilities_Extension'">ItemDisponibilities<br>Extension</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=ItemDisponibilities_Utilisation'">ItemDisponibilities<br>Utilisation</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Modele_Email'">Modèle email</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Optimisation_Widget'">Optimisation widget</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Permissions'">Permissions</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Planning'">Planning</div>
-              <div class="chapter" onclick="window.location.href='index.php?rub=Reset_Password'">Réinitialiser votre<br>mot de passe</div>
+              <div class="chapter" onclick="window.location.href='index.php?rub=Reset_password'">Réinitialiser votre<br>mot de passe</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=SMTP'">SMTP</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Transfer_IN'">Transfer IN</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Transfer_OUT'">Transfer OUT</div>
