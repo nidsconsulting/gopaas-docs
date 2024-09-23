@@ -21,7 +21,8 @@ Avant de pouvoir accéder au module de versionning, il est nécessaire d'importe
    - Allez dans le menu **Admin** (menu de gauche).
    - Cliquez sur **Versionning**.
 
-   ![screenshot](./images/image.png)
+   <img src="images/image.png" height="400px"/>
+    <!-- ![screenshot](./images/image.png)-->
 
 2. **Vue des Versions :**
    - Vous verrez un historique des versions précédentes, avec des informations sur les mises à jour passées.
