@@ -85,7 +85,7 @@ Nous allons mettre en place des permissions sur la table compte permettant la cr
 
 ### Résultat
 
-![Images](images/EXEMPLE_VUE_RESULTAT_ADMIN.png)
+![screenshot](images/EXEMPLE_VUE_RESULTAT_ADMIN.png)
 
  ---
 
@@ -161,19 +161,19 @@ Nous allons mettre en place des permissions sur la table contact permettant la c
 
 - Depuis une session **COMMERCIAL** :
 
-![Images](images/EXEMPLE_VUE_CONTACT_RESULTAT_COMMERCIAL.png)
+![screenshot](images/EXEMPLE_VUE_CONTACT_RESULTAT_COMMERCIAL.png)
 
 ### Configuration de permissions dans une vue
 
-![Images](images/EXEMPLE_PERMISSION_VUE.png)
+![screenshot](images/EXEMPLE_PERMISSION_VUE.png)
 
 ### Configuration de permissions dans un dashboard
 
-![Images](images/EXEMPLE_PERMISSION_DASH.png)
+![screenshot](images/EXEMPLE_PERMISSION_DASH.png)
 
 ### Configuration de permissions sur un champ
 
-![Images](images/EXEMPLE_PERMISSION_CHAMP.png)
+![screenshot](images/EXEMPLE_PERMISSION_CHAMP.png)
 ___
 
 ## 3. Utilisation des permissions avec la notion de groupe.
@@ -207,7 +207,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 
    - Répétez cette opération pour les quatre groupes.
 
-   ![Images](images3/VUE_GROUPE_DISPONIBLE.png)
+   ![screenshot](images3/VUE_GROUPE_DISPONIBLE.png)
 
 ### Étape 2 : Attribution des groupes aux utilisateurs
 
@@ -219,7 +219,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
    - Pour chaque utilisateur concerné, double-cliquez sur l'utilisateur.
    - Dans la section **Groupe** (multi-connexion), associez le groupe approprié (NORD, SUD, EST, OUEST).
 
-   ![Images](images3/VUE_UTILISATEUR_GROUPE.png)
+   ![screenshot](images3/VUE_UTILISATEUR_GROUPE.png)
 
    - Enregistrez la fiche utilisateur.
    - Assurez-vous d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
@@ -234,7 +234,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
    - Sur les fiches **Comptes**, vous devez posséder un champ, permettant de gérer les permissions, dans notre cas nous le nomerons **Permission** et pointera vers la table **Groupe** et de type multi-connexion.
    - Renseignez le champ **Permission** (multi-connexion), en sélectionnant le groupe approprié (NORD, EST, OUEST, SUD).
 
-   ![Images](images3/EXEMPLE_COMPTE_SELECTION_PERMISSION.png)
+   ![screenshot](images3/EXEMPLE_COMPTE_SELECTION_PERMISSION.png)
 
    - Enregistrez chaque fiche compte.
 
@@ -263,7 +263,7 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 | **Export**            | ADMIN                             |
 | **Modification en masse** | SUD, ADMIN, NORD, EST, OUEST  |
 
-![Images](images3/VUE_PERMISSION_COMPTE.png)
+![screenshot](images3/VUE_PERMISSION_COMPTE.png)
 
 3. **Enregistrer les permissions :**
    - Cliquez sur `Enregistrer`.
@@ -277,10 +277,10 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 ### Résultat
 
 - Depuis une session région **SUD** :
-![Images](images3/EXEMPLE_VUE_RESULTAT_USER.png)
+![screenshot](images3/EXEMPLE_VUE_RESULTAT_USER.png)
 
 - Depuis une session **GESTIONNAIRE** :
-![Images](images3/EXEMPLE_VUE_RESULTAT_ADMIN.png)
+![screenshot](images3/EXEMPLE_VUE_RESULTAT_ADMIN.png)
 
 ### Conclusion
 

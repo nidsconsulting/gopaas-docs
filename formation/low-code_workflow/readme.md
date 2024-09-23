@@ -14,7 +14,7 @@ Pour pouvoir utiliser un workflow sur une table, il y a deux paramètres à pren
 
 Dans le menu de personnalisation 
 
-![capture](images/image5.png)
+![screenshot](images/image5.png)
 
 - Cliquer sur le menu `Tables` pour afficher la vue avec la liste de toutes les tables.
 - Cliquer ensuite sur le bouton `Ajouter`.

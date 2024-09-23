@@ -4,7 +4,7 @@
 
 Les modèles de lettre simplifient le processus de fusion de données en permettant aux utilisateurs de créer rapidement des documents personnalisés à partir des données de leur application. En utilisant les modèles de lettre, les utilisateurs peuvent générer des documents professionnels et cohérents en un clin d'œil.
 
-![alt_text](images/image1.png)
+![screenshot](images/image1.png)
 
 ### Prérequis
 
@@ -14,13 +14,13 @@ Pour assurer une fusion de données correcte, les informations de l'application 
 
 Pour créer un modèle de lettre rendez vous dans dans la **barre de navigation > Références > Modèle > Modèle de lettre**.
 
-![alt_text](images/image2.png)
+![screenshot](images/image2.png)
 
 Cliquer sur `ajouter`.
 
-![alt_text](images/image3.png)
+![screenshot](images/image3.png)
 
-![alt_text](images/image4.png)
+![screenshot](images/image4.png)
 
 | Intitulé                             | Nom du modèle                                                                          |
 | ------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -66,9 +66,9 @@ En choisissant la vue de fusion dans le modèle de lettre, GoPaaS offre une list
 
 Si un champ nécessaire à la fusion est absent, il doit être ajouté à la vue de fusion.
 
-![alt_text](images/image5.png)
+![screenshot](images/image5.png)
 
-Cliquer sur l'icône ![alt_text](images/image6.png) dans le tableau des champs pour copier le code de fusion puis coller dans le modèle de fusion.
+Cliquer sur l'icône ![capture](images/image6.png) dans le tableau des champs pour copier le code de fusion puis coller dans le modèle de fusion.
 
 *Exemple dans le modèle de fusion* : `Adresse client : [onshow.client_adresse;noerr;ifempty'']`
 
@@ -78,11 +78,11 @@ En sélectionnant les vues liées de fusion dans le modèle de lettre, GoPaaS of
 
 Si un champ nécessaire à la fusion est absent, il doit être ajouté à la vue de fusion.
 
-![alt_text](images/image7.png)
+![screenshot](images/image7.png)
 
 > **Remarque** : Lors de la fusion d'une vue liée, le code de fusion du premier champ de la vue est légèrement modifié. Il est important de prendre en compte l'ordre des champs dans la vue.
 
-Pour inclure le premier champ d'une vue liée cliquer sur l'icône ![alt_text](images/image6.png) dans le tableau des champs, puis collez-le dans le modèle de fusion. Répéter l’opération pour les autres champs de la vue liée.
+Pour inclure le premier champ d'une vue liée cliquer sur l'icône ![capture](images/image6.png) dans le tableau des champs, puis collez-le dans le modèle de fusion. Répéter l’opération pour les autres champs de la vue liée.
 
 *Exemple dans le modèle de fusion :*
 
@@ -96,12 +96,12 @@ Les modèles de lettre peuvent être imprimés depuis :
 
 Depuis une fiche, **menu outil > Fusionner > choisir le modèle > Fusionner**
 
-![alt_text](images/image10.png)
+![screenshot](images/image10.png)
 
-![alt_text](images/image9.png)
+![screenshot](images/image9.png)
 
 Depuis une vue, **sélectionner les fiches à fusionner > menu outil > Fusionner > choisir le modèle > Fusionner**
 
-![alt_text](images/image8.png)
+![screenshot](images/image8.png)
 
-![alt_text](images/image9.png)
+![screenshot](images/image9.png)

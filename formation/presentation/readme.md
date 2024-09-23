@@ -51,7 +51,7 @@ Dans cette liste sont regroupées les principales fonctions d’administration d
 
 **La barre d'outils** regroupe plusieurs boutons :
 
-![Bouton](images/Image15.png)
+![screenshot](images/Image15.png)
 
 ![Bouton](images/Image3.png)  Ce bouton permet de réduire la barre de navigation.
 
