@@ -1,8 +1,8 @@
-## Archivage des Emails sur GoPaaS
+# Archivage des Emails sur GoPaaS
 
 L'archivage des emails sur GoPaaS nécessite la création d'un automatisme dans l'application. Voici les étapes à suivre pour mettre en place cette fonctionnalité :
 
-### Étape 1 : Créer un Automatisme
+## Étape 1 : Créer un Automatisme
 
 1. **Accéder au menu Automatisation :**
    - Depuis le menu de droite, cliquez sur **Automatisation**.
@@ -13,7 +13,7 @@ L'archivage des emails sur GoPaaS nécessite la création d'un automatisme dans 
    - Une fois enregistré, rouvrez l'automatisme.
    - **Cochez la case** **Actif** pour activer l'automatisme.
 
-### Étape 2 : Configurer le Déclencheur
+## Étape 2 : Configurer le Déclencheur
 
 Dans la section **Déclencheur** :
    - **Type** : Sélectionnez **Timer**.
@@ -23,7 +23,7 @@ Dans la section **Déclencheur** :
     Exemple :
     ![Exemple d'Interface](images/config1.png)
 
-### Étape 3 : Configuration de l'Action
+## Étape 3 : Configuration de l'Action
 
 1. **Appliquer les modifications :**
    - Avant de créer l'action, cliquez sur le bouton **Appliquer** en haut de la page pour sauvegarder la configuration.
@@ -44,7 +44,7 @@ Dans la section **Déclencheur** :
     Exemple :
     ![Exemple d'Interface](images/config2.png)
 
-### Étape 4 : Mapper les Champs
+## Étape 4 : Mapper les Champs
 
 Dans la section **Valeur**, mappez les champs suivants avec les fonctions correspondantes pour associer les données des emails aux bons emplacements dans la fiche d'archivage :
 
@@ -57,7 +57,7 @@ Dans la section **Valeur**, mappez les champs suivants avec les fonctions corres
 Exemple :
 ![Exemple d'Interface](images/config3.png)
 
-### Étape 5 : Utiliser des Fonctions Système
+## Étape 5 : Utiliser des Fonctions Système
 
 Utilisez les fonctions suivantes pour renseigner automatiquement la date et l'heure de création de l'enregistrement dans les champs système **Date création** et **Heure création** :
 - **$$CURDATE()** : Renseigne la date de création.
@@ -65,5 +65,5 @@ Utilisez les fonctions suivantes pour renseigner automatiquement la date et l'he
 
 Ces champs système existent déjà sur la table, il n'est donc pas nécessaire de les créer, mais nécessaire de les renseigner dans la section valeur.
 
-### Conclusion
+## Conclusion
 Avec ces étapes, vous avez mis en place un système d'archivage automatisé des emails sur GoPaaS. Les emails reçus seront automatiquement enregistrés dans la table spécifiée avec les informations clés, telles que l'expéditeur, le corps du message, les pièces jointes, etc., facilitant ainsi leur gestion et leur consultation future.
