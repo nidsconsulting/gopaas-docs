@@ -76,7 +76,7 @@
               <div class="chapter" onclick="window.location.href='index.php?rub=Aide'">Aide</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Assistant'">Assistant</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Automatisme'">Automatisme</div>
-              <div class="chapter" onclick="window.location.href='index.php?rub=Backup_element'">Restaurer un élément</div>
+              <div class="chapter" onclick="window.location.href='index.php?rub=backup_element'">Restaurer un élément</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Create_user'">Créer un utilisateur</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=Draw_JS'">DrawJS</div>
               <div class="chapter" onclick="window.location.href='index.php?rub=import'">Import</div>
