@@ -106,11 +106,11 @@ Pour finaliser l'installation :
 #### Résultat attendu :
 - Affichage de la section permettant de rechercher le meilleur intervenant :
 
-![image](images/image5.png)
+![screenshot](images/image5.png)
 
 - Interface de la sélection du meilleur créneau :
 
-![image](images/image4.png)
+![screenshot](images/image4.png)
 
 ### Conclusion
 

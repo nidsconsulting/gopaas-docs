@@ -30,7 +30,7 @@ Le paramétrage du workflow permet de définir et de gérer les processus automa
    | **Description**          | Description détaillée du workflow et de son objectif.                                                 |
 
    #### Exemple :
-   ![Exemple](images/image1.png)
+   ![screenshot](images/image1.png)
 
 4. **Appliquer les Modifications**
    - Cliquez sur le bouton **Appliquer** pour enregistrer les modifications.
@@ -60,7 +60,7 @@ Le paramétrage du workflow permet de définir et de gérer les processus automa
      ]
      ```
      #### Exemple :
-     ![Exemple](images/image2.png)
+     ![screenshot](images/image2.png)
 
 7. **Intégrer le Workflow avec le Script JavaScript**
    - Une fois le workflow terminé, accédez au script JavaScript de la table concernée.
@@ -88,7 +88,7 @@ Le paramétrage du workflow permet de définir et de gérer les processus automa
    | **Section Filtre** | Témoin ou se déclenche l'étape, dans notre cas l'étape se déclenche au statut "Devis en cours de réalisation"   |
 
    #### Exemple :
-   ![Exemple](images/image3.png) 
+   ![screenshot](images/image3.png) 
 
    - Enfin après avoir configuré l'automatisme, Cliquer sur **Appliquer**.
 
@@ -114,7 +114,7 @@ Le paramétrage du workflow permet de définir et de gérer les processus automa
      | **Valeur**     | Remplissez les champs souhaités dans la section **Valeur**.                |
 
      #### Exemple :
-     ![Exemple](images/image4.png)
+     ![screenshot](images/image4.png)
 
      - **PS :** Assurez-vous de connecter cette fiche enfant à la fiche parent, en remplissant le champ connexion avec :
      ```json

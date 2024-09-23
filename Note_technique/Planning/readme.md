@@ -45,7 +45,7 @@ La création d'un planning permet de gérer et de visualiser des événements ou
      - **Afficher comme un planning** : A cocher.
 
         Exemple de la configuration :
-        ![Exemple d'Interface](images/images.png)
+        ![screenshot](images/images.png)
 
 ### Étape 3 : Configuration additionnelle
 
@@ -57,7 +57,7 @@ La création d'un planning permet de gérer et de visualiser des événements ou
 - Nommez et enregistrez la vue.
 
 ### Résultat
-![Exemple d'Interface](images/resultat.png)
+![screenshot](images/resultat.png)
 
 ### Conclusion
 

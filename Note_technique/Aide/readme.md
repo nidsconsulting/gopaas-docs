@@ -22,7 +22,7 @@ GoPaaS propose une fonctionnalité permettant de générer un guide de prise en 
    - Cliquez sur le menu **Outil**, puis sélectionnez **Personnaliser**.
    - Dans la partie **Description**, vous pouvez ajouter une note permettant de contextualiser l'utilité  de la table.
 
-      ![Exemple d'Interface](images/3.png)
+      ![screenshot](images/3.png)
 
    - Ensuite allez dans l'onglet **Aide** pour configurer les différentes options d'aide.
 
@@ -33,7 +33,7 @@ GoPaaS propose une fonctionnalité permettant de générer un guide de prise en 
    - **À l'enregistrement :** Ajoutez ici des informations ou des conseils lors de l'enregistrement d'une fiche.
    - **Menu Outil :** Décrivez les options spécifiques du menu **Outil** disponibles pour cette table. Cela peut inclure des conseils ou des explications sur les fonctionnalités.
 
-      ![Exemple d'Interface](images/4.png)
+      ![screenshot](images/4.png)
 
 ### Étape 3 : Documenter les champs d'une table
 
@@ -44,13 +44,13 @@ GoPaaS propose une fonctionnalité permettant de générer un guide de prise en 
    - Vous pouvez ajouter de l'aide spécifique pour chaque champ de la table. Cela permet aux utilisateurs de mieux comprendre l'utilisation de chaque champ lors de la saisie de données.
    - Remplissez le champ **Aide** de chaque fiche champ avec des informations utiles.
 
-      ![Exemple d'Interface](images/5.png)
+      ![screenshot](images/5.png)
 
 ### Résultat 
 
-![Exemple d'Interface](images/1.png)
+![screenshot](images/1.png)
 
-![Exemple d'Interface](images/2.png)
+![screenshot](images/2.png)
 
 ### Conclusion
 

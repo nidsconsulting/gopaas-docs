@@ -31,7 +31,7 @@ Créer un utilisateur sur GoPaaS permet de gérer les accès et les autorisation
 
 ### Résultat
 
-![Exemple d'Interface](images/image.png)
+![screenshot](images/image.png)
 
 ### Instructions pour envoyer les accès par email.
 

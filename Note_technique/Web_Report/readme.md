@@ -23,7 +23,7 @@ Les WebReports dans GoPaaS sont des tableaux croisés dynamiques permettant d'an
    - Une fois que vous avez ouvert la vue WebReport, cliquez sur **Champs** pour modifier l'affichage des données.
 
    - Exemple de configuration dans le cas d'une analyse de la facturation :
-    ![Configuration WebReport](images/config.png)
+    ![screenshot](images/config.png)
 
    - Assurez-vous que les champs nécessaires sont déjà présents dans la vue. Si vous avez besoin d'ajouter ou de modifier des champs, cliquez sur **Edit**.
    - Après avoir configuré l'affichage selon vos besoins, cliquez sur **Save** pour sauvegarder votre configuration.
@@ -31,7 +31,7 @@ Les WebReports dans GoPaaS sont des tableaux croisés dynamiques permettant d'an
 
 Une fois le WebReport configuré, vous obtiendrez une analyse visuelle des factures avec un aperçu global sur plusieurs années. Voici un exemple de résultat :
 
-![Résultat WebReport](images/resultat.png)
+![screenshot](images/resultat.png)
 
 ### Conclusion
 

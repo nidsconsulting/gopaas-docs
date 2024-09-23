@@ -21,12 +21,12 @@ Avant de pouvoir accéder au module de versionning, il est nécessaire d'importe
    - Allez dans le menu **Admin** (menu de gauche).
    - Cliquez sur **Versionning**.
 
-   ![Hearder Top](./images/image.png)
+   ![screenshot](./images/image.png)
 
 2. **Vue des Versions :**
    - Vous verrez un historique des versions précédentes, avec des informations sur les mises à jour passées.
 
-   ![Hearder Top](./images/image1.png)
+   ![screenshot](./images/image1.png)
 
 ### Étape 2 : Déclarer une nouvelle version
 
@@ -41,7 +41,7 @@ Avant de pouvoir accéder au module de versionning, il est nécessaire d'importe
 3. **Enregistrer la nouvelle version :**
    - Cliquez sur **Enregistrer** pour valider la création de la nouvelle version.
 
-   ![Hearder Top](./images/image2.png)
+   ![screenshot](./images/image2.png)
 
 ### Étape 3 : Message pour les utilisateurs
 

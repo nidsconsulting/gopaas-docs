@@ -14,7 +14,7 @@ L'extension **ItemDisponibilities** permet d'optimiser la gestion des rendez-vou
 
 1. Accéder à une fiche **Intervention** puis se rendre dans la section **RDV**.
 
-![image](images/image1.png)
+![screenshot](images/image1.png)
 
 ### 2. Renseigner les Informations Nécessaires
 
@@ -22,7 +22,7 @@ L'extension **ItemDisponibilities** permet d'optimiser la gestion des rendez-vou
 2. **Temps d'intervention (min)** : Indiquer la durée estimée de l'intervention.
 3. **Date début** et **Date fin** : Définir la période pendant laquelle le rendez-vous doit avoir lieu.
 
-![image](images/image2.png)
+![screenshot](images/image2.png)
 
 ### 3. Rechercher un Créneau Disponible
 
@@ -32,7 +32,7 @@ L'extension **ItemDisponibilities** permet d'optimiser la gestion des rendez-vou
 
 3. Les résultats s'affichent sous forme de calendrier, permettant de choisir le créneau optimal.
 
-![image](images/image3.png)
+![screenshot](images/image3.png)
 
 ### 4. Sélectionner et Valider un Créneau
 
@@ -44,23 +44,23 @@ Chaque ligne de créneau affiches les disponibilités des techniciens préalable
 
 1. Une fois le créneau sélectionné, enregistrer la fiche **Action** pour sauvegarder le rendez-vous.
 
-![image](images/image4.png)
+![screenshot](images/image4.png)
 
 Le rendez-vous choisi apparait désormais en rouge pour signifier que le technicien est attribué à cette intervention.
 Un créneau orange signifie que le technicien est attribué à une autre intervention sur cet horaire.
 
-![image](images/image5.png)
+![screenshot](images/image5.png)
 
 ### 6. Modification des Créneaux
 
 1. Pour ajuster un rendez-vous après l'avoir planifié, retourner sur la section **RDV** et cliquer à nouveau sur **Rechercher** pour trouver un autre créneau.
 2. Il suffit alors de sélectionner un autre créneau. Une pop-up apparait demandant une confirmation pour remplacer l'ancien rendez-vous.
    
-![image](images/image6.png)
+![screenshot](images/image6.png)
 
 3. A la confirmation, une fiche **Action** s'ouvre affichant le récapitulatif du rendez-vous. Enregistrer cette fiche pour valider la modification de créneau.
 
-![image](images/image7.png)
+![screenshot](images/image7.png)
 
 ## Conclusion
 

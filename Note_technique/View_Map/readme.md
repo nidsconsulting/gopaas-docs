@@ -38,7 +38,7 @@ Le paramétrage de ViewMap permet de visualiser les adresses sur une carte en ut
 
 ### Résultat attendu
 
-![Carte](images/map.png)
+![screenshot](images/map.png)
 
 ### Conclusion
 
