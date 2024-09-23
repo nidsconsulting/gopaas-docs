@@ -36,17 +36,20 @@ Pour commencer, il vous faut créer les deux tables avec les champs mentionnés.
   Dupliquez la vue par défaut de la table **Collaborateur**, qui contient les champs que vous avez créés précédemment. Cela vous permettra de conserver la structure tout en modifiant les paramètres nécessaires pour l'agenda.
 
   - Ouvrez votre vue par défaut et accédez aux paramètres de la vue en cliquant sur le bouton en forme d'engrenage <img src="./images/image13.png" width="1.8%" alt="Bouton engrenage" style="border-radius: 5px;"/> en haut à droite.
-  
-    <img src="./images/image15.png" width="100%" alt="Accès aux paramètres de la vue" style="border-radius: 15px;"/>
+
+    ![screenshot](images/image15.png)
+    <!-- <img src="./images/image15.png" width="90%" alt="Accès aux paramètres de la vue" style="border-radius: 15px;"/>-->
 
    - Une fois dans les paramètres de la vue, cliquez sur le menu **Outil** et sélectionnez **Dupliquer**.
       
-      <img src="./images/image10.png" width="100%" alt="Duplication de la vue Collaborateur" style="border-radius: 5px;"/>
+      ![screenshot](images/image10.png)
+    <!-- <img src="./images/image10.png" width="90%" alt="Duplication de la vue Collaborateur" style="border-radius: 5px;"/>-->
 
 - **Personnalisation de la vue :**
   Dans la vue dupliquée, personnalisez les colonnes à afficher et ajustez l'affichage en fonction de vos besoins. Vous pouvez ajouter des filtres ou des conditions pour mieux organiser l'affichage des collaborateurs.
 
-   <img src="./images/image11.png" width="100%" alt="Personnalisation des colonnes dans la vue Collaborateur" style="border-radius: 5px;"/>
+   ![screenshot](images/image11.png)
+    <!-- <img src="./images/image11.png" width="100%" alt="Personnalisation des colonnes dans la vue Collaborateur" style="border-radius: 5px;"/>-->
 
 ### Vue Agenda action collaborateur :
 
@@ -55,17 +58,20 @@ Pour commencer, il vous faut créer les deux tables avec les champs mentionnés.
 
   - Ouvrez votre vue par défaut et accédez aux paramètres de la vue en cliquant sur le bouton en forme d'engrenage <img src="./images/image13.png" width="1.8%" alt="Bouton engrenage" style="border-radius: 5px;"/> en haut à droite.
   
-    <img src="./images/image12.png" width="100%" alt="Accès aux paramètres de la vue" style="border-radius: 5px;"/>
+    ![screenshot](images/image12.png)
+    <!-- <img src="./images/image12.png" width="100%" alt="Accès aux paramètres de la vue" style="border-radius: 5px;"/>-->
 
    - Une fois dans les paramètres de la vue, cliquez sur le menu **Outil** et sélectionnez **Dupliquer**.
       
-      <img src="./images/image14.png" width="100%" alt="Menu Outil pour dupliquer la vue" style="border-radius: 5px;"/>
+      ![screenshot](images/image14.png)
+    <!-- <img src="./images/image14.png" width="100%" alt="Menu Outil pour dupliquer la vue" style="border-radius: 5px;"/>-->
 
 
 - **Changer le type de vue :**
   - Après avoir dupliqué la vue, nommez-la **Agenda action collaborateur** et changez son type pour **Agenda**. Cela permettra d'afficher les actions et événements sous forme de calendrier interactif.
 
-      <img src="./images/image9.png" width="100%" alt="Modification du type de vue en Agenda" style="border-radius: 5px;"/>
+      ![screenshot](images/image9.png)
+    <!-- <img src="./images/image9.png" width="100%" alt="Modification du type de vue en Agenda" style="border-radius: 5px;"/>-->
 
 
 - **Configuration des champs :**
@@ -84,14 +90,15 @@ Pour commencer, il vous faut créer les deux tables avec les champs mentionnés.
   - **Table de collaboration :**
   Sélectionnez **Collaborateur Agenda** pour lier chaque action ou événement à un collaborateur spécifique. Cela permet de visualiser quel collaborateur est impliqué dans chaque action sur l'agenda.
      
-      <img src="./images/images.png" width="100%" alt="configuration des champs dans l'onglet Agenda" style="border-radius: 5px;"/>
+      ![screenshot](images/images.png)
+    <!-- <img src="./images/images.png" width="100%" alt="configuration des champs dans l'onglet Agenda" style="border-radius: 5px;"/>-->
 
 ### Résultat
 
 Ouvrez la vue que vous avez créée pour visualiser les actions sous forme d'agenda.
 Vous devriez maintenant voir vos événements et tâches organisés de manière claire et intuitive, comme dans l'exemple ci-dessous.
 
-![Exemple d'Interface](images/resultat.png)
+![screenshot](images/resultat.png)
 
 
 ### Conclusion
