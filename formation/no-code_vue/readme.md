@@ -10,13 +10,13 @@ Les vues peuvent être adaptées pour répondre à des besoins spécifiques, tel
 
 1. Pour ajouter une nouvelle vue, accédez au menu "Vue" puis cliquez sur le bouton **Ajouter** pour commencer le paramétrage.
 
-![1724163685790](images/1724163685790.png)
+![screenshot](images/1724163685790.png)
 
 Vous arriverez alors sur la fiche de personnalisation des vues, composée de plusieurs onglets.
 
 2. Commencez par initialiser le paramétrage.
 
-![1724163720069](images/1724163720069.png)
+![screenshot](images/1724163720069.png)
 
 Renseignez les champs suivants :
 
@@ -63,9 +63,9 @@ Renseignez les champs suivants :
 
 En double-cliquant sur un des champs dans la colonne de droite, vous accéderez aux propriétés du champ dans la vue. Cela vous permet d'apporter des modifications spécifiques telles que l'ajustement de la largeur de la colonne ou l'alignement du contenu.
 
-![capture](images/image28.png)
+![screenshot](images/image28.png)
 
-![capture](images/image21.png)
+![screenshot](images/image21.png)
 
 Vous pouvez également personnaliser les propriétés suivantes :
 
@@ -115,6 +115,6 @@ Depuis la vue par défaut, cliquez sur ![alt_text](images/image5.png) -> ![alt_t
 
 ![screenshot](images/image44.png)
 
-![1724164167318](images/1724164167318.png)
+![screenshot](images/1724164167318.png)
 
 Modifiez ensuite le nom de la nouvelle vue, puis cliquez sur `Appliquer` pour commencer le paramétrage.

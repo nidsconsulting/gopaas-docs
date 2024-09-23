@@ -1,14 +1,6 @@
 
 # Comment gérer des permissions dans GoPaaS ?
 
-## Sommaire
-
-- [1. Utilisation des permissions sans la notion de groupe](#1-utilisation-des-permissions-sans-la-notion-de-groupe)
-- [2. Utilisation des permissions "Sélective" sur une table](#2-utilisation-des-permissions-sélective-sur-une-table)
-- [3. Utilisation des permissions avec la notion de groupe](#3-utilisation-des-permissions-avec-la-notion-de-groupe)
-
----
-
 ## 1. Utilisation des permissions sans la notion de groupe.
 
 ### Description
