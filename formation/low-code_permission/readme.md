@@ -77,7 +77,9 @@ Nous allons mettre en place des permissions sur la table compte permettant la cr
 
 ### Résultat
 
-![screenshot](images/EXEMPLE_VUE_RESULTAT_ADMIN.png)
+<img src="./images/EXEMPLE_VUE_RESULTAT_ADMIN.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!-- ![screenshot](images/EXEMPLE_VUE_RESULTAT_ADMIN.png)-->
 
  ---
 
@@ -153,19 +155,27 @@ Nous allons mettre en place des permissions sur la table contact permettant la c
 
 - Depuis une session **COMMERCIAL** :
 
-![screenshot](images/EXEMPLE_VUE_CONTACT_RESULTAT_COMMERCIAL.png)
+<img src="./images/EXEMPLE_VUE_CONTACT_RESULTAT_COMMERCIAL.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!-- ![screenshot](images/EXEMPLE_VUE_CONTACT_RESULTAT_COMMERCIAL.png)-->
 
 ### Configuration de permissions dans une vue
 
-![screenshot](images/EXEMPLE_PERMISSION_VUE.png)
+<img src="./images/EXEMPLE_PERMISSION_VUE.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!-- ![screenshot](images/EXEMPLE_PERMISSION_VUE.png)-->
 
 ### Configuration de permissions dans un dashboard
 
-![screenshot](images/EXEMPLE_PERMISSION_DASH.png)
+<img src="./images/EXEMPLE_PERMISSION_DASH.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!-- ![screenshot](images/EXEMPLE_PERMISSION_DASH.png)-->
 
 ### Configuration de permissions sur un champ
 
-![screenshot](images/EXEMPLE_PERMISSION_CHAMP.png)
+<img src="./images/EXEMPLE_PERMISSION_CHAMP.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images/EXEMPLE_PERMISSION_CHAMP.png)-->
 ___
 
 ## 3. Utilisation des permissions avec la notion de groupe.
@@ -211,7 +221,9 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
    - Pour chaque utilisateur concerné, double-cliquez sur l'utilisateur.
    - Dans la section **Groupe** (multi-connexion), associez le groupe approprié (NORD, SUD, EST, OUEST).
 
-   ![screenshot](images3/VUE_UTILISATEUR_GROUPE.png)
+   <img src="./images3/VUE_UTILISATEUR_GROUPE.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images3/VUE_UTILISATEUR_GROUPE.png)-->
 
    - Enregistrez la fiche utilisateur.
    - Assurez-vous d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
@@ -226,7 +238,9 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
    - Sur les fiches **Comptes**, vous devez posséder un champ, permettant de gérer les permissions, dans notre cas nous le nomerons **Permission** et pointera vers la table **Groupe** et de type multi-connexion.
    - Renseignez le champ **Permission** (multi-connexion), en sélectionnant le groupe approprié (NORD, EST, OUEST, SUD).
 
-   ![screenshot](images3/EXEMPLE_COMPTE_SELECTION_PERMISSION.png)
+   <img src="./images3/EXEMPLE_COMPTE_SELECTION_PERMISSION.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images3/EXEMPLE_COMPTE_SELECTION_PERMISSION.png)-->
 
    - Enregistrez chaque fiche compte.
 
@@ -255,7 +269,9 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 | **Export**            | ADMIN                             |
 | **Modification en masse** | SUD, ADMIN, NORD, EST, OUEST  |
 
-![screenshot](images3/VUE_PERMISSION_COMPTE.png)
+   <img src="./images3/VUE_PERMISSION_COMPTE.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images3/VUE_PERMISSION_COMPTE.png)-->
 
 3. **Enregistrer les permissions :**
    - Cliquez sur `Enregistrer`.
@@ -269,10 +285,16 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 ### Résultat
 
 - Depuis une session région **SUD** :
-![screenshot](images3/EXEMPLE_VUE_RESULTAT_USER.png)
+
+   <img src="./images3/EXEMPLE_VUE_RESULTAT_USER.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images3/EXEMPLE_VUE_RESULTAT_USER.png)-->
 
 - Depuis une session **GESTIONNAIRE** :
-![screenshot](images3/EXEMPLE_VUE_RESULTAT_ADMIN.png)
+
+   <img src="./images3/EXEMPLE_VUE_RESULTAT_ADMIN.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images3/EXEMPLE_VUE_RESULTAT_ADMIN.png)-->
 
 ### Conclusion
 

@@ -10,7 +10,9 @@ Les vues peuvent être adaptées pour répondre à des besoins spécifiques, tel
 
 1. Pour ajouter une nouvelle vue, accédez au menu "Vue" puis cliquez sur le bouton **Ajouter** pour commencer le paramétrage.
 
-![screenshot](images/1724163685790.png)
+   <img src="./images/1724163685790.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images/1724163685790.png)-->
 
 Vous arriverez alors sur la fiche de personnalisation des vues, composée de plusieurs onglets.
 
@@ -50,7 +52,9 @@ Renseignez les champs suivants :
 
 1. Rendez-vous dans l'onglet **Champs** pour sélectionner les champs que vous souhaitez voir apparaître dans votre vue.
 
-![screenshot](images/image27.png)
+  <img src="./images/image27.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images/image27.png)-->
 
 1. La liste des tables disponibles dans l'application.
 2. Liste des champs de la table sélectionnée.
@@ -88,7 +92,9 @@ Vous pouvez également personnaliser les propriétés suivantes :
 
 ## Ajouter des conditions
 
-![screenshot](images/image43.png)
+  <img src="./images/image43.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images/image43.png)-->
 
 1. La liste des tables disponibles dans l'application.
 2. Liste des champs de la table sélectionnée.
@@ -99,7 +105,9 @@ Vous pouvez également personnaliser les propriétés suivantes :
 
 Dans l'onglet **Mise en forme**, vous pouvez trier les données de votre vue, par exemple pour regrouper des actions par statut ou trier des comptes par ordre alphabétique.
 
-![screenshot](images/image38.png)
+  <img src="./images/image38.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images/image38.png)-->
 
 1. Utilisez les tris (de 1 à 5) pour classer les enregistrements en fonction des champs sélectionnés dans l'onglet Champs.
 2. Choisissez l'ordre croissant (ASC) ou décroissant (DESC).
@@ -113,7 +121,9 @@ Il est possible de dupliquer une vue existante et de modifier ses paramètres po
 
 Depuis la vue par défaut, cliquez sur ![alt_text](images/image5.png) -> ![alt_text](images/image18.png) -> **Dupliquer**.
 
-![screenshot](images/image44.png)
+  <img src="./images/image44.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
+      
+<!--![screenshot](images/image44.png)-->
 
 ![screenshot](images/1724164167318.png)
 
