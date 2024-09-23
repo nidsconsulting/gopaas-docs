@@ -271,4 +271,4 @@ code {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
-img[alt=screenshot] { max-width: 800px; text-align: center; }
+img[alt=screenshot] { width: 100%; text-align: center; }
