@@ -51,7 +51,8 @@ Dans cette liste sont regroupées les principales fonctions d’administration d
 
 **La barre d'outils** regroupe plusieurs boutons :
 
-![Bouton](images/Image15.png)
+<!-- ![screenshot](images/Image15.png)-->
+<img src="./images/Image15.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
 
 ![Bouton](images/Image3.png)  Ce bouton permet de réduire la barre de navigation.
 
