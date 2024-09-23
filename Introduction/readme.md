@@ -51,9 +51,6 @@ Dans cette liste sont regroupées les principales fonctions d’administration d
 
 **La barre d'outils** regroupe plusieurs boutons :
 
-<!-- ![screenshot](images/Image15.png)-->
-<img src="./images/Image15.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-
 ![Bouton](images/Image3.png)  Ce bouton permet de réduire la barre de navigation.
 
 ![Bouton](images/Image4.png) Ce bouton permet d’ouvrir la barre de personnalisation pour accéder au paramétrage des tables, des champs, pour personnaliser plus avant votre application. Il inclut aussi la fonction d’import des données, et de mise à jour de l’environnement GoPaaS.
