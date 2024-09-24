@@ -6,12 +6,10 @@ Le dashboard centralise les informations des tables Compte, Contact, Affaire et 
 
 Cela permet une visualisation simplifiée et un accès rapide aux données essentielles de l'application. Lors de l'ouverture d'un widget, la vue par défaut de la table correspondante est affichée.
 
-1. Cliquez dans le menu **Références** > **Paramètre** > **Dashboard** pour ouvrir la vue des dashboards.
-2. Cliquez sur le bouton `Ajouter`.
+1. Cliquer dans le menu **Références** > **Paramètre** > **Dashboard** pour ouvrir la vue des dashboards.
+2. Cliquer sur le bouton `Ajouter`.
 
 ![screenshot](images/image1.png)
-
-Vous accédez à l'interface de configuration du Dashboard.
 
 ![1724227885621](images/image0.png)
 
@@ -24,22 +22,22 @@ Vous accédez à l'interface de configuration du Dashboard.
 | **Pour le(s) groupe(s)**       | Liste des groupes pour lesquels le dashboard s'affichera au démarrage                                 |
 | **Afficher bouton Fullscreen** | Permet d'afficher un bouton pour passer le dashboard en plein écran                                     |
 
-Pour sélectionnez un groupe dans les permissions, cliquez sur l'icone ![screenshot](images/image3.png).
+Pour sélectionner un groupe dans les permissions, cliquer sur l'icone ![screenshot](images/image3.png).
 
 ![1724227885621](images/image01.png)
 
-Sélectionnez le groupe qui aura accès au dashboard puis cliquez sur la flèche ![screenshot](images/image4.png).
+Sélectionner le groupe qui aura accès au dashboard puis cliquer sur la flèche ![screenshot](images/image4.png).
 
 ![screenshot](images/image5.png)
 
-3. Cliquez sur le bouton `Enregistrer` pour appliquer les modifications.
-4. Cliquez sur le bouton `Appliquer` pour enregistrer le Dashboard et pouvoir créer une ligne de dashboard.
+3. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications.
+4. Cliquer sur le bouton `Appliquer` pour enregistrer le Dashboard et pouvoir créer une ligne de dashboard.
 
 ![screenshot](images/image30.png)
 
 > ***Remarque :** "Afficher au démarrage", "Pour le(s) groupe(s)" et "Afficher bouton Fullscreen" sont des paramètres optionnels.*
 
-5. Cliquez sur le bouton `Ajouter` de la section `Détails` pour ajouter une ligne de dashboard.
+5. Cliquer sur le bouton `Ajouter` de la section `Détails` pour ajouter une ligne de dashboard.
 
 ![screenshot](images/image2.png)
 
@@ -62,37 +60,37 @@ Sélectionnez le groupe qui aura accès au dashboard puis cliquez sur la flèche
 
 ![screenshot](images/image7.png)
 
-9. Cliquez sur l'icone ![screenshot](images/image3.png) du champ **view2**.
-10. Cherchez la table **contact** puis sélectionnez la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
+9. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view2**.
+10. Chercher la table **contact** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
 
 ![screenshot](images/image8.png)
 
-11. Cliquez sur l'icone ![screenshot](images/image3.png) du champ **view3**.
-12. Cherchez la table **affaire** puis sélectionnez la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
+11. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view3**.
+12. Chercher la table **affaire** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
 
 ![screenshot](images/image9.png)
 
-13. Cliquez sur l'icone ![screenshot](images/image3.png) du champ **view4**.
-14. Cherchez la table **action** puis sélectionnez la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
+13. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view4**.
+14. Chercher la table **action** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
 
 ![screenshot](images/image17.png)
 
-15. Sélectionnez une largeur 3 pour chaque Icone.
+15. Sélectionner une largeur 3 pour chaque Icone.
 
 ![screenshot](images/image10.png)
 
-16. Cliquez sur le bouton `Enregistrer` pour appliquer les modifications de la ligne.
+16. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications de la ligne.
 
 ![screenshot](images/image11.png)
 
-17. Cliquez sur le bouton `Enregistrer` pour appliquer les modifications du dashboard.
-18. Actualisez l'application.
+17. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications du dashboard.
+18. Actualiser l'application.
 
-Pour modifier les icones des widgets, cliquez sur  ![screenshot](images/image12.png).
+Pour modifier les icones des widgets, cliquer sur  ![screenshot](images/image12.png).
 
 ![screenshot](images/image13.png)
 
-19. Cliquez sur l'onglet **Graphique** puis modifier le champ **Icône du widget** par une icone [Font Awesome](https://fontawesome.com/).
+19. Cliquer sur l'onglet **Graphique** puis modifier le champ **Icône du widget** par une icone [Font Awesome](https://fontawesome.com/).
 
 ![screenshot](images/image14.png)
 
@@ -104,8 +102,8 @@ Icone **Affaire** : `fas fa-suitcase fa-5x`
 
 Icone **Action** : `fas fa-file-signature fa-5x`
 
-20. Cliquez sur le bouton `Enregistrer` pour appliquer les modifications de la vue.
-21. Actualisez le dahsboard en cliquant sur le bouton ![screenshot](images/image15.png) pour voir le résultat.
+20. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications de la vue.
+21. Actualiser le dahsboard en cliquant sur le bouton ![screenshot](images/image15.png) pour voir le résultat.
 
 ![screenshot](images/image16.png)
 
@@ -119,20 +117,20 @@ WebReport est un outil graphique qui vous permet d'obtenir une vue d'ensemble cl
 
 Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé un Dashboard existant.
 
-1. Modifiez le dasboard en cliquant sur ![screenshot](images/image12.png)
+1. Modifier le dasboard en cliquant sur ![screenshot](images/image12.png)
 2. Une fois sur l'interface, ajouter une **nouvelle ligne de Dashboard**.
 
 ![screenshot](images/image31.png)
 
-3. Donnez un Nom à cette nouvelle ligne plus cliquez sur le bouton `Appliquer` pour sauvegarder la fiche sans la fermer.
+3. Donner un Nom à cette nouvelle ligne plus cliquer sur le bouton `Appliquer` pour sauvegarder la fiche sans la fermer.
 
 ![screenshot](images/image32.png)
 
-4. Cochez la case **« Options avancées »** pour afficher l’onglet **« Html »** puis l’ouvrir.
+4. Cocher la case **« Options avancées »** pour affiche l’onglet **« Html »** puis l’ouvrir.
 
 ![screenshot](images/image33.png)
 
-5. Dans le menu outil, cliquez sur l’option  `Ajouter un WebReport`.
+5. Dans le menu outil, cliquer sur l’option  `Ajouter un WebReport`.
 
 ![screenshot](images/image34.png)
 
@@ -149,13 +147,13 @@ Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé
 
 ![screenshot](images/image37.png)
 
-10. Cliquez sur la **flèche diagonale** en haut à droite du pivot pour modifier le WebReport en ajoutant des champs dans les lignes, colonnes, filtres, et valeurs.
+10. Cliquer sur la **flèche diagonale** en haut à droite du pivot pour modifier le WebReport en ajoutant des champs dans les lignes, colonnes, filtres, et valeurs.
 
 ![screenshot](images/image38.png)
 
 ![screenshot](images/image39.png)
 
-11. Configurez le WebReport selon les besoins puis cliquez sur le bouton `Enr.` pour afficher la nouvelle configuration du WebReport au  **format JSON**.
+11. Configurer le WebReport selon les besoins puis cliquer sur le bouton `Enr.` pour afficher la nouvelle configuration du WebReport au  **format JSON**.
 
 ![screenshot](images/image40.png)
 
@@ -173,7 +171,7 @@ Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé
 
 ![screenshot](images/image44.png)
 
-15. Cliquez sur le bouton `Enregistrer` pour sauvegarder dans la nouvelle configuration du WebReport.
+15. Cliquer sur le bouton `Enregistrer` pour sauvegarder dans la nouvelle configuration du WebReport.
 
 ![screenshot](images/image45.png)
 
