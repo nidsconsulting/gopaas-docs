@@ -30,7 +30,7 @@ Sélectionner le groupe qui aura accès au dashboard puis cliquer sur la flèche
 
 ![screenshot](images/image5.png)
 
-3. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications.
+3. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications et fermer la fiche.
 4. Cliquer sur le bouton `Appliquer` pour enregistrer le Dashboard et pouvoir créer une ligne de dashboard.
 
 ![screenshot](images/image30.png)
@@ -41,7 +41,7 @@ Sélectionner le groupe qui aura accès au dashboard puis cliquer sur la flèche
 
 ![screenshot](images/image2.png)
 
-6. L'interface Dashboard Line, vous permet d'ajouter de nouvelles lignes sur le Dashboard et d'y insérer des widgets.
+6. L'interface Dashboard Line, permet d'ajouter de nouvelles lignes sur le Dashboard et d'y insérer des vues.
 
 ![screenshot](images/image18.png)
 
