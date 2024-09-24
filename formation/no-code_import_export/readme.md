@@ -2,13 +2,13 @@
 
 ## Description
 
-L'importation permet de charger des données à partir d'un fichier CSV pour les intégrer directement dans le CRM, enrichissant ainsi la base de données existante.
+L'import permet de charger des données à partir d'un fichier CSV pour les intégrer directement dans le CRM, enrichissant ainsi la base de données existante.
 
-L'exportation, quant à elle, offre la possibilité d'extraire les données présentes dans l'application sous forme de fichier CSV, facilitant ainsi leur manipulation et leur réutilisation externe.
+L'export, offre la possibilité d'extraire les données présentes dans l'application sous forme de fichier CSV, facilitant ainsi leur manipulation et leur réutilisation externe.
 
 ## Importer un fichier
 
-1. Dans le menu personnalisation de l'application  ![alt_text](images/Image1.png) cliquer sur `importer un fichier`.
+1. Dans le menu personnalisation de l'application  ![alt_text](images/Image1.png) cliquez sur `importer un fichier`.
 
 ![alt_text](images/Image0.png)
 
@@ -24,30 +24,28 @@ Plusieurs champs sont déjà renseignés sur cette fiche, ils sont modifiables s
 | **Encodage du fichier CSV**     | Il existe trois formes d'encodage pour l'import GoPaaS : iso-8859-1, iso-8859-15, utf-8.                                           |
 | **Format de date**              | La plateforme propose également trois formats de date possible pour l'import : JJ/MM/AAAA, MM/JJ/AAAA, AAAA-MM-JJ.                |
 
-3. Cocher l'option si le fichier contient une ligne d'en-tête (Ex: Nom, prénom, ville), si il n'en contient pas la correspondance se fera sur la première ligne de donnée.
+3. Cochez l'option si le fichier contient une ligne d'en-tête (Ex: Nom, prénom, ville), si il n'en contient pas la correspondance se fera sur la première ligne de donnée.
 4. Cliquez sur le bouton ![alt_text](images/Image4.png) pour passer à l'étape suivante.
 
 ## Faire la correspondance des champs
 
-1. Vous devez préalablement sélectionner la table sur laquelle vous souhaitez importer le fichier.
+1. Sélectionnez la table sur laquelle vous souhaitez importer le fichier.
 
 ![alt_text](images/Image5.png)
 
 ![alt_text](images/Image6.png)
 
-Une fois la table sélectionnée, la page s'actualise et affiche l'ensemble des champs de cette table.
+2. Réalisez la correspondance des champs de votre fichier avec les champs de la table.
 
-2. Il ne reste plus qu'à faire correspondre les champs de la table avec les colonnes du fichier importé.
+Pour cela, en face de chaque nom de champ, cliquez dans la zone **(ne pas importer)**, puis sélectionnez le nom de colonne de votre fichier à faire correspondre.
 
-Pour cela, en face de chaque nom de champ, cliquez dans la zone **(ne pas importer)** afin de sélectionner le nom de colonne à faire correspondre.
-
-Il est possible de renseigner une valeur par défaut dans la colonne "Valeur par défaut".
+Il est possible de renseigner une valeur par défaut dans la colonne "Valeur par défaut" et d'identifiez les doublons dans la colonne d'identification des doublons.
 
 ## Lancer l'import
 
-Cliquer sur Importer pour lancer l'import.
+Cliquer sur `Importer` pour lancer l'import.
 
-Quand l'import est terminé un message apparaît avec le nombre d'enregistrements importés.
+Quand l'import est terminé un message apparaît avec un rapport d'enregistrements traités.
 
 ![alt_text](images/Image7.png)
 
@@ -63,7 +61,7 @@ Ces modèles sont réutilisables à chaque import du même type de fichier.
 
 Il est conseillé de lui donner un nom afin de le retrouver plus facilement lors des prochains imports.
 
-2. Pour charger un modèle d'import, sélectionner le dans la liste déroulante puis cliquer sur le bouton ![alt_text](images/Image4.png) . Si le fichier correspond bien au modèle, la correspondance se fera automatiquement.
+2. Pour charger un modèle d'import, sélectionnez le dans la liste déroulante puis cliquer sur le bouton ![alt_text](images/Image4.png) . Si le fichier correspond bien au modèle, la correspondance se fera automatiquement.
 
 Il est possible de modifier les correspondances puis d'enregistrer à nouveau le modèle sous un autre nom en cliquant sur ![alt_text](images/Image11.png) **.**
 
@@ -71,7 +69,7 @@ Il est possible de modifier les correspondances puis d'enregistrer à nouveau le
 
 ## Gérer les doublons
 
-En dessous de la partie correspondance des champs, il existe un champ Traitement des fiches existantes. Ce champ de type liste vous permet de gérer les actions à mettre en place face aux potentiels doublons.
+En dessous de la partie correspondance des champs, il existe une option permettant de gérer les actions à mettre en place face aux potentiels doublons.
 
 ![alt_text](images/Image14.png)
 
