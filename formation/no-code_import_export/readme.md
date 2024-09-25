@@ -10,7 +10,6 @@ L'export, offre la possibilité d'extraire les données présentes dans l'applic
 
 1. Dans le menu personnalisation de l'application  ![alt_text](images/Image1.png) cliquez sur `importer un fichier`.
 
-
 ![screenshot](images/Image0.png)
 
 ![screenshot](images/Image2.png)
