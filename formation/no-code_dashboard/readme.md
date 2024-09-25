@@ -118,7 +118,8 @@ Icone **Action** : `fas fa-file-signature fa-5x`
 
 ![screenshot](images/image16.png)
 
-<!--# Webreport
+<!--
+# Webreport
 
 ## Description
 
@@ -186,5 +187,39 @@ Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé
 
 ![screenshot](images/image45.png)
 
-> Dans le champ Html, il est possible de modifier la configuration du WebReport en ajoutant ou modifiant les propriétés des objets  **slice** ,  **options** , **conditions** et  **formats** .
--->
+> Dans le champ Html, il est possible de modifier la configuration du WebReport en ajoutant ou modifiant les propriétés des objets  **slice** ,  **options** , **conditions** et  **formats** .-->
+
+# Webreport
+
+## Description
+
+WebReport est un outil graphique qui vous permet d'obtenir une vue d'ensemble claire et détaillée des données sélectionnées, avec des options de calcul avancées pour une analyse approfondie et précise.
+
+#### Création d'un Webreport
+
+1. **Dupliquer une vue :**
+   - Prendre la vue par défaut d'une table, par exemple la vue par défaut des factures.
+   - Dupliquer cette vue et la nommer : **WR - Analyse Facture**.
+
+2. **Changer le type de la vue :**
+   - Pour cela, sélectionner **WebReport** dans le champ **Type** de la vue.
+
+#### Configurer la vue WebReport
+
+1. **Accéder à la vue WebReport :**
+   - Depuis le menu de gauche, aller dans **Référence > Paramètre > Vue**.
+   - Rechercher le nom de votre vue WebReport (ex. **WR - Analyse Facture**).
+
+2. **Configurer l'affichage :**
+   - Ouvrir la vue WebReport, cliquer sur **Champs** pour modifier l'affichage des données.
+
+   - Exemple de configuration dans le cas d'une analyse de la facturation :
+    ![screenshot](images/config.png)
+
+   - S'assurer que les champs nécessaires sont déjà présents dans la vue. Si besoin pour ajouter ou modifier des champs, cliquez sur **Edit**.
+   - Après avoir configuré l'affichage selon les besoins, cliquer sur **Save** pour sauvegarder la configuration.
+### Résultat
+
+Une fois le WebReport configuré, une analyse visuelle des factures est disponiblle. Voici un exemple de résultat :
+
+![screenshot](images/resultat.png)
