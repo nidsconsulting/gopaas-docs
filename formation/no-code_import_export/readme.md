@@ -33,13 +33,9 @@ Plusieurs champs sont déjà renseignés sur cette fiche, ils sont modifiables s
 
 1. Sélectionner la table sur laquelle il faut importer le fichier.
 
-<img src="./images/Image5.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
+![screenshot](images/Image5.png)
 
-<img src="./images/Image6.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
-
-<!--![screenshot](images/Image5.png)
-
-![screenshot](images/Image6.png)-->
+![screenshot](images/Image6.png)
 
 2. Réaliser la correspondance des champs de votre fichier avec les champs de la table.
 
