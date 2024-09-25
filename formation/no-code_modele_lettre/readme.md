@@ -31,7 +31,7 @@ Cliquer sur `ajouter`.
 | **Vue(s) liée(s) à utiliser** | Nom des vues liées pour la fusion du modèle                                           |
 | **Note**                        | Description détaillée du modèle de lettre                                            |
 
-Enregistrez la fiche, puis ouvrez-la à nouveau pour voir apparaître les codes de champs.
+Enregistrer puis ouvrir de nouveau la fiche pour faire apparaître les codes de champs.
 
 ## Créer et paramètrer le modèle de fusion
 
