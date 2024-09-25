@@ -19,7 +19,7 @@ Renseigner les champs suivant:
 | Type                             | Ex: **Application**                                                                                          |
 | Module                           | Ex: **CRM**                                                                                                  |
 
-* Assurez-vous que votre **groupe** a bien accès à ce **module** en vérifiant dans la **barre de navigation** > <img src="images/image2.png" height="30px" alt="Admin"/> > **Groupes**.
+* S'assurer que le **groupe** a bien accès à ce **module** en vérifiant dans la **barre de navigation** > <img src="images/image2.png" height="30px" alt="Admin"/> > **Groupes**.
 
 * Si vous faites partie du groupe **ADMIN**, ouvrez la fiche du groupe **ADMIN** pour ajouter par exemple le module **CRM**.
 
@@ -27,13 +27,13 @@ Renseigner les champs suivant:
 
 * Enregistrer la table **Contact**.
 
-* Pour ouvrir la nouvelle table, il est nécessaire de vous déconnecter de GoPaaS et de vous reconnecter.
+* Pour ouvrir la nouvelle table, il est nécessaire de se déconnecter de GoPaaS et de se reconnecter.
 
     ![screenshot](images/image4.png)
 
 ## FormDesigner
 
-Le FormDesigner permet de créer facilement des champs personnalisés dans vos formulaires en quelques clics.
+Le FormDesigner permet de créer facilement des champs personnalisés dans les formulaires en quelques clics.
 
 Dans le menu personnalisation ![capture](images/image5.png):
 - Cliquer sur le menu `Tables` pour afficher la vue avec la liste de toutes les tables.
@@ -175,7 +175,7 @@ Voici un tableau avec les champs de la table `Contact` à créer et leur types :
 ### Actualisation du FormDesigner
 - Cliquer sur le bouton ![capture](images/image16.png) pour mettre à jour le `FormDesigner` et visualiser les modifications apportées.
 
-    > *Astuce : Vous pouvez également **glisser-déposer** les champs pour réorganiser leur ordre sur le formulaire.*
+    > *Astuce : Il est possible de **glisser-déposer** les champs pour réorganiser leur ordre sur le formulaire.*
     
     ![screenshot](images/image17.png)
 
