@@ -68,6 +68,12 @@ Il est possible de modifier les correspondances puis d'enregistrer à nouveau le
 3. Cliquez sur ![alt_text](images/Image12.png) pour supprimer le modèle, ou sur ![alt_text](images/Image13.png) pour le renommer.
 
 ## Gérer les doublons
+ 1. Identifier les doublons
+
+Pour identifier les doublons, cliquer sur la case à cocher dans la colonne "sélectionnez une ou plusieurs colonnes pour identifier les doublons".
+Par exemple, cliquer sur la case à cocher de la ligne clé, pour identifier les doublons sur la clé.
+
+ 2. Traiter les doublons
 
 En dessous de la partie correspondance des champs, il existe une option permettant de gérer les actions à mettre en place face aux potentiels doublons.
 
@@ -75,11 +81,14 @@ En dessous de la partie correspondance des champs, il existe une option permetta
 
 1. Cliquez sur la liste déroulante pour définir l'action à mettre en place lors de l'import :
 
-* Remplacer les doublons, champs importés seuls
-* Remplacer les doublons, tous champs
-* Ne pas importer les doublons
+| Action                                           | Description                                                                      |
+|--------------------------------------------------|----------------------------------------------------------------------------------|
+| Remplacer les doublons, champs importés seuls    | Remplace les doublons uniquement dans les champs spécifiés pour l'import.        |
+| Remplacer les doublons, tous champs              | Remplace tous les doublons présents dans l'ensemble des champs lors de l'import. |
+| Ne pas importer les doublons                     | Ignore complètement les doublons et ne les importe pas.                          |
 
-2. Sélectionnez l'option " **Ajouter nouvelles fiches** " si vous désirez incorporer de nouvelles fiches durant l'importation.
+
+3. Sélectionnez l'option " **Ajouter nouvelles fiches** " si vous désirez incorporer de nouvelles fiches durant l'importation.
 
 Ne pas oublier de sélectionner sur quels champs identifier les doublons dans la partie "correspondance des champs".
 
