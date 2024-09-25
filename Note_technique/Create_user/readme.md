@@ -1,4 +1,4 @@
-# Création d'un utilisateur et envoie de des accès.
+# Création d'un utilisateur et envoie des accès.
 
 ## Description
 
