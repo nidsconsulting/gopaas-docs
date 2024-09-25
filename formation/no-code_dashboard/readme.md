@@ -9,9 +9,13 @@ Cela permet une visualisation simplifiée et un accès rapide aux données essen
 1. Cliquer dans le menu **Références** > **Paramètre** > **Dashboard** pour ouvrir la vue des dashboards.
 2. Cliquer sur le bouton `Ajouter`.
 
-![screenshot](images/image1.png)
+<img src="images/image1.png" width="1100">
 
-![1724227885621](images/image0.png)
+<!--![screenshot](images/image1.png)-->
+
+<img src="images/image0.png" width="1100">
+
+<!--![1724227885621](images/image0.png)-->
 
 | Champs                               | Valeur                                                                                                   |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------- |
@@ -41,22 +45,25 @@ Sélectionner le groupe qui aura accès au dashboard puis cliquer sur la flèche
 
 ![screenshot](images/image2.png)
 
-6. L'interface Dashboard Line, permet d'ajouter de nouvelles lignes sur le Dashboard et d'y insérer des vues.
+6. L'interface Dashboard Line, permet d'ajouter de nouvelles lignes sur le Dashboard et d'y insérer des widgets.
 
-![screenshot](images/image18.png)
+     - Cette fiche permet d'ajouter des lignes sur le dashboard et d'y insérer des vues
 
-| Champs                      | Valeur                                                                                       |
-| --------------------------- | -------------------------------------------------------------------------------------------- |
-| **Dashboard**         | Dashboard auquel est relié la ligne de dashboard                                            |
-| **Intitulé**         | Nom de la ligne de dashboard                                                                 |
-| **Ordre**             | Ordre d'affichage de la ligne                                                                |
-| **Options avancées** | Affiche l'onglet `HTML` qui permet de personnaliser plus en détail la ligne de dashboard  |
-| **Description**       | Description de la ligne de dashboard                                                         |
-| **View**              | Permet de sélectionner une vue de type**Graphique** qui apparaitra dans le dashboard  |
-| **Largeur**           | Permet de sélectionner la largeur que prendra le**Widget** dans la ligne de dashboard |
+        ![screenshot](images/image18.png)
 
-7. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view1**.
-8. Chercher la table **compte** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).
+        | Champs                      | Valeur                                                                                       |
+        | --------------------------- | -------------------------------------------------------------------------------------------- |
+        | **Dashboard**         | Dashboard auquel est relié la ligne de dashboard                                            |
+        | **Intitulé**         | Nom de la ligne de dashboard                                                                 |
+        | **Ordre**             | Ordre d'affichage de la ligne                                                                |
+        | **Options avancées** | Affiche l'onglet `HTML` qui permet de personnaliser plus en détail la ligne de dashboard  |
+        | **Description**       | Description de la ligne de dashboard                                                         |
+        | **View**              | Permet de sélectionner une vue de type**Graphique** qui apparaitra dans le dashboard  |
+        | **Largeur**           | Permet de sélectionner la largeur que prendra le**Widget** dans la ligne de dashboard |
+
+7. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view1** pour sélectionner une vue.
+8. Sélectionner la vue "Icone compte" en cliquant sur le bouton ![screenshot](images/image6.png).
+<!--Chercher la table **compte** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).-->
 
 ![screenshot](images/image7.png)
 
@@ -75,7 +82,9 @@ Sélectionner le groupe qui aura accès au dashboard puis cliquer sur la flèche
 
 ![screenshot](images/image17.png)
 
-15. Sélectionner une largeur 3 pour chaque Icone.
+15. Sélectionner une largeur 3 pour chaque Icone du dashboard.
+
+ **Attention : La somme des largeurs ne peut excéder 12 par ligne de dashboard.** 
 
 ![screenshot](images/image10.png)
 
@@ -102,12 +111,14 @@ Icone **Affaire** : `fas fa-suitcase fa-5x`
 
 Icone **Action** : `fas fa-file-signature fa-5x`
 
+**Attention : Il est nécessaire d'ajouter après chaque icône "fa-5x" pour que la taille de cette dernière s'adapte.** 
+
 20. Cliquer sur le bouton `Enregistrer` pour appliquer les modifications de la vue.
 21. Actualiser le dahsboard en cliquant sur le bouton ![screenshot](images/image15.png) pour voir le résultat.
 
 ![screenshot](images/image16.png)
 
-# Webreport
+<!--# Webreport
 
 ## Description
 
@@ -176,3 +187,4 @@ Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé
 ![screenshot](images/image45.png)
 
 > Dans le champ Html, il est possible de modifier la configuration du WebReport en ajoutant ou modifiant les propriétés des objets  **slice** ,  **options** , **conditions** et  **formats** .
+-->
