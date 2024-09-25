@@ -4,7 +4,7 @@
 
 Créer un utilisateur sur GoPaaS permet de gérer les accès et les autorisations au sein de la plateforme, en attribuant des rôles spécifiques pour interagir avec les services et applications hébergés.
 
-### Instructions pour créer un utilisateur
+### Créer un utilisateur
 
 1. **Accéder au menu Admin :**
    - Allez dans **Admin** (menu de gauche).
@@ -21,20 +21,20 @@ Créer un utilisateur sur GoPaaS permet de gérer les accès et les autorisation
     | **Téléphone**         | Saisir le numéro de téléphone                          |
     | **Email**             | Saisir l'adresse email de la personne concernée        |
     | **Login**             | Saisir un login                                        |
-    | **Profil**            | Choisir le bon type de profil (Admin, User ou Guest)   |
-    | **Groupe**            | Ajouter le bon groupe                                  |
+    | **Profil**            | Choisir le type de profil (Admin, User ou Guest)       |
+    | **Groupe**            | Sélectionner un groupe                                 |
     | **Actif**             | Cocher                                                 |
-    | **Langue**            | FR                                                     |
-    | **Thème**             | Material                                               |
+    | **Langue**            | Sélectionner la langue de l'utilisateur (Exemple : FR) |
+    | **Thème**             | Sélectionner le thème                                  |
 
     - Puis cliquez sur "Enregistrer".
 
 ### Résultat
 
-![screenshot](images/image.png)
+<img src="./images/image.png" width="80%" alt="Hearder Top" style="border-radius: 5px;"/>
 
-### Instructions pour envoyer les accès par email.
+### Les accès de l'utilisateur sont envoyé par email :
 
-- Depuis la vue des utilisateurs, sélectionnez l'utilisateur concerné avec la case à cocher.
-- Enfin cliquez sur "Outil", puis sur "Regénérer mot de passe".
-- À la suite de cela un email sera envoyé à l'email renseigné dans le champ **Email**.
+- Ouvrir la fiche de l'utilisateur.
+- Cliquer sur "Outil", puis sur "Regénérer mot de passe".
+- Un email est envoyé à l'utilisateur avec les accès.
