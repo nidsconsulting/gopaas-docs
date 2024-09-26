@@ -33,3 +33,7 @@ Un **CRM (Customer Relationship Management)** est un système ou une stratégie 
 | action  | 1 à 1    | compte  | Connexion       |
 | action  | 1 à 1    | contact | Connexion       |
 | action  | 1 à 1    | affaire | Connexion       |
+
+## TP : création d'un CRM
+
+Pour lancer le TP, [cliquez ici.](crm_tp/index.php?rub=compte)
