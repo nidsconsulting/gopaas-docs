@@ -89,7 +89,7 @@ $html = $doc->saveHTML();
 		<div class="chapter" onclick="window.location.href='index.php?rub=no-code_import_export'">Import/Export</div>
 		<div class="chapter" onclick="window.location.href='index.php?rub=no-code_dashboard'">Dashboard</div>
 		<div class="chapter" onclick="window.location.href='index.php?rub=no-code_modele_lettre'">Modèle de lettre</div>
-		<div class="chapter" onclick="window.location.href='index.php?rub=crm'">Créer son CRM</div>
+		<div class="chapter" onclick="window.location.href='tp_crm/index.php?rub=introduction'">TP : création d'un CRM</div>
 	  </div>
 	  
 	  <!-- Chapitre CRM -->

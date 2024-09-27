@@ -72,13 +72,14 @@ $html = $doc->saveHTML();
 <div class="container">
 	<div id="sidebar-left">
 	  <div id="sidebar-left-title">
-		<a href="../index.php?rub=presentation"><img src="../../asset/question.png" width="30px" />&nbsp;&nbsp;Formation</a>
+		<a href="index.php?rub=introduction"><img src="../../asset/question.png" width="30px" />&nbsp;&nbsp;Création d'un CRM</a>
 	  </div>
 	  
 	  
 	  <!-- Chapitre CRM -->
 	  <div class="chapter-group">
 		<div class="chapter-title"></div>
+		<div class="chapter" onclick="window.location.href='index.php?rub=introduction'">Introdution</div>
 		<div class="chapter" onclick="window.location.href='index.php?rub=compte'">Compte</div>
 		<div class="chapter" onclick="window.location.href='index.php?rub=contact'">Contact</div>
 		<div class="chapter" onclick="window.location.href='index.php?rub=affaire'">Affaire</div>
