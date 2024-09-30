@@ -13,7 +13,7 @@ La création de la clé d'une fiche se crée de la façon suivante :
 var cle = Date.now() + "_" +gsUser;
 ```
 
-Enfin il est nécessaire d'insérer la valeur générée dans le champ clef de notre fiche :
+Il est nécessaire d'insérer la valeur générée dans le champ clef de notre fiche :
 
 ```
 thisComponent.setValue("cle", cle);

@@ -14,43 +14,43 @@ Nous allons mettre en place des permissions sur la table compte permettant la cr
 ### Étape 1 : Création des groupes
 
 1. **Accéder au menu Admin :**
-   - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur `Groupes`.
+   - Aller dans **Admin** (menu de gauche).
+   - Cliquer sur `Groupes`.
 
 2. **Créer le groupe :**
-   - Cliquez sur `Ajouter`.
-   - Remplissez le champ **Intitulé** avec le nom du groupe : **COMMERCIAL**.
+   - Cliquer sur `Ajouter`.
+   - Remplisser le champ **Intitulé** avec le nom du groupe : **COMMERCIAL**.
    - Dans la section **Permissions** :
 
-        - **Module(s)** : Sélectionnez le(s) module(s) disponible(s) pour le groupe, par exemple : CRM.
-        - **Accès rapide** : Cochez la case si le groupe peut y accéder.
-        - **Dashboard** : Cochez la case si le groupe peut y accéder.
-        - **Référence** : Cochez la case si le groupe peut y accéder.
-        - **Ajout rapide** : Cochez la case si le groupe peut y accéder.
+        - **Module(s)** : Sélectionner le(s) module(s) disponible(s) pour le groupe, par exemple : CRM.
+        - **Accès rapide** : Cocher la case si le groupe peut y accéder.
+        - **Dashboard** : Cocher la case si le groupe peut y accéder.
+        - **Référence** : Cocher la case si le groupe peut y accéder.
+        - **Ajout rapide** : Cocher la case si le groupe peut y accéder.
 
-   - Cliquez sur `Enregistrer`.
+   - Cliquer sur `Enregistrer`.
 
 ### Étape 2 : Attribution des groupes aux utilisateurs
 
 1. **Accéder au menu Utilisateur :**
-   - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur `Utilisateur`.
+   - Aller dans **Admin** (menu de gauche).
+   - Cliquer sur `Utilisateur`.
 
 2. **Associer les utilisateurs aux groupes :**
-   - Pour chaque utilisateur concerné, double-cliquez sur l'utilisateur.
-   - Dans la section **Groupe** (multi-connexion), associez le groupe **COMMERCIAL**.
-   - Enregistrez la fiche utilisateur.
-   - Assurez-vous d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
+   - Pour chaque utilisateur concerné, double-cliquer sur l'utilisateur.
+   - Dans la section **Groupe** (multi-connexion), associer le groupe **COMMERCIAL**.
+   - Enregistrer la fiche utilisateur.
+   - s'assurer d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
 
 ### Étape 3 : Création des permissions pour la fiche compte
 
 1. **Accéder au menu Permissions :**
-   - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur `Permissions`.
+   - Aller dans **Admin** (menu de gauche).
+   - Cliquer sur `Permissions`.
 
 2. **Ajouter les permissions :**
-   - Cliquez sur `Ajouter`.
-   - Remplissez les champs comme suit :
+   - Cliquer sur `Ajouter`.
+   - Remplisser les champs comme suit :
 
 | **Champ**                 | **Valeur**                        |
 |---------------------------|-----------------------------------|
@@ -67,13 +67,13 @@ Nous allons mettre en place des permissions sur la table compte permettant la cr
 | **Modification en masse** | ADMIN                             |
 
 3. **Enregistrer les permissions :**
-   - Cliquez sur `Enregistrer`.
+   - Cliquer sur `Enregistrer`.
 
 ### Étape 4 : Se déconnecter et se reconnecter
 
 1. **Actualisation des permissions :**
-   - Déconnectez-vous de votre session.
-   - Demandez aux utilisateurs concernés de se déconnecter et de se reconnecter pour que les nouvelles permissions soient prises en compte.
+   - Se déconnecter de la session.
+   - Demander aux utilisateurs concernés de se déconnecter et de se reconnecter pour que les nouvelles permissions soient prises en compte.
 
 ### Résultat
 
@@ -90,43 +90,43 @@ Nous allons mettre en place des permissions sur la table contact permettant la c
 ### Étape 1 : Création des groupes
 
 1. **Accéder au menu Admin :**
-   - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur `Groupes`.
+   - Aller dans **Admin** (menu de gauche).
+   - Cliquer sur `Groupes`.
 
 2. **Créer le groupe :**
-   - Cliquez sur `Ajouter`.
-   - Remplissez le champ **Intitulé** avec le nom du groupe : **COMMERCIAL**.
+   - Cliquer sur `Ajouter`.
+   - Remplisser le champ **Intitulé** avec le nom du groupe : **COMMERCIAL**.
    - Dans la section **Permissions** :
 
-        - **Module(s)** : Sélectionnez le(s) module(s) disponible(s) pour le groupe, par exemple : CRM.
-        - **Accès rapide** : Cochez la case si le groupe peut y accéder.
-        - **Dashboard** : Cochez la case si le groupe peut y accéder.
-        - **Référence** : Cochez la case si le groupe peut y accéder.
-        - **Ajout rapide** : Cochez la case si le groupe peut y accéder.
+        - **Module(s)** : Sélectionner le(s) module(s) disponible(s) pour le groupe, par exemple : CRM.
+        - **Accès rapide** : Cocher la case si le groupe peut y accéder.
+        - **Dashboard** : Cocher la case si le groupe peut y accéder.
+        - **Référence** : Cocher la case si le groupe peut y accéder.
+        - **Ajout rapide** : Cocher la case si le groupe peut y accéder.
 
-   - Cliquez sur `Enregistrer`.
+   - Cliquer sur `Enregistrer`.
 
 ### Étape 2 : Attribution des groupes aux utilisateurs
 
 1. **Accéder au menu Utilisateur :**
-   - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur `Utilisateur`.
+   - Aller dans **Admin** (menu de gauche).
+   - Cliquer sur `Utilisateur`.
 
 2. **Associer les utilisateurs aux groupes :**
-   - Pour chaque utilisateur concerné, double-cliquez sur l'utilisateur.
-   - Dans la section **Groupe** (multi-connexion), associez le groupe **COMMERCIAL**.
-   - Enregistrez la fiche utilisateur.
-   - Assurez-vous d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
+   - Pour chaque utilisateur concerné, double-cliquer sur l'utilisateur.
+   - Dans la section **Groupe** (multi-connexion), associer le groupe **COMMERCIAL**.
+   - Enregistrer la fiche utilisateur.
+   - S'assurer d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
 
 ### Étape 3 : Création des permissions pour la fiche contact
 
 1. **Accéder au menu Permissions :**
-   - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur `Permissions`.
+   - Aller dans **Admin** (menu de gauche).
+   - Cliquer sur `Permissions`.
 
 2. **Ajouter les permissions :**
-   - Cliquez sur `Ajouter`.
-   - Remplissez les champs comme suit :
+   - Cliquer sur `Ajouter`.
+   - Remplisser les champs comme suit :
 
 | **Champ**                 | **Valeur**                        |
 |---------------------------|-----------------------------------|
@@ -143,13 +143,13 @@ Nous allons mettre en place des permissions sur la table contact permettant la c
 | **Modification en masse** | ADMIN                             |
 
 3. **Enregistrer les permissions :**
-   - Cliquez sur `Enregistrer`.
+   - Cliquer sur `Enregistrer`.
 
 ### Étape 4 : Se déconnecter et se reconnecter
 
 1. **Actualisation des permissions :**
-   - Déconnectez-vous de votre session.
-   - Demandez aux utilisateurs concernés de se déconnecter et de se reconnecter pour que les nouvelles permissions soient prises en compte.
+   - Se déconnecter de la session.
+   - Demander aux utilisateurs concernés de se déconnecter et de se reconnecter pour que les nouvelles permissions soient prises en compte.
 
 ### Résultat
 
@@ -191,68 +191,68 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 ### Étape 1 : Création des groupes
 
 1. **Accéder au menu Admin :**
-   - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur `Groupes`.
+   - Aller dans **Admin** (menu de gauche).
+   - Cliquer sur `Groupes`.
 
 2. **Créer les groupes :**
-   - Cliquez sur `Ajouter`.
-   - Remplissez le champ **Intitulé** avec les noms des groupes : **EST**, **OUEST**, **NORD**, **SUD**.
+   - Cliquer sur `Ajouter`.
+   - Remplisser le champ **Intitulé** avec les noms des groupes : **EST**, **OUEST**, **NORD**, **SUD**.
    - Dans la section **Permissions** :
 
-        - **Module(s)** : Sélectionnez le(s) module(s) disponible(s) pour le groupe, par exemple : CRM.
-        - **Accès rapide** : Cochez la case si le groupe peut y accéder.
-        - **Dashboard** : Cochez la case si le groupe peut y accéder.
-        - **Référence** : Cochez la case si le groupe peut y accéder.
-        - **Ajout rapide** : Cochez la case si le groupe peut y accéder.
+        - **Module(s)** : Sélectionner le(s) module(s) disponible(s) pour le groupe, par exemple : CRM.
+        - **Accès rapide** : Cocher la case si le groupe peut y accéder.
+        - **Dashboard** : Cocher la case si le groupe peut y accéder.
+        - **Référence** : Cocher la case si le groupe peut y accéder.
+        - **Ajout rapide** : Cocher la case si le groupe peut y accéder.
 
-   - Cliquez sur `Enregistrer`.
+   - Cliquer sur `Enregistrer`.
 
-   - Répétez cette opération pour les quatre groupes.
+   - Répéter cette opération pour les quatre groupes.
 
    ![screenshot](images3/VUE_GROUPE_DISPONIBLE.png)
 
 ### Étape 2 : Attribution des groupes aux utilisateurs
 
 1. **Accéder au menu Utilisateur :**
-   - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur `Utilisateur`.
+   - Aller dans **Admin** (menu de gauche).
+   - Cliquer sur `Utilisateur`.
 
 2. **Associer les utilisateurs aux groupes :**
-   - Pour chaque utilisateur concerné, double-cliquez sur l'utilisateur.
-   - Dans la section **Groupe** (multi-connexion), associez le groupe approprié (NORD, SUD, EST, OUEST).
+   - Pour chaque utilisateur concerné, double-cliquer sur l'utilisateur.
+   - Dans la section **Groupe** (multi-connexion), associer le groupe approprié (NORD, SUD, EST, OUEST).
 
    <img src="./images3/VUE_UTILISATEUR_GROUPE.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
       
 <!--![screenshot](images3/VUE_UTILISATEUR_GROUPE.png)-->
 
-   - Enregistrez la fiche utilisateur.
-   - Assurez-vous d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
+   - Enregistrer la fiche utilisateur.
+   - S'assurer d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
 
 ### Étape 3 : Modification des fiches comptes
 
 1. **Accéder aux comptes :**
-   - Allez dans **Applications** (menu de gauche), puis dans le sous-menu **CRM** puis cliquer sur `Comptes`.
-   - Double-cliquez sur chaque fiche compte à modifier (au minimum quatre fiches comptes).
+   - Aller dans **Applications** (menu de gauche), puis dans le sous-menu **CRM** puis cliquer sur `Comptes`.
+   - Double-cliquer sur chaque fiche compte à modifier (au minimum quatre fiches comptes).
 
 2. **Associer les permissions :**
-   - Sur les fiches **Comptes**, vous devez posséder un champ, permettant de gérer les permissions, dans notre cas nous le nomerons **Permission** et pointera vers la table **Groupe** et de type multi-connexion.
-   - Renseignez le champ **Permission** (multi-connexion), en sélectionnant le groupe approprié (NORD, EST, OUEST, SUD).
+   - Sur les fiches **Comptes**, un champ doit être présent, permettant de gérer les permissions, dans notre cas nous le nomerons **Permission** et pointera vers la table **Groupe** et de type multi-connexion.
+   - Renseigner le champ **Permission** (multi-connexion), en sélectionnant le groupe approprié (NORD, EST, OUEST, SUD).
 
    <img src="./images3/EXEMPLE_COMPTE_SELECTION_PERMISSION.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
       
 <!--![screenshot](images3/EXEMPLE_COMPTE_SELECTION_PERMISSION.png)-->
 
-   - Enregistrez chaque fiche compte.
+   - Enregistrer chaque fiche compte.
 
 ### Étape 4 : Création des permissions pour la fiche compte
 
 1. **Accéder au menu Permissions :**
-   - Allez dans **Admin** (menu de gauche).
-   - Cliquez sur `Permissions`.
+   - Aller dans **Admin** (menu de gauche).
+   - Cliquer sur `Permissions`.
 
 2. **Ajouter les permissions :**
-   - Cliquez sur `Ajouter`.
-   - Remplissez les champs comme suit :
+   - Cliquer sur `Ajouter`.
+   - Remplisser les champs comme suit :
 
 | **Champ**             | **Valeur**                        |
 |-----------------------|-----------------------------------|
@@ -274,13 +274,13 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 <!--![screenshot](images3/VUE_PERMISSION_COMPTE.png)-->
 
 3. **Enregistrer les permissions :**
-   - Cliquez sur `Enregistrer`.
+   - Cliquer sur `Enregistrer`.
 
 ### Étape 5 : Se déconnecter et se reconnecter
 
 1. **Actualisation des permissions :**
-   - Déconnectez-vous de votre session.
-   - Demandez aux utilisateurs concernés de se déconnecter et de se reconnecter pour que les nouvelles permissions soient prises en compte.
+   - Se déconnecter de la session.
+   - Demander aux utilisateurs concernés de se déconnecter et de se reconnecter pour que les nouvelles permissions soient prises en compte.
 
 ### Résultat
 
