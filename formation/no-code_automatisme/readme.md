@@ -4,7 +4,7 @@
 
 Les automatisations permettent à GoPaaS d'accomplir des tâches répétitives ou routinières, telles que l’envoi d’un email quotidien à 9 heures contenant les tâches de la journée, ou encore des tâches plus complexes, comme l’envoi d’un email à un commercial responsable d’un compte pour lequel un technicien a signalé un incident important ou critique.
 
-Dans le menu de personnalisation de l'application, cliquez sur `Automatisation` pour accéder à cette fonctionnalité.
+Dans le menu de personnalisation de l'application, cliquer sur `Automatisation` pour accéder à cette fonctionnalité.
 
 ![alt_text](images/image0.png)
 
@@ -18,9 +18,9 @@ Une automatisation est une série d’instructions que GoPaaS exécute automatiq
 
 ### **Exercice :**
 
-Lors de l'enregistrement d'une nouvelle affaire avec un CA > 10 000€, envoyez un email à mgooriah@nids.fr.
+Lors de l'enregistrement d'une nouvelle affaire avec un CA > 10 000€, envoyer un email à mgooriah@nids.fr.
 
-Pour ce faire, cliquez sur le bouton `Ajouter` pour créer une nouvelle fiche.
+Pour ce faire, cliquer sur le bouton `Ajouter` pour créer une nouvelle fiche.
 
 ![screenshot](images/image3.png)
 
@@ -33,11 +33,11 @@ Pour ce faire, cliquez sur le bouton `Ajouter` pour créer une nouvelle fiche.
 | **Description** | Description de l'automatisation                                       |
 | **Ordre**       | Ordre d'apparition dans la vue                                        |
 
-Une fois les champs remplis, cliquez sur le bouton `Enregistrer` pour sauvegarder.
+Cliquer sur le bouton `Enregistrer` pour sauvegarder.
 
 ![screenshot](images/image5.png)
 
-Ouvrez de nouveau la fiche pour accéder aux paramètres d'automatisation.
+Ouvrir de nouveau la fiche pour accéder aux paramètres d'automatisation.
 
 ![screenshot](images/image6.png)
 
@@ -66,15 +66,15 @@ Dans le cadre de l'exercice, nous allons choisir "Enregistrement de fiche" et "C
 
 ![screenshot](images/image10.png)
 
-Ensuite, dans la section "Filtre", sélectionnez le champ "CA" avec la condition "supérieur ou égal à" et une valeur de 10 000.
+Ensuite, dans la section "Filtre", sélectionner le champ "CA" avec la condition "supérieur ou égal à" et une valeur de 10 000.
 
 ![screenshot](images/image11.png)
 
-Dans la section "Action", cliquez sur `Ajouter` pour créer une nouvelle action.
+Dans la section "Action", cliquer sur `Ajouter` pour créer une nouvelle action.
 
 ![screenshot](images/image12.png)
 
-Sélectionnez le type "Email".
+Sélectionner le type "Email".
 
 ![screenshot](images/image13.png)
 
@@ -89,11 +89,11 @@ Sélectionnez le type "Email".
 - **Format :** "HTML" pour un formatage avancé ou "Texte" pour un texte simple
 - **Archiver :** Option pour archiver l'email
 
-Pour insérer un champ de la table "Affaire", utilisez le bouton "Insérer champ".
+Pour insérer un champ de la table "Affaire", utiliser le bouton "Insérer champ".
 
 ![screenshot](images/image15.png)
 
-Ensuite, enregistrez la fiche.
+Enregistrer la fiche.
 
 ##### Timer
 
