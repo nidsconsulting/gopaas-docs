@@ -22,6 +22,8 @@ Un **CRM (Customer Relationship Management)** est un système ou une stratégie 
 
 ![screenshot](images/schema.png "Ecran principal")
 
+### Description des relations
+
 | Table 1 | Relation | Table 2 | Type de relation |
 |---------|----------|---------|------------------|
 | compte  | 1 à n    | contact | Vue liée contact |
