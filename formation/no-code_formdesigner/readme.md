@@ -2,7 +2,7 @@
 
 ## Description
 
-Le **Form Designer** est un outil puissant qui permet d'éditer et de personnaliser l'organisation des formulaires. Avec cet outil, vous pouvez créer, déplacer et modifier les champs, les onglets et les sections. Que ce soit pour ajuster la disposition ou pour ajouter de nouveaux éléments, le **Form Designer** vous donne un contrôle total sur la structure et le contenu de vos formulaires.
+Le **Form Designer** est un outil puissant qui permet d'éditer et de personnaliser l'organisation des formulaires. Cet outil, permet de créer, déplacer et modifier les champs, les onglets et les sections. Que ce soit pour ajuster la disposition ou pour ajouter de nouveaux éléments, le **Form Designer** donne un contrôle total sur la structure et le contenu de vos formulaires.
 
 ## Création d'une table
 
@@ -14,7 +14,7 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
 2. Cliquez sur le bouton `Ajouter`.
 
    ![screenshot](images/1724159776804.png)
-3. Remplissez le formulaire suivant :
+3. Remplir le formulaire suivant :
 
    ![screenshot](images/1724159913024.png)
 
@@ -31,11 +31,11 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
    | **Couleur**                                       | Choisir la couleur pour modifier la couleur des onglets et des intitulés des sections                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
    | **Afficher les vues dans la barre de navigation** | Cocher cette option permet d'afficher le menu des vues en sous-menu dans la barre de navigation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    | **Afficher dans Ajout rapide**                    | Cocher cette option permet d'afficher une option de création rapide                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-4. Une fois le formulaire rempli, cliquez sur `Enregistrer`. La table sera alors créée dans la base de données.
-5. Pour rendre la table accessible, déconnectez-vous puis reconnectez-vous.
+4. Une fois le formulaire rempli, cliquer sur `Enregistrer`. La table sera créée dans la base de données.
+5. Déconnectez-vous, puis reconnectez-vous pour activer les permissions sur la nouvelle table et la rendre accessible dans l'application.
 
    ![screenshot](images/1724160357613.png)
-6. Retournez dans la vue des tables, ouvrez la fiche de la table, puis dans le menu **Outil**, cliquez sur `Form Designer`.
+6. Dans la vue des tables, ouvrir la fiche de la table, puis dans le menu **Outil**, cliquer sur `Form Designer`.
 
    ![screenshot](images/1724160520512.png)
 
@@ -43,11 +43,11 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
 
 ### Ajouter un onglet
 
-1. Dans l'interface du Form Designer, cliquez sur le bouton `+ Onglet`.
+1. Dans l'interface du Form Designer, cliquer sur le bouton `+ Onglet`.
 
    ![screenshot](images/1724160860507.png)
    
-2. Remplissez le formulaire suivant :
+2. Remplir le formulaire suivant :
 
    ![screenshot](images/1724160905545.png)
 
@@ -57,16 +57,16 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
    | **Label**     | Étiquette visible pour l'onglet                 |
    | **Table**     | Nom de la table dans laquelle l'onglet se trouve |
    | **Ordre**     | Ordre de l'onglet sur la fiche                  |
-3. Une fois le formulaire enregistré, cliquez sur le bouton de mise à jour pour actualiser l'interface du designer et voir apparaître les modifications.
+3. Une fois le formulaire enregistré, cliquer sur le bouton de mise à jour pour actualiser l'interface du designer et voir apparaître les modifications.
 
    ![screenshot](images/1724161011935.png)
 
 ### Ajouter une section
 
-1. Cliquez sur le bouton `Section` dans l'interface du Form Designer.
+1. cliquer sur le bouton `Section` dans l'interface du Form Designer.
 
    ![screenshot](images/1724161151490.png)
-2. Remplissez le formulaire suivant :
+2. Remplir le formulaire suivant :
 
    ![screenshot](images/1724161212440.png)
 
@@ -80,16 +80,16 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
    | **Onglet**               | Onglet dans lequel la section sera affichée |
    | **Ordre**                | Ordre d'affichage de la section              |
    | **Réduire par défaut** | Option pour réduire la section par défaut  |
-3. Mettez à jour l'interface du designer pour voir apparaître la nouvelle section.
+3. Actualiser l'interface du designer pour voir apparaître la nouvelle section.
 
    ![screenshot](images/1724161315262.png)
 
 ### Ajouter un champ
 
-1. Cliquez sur le bouton `+` pour ajouter un champ.
+1. cliquer sur le bouton `+` pour ajouter un champ.
 
    ![screenshot](images/1724161493061.png)
-2. Remplissez le formulaire suivant :
+2. Remplir le formulaire suivant :
 
    ![screenshot](images/1724161633266.png)
 
@@ -106,29 +106,29 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
    | **Intitulé**                  | Nom du champ dans l'application.                                                                                                                                                 |
    | **Largeur intitulé**          | Largeur du label du champ                                                                                                                                                        |
    | **Alignement intitulé**       | Alignement du label (ex : Gauche, Droite, Centre)                                                                                                                                |
-3. Une fois le champ enregistré, mettez à jour l'interface pour le rendre visible.
+3. Cliquer sur le bouton actualiser pour afficher le champ enregistré.
 
    ![screenshot](images/1724161647141.png)
-4. Vous pouvez également déplacer un champ par glisser-déposer.
+4. Il est également possible de déplacer un champ par glisser-déposer.
 
    ![screenshot](images/1724161686645.png)
 
 ## Gestion des vues
 
-Pour gérer les vues associées à une table, suivez ces étapes :
+Pour gérer les vues associées à une table, voici les étapes :
 
-1. Rendez-vous dans les paramètres de la table de votre choix, ouvrez le menu **Outil**, puis cliquez sur `Ouvrir/gérer les vues`.
+1. Accéder aux paramètres de la table, ouvrir le menu **Outil**, et cliquer sur `Ouvrir/gérer les vues`.
 
    ![screenshot](images/1724162129686.png)
-2. Vous retrouvez toutes les vues de la table.
 
+2. Le menu `Ouvrir/gérer les vues` permet d'afficher toutes les vues de la table.
    ![screenshot](images/1724161824579.png)
-3. En sélectionnant la vue **Par défaut** et en cliquant sur `Ouvrir une vue`, vous accéderez à la vue par défaut de la table sélectionnée.
+3. Sélectionner la vue **Par défaut** et cliquer sur `Ouvrir une vue`, la vue 'par défaut' de la table s'ouvre.
 
    ![screenshot](images/1724161965448.png)
-4. En sélectionnant la vue **Connexion** et en cliquant sur `Ouvrir une vue`, vous accéderez à la vue Connexion de la table sélectionnée.
+4. Sélectionner la vue **Connexion** et cliquer sur `Ouvrir une vue`, la vue Connexion de la table s'ouvre.
 
    ![screenshot](images/1724161879109.png)
-5. En sélectionnant la vue **Icône** et en cliquant sur `Ouvrir une vue`, vous accéderez à la vue Icône de la table sélectionnée.
+5. Sélectionner la vue **Icône** et cliquer sur `Ouvrir une vue`, la vue Icône de la table s'ouvre.
 
    ![screenshot](images/1724162008794.png)
