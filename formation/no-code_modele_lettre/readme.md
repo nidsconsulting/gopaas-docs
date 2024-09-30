@@ -12,7 +12,7 @@ Pour assurer une fusion de données correcte, les informations de l'application 
 
 # Création d'un modèle de lettre
 
-Pour créer un modèle de lettre rendez vous dans dans la **barre de navigation > Références > Modèle > Modèle de lettre**.
+Pour créer un modèle de lettre aller dans dans la **barre de navigation > Références > Modèle > Modèle de lettre**.
 
 ![screenshot](images/image2.png)
 
@@ -58,7 +58,7 @@ Il existe quatres formats d’affichage de balise. Les différents formats sont 
 | **Date**                | `[onshow.NOM_ALIAS_DANS_LA_VUE;frm=dd/mm/yyyy;noerr;ifempty'']`                                                                                                                                                                                                                                                                                     |
 | **Nombre**              | `[onshow.NOM_ALIAS_DANS_LA_VUE;frm='0 000,00';noerr;ifempty'']`                                                                                                                                                                                                                                                                                     |
 | **Image**               | `[onshow.NOM_ALIAS_DANS_LA_VUE;ope=changepic;tagpos=inside;adjust;unique]`                                                                                                                                                                                                                                                                          |
-| **Image vue de Fusion** | Dans la vue de fusion, le chemin serveur vers le fichier doit être indiqué :<br />Exemple avec la table “fichier” et le champ “pj1” <br />**Colonne SQL** : `if(fichier.pj1<> '', CONCAT('../../file/fichier/', fichier.pj1),'')`<br /> Vous pouvez également définir un fichier par défaut dans la clause `else`, si nécessaire. |
+| **Image vue de Fusion** | Dans la vue de fusion, le chemin serveur vers le fichier doit être indiqué :<br />Exemple avec la table “fichier” et le champ “pj1” <br />**Colonne SQL** : `if(fichier.pj1<> '', CONCAT('../../file/fichier/', fichier.pj1),'')`<br /> Il est également possible de définir un fichier par défaut dans la clause `else`, si nécessaire. |
 
 ## Fusion des champs
 
@@ -74,7 +74,7 @@ Cliquer sur l'icône ![capture](images/image6.png) dans le tableau des champs po
 
 ## Fusion d'une vue liée
 
-En sélectionnant les vues liées de fusion dans le modèle de lettre, GoPaaS offre une liste des champs disponibles à fusionner dans le modèle.
+Sélectionner les vues liées de fusion dans le modèle de lettre, GoPaaS offre une liste des champs disponibles à fusionner dans le modèle.
 
 Si un champ nécessaire à la fusion est absent, il doit être ajouté à la vue de fusion.
 
@@ -82,7 +82,7 @@ Si un champ nécessaire à la fusion est absent, il doit être ajouté à la vue
 
 > **Remarque** : Lors de la fusion d'une vue liée, le code de fusion du premier champ de la vue est légèrement modifié. Il est important de prendre en compte l'ordre des champs dans la vue.
 
-Pour inclure le premier champ d'une vue liée cliquer sur l'icône ![capture](images/image6.png) dans le tableau des champs, puis collez-le dans le modèle de fusion. Répéter l’opération pour les autres champs de la vue liée.
+Pour inclure le premier champ d'une vue liée cliquer sur l'icône ![capture](images/image6.png) dans le tableau des champs, puis le coller dans le modèle de fusion. Répéter l’opération pour les autres champs de la vue liée.
 
 *Exemple dans le modèle de fusion :*
 

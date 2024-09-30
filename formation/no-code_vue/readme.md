@@ -8,19 +8,15 @@ Pour visualiser les données saisies dans la base, GoPaaS met à votre dispositi
 
 Les vues peuvent être adaptées pour répondre à des besoins spécifiques, tels que la modification des couleurs, l'ordre d'affichage, les conditions d'affichage et les champs inclus. Chaque type de vue (Tableau, Agenda, Graphique, Pivot) offre des options personnalisées permettant une flexibilité accrue.
 
-1. Pour ajouter une nouvelle vue, accédez au menu "Vue" puis cliquez sur le bouton **Ajouter** pour commencer le paramétrage.
+1. Pour ajouter une nouvelle vue, accéder au menu "Vue" puis cliquer sur le bouton **Ajouter** pour commencer le paramétrage.
 
    <img src="./images/1724163685790.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images/1724163685790.png)-->
 
-Vous arriverez alors sur la fiche de personnalisation des vues, composée de plusieurs onglets.
-
-2. Commencez par initialiser le paramétrage.
+2. Commencer par initialiser le paramétrage.
 
 ![screenshot](images/1724163720069.png)
 
-Renseignez les champs suivants :
+Renseigner les champs suivants :
 
 | Champ                                            | Description                                                                                                                                  |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +46,7 @@ Renseignez les champs suivants :
 
 ## Agencer les champs
 
-1. Rendez-vous dans l'onglet **Champs** pour sélectionner les champs que vous souhaitez voir apparaître dans votre vue.
+1. Dans l'onglet **Champs** sélectionner les champs à faire apparaître dans la vue.
 
   <img src="./images/image27.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
       
@@ -58,20 +54,20 @@ Renseignez les champs suivants :
 
 1. La liste des tables disponibles dans l'application.
 2. Liste des champs de la table sélectionnée.
-3. Utilisez les flèches pour ajouter un champ à la vue (flèche de droite) ou pour le retirer (flèche de gauche).
-4. Les champs sélectionnés pour la vue. Vous pouvez réorganiser l'ordre d'affichage par glisser-déposer.
+3. Utiliser les flèches pour ajouter un champ à la vue (flèche de droite) ou pour le retirer (flèche de gauche).
+4. Les champs sélectionnés pour la vue. Il est possible de réorganiser l'ordre d'affichage par glisser-déposer.
 
 > **Astuce :** Il est possible de sélectionner plusieurs champs en utilisant le raccourci CTRL + CLIC.
 
 ## Propriétés de la colonne
 
-En double-cliquant sur un des champs dans la colonne de droite, vous accéderez aux propriétés du champ dans la vue. Cela vous permet d'apporter des modifications spécifiques telles que l'ajustement de la largeur de la colonne ou l'alignement du contenu.
+En double-cliquant sur un des champs dans la colonne de droite, acccéder aux propriétés du champ dans la vue. Cela permet d'apporter des modifications spécifiques telles que l'ajustement de la largeur de la colonne ou l'alignement du contenu.
 
 ![screenshot](images/image28.png)
 
 ![screenshot](images/image21.png)
 
-Vous pouvez également personnaliser les propriétés suivantes :
+Il est également possible de personnaliser les propriétés suivantes :
 
 | Champ                                  | Description                                                                                                                                                                                                                                                   |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -80,11 +76,11 @@ Vous pouvez également personnaliser les propriétés suivantes :
 | **Alias**                      | Alias de la colonne. (Modifiable)                                                                                                                                                                                                                            |
 | **Intitulé**                      | Intiulé de la colonne dans la vue. (Modifiable)                                                                                                                                                                                                                           |
 | **Largeur**                      | Définir la largeur de la colonne.                                                                                                                                                                                                                            |
-| **Format**                       | Personnalisez le format du champ. Les options incluent Texte, Date, Nombre, HTML, Gauge, Rating, Smileys, SQL, et SQLNumber.                                                                                                                                  |
-| **Code**                         | Utilisez ce champ pour inclure des balises HTML ou des requêtes SQL, en fonction du format sélectionné.                                                                                                                                                    |
+| **Format**                       | Personnaliser le format du champ. Les options incluent Texte, Date, Nombre, HTML, Gauge, Rating, Smileys, SQL, et SQLNumber.                                                                                                                                  |
+| **Code**                         | Utiliser ce champ pour inclure des balises HTML ou des requêtes SQL, en fonction du format sélectionné.                                                                                                                                                    |
 | **Alignement**                   | Définit l'alignement du texte dans la colonne (left, center ou right). Par défaut, l'alignement est à gauche.                                                                                                                                              |
-| **Style**                        | Appliquez du style personnalisé à la colonne. Par exemple :`[{"value": "Client", "style":"font-size:8px;background-color:#ff0000;color:#fff;font-weight:bold;"}, {"value": "Prospect", "style":"background-color:green;color:#fff;font-weight:normal;"}]` |
-| **Visible**                      | Masquez le champ dans la vue en décochant cette option.                                                                                                                                                                                                      |
+| **Style**                        | Appliquer du style personnalisé à la colonne. Par exemple :`[{"value": "Client", "style":"font-size:8px;background-color:#ff0000;color:#fff;font-weight:bold;"}, {"value": "Prospect", "style":"background-color:green;color:#fff;font-weight:normal;"}]` |
+| **Visible**                      | Masquer le champ dans la vue en décochant cette option.                                                                                                                                                                                                      |
 | **Masquer sur mobile**           | Masque le champ sur les appareils mobiles.                                                                                                                                                                                                                    |
 | **Masquer intitulé sur mobile** | Masque l'intitulé du champ sur les appareils mobiles.                                                                                                                                                                                                        |
 | **Afficher en ligne sur mobile** | Affiche les données sur une seule ligne sur les appareils mobiles.**NB :** Le mode mobile doit être réglé sur "List".                                                                                                                               |
@@ -98,20 +94,20 @@ Vous pouvez également personnaliser les propriétés suivantes :
 
 1. La liste des tables disponibles dans l'application.
 2. Liste des champs de la table sélectionnée.
-3. Utilisez les flèches pour ajouter un champ (flèche de droite) ou le retirer (flèche de gauche).
+3. Utiliser les flèches pour ajouter un champ (flèche de droite) ou le retirer (flèche de gauche).
 4. Les champs sélectionnés pour les conditions.
 
 ## Trier et mettre en forme
 
-Dans l'onglet **Mise en forme**, vous pouvez trier les données de votre vue, par exemple pour regrouper des actions par statut ou trier des comptes par ordre alphabétique.
+Dans l'onglet **Mise en forme**, il est possible de trier les données de votre vue, par exemple pour regrouper des actions par statut ou trier des comptes par ordre alphabétique.
 
   <img src="./images/image38.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
       
 <!--![screenshot](images/image38.png)-->
 
-1. Utilisez les tris (de 1 à 5) pour classer les enregistrements en fonction des champs sélectionnés dans l'onglet Champs.
-2. Choisissez l'ordre croissant (ASC) ou décroissant (DESC).
-3. Sélectionnez le champ pour effectuer le regroupement.
+1. Utiliser les tris (de 1 à 5) pour classer les enregistrements en fonction des champs sélectionnés dans l'onglet Champs.
+2. Choisisser l'ordre croissant (ASC) ou décroissant (DESC).
+3. Sélectionner le champ pour effectuer le regroupement.
 
 **NB :** Une option est disponible pour condenser le regroupement à l'ouverture de la vue.
 
@@ -119,7 +115,7 @@ Dans l'onglet **Mise en forme**, vous pouvez trier les données de votre vue, pa
 
 Il est possible de dupliquer une vue existante et de modifier ses paramètres pour créer une nouvelle vue.
 
-Depuis la vue par défaut, cliquez sur ![alt_text](images/image5.png) -> ![alt_text](images/image18.png) -> **Dupliquer**.
+Depuis la vue par défaut, cliquer sur ![alt_text](images/image5.png) -> ![alt_text](images/image18.png) -> **Dupliquer**.
 
   <img src="./images/image44.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
       
@@ -127,4 +123,4 @@ Depuis la vue par défaut, cliquez sur ![alt_text](images/image5.png) -> ![alt_t
 
 ![screenshot](images/1724164167318.png)
 
-Modifiez ensuite le nom de la nouvelle vue, puis cliquez sur `Appliquer` pour commencer le paramétrage.
+Modifier le nom de la nouvelle vue, puis cliquer sur `Appliquer` pour commencer le paramétrage.

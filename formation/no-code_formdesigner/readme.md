@@ -2,16 +2,16 @@
 
 ## Description
 
-Le **Form Designer** est un outil puissant qui permet d'éditer et de personnaliser l'organisation des formulaires. Cet outil, permet de créer, déplacer et modifier les champs, les onglets et les sections. Que ce soit pour ajuster la disposition ou pour ajouter de nouveaux éléments, le **Form Designer** donne un contrôle total sur la structure et le contenu de vos formulaires.
+Le **Form Designer** est un outil puissant qui permet d'éditer et de personnaliser l'organisation des formulaires. Cet outil, permet de créer, déplacer et modifier les champs, les onglets et les sections. Que ce soit pour ajuster la disposition ou pour ajouter de nouveaux éléments, le **Form Designer** donne un contrôle total sur la structure et le contenu des formulaires.
 
 ## Création d'une table
 
-Pour créer une nouvelle table, suivez les étapes ci-dessous :
+Pour créer une nouvelle table, suiver les étapes ci-dessous :
 
 1. Dans le menu personnalisation de l'application  ![capture](images/Image1.png) cliquer sur `Tables` pour accéder à la vue des tables.
 
    ![screenshot](images/1724159475408.png)
-2. Cliquez sur le bouton `Ajouter`.
+2. Cliquer sur le bouton `Ajouter`.
 
    ![screenshot](images/1724159776804.png)
 3. Remplir le formulaire suivant :
@@ -32,7 +32,7 @@ Pour créer une nouvelle table, suivez les étapes ci-dessous :
    | **Afficher les vues dans la barre de navigation** | Cocher cette option permet d'afficher le menu des vues en sous-menu dans la barre de navigation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    | **Afficher dans Ajout rapide**                    | Cocher cette option permet d'afficher une option de création rapide                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 4. Une fois le formulaire rempli, cliquer sur `Enregistrer`. La table sera créée dans la base de données.
-5. Déconnectez-vous, puis reconnectez-vous pour activer les permissions sur la nouvelle table et la rendre accessible dans l'application.
+5. Seéconnecter, puis se reconnecter pour activer les permissions sur la nouvelle table et la rendre accessible dans l'application.
 
    ![screenshot](images/1724160357613.png)
 6. Dans la vue des tables, ouvrir la fiche de la table, puis dans le menu **Outil**, cliquer sur `Form Designer`.

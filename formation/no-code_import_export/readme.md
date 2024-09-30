@@ -96,7 +96,7 @@ Ne pas oublier de sélectionner sur quels champs identifier les doublons dans la
 
 ## Intégrité des données
 
-Dans les valeurs par défaut des champs, vous ajouter des codes de champs pour contrôler l'intégrité des données qui vont être importées.
+Dans les valeurs par défaut des champs, ajouter des codes de champs pour contrôler l'intégrité des données qui vont être importées.
 
 Le contrôle d'intégrité se fait à l'aide de REGEX.
 

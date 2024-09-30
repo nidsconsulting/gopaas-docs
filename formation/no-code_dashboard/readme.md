@@ -118,82 +118,11 @@ Icone **Action** : `fas fa-file-signature fa-5x`
 
 ![screenshot](images/image16.png)
 
-<!--
 # Webreport
 
 ## Description
 
-WebReport est un outil graphique qui vous permet d'obtenir une vue d'ensemble claire et détaillée des données sélectionnées, avec des options de calcul avancées pour une analyse approfondie et précise.
-
-## Création d'un Webreport
-
-Pour ajouter un WebReport dans GoPaaS vous devez créer un Dashboard ou utilisé un Dashboard existant.
-
-1. Modifier le dasboard en cliquant sur ![screenshot](images/image12.png)
-2. Une fois sur l'interface, ajouter une **nouvelle ligne de Dashboard**.
-
-![screenshot](images/image31.png)
-
-3. Donner un Nom à cette nouvelle ligne plus cliquer sur le bouton `Appliquer` pour sauvegarder la fiche sans la fermer.
-
-![screenshot](images/image32.png)
-
-4. Cocher la case **« Options avancées »** pour affiche l’onglet **« Html »** puis l’ouvrir.
-
-![screenshot](images/image33.png)
-
-5. Dans le menu outil, cliquer sur l’option  `Ajouter un WebReport`.
-
-![screenshot](images/image34.png)
-
-6. Cette option permet d’insérer dans le champ **« Html »** le script pour appeler le composant WebReport.
-
-![screenshot](images/image35.png)
-
-7. Les paramètres du script insérés devront être modifiés pour appeler une source de données existante ( **vue** ).
-8. Rechercher la ligne suivante **« `var viewKey = "A_RENSEIGNER"` »** et remplacer la chaine **« A_RENSEIGNER »** par la **« cle »** de la vue avec la source de données souhaités. Par exemple  **« var viewKey = "Par défaut Affaire" »**.
-
-![screenshot](images/image36.png)
-
-9. **Enregistrer** la ligne de dashboard et ouvrir le Dashboard pour afficher le WebReport avec la configuration par défaut.
-
-![screenshot](images/image37.png)
-
-10. Cliquer sur la **flèche diagonale** en haut à droite du pivot pour modifier le WebReport en ajoutant des champs dans les lignes, colonnes, filtres, et valeurs.
-
-![screenshot](images/image38.png)
-
-![screenshot](images/image39.png)
-
-11. Configurer le WebReport selon les besoins puis cliquer sur le bouton `Enr.` pour afficher la nouvelle configuration du WebReport au  **format JSON**.
-
-![screenshot](images/image40.png)
-
-12. Cette configuration devra être **copié** afin de l'insérer dans le champ Html de la ligne de dashboard.
-
-![screenshot](images/image41.png)
-
-13. Ouvrir la ligne de dashboard puis l’onglet Html.
-
-![screenshot](images/image42.png)
-
-![screenshot](images/image43.png)
-
-14. **Coller** pour remplacer la nouvelle configuration au format JSON entre les balises de commentaires ==Début== et ==Fin==.
-
-![screenshot](images/image44.png)
-
-15. Cliquer sur le bouton `Enregistrer` pour sauvegarder dans la nouvelle configuration du WebReport.
-
-![screenshot](images/image45.png)
-
-> Dans le champ Html, il est possible de modifier la configuration du WebReport en ajoutant ou modifiant les propriétés des objets  **slice** ,  **options** , **conditions** et  **formats** .-->
-
-# Webreport
-
-## Description
-
-WebReport est un outil graphique qui vous permet d'obtenir une vue d'ensemble claire et détaillée des données sélectionnées, avec des options de calcul avancées pour une analyse approfondie et précise.
+WebReport est un outil graphique qui permet d'obtenir une vue d'ensemble claire et détaillée des données sélectionnées, avec des options de calcul avancées pour une analyse approfondie et précise.
 
 #### Création d'un Webreport
 
@@ -216,7 +145,7 @@ WebReport est un outil graphique qui vous permet d'obtenir une vue d'ensemble cl
    - Exemple de configuration dans le cas d'une analyse de la facturation :
     ![screenshot](images/config.png)
 
-   - S'assurer que les champs nécessaires sont déjà présents dans la vue. Si besoin pour ajouter ou modifier des champs, cliquez sur **Edit**.
+   - S'assurer que les champs nécessaires sont déjà présents dans la vue. Si besoin pour ajouter ou modifier des champs, cliquer sur **Edit**.
    - Après avoir configuré l'affichage selon les besoins, cliquer sur **Save** pour sauvegarder la configuration.
 ### Résultat
 
