@@ -29,9 +29,9 @@ Une vue agenda dans une application vous permet de visualiser et de gérer facil
 ### Kanban
 ![screenshot](images/image7.png "Ecran principal")
 
-La vue Kanban dans GoPaaS est un outil visuel qui vous permet de suivre et de gérer vos tâches de manière simple et intuitive. Elle présente les tâches sous forme de cartes organisées en colonnes, chaque colonne représentant une étape du processus (par exemple : "À faire", "En cours", "Terminé").
+La vue Kanban dans GoPaaS est un outil visuel qui vous permet de suivre de manière simple et intuitive les différentes étapes d'un processus, sous forme de cartes organisées en colonnes. Chaque colonne représentant une étape du processus (par exemple : "À faire", "En cours", "Terminé").
 
-En déplaçant les cartes d'une colonne à l'autre, vous pouvez facilement identifier les blocages et assurer un flux de travail fluide. C’est une méthode idéale pour gérer les projets et favoriser une meilleure collaboration au sein de l'équipe.
+En déplaçant les cartes d'une colonne à l'autre, vous pouvez facilement changer les étapes de la fiche.
 
 ### Vue liée
 ![screenshot](images/image8.png "Ecran principal")
