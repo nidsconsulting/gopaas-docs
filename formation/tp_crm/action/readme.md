@@ -269,8 +269,8 @@ Dans le menu personnalisation ![capture](images/image5.png):
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | Vue           |
-| Nom de la table | contact (table à partir de laquelle vous souhaitez insérer la vue) |
-| Nom champ   | nom de la vue que vous avez créée `LinkCompteContacts` |
+| Nom de la table | contact (Table à partir de laquelle insérer la vue.) |
+| Nom champ   | nom de la vue créée `LinkCompteContacts` |
 
 ![screenshot](images/image56.png)
 

@@ -1,6 +1,6 @@
 ## Création d'un CRM
 
-L'objectif de cette formation est de vous guider dans la création d'un CRM (Customer Relationship Management) sur GoPaaS, afin de centraliser et de gérer efficacement vos relations clients, en optimisant la collecte, le suivi et l'analyse des données clients.
+L'objectif de cette formation est de guider l'utilisateur dans la création d'un CRM (Customer Relationship Management) sur GoPaaS, afin de centraliser et de gérer efficacement les relations clients, en optimisant la collecte, le suivi et l'analyse des données clients.
 
 ![screenshot](images/image1.png "Ecran principal")
 

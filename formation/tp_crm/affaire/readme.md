@@ -302,7 +302,7 @@ Dans le menu personnalisation ![capture](images/image5.png):
 * Mettre NB colonne a `1`, Ordre à `1`.
 * Cliquer sur le bouton Enregistrer pour appliquer les modifications.
 * Cliquer sur le bouton ![capture](images/image10.png) pour actualiser le FormDesigner et visualiser les modifications.
-* Cliquez sur le bouton `+` pour ajouter un nouveau champ.
+* Cliquer sur le bouton `+` pour ajouter un nouveau champ.
 
 ![screenshot](images/image55.png)
 
@@ -311,8 +311,8 @@ Dans le menu personnalisation ![capture](images/image5.png):
 | Nom des champs | Valeur                          |
 |----------------|-------------------------------|
 | Type            | Vue           |
-| Nom de la table | contact (table à partir de laquelle vous souhaitez insérer la vue) |
-| Nom champ   | nom de la vue que vous avez créée `LinkCompteAffaires` |
+| Nom de la table | contact (Table à partir de laquelle insérer la vue.) |
+| Nom champ   | nom de la vue créée `LinkCompteAffaires` |
 
 ![screenshot](images/image56.png)
 
