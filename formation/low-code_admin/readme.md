@@ -62,13 +62,13 @@ Renseigner les informations relatives à la société, les coordonnées et le RI
 | **Durée d'inactivité**     | Permet de définir la durée maximale d'inactivité durant laquelle la session est ouverte. (Valeur à définir en secondes)              |
 | **Activer gestion du token** | Un Token peut être utilisé pour authentifier les utilisateurs dans des applications externes ou via une API.                            |
 | **Activer corbeille**        | Permet d’activer la corbeille sur votre application, les fiches envoyées dans la corbeille se retrouvent dans le menu Admin > Corbeille |
-| **Activer historique**       | Vous permet d’activer l’historique de navigation                                                                                        |
+| **Activer historique**       | Permet d’activer l’historique de navigation                                                                                        |
 
 #### Autres sections
 
 | **Champ**                | Description                                                                                          |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| **Serveur SMTP**         | Vous permet de paramétrer un serveur SMTP qui sera utilisé pour l’envoi des emails depuis GoPaaS. |
+| **Serveur SMTP**         | Permet de paramétrer un serveur SMTP qui sera utilisé pour l’envoi des emails depuis GoPaaS. |
 | **Docusign**             | Authentification sur l’API Docusign                                                                 |
 | **Yousign**              | Authentification sur l’API Yousign                                                                  |
 | **SSO (Single Sign-On)** | Permet d'accéder à GoPaaS avec l’authentification Google                                          |
@@ -93,9 +93,9 @@ Il est possible de paramétrer la couleur des boutons :
 | **Bouton danger**        | Bouton de type![capture](images/image20.png)                         |
 | **Bouton avertissement** | Bouton de type![capture](images/image13.png)                         |
 
-Il est également possible de personnaliser les couleurs de la vue Pivot (Tableau croisé dynamique) via la section** Couleur vue pivot.**
+Il est également possible de personnaliser les couleurs de la vue Pivot (Tableau croisé dynamique) via la section **Couleur vue pivot.**
 
-> Pour le paramétrage des couleurs, veuillez renseigner une valeur au format : **#FFFFFF**.
+> Pour le paramétrage des couleurs, renseigner une valeur au format : **#FFFFFF**.
 
 ### Onglet Script
 
@@ -109,7 +109,7 @@ Ajouter un script à cet emplacement pour des paramétrages spécifiques comme :
 
 ### Onglet Archivage emails
 
-Vous permet de paramétrer l’archivage email dans GoPaaS.
+Permet de paramétrer l’archivage email dans GoPaaS.
 
 ![screenshot](images/image32.png)
 
@@ -126,9 +126,9 @@ Vous permet de paramétrer l’archivage email dans GoPaaS.
 
 ## Dictionnaire
 
-Vous pouvez importer un dictionnaire afin de bénéficier de l'application dans votre langue. Vous pouvez également créer des chaînes de caractères manuellement.
+Il est possible d'importer un dictionnaire afin de bénéficier de l'application dans votre langue, mais également de créer des chaînes de caractères manuellement.
 
-Pour importer un dictionnaire utilisez le module d'import, pour créer des chaînes de caractères cliquez sur Admin depuis la barre de navigation puis Dictionnaire.
+Pour importer un dictionnaire utiliser le module d'import, pour créer des chaînes de caractères cliquer sur Admin depuis la barre de navigation puis Dictionnaire.
 
 ![screenshot](images/dictionnaire.png)
 
@@ -144,11 +144,11 @@ Plusieurs champs sont à renseigner pour enregistrer la traduction :
 | **Type**                 | Pour l'application, sélectionner systématiquement "application".                                         |
 |                                | Inscrire ensuite la traduction du texte de référence dans les autres langues pour valider la traduction. |
 
-> il faudra vous déconnecter et vous reconnecter de GoPaaS pour que les nouvelles traductions soient chargées.
+> il faut se déconnecter et se reconnecter de GoPaaS pour que les nouvelles traductions soient chargées.
 
 ## Extension
 
-Sur cette vue vous pouvez créer vos extensions GoPaaS.
+Sur cette vue il est possible de créer vos extensions GoPaaS.
 
 ![screenshot](images/extension.png)
 
@@ -165,7 +165,7 @@ Saisir le nom de votre extension, une description et cocher la case pour l’act
 | **CSS**       | Feuille de style            |
 | **PHP**       | Cet onglet n’est pas actif |
 
-> ***Remarque :** Il faudra vous déconnecter et vous reconnecter de GoPaaS pour que l’extension soit chargée*
+> ***Remarque :** Il faut se déconnecter et se reconnecter de GoPaaS pour que l’extension soit chargée*
 
 ## Groupes
 
@@ -179,7 +179,7 @@ Le groupe sera alors associé à un ou plusieurs utilisateurs.
 
 ![screenshot](images/image25.png)
 
-Pour créer un nouveau groupe cliquez sur `Ajouter`, puis renseigner le champ **Intitulé** il correspond tout simplement au nom du groupe.
+Pour créer un nouveau groupe cliquer sur `Ajouter`, puis renseigner le champ **Intitulé** il correspond tout simplement au nom du groupe.
 
 ![screenshot](images/image8.png)
 
@@ -197,13 +197,13 @@ Permet de voir la liste des membres du groupe.
 
 ## History (historique)
 
-Vous pouvez ici retrouver la liste de toutes les fiches historiques de navigation sur l’application.
+Retrouver la liste de toutes les fiches historiques de navigation sur l’application.
 
 ![screenshot](images/history.png)
 
 ![screenshot](images/image7.png)
 
-Vous retrouverez sur la fiche les informations suivante
+Retrouver sur la fiche les informations suivante :
 
 ![screenshot](images/image6.png)
 
@@ -219,7 +219,7 @@ Vous retrouverez sur la fiche les informations suivante
 
 ## Corbeille
 
-Vous retrouverez ici la liste de toutes les fiches supprimées et si nécessaire les restaurer.
+Retrouver ici la liste de toutes les fiches supprimées et si nécessaire les restaurer.
 
 ![screenshot](images/corbeille.png)
 
@@ -262,11 +262,9 @@ Le menu des Permissions permet de définir les droits sur les tables en fonction
 
 Le menu **Sessions** permet d'afficher la liste des sessions utilisateurs des applications GoPaaS.
 
-Dans la vue vous avez déjà accès à certaines informations comme l'heure, le statut ou encore la durée de connexion en secondes.
-
 ![screenshot](images/sessions.png)
 
-En effectuant un double clic sur une fiche, vous accédez à plus d'informations comme l'adresse IP de l'utilisateur, le nom de son navigateur ou encore le type d'OS utilisé.
+En effectuant un double clic sur une fiche, accéder à plus d'informations comme l'adresse IP de l'utilisateur, le nom de son navigateur ou encore le type d'OS utilisé.
 
 ![screenshot](images/image24.png)
 
@@ -276,7 +274,7 @@ Le menu Utilisateur permet d'afficher la liste des utilisateurs de l'application
 
 ![screenshot](images/utilisateur.png)
 
-Modifiez la fiche d'un utilisateur en double cliquant dessus ou ajouter un nouvel utilisateur cliquez sur **Ajouter**
+Modifier la fiche d'un utilisateur en double cliquant dessus ou ajouter un nouvel utilisateur cliquer sur **Ajouter**
 
 ![screenshot](images/image27.png)
 
@@ -335,15 +333,15 @@ Il est conseillé de renseigner un certain nombre de champ pour enregistrer la f
 
 ### Onglet Email sortant
 
-Vue des emails que vous avez envoyé depuis GoPaaS
+Vue des emails envoyés depuis GoPaaS.
 
 ### Onglet Session
 
-Vue de l’historiques de vos sessions GoPaaS
+Vue de l’historiques des sessions GoPaaS.
 
 ### Onglet Webmail
 
-Vous pouvez ici ajouter un compte mail qui sera disponible dans la barre de navigation > Admin > Webmail
+Ajouter un compte mail qui sera disponible dans la barre de navigation > Admin > Webmail
 
 ![screenshot](images/image3.png)
 
@@ -378,7 +376,7 @@ Pour Table et vues il y a plusieurs options possibles :
 | **Scripts**                             | Exporte les champs script JS, class JS et script PHP |
 | **Permissions**                         | Exporte les permissions                              |
 | **Toutes les vues**                     | Exporte toutes les vues                              |
-| **Sélectionnez une ou plusieurs vues** | Permet de choisir les vues à exporter               |
+| **Sélectionner une ou plusieurs vues** | Permet de choisir les vues à exporter               |
 
 ## Transfer In
 
@@ -397,7 +395,7 @@ Permet d’importer des éléments d’une autre application.
 
 ## 2FA Authenticator
 
-Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On utilise une application mobile qui génère des codes de vérification temporaires et qui seront utiliséq en complément du mot de passe pour renforcer la sécurité des accès aux applications GoPaaS.
+Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On utilise une application mobile qui génère des codes de vérification temporaires et qui seront utilisé en complément du mot de passe pour renforcer la sécurité des accès aux applications GoPaaS.
 
 ### Avantages
 
@@ -417,20 +415,20 @@ Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On ut
 | **iOS**     | [Google Authenticator on App Store](https://apps.apple.com/fr/app/google-authenticator/id388497605)                                           |
 | **Android** | [Google Authenticator on Google Play Store](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=fr&pli=1) |
 
-1. Après avoir installée l'application "Google Authenticator", connectez-vous à votre compte Google.
-2. Sur votre profil GoPaaS accédez à la section "2FA Authenticator".
+1. Après avoir installée l'application "Google Authenticator", il est nécessaire de se connecter à un compte Google.
+2. Sur votre profil GoPaaS accéder à la section "2FA Authenticator".
 
 ![screenshot](images/image31.png)
 
 ![screenshot](images/image29.png)
 
-3. Activez cette fonctionnalité et cliquez sur "Générer code secret" pour obtenir un QR Code.
-4. Ouvrez Google Authenticator, appuyez sur le "+" en bas à droite, puis sélectionnez "Scanner un code QR".
-5. Scannez le code QR affiché sur GoPaaS pour ajouter un 2FA à votre profil et obtenir un code unique qui se régénère toutes les 30 secondes.
+3. Activer cette fonctionnalité et cliquer sur "Générer code secret" pour obtenir un QR Code.
+4. Ouvrir Google Authenticator, appuyer sur le "+" en bas à droite, puis sélectionner "Scanner un code QR".
+5. Scanner le code QR affiché sur GoPaaS pour ajouter un 2FA au profil et obtenir un code unique qui se régénère toutes les 30 secondes.
 
 ![screenshot](images/image30.png)
 
-6. Enregistrez votre fiche utilisateur.
+6. Enregistrer la fiche utilisateur.
 
 #### Configuration avec Microsoft Authenticator
 
@@ -439,17 +437,17 @@ Le 2FA Authenticator est une méthode d'authentification à deux facteurs. On ut
 | **iOS**     | [Microsoft Authenticator on App Store](https://apps.apple.com/fr/app/microsoft-authenticator/id983156458)                   |
 | **Android** | [Microsoft Authenticator on Google Play Store](https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=fr) |
 
-1. Après avoir installé l'application "Microsoft Authenticator", connectez-vous à votre compte Microsoft.
-2. Rendez-vous sur votre profil GoPaaS et accédez à la section "2FA Authenticator".
+1. Après avoir installé l'application "Microsoft Authenticator", il est nécessaire de se connecter à un compte Microsoft.
+2. Sur le profil GoPaaS et accéder à la section "2FA Authenticator".
 
 ![screenshot](images/image31.png)
 
 ![screenshot](images/image29.png)
 
-3. Activez cette fonctionnalité et cliquez sur "Générer code secret" pour obtenir un QR Code.
-4. Ouvrez Microsoft Authenticator, appuyez sur le "+" en haut à droite, puis choisissez "Autre (Google, Facebook, etc.)".
-5. Scannez le code QR affiché sur GoPaaS pour ajouter un 2FA à votre profil et obtenir un code unique qui se régénère toutes les 30 secondes.
+3. Activer cette fonctionnalité et cliquer sur "Générer code secret" pour obtenir un QR Code.
+4. Ouvrir Microsoft Authenticator, appuyer sur le "+" en haut à droite, puis choisiir "Autre (Google, Facebook, etc.)".
+5. Scanner le code QR affiché sur GoPaaS pour ajouter un 2FA au profil et obtenir un code unique qui se régénère toutes les 30 secondes.
 
 ![screenshot](images/image30.png)
 
-6. Enregistrez votre fiche utilisateur.
+6. Enregistrer votre fiche utilisateur.
