@@ -105,7 +105,6 @@ Exemple dans le modèle de fusion :
 |---|---|---|
 | `[facture_ligne.Pardéfaut.WLW4M.reference;block=tbs:row]` | `[facture_ligne.Pardéfaut.WLW4M.facture_ligne_montant_ht;frm='0 000,00']` | `[facture_ligne.Pardéfaut.WLW4M.remise_0;frm='0 000,00']` |
 
-
 ## Imprimer le modèle de lettre
 
 Les modèles de lettre peuvent être imprimés depuis :
@@ -117,3 +116,23 @@ Les modèles de lettre peuvent être imprimés depuis :
 Depuis une fiche, menu outil > Fusionner > choisir le modèle > Fusionner
 
 Depuis une vue, sélectionner les fiches à fusionner > menu outil > Fusionner > choisir le modèle > Fusionner
+
+## Protection d'un modèle de lettre
+
+Pour protéger un document, ajouter dans le champ **protection** (onglet Système du modèle de lettre), les options souhaitées : 
+
+| Option         | Explication                                                                  |
+|----------------|------------------------------------------------------------------------------|
+| `print`        | Interdire l'impression du document.                                          |
+| `modify`       | Empêcher toute modification du contenu du document.                          |
+| `copy`         | Interdire la copie du texte ou des éléments du document.                     |
+| `annot-forms`  | Empêcher l'ajout d'annotations au document.                                  |
+| `fill-forms`   | Bloquer la possibilité de remplir les formulaires existants dans le document.|
+| `extract`      | Interdire l'extraction de contenu pour une utilisation ailleurs.             |
+| `assemble`     | Empêcher la combinaison du document avec d'autres fichiers.                  |
+| `print-high`   | Interdire l'impression en haute qualité.                                     |
+
+#### Exemple : 
+["print", "modify", "copy", "annot-forms", "fill-forms", "extract", "assemble", "print-high"]. 
+
+**A noter :** Si aucune protection n'est nécessaire, indiquer simplement : [].
