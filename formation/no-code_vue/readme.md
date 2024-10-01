@@ -2,13 +2,13 @@
 
 ## Description
 
-Pour visualiser les données saisies dans la base, GoPaaS met à votre disposition un ensemble de vues entièrement personnalisables. Ces vues peuvent se présenter sous forme de tableau, liste, agenda, graphique ou encore widget.
+Pour visualiser les données saisies dans la base, GoPaaS met à disposition un ensemble de vues entièrement personnalisables. Ces vues peuvent se présenter sous forme de tableau, liste, agenda, graphique ou encore widget.
 
 ## Créer une vue
 
 Les vues peuvent être adaptées pour répondre à des besoins spécifiques, tels que la modification des couleurs, l'ordre d'affichage, les conditions d'affichage et les champs inclus. Chaque type de vue (Tableau, Agenda, Graphique, Pivot) offre des options personnalisées permettant une flexibilité accrue.
 
-1. Pour ajouter une nouvelle vue, accéder au menu "Vue" puis cliquer sur le bouton **Ajouter** pour commencer le paramétrage.
+1. Accéder au menu "Vue" puis cliquer sur le bouton **Ajouter** pour commencer le paramétrage.
 
    <img src="./images/1724163685790.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
 
@@ -49,8 +49,6 @@ Renseigner les champs suivants :
 1. Dans l'onglet **Champs** sélectionner les champs à faire apparaître dans la vue.
 
   <img src="./images/image27.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images/image27.png)-->
 
 1. La liste des tables disponibles dans l'application.
 2. Liste des champs de la table sélectionnée.
@@ -61,7 +59,7 @@ Renseigner les champs suivants :
 
 ## Propriétés de la colonne
 
-En double-cliquant sur un des champs dans la colonne de droite, acccéder aux propriétés du champ dans la vue. Cela permet d'apporter des modifications spécifiques telles que l'ajustement de la largeur de la colonne ou l'alignement du contenu.
+Il est possible de double-cliquer sur un des champs dans la colonne de droite, acccéder aux propriétés du champ dans la vue. Cela permet d'apporter des modifications spécifiques telles que l'ajustement de la largeur de la colonne ou l'alignement du contenu.
 
 ![screenshot](images/image28.png)
 
@@ -89,8 +87,6 @@ Il est également possible de personnaliser les propriétés suivantes :
 ## Ajouter des conditions
 
   <img src="./images/image43.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images/image43.png)-->
 
 1. La liste des tables disponibles dans l'application.
 2. Liste des champs de la table sélectionnée.
@@ -102,8 +98,6 @@ Il est également possible de personnaliser les propriétés suivantes :
 Dans l'onglet **Mise en forme**, il est possible de trier les données de votre vue, par exemple pour regrouper des actions par statut ou trier des comptes par ordre alphabétique.
 
   <img src="./images/image38.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images/image38.png)-->
 
 1. Utiliser les tris (de 1 à 5) pour classer les enregistrements en fonction des champs sélectionnés dans l'onglet Champs.
 2. Choisisser l'ordre croissant (ASC) ou décroissant (DESC).
@@ -118,8 +112,6 @@ Il est possible de dupliquer une vue existante et de modifier ses paramètres po
 Depuis la vue par défaut, cliquer sur ![alt_text](images/image5.png) -> ![alt_text](images/image18.png) -> **Dupliquer**.
 
   <img src="./images/image44.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images/image44.png)-->
 
 ![screenshot](images/1724164167318.png)
 

@@ -14,8 +14,6 @@ L'export, offre la possibilité d'extraire les données présentes dans l'applic
 
 <img src="./images/Image2.png" width="100%" alt="Hearder Top" style="border-radius: 5px;"/>
 
-<!--![screenshot](images/Image2.png)-->
-
 2. Cliquer sur ![capture](images/Image3.png) pour ajouter le fichier à importer.
 
 Plusieurs champs sont déjà renseignés sur cette fiche, ils sont modifiables selon l'utilisation :
@@ -39,7 +37,7 @@ Plusieurs champs sont déjà renseignés sur cette fiche, ils sont modifiables s
 
 2. Réaliser la correspondance des champs de votre fichier avec les champs de la table.
 
-Pour cela, en face de chaque nom de champ, cliquer dans la zone **(ne pas importer)**, puis sélectionner le nom de colonne de votre fichier à faire correspondre.
+Cliquer dans la zone **(ne pas importer)**, puis sélectionner le nom de colonne de votre fichier à faire correspondre.
 
 Il est possible de renseigner une valeur par défaut dans la colonne "Valeur par défaut" et d'identifier les doublons dans la colonne d'identification des doublons.
 

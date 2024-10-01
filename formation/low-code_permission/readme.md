@@ -78,8 +78,6 @@ Nous allons mettre en place des permissions sur la table compte permettant la cr
 ### Résultat
 
 <img src="./images/EXEMPLE_VUE_RESULTAT_ADMIN.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!-- ![screenshot](images/EXEMPLE_VUE_RESULTAT_ADMIN.png)-->
 
  ---
 
@@ -156,26 +154,19 @@ Nous allons mettre en place des permissions sur la table contact permettant la c
 - Depuis une session **COMMERCIAL** :
 
 <img src="./images/EXEMPLE_VUE_CONTACT_RESULTAT_COMMERCIAL.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!-- ![screenshot](images/EXEMPLE_VUE_CONTACT_RESULTAT_COMMERCIAL.png)-->
 
 ### Configuration de permissions dans une vue
 
 <img src="./images/EXEMPLE_PERMISSION_VUE.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!-- ![screenshot](images/EXEMPLE_PERMISSION_VUE.png)-->
 
 ### Configuration de permissions dans un dashboard
 
 <img src="./images/EXEMPLE_PERMISSION_DASH.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!-- ![screenshot](images/EXEMPLE_PERMISSION_DASH.png)-->
 
 ### Configuration de permissions sur un champ
 
 <img src="./images/EXEMPLE_PERMISSION_CHAMP.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images/EXEMPLE_PERMISSION_CHAMP.png)-->
+
 ___
 
 ## 3. Utilisation des permissions avec la notion de groupe.
@@ -222,8 +213,6 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
    - Dans la section **Groupe** (multi-connexion), associer le groupe approprié (NORD, SUD, EST, OUEST).
 
    <img src="./images3/VUE_UTILISATEUR_GROUPE.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images3/VUE_UTILISATEUR_GROUPE.png)-->
 
    - Enregistrer la fiche utilisateur.
    - S'assurer d'avoir au moins quatre utilisateurs, chacun associé à un groupe différent.
@@ -236,11 +225,9 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 
 2. **Associer les permissions :**
    - Sur les fiches **Comptes**, un champ doit être présent, permettant de gérer les permissions, dans notre cas nous le nomerons **Permission** et pointera vers la table **Groupe** et de type multi-connexion.
-   - Renseigner le champ **Permission** (multi-connexion), en sélectionnant le groupe approprié (NORD, EST, OUEST, SUD).
+   - Renseigner le champ **Permission** (multi-connexion), et sélectionner le groupe approprié (NORD, EST, OUEST, SUD).
 
    <img src="./images3/EXEMPLE_COMPTE_SELECTION_PERMISSION.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images3/EXEMPLE_COMPTE_SELECTION_PERMISSION.png)-->
 
    - Enregistrer chaque fiche compte.
 
@@ -264,14 +251,12 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 | **Lecture**           | ADMIN                             |
 | **Lecture sélective** | SUD, ADMIN, NORD, EST, OUEST      |
 | **Modification sélective** | SUD, ADMIN, NORD, EST, OUEST |
-| **Suppression** | ADMIN                         |
+| **Suppression**       | ADMIN                             |
 | **Import**            | SUD, ADMIN, NORD, EST, OUEST      |
 | **Export**            | ADMIN                             |
 | **Modification en masse** | SUD, ADMIN, NORD, EST, OUEST  |
 
    <img src="./images3/VUE_PERMISSION_COMPTE.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images3/VUE_PERMISSION_COMPTE.png)-->
 
 3. **Enregistrer les permissions :**
    - Cliquer sur `Enregistrer`.
@@ -287,15 +272,11 @@ Vous disposez de commerciaux dont les clients sont répartis par région, et vou
 - Depuis une session région **SUD** :
 
    <img src="./images3/EXEMPLE_VUE_RESULTAT_USER.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images3/EXEMPLE_VUE_RESULTAT_USER.png)-->
 
 - Depuis une session **GESTIONNAIRE** :
 
    <img src="./images3/EXEMPLE_VUE_RESULTAT_ADMIN.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
-      
-<!--![screenshot](images3/EXEMPLE_VUE_RESULTAT_ADMIN.png)-->
 
 ### Conclusion
 
-La gestion des permissions basée sur la région permet une distribution précise et sécurisée des droits d'accès. En adaptant les permissions en fonction des régions, vous assurez que les informations sont accessibles et modifiables uniquement par les groupes concernés, ce qui optimise la sécurité et la pertinence des données traitées.
+La gestion des permissions basée sur la région permet une distribution précise et sécurisée des droits d'accès. En adaptant les permissions selon les régions, il est possible d'assurer que les informations sont accessibles et modifiables uniquement par les groupes concernés, optimisant ainsi la sécurité et la pertinence des données traitées.

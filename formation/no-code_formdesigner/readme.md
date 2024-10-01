@@ -31,8 +31,8 @@ Pour créer une nouvelle table, suiver les étapes ci-dessous :
    | **Couleur**                                       | Choisir la couleur pour modifier la couleur des onglets et des intitulés des sections                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
    | **Afficher les vues dans la barre de navigation** | Cocher cette option permet d'afficher le menu des vues en sous-menu dans la barre de navigation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    | **Afficher dans Ajout rapide**                    | Cocher cette option permet d'afficher une option de création rapide                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-4. Une fois le formulaire rempli, cliquer sur `Enregistrer`. La table sera créée dans la base de données.
-5. Seéconnecter, puis se reconnecter pour activer les permissions sur la nouvelle table et la rendre accessible dans l'application.
+4. Cliquer sur `Enregistrer`. La table sera créée dans la base de données.
+5. Se déconnecter, puis se reconnecter pour activer les permissions sur la nouvelle table et la rendre accessible dans l'application.
 
    ![screenshot](images/1724160357613.png)
 6. Dans la vue des tables, ouvrir la fiche de la table, puis dans le menu **Outil**, cliquer sur `Form Designer`.
@@ -53,10 +53,10 @@ Pour créer une nouvelle table, suiver les étapes ci-dessous :
 
    | Champ               | Description                                      |
    | ------------------- | ------------------------------------------------ |
-   | **Intitulé** | Nom du champ en base de données                           |
-   | **Label**     | Étiquette visible pour l'onglet                 |
-   | **Table**     | Nom de la table dans laquelle l'onglet se trouve |
-   | **Ordre**     | Ordre de l'onglet sur la fiche                  |
+   | **Intitulé**        | Nom du champ en base de données                  |
+   | **Label**           | Étiquette visible pour l'onglet                  |
+   | **Table**           | Nom de la table dans laquelle l'onglet se trouve |
+   | **Ordre**           | Ordre de l'onglet sur la fiche                   |
 3. Une fois le formulaire enregistré, cliquer sur le bouton de mise à jour pour actualiser l'interface du designer et voir apparaître les modifications.
 
    ![screenshot](images/1724161011935.png)
@@ -72,14 +72,14 @@ Pour créer une nouvelle table, suiver les étapes ci-dessous :
 
    | Champ                          | Description                                  |
    | ------------------------------ | -------------------------------------------- |
-   | **Intitulé**            | Nom de la section                            |
-   | **Masquer titre**        | Option pour masquer le titre de la section   |
-   | **Nb Colonne**           | Nombre de colonnes dans la section           |
-   | **Répartition colonne** | Répartition des colonnes entre elles        |
-   | **Table**                | Table associée à la section                |
-   | **Onglet**               | Onglet dans lequel la section sera affichée |
-   | **Ordre**                | Ordre d'affichage de la section              |
-   | **Réduire par défaut** | Option pour réduire la section par défaut  |
+   | **Intitulé**                   | Nom de la section                            |
+   | **Masquer titre**              | Option pour masquer le titre de la section   |
+   | **Nb Colonne**                 | Nombre de colonnes dans la section           |
+   | **Répartition colonne**        | Répartition des colonnes entre elles         |
+   | **Table**                      | Table associée à la section                  |
+   | **Onglet**                     | Onglet dans lequel la section sera affichée  |
+   | **Ordre**                      | Ordre d'affichage de la section              |
+   | **Réduire par défaut**         | Option pour réduire la section par défaut    |
 3. Actualiser l'interface du designer pour voir apparaître la nouvelle section.
 
    ![screenshot](images/1724161315262.png)
@@ -95,17 +95,17 @@ Pour créer une nouvelle table, suiver les étapes ci-dessous :
 
    | Champ                                | Description                                                                                                                                                                      |
    | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | **Table**                      | Table à laquelle le champ est lié                                                                                                                                              |
-   | **Onglet**                     | Onglet dans lequel le champ sera affiché                                                                                                                                        |
-   | **Section**                    | Section dans laquelle le champ sera affiché                                                                                                                                     |
-   | **Colonne**                    | Définir le numéro de colonne, une section peut contenir au maximum 3 colonnes                                                                                                  |
-   | **Ordre champ**                | Ordre du champ dans la colonne                                                                                                                                                   |
-   | **Type**                       | Typologie de champ disponible                                                                                                     |
-   | **Nom champ**                  | Nom du champ en base de données                                                                                                                                                 |
-   | **Alias/Nom Table connectée** | Nom de l'alias du champ ou nom de la table connecté dans la cadre d'un champ type connexion |
-   | **Intitulé**                  | Nom du champ dans l'application.                                                                                                                                                 |
-   | **Largeur intitulé**          | Largeur du label du champ                                                                                                                                                        |
-   | **Alignement intitulé**       | Alignement du label (ex : Gauche, Droite, Centre)                                                                                                                                |
+   | **Table**                            | Table à laquelle le champ est lié                                                                                                                                                |
+   | **Onglet**                           | Onglet dans lequel le champ sera affiché                                                                                                                                         |
+   | **Section**                          | Section dans laquelle le champ sera affiché                                                                                                                                      |
+   | **Colonne**                          | Définir le numéro de colonne, une section peut contenir au maximum 3 colonnes                                                                                                    |
+   | **Ordre champ**                      | Ordre du champ dans la colonne                                                                                                                                                   |
+   | **Type**                             | Typologie de champ disponible                                                                                                                                                    |
+   | **Nom champ**                        | Nom du champ en base de données                                                                                                                                                  |
+   | **Alias/Nom Table connectée**        | Nom de l'alias du champ ou nom de la table connecté dans la cadre d'un champ type connexion                                                                                      |
+   | **Intitulé**                         | Nom du champ dans l'application.                                                                                                                                                 |
+   | **Largeur intitulé**                 | Largeur du label du champ                                                                                                                                                        |
+   | **Alignement intitulé**              | Alignement du label (ex : Gauche, Droite, Centre)                                                                                                                                |
 3. Cliquer sur le bouton actualiser pour afficher le champ enregistré.
 
    ![screenshot](images/1724161647141.png)

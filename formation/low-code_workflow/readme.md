@@ -2,7 +2,8 @@
 GoPaaS est équipé d'un designer de workflow intuitif qui permet de modéliser et d'automatiser les processus métier en quelques clics. Grâce à cet outil, il est possible de définir des étapes, assigner des actions, et orchestrer des flux de travail complexes pour améliorer l'efficacité et la cohérence dans les opérations quotidiennes.
 
 ## Objectifs
-Dans cette formation, vous apprendrez à créer un workflow de gestion de congé dans GoPaaS. Ce workflow automatisera l'ensemble du processus de demande de congé, depuis la soumission par l'employé jusqu'à l'approbation par le manager. Vous configurerez les étapes clés, telles que la soumission de la demande, la validation ou le refus par le responsable, et la notification de la décision à l'employé
+Dans cette formation, il sera possible d'apprendre à créer un workflow de gestion de congé dans GoPaaS. Ce workflow automatisera l'ensemble du processus de demande de congé, depuis la soumission par l'employé jusqu'à l'approbation par le manager. Les étapes clés seront configurées, telles que la soumission de la demande, la validation ou le refus par le responsable, ainsi que la notification de la décision à l'employé.
+
 ## Pré-requis
 Pour pouvoir utiliser un workflow sur une table, il y a deux paramètres à prendre en compte.
 
@@ -21,14 +22,14 @@ Dans le menu de personnalisation
 
 Renseigner les champs suivant:
 
-| Champ    | Valeur                               |
-|----------|--------------------------------------|
-| Intitulé | demande_conge |
-| Alias    | Demande de congé |
-| Champs à afficher dans connexion    | cle |
-| Icone    | Icone [Font Awesome](https://fontawesome.com/) qui permet de personnaliser la table  |
-| Type    | **Application** |
-| Module    | **CRM** |
+| Champ                           | Valeur                                                                               |
+|---------------------------------|--------------------------------------------------------------------------------------|
+| Intitulé                        | demande_conge                                                                        |
+| Alias                           | Demande de congé                                                                     |
+| Champs à afficher dans connexion| cle                                                                                  |
+| Icone                           | Icone [Font Awesome](https://fontawesome.com/) qui permet de personnaliser la table  |
+| Type                            | **Application**                                                                      |
+| Module                          | **CRM**                                                                              |
 
 * Enregistrer la table **Demande de congé**.
 
@@ -67,12 +68,12 @@ Cliquer sur `ajouter`.
 
 | Champ                      | Description                                   |
 |----------------------------|-----------------------------------------------|
-| Intitulé                   | Demande de congé                               |
-| Table                      | Sélectionner la table **demande de congé**                              |
-| Champ pour les étapes      |  statut       |                          |
-| Champ pour les commentaires| commentaire_refus |
-| Actif                      | Cocher la case              |
-| Description                | Processus de demande de congé            |
+| Intitulé                   | Demande de congé                              |
+| Table                      | Sélectionner la table **demande de congé**    |
+| Champ pour les étapes      |  statut                                       |
+| Champ pour les commentaires| commentaire_refus                             |
+| Actif                      | Cocher la case                                |
+| Description                | Processus de demande de congé                 |
 
 Une fois renseigné, cliquer sur `appliquer` pour continuer.
 

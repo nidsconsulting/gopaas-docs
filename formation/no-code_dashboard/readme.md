@@ -11,20 +11,16 @@ Cela permet une visualisation simplifiée et un accès rapide aux données essen
 
 <img src="images/image1.png" width="1100">
 
-<!--![screenshot](images/image1.png)-->
-
 <img src="images/image0.png" width="1100">
-
-<!--![1724227885621](images/image0.png)-->
 
 | Champs                               | Valeur                                                                                                   |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| **Intitulé**                  | Nom du dashboard                                                                                         |
-| **Permission**                 | Liste des groupes ayant accès au dashboard                                                              |
-| **Regroupement**               | Regroupe le dashboard dans un dossier du menu `Dashboard`                                              |
-| **Afficher au démarrage**     | Affiche le dashboard lors de la connexion de l'utilisateur (fonctionne avec le `Pour le(s) groupe(s)`) |
-| **Pour le(s) groupe(s)**       | Liste des groupes pour lesquels le dashboard s'affichera au démarrage                                 |
-| **Afficher bouton Fullscreen** | Permet d'afficher un bouton pour passer le dashboard en plein écran                                     |
+| **Intitulé**                         | Nom du dashboard                                                                                         |
+| **Permission**                       | Liste des groupes ayant accès au dashboard                                                               |
+| **Regroupement**                     | Regroupe le dashboard dans un dossier du menu `Dashboard`                                                |
+| **Afficher au démarrage**            | Affiche le dashboard lors de la connexion de l'utilisateur (fonctionne avec le `Pour le(s) groupe(s)`)   |
+| **Pour le(s) groupe(s)**             | Liste des groupes pour lesquels le dashboard s'affichera au démarrage                                    |
+| **Afficher bouton Fullscreen**       | Permet d'afficher un bouton pour passer le dashboard en plein écran                                      |
 
 Pour sélectionner un groupe dans les permissions, cliquer sur l'icone ![screenshot](images/image3.png).
 
@@ -53,17 +49,16 @@ Sélectionner le groupe qui aura accès au dashboard puis cliquer sur la flèche
 
         | Champs                      | Valeur                                                                                       |
         | --------------------------- | -------------------------------------------------------------------------------------------- |
-        | **Dashboard**         | Dashboard auquel est relié la ligne de dashboard                                            |
-        | **Intitulé**         | Nom de la ligne de dashboard                                                                 |
-        | **Ordre**             | Ordre d'affichage de la ligne                                                                |
-        | **Options avancées** | Affiche l'onglet `HTML` qui permet de personnaliser plus en détail la ligne de dashboard  |
-        | **Description**       | Description de la ligne de dashboard                                                         |
-        | **View**              | Permet de sélectionner une vue de type**Graphique** qui apparaitra dans le dashboard  |
-        | **Largeur**           | Permet de sélectionner la largeur que prendra le**Widget** dans la ligne de dashboard |
+        | **Dashboard**               | Dashboard auquel est relié la ligne de dashboard                                             |
+        | **Intitulé**                | Nom de la ligne de dashboard                                                                 |
+        | **Ordre**                   | Ordre d'affichage de la ligne                                                                |
+        | **Options avancées**        | Affiche l'onglet `HTML` qui permet de personnaliser plus en détail la ligne de dashboard     |
+        | **Description**             | Description de la ligne de dashboard                                                         |
+        | **View**                    | Permet de sélectionner une vue de type**Graphique** qui apparaitra dans le dashboard         |
+        | **Largeur**                 | Permet de sélectionner la largeur que prendra le**Widget** dans la ligne de dashboard        |
 
 7. Cliquer sur l'icone ![screenshot](images/image3.png) du champ **view1** pour sélectionner une vue.
 8. Sélectionner la vue "Icone compte" en cliquant sur le bouton ![screenshot](images/image6.png).
-<!--Chercher la table **compte** puis sélectionner la vue **Icone** de type **Graphique** en cliquant sur le bouton ![screenshot](images/image6.png).-->
 
 ![screenshot](images/image7.png)
 

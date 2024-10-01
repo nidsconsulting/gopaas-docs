@@ -22,14 +22,14 @@ Cliquer sur `ajouter`.
 
 ![screenshot](images/image4.png)
 
-| Intitulé                             | Nom du modèle                                                                          |
+| Intitulé                              | Nom du modèle                                                                           |
 | ------------------------------------- | --------------------------------------------------------------------------------------- |
-| **Table**                       | Nom de la table principale pour la fusion du modèle                                    |
-| **Vue**                         | Nom de la vue principale à utiliser pour la fusion du modèle                          |
-| **PDF**                         | Option qui permet la fusion du modèle en PDF. La fusion par défaut est au format Word |
-| **Fichier**                     | Modèle de lettre au format docx, odt, xlsx, pttx                                       |
-| **Vue(s) liée(s) à utiliser** | Nom des vues liées pour la fusion du modèle                                           |
-| **Note**                        | Description détaillée du modèle de lettre                                            |
+| **Table**                             | Nom de la table principale pour la fusion du modèle                                     |
+| **Vue**                               | Nom de la vue principale à utiliser pour la fusion du modèle                            |
+| **PDF**                               | Option qui permet la fusion du modèle en PDF. La fusion par défaut est au format Word   |
+| **Fichier**                           | Modèle de lettre au format docx, odt, xlsx, pttx                                        |
+| **Vue(s) liée(s) à utiliser**         | Nom des vues liées pour la fusion du modèle                                             |
+| **Note**                              | Description détaillée du modèle de lettre                                               |
 
 Enregistrer puis ouvrir de nouveau la fiche pour faire apparaître les codes de champs.
 

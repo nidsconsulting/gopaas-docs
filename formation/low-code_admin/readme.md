@@ -148,7 +148,7 @@ Plusieurs champs sont à renseigner pour enregistrer la traduction :
 
 ## Extension
 
-Sur cette vue il est possible de créer vos extensions GoPaaS.
+Sur cette vue il est possible de créer des extensions GoPaaS.
 
 ![screenshot](images/extension.png)
 
@@ -209,13 +209,13 @@ Retrouver sur la fiche les informations suivante :
 
 | Champ                 | Description                    |
 | --------------------- | ------------------------------ |
-| **Date**        | Date de l’historique          |
-| **Time**        | Heure de l’historique         |
-| **Utilisateur** | Utilisateur concerné          |
-| **Name**        | Nom de la fiche ou vue ouverte |
-| **Type**        | Item (fiche) ou view (vue)     |
-| **Tablename**   | Table concernée               |
-| **Keyvalue**    | Clé de la fiche ou vue        |
+| **Date**        | Date de l’historique                 |
+| **Time**        | Heure de l’historique                |
+| **Utilisateur** | Utilisateur concerné                 |
+| **Name**        | Nom de la fiche ou vue ouverte       |
+| **Type**        | Item (fiche) ou view (vue)           |
+| **Tablename**   | Table concernée                      |
+| **Keyvalue**    | Clé de la fiche ou vue               |
 
 ## Corbeille
 

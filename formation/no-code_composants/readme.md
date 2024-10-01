@@ -10,8 +10,10 @@ Dans cette interface, un onglet regroupe des informations liées à un thème sp
 
 ## Les vues
 Pour visualiser les données saisies dans la base, GoPaaS met à votre disposition un ensemble de vues entièrement personnalisables. Ces vues peuvent se présenter sous forme de tableau, liste, agenda, graphique ou encore widget. Elles sont créées à partir d’une seule table mais peuvent afficher des informations issues d’autres tables grâce aux connexions (voir ci-après). Elles peuvent être triées, filtrées et sauvegardées sous des noms différents. Les vues liées, permettent de regrouper plusieurs vues dans un onglet d’une fiche. C’est un moyen très puissant de visualiser rapidement un ensemble d’informations liées.
+
 ### Tableau
 ![screenshot](images/image1.png "Ecran principal")
+
 #### Les filtres avancés
 ![screenshot](images/image2.png "Ecran principal")
 
@@ -22,10 +24,12 @@ Il est possible de cummuler plusieurs conditions en cliquant sur le bouton <img 
 Cliquer sur le bouton <img src="images/image4.png" width="80"> pour lancer la recherche
 
 Cliquer sur le bouton à droite du bouton pour enregistrer la recherche sur la vue.
+
 ### Agenda
 ![screenshot](images/image6.png "Ecran principal")
 
 Une vue agenda dans une application permet de visualiser et de gérer facilement tous les événements, tâches, et aller sur une période donnée, comme une journée, une semaine, ou un mois. C’est un outil très pratique pour avoir un aperçu clair de votre emploi du temps, éviter les chevauchements d’engagements, et mieux organiser votre temps.
+
 ### Kanban
 ![screenshot](images/image7.png "Ecran principal")
 
