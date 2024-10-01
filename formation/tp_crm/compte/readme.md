@@ -19,7 +19,7 @@ Renseigner les champs suivant:
 | Type    | Ex: **Application** |
 | Module    | Ex: **CRM** |
 
-* S'assurer que le **groupe** a bien accès à ce **module** en vérifiant dans la **barre de navigation** > <img src="images/image2.png" height="30px" alt="Admin"/> > **Groupes**.
+* Cliquer sur la **barre de navigation** > <img src="images/image2.png" height="30px" alt="Admin"/> > **Groupes**, pour s'assurer que le **groupe** a bien accès à ce **module**.
 
 * Pour le groupe **ADMIN**, ouvrir la fiche du groupe **ADMIN** pour ajouter par exemple le module **CRM**.
 
@@ -42,14 +42,13 @@ Dans le menu personnalisation ![capture](images/image5.png):
     ![screenshot](images/image6.png)
 
 ### Ouvrir le FormDesigner
-- Cliquer sur le menu `Outil` de la fiche puis `FormDesigner`.
-- Dans le menu qui apparaît cliquer sur **FormDesigner**.
+- Cliquer sur le menu `Outil` de la fiche puis sélectionner `FormDesigner`.
 
     ![screenshot](images/image7.png)
 
 ###  Création des champs
 
-Nous avons dans une fiche GoPaaS, des onglets, des sections et des colonnes.
+Une fiche GoPaaS est composée d'onglets, de sections et de colonnes.
 
 - Les Onglets contiennent des sections.
 - Les Sections contiennent 1 à 4 colonnes.
@@ -133,8 +132,6 @@ Nous avons dans une fiche GoPaaS, des onglets, des sections et des colonnes.
 
 ####  Liste des autres champs à créer
 
-Voici un tableau avec les champs de la table `Compte` à créer et leur types :
-
 | Nom des champs | Type                          |
 |----------------|-------------------------------|
 | Nom            | Texte `Obligatoire`           |
@@ -171,27 +168,27 @@ Voici un tableau avec les champs de la table `Compte` à créer et leur types :
 | Données sensibles       | Catégoriser le champ comme contenant des données sensibles (RGPD).                                                                                                  |
 
 ### Actualisation du FormDesigner
-- Cliquer sur le bouton ![capture](images/image10.png) pour mettre à jour le `FormDesigner` et visualiser les modifications apportées.
+- Cliquer sur le bouton ![capture](images/image10.png) pour actualiser le `FormDesigner` et visualiser les modifications apportées.
 
-    > *Astuce : Il est possible de **glisser-déposer** les champs pour réorganiser leur ordre sur le formulaire.*
+    > *Astuce : Il est possible de **glisser-déposer** les champs pour agencer le formulaire.*
     
     ![screenshot](images/image11.png)
 
 
 ### Agencer la vue `Par défaut`
 
-* Dans le menu **Application** > cliquer sur le sous-menu **CRM** > et cliquer sur **Compte**
+* Dans le menu **Application**, sélectionner le module **CRM**, puis sélectionner la table **Compte**
 
     ![screenshot](images/image25.png)
 
-* Cliquer sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue pour pouvoir la personnaliser.
-* Cliquer sur l'onglet `Champs` pour voir la liste des champs de la table **Compte** dans la colonne de gauche.
+* Cliquer sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue et la personnaliser.
+* Cliquer sur l'onglet `Champs` pour afficher la liste des champs de la table **Compte**.
 
     ![screenshot](images/image27.png)
 * Sélectionner les champs à afficher dans la vue.
-  > *Astuce : Sélectionner plusieurs champs simultanément en maintenant la touche CTRL enfoncée.*
-* Après avoir sélectionné les champs, cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour les ajouter.
+  > *Astuce : Pour sélectionner plusieurs champs, se positionner sur le premier champ, maintener la touche CTRL enfoncée et sélectionner d'autres champs.*
+* Cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour les ajouter à la vue.
 * Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
-* Pour voir les changements effectués, fermer la vue actuelle et la ré-ouvrir.
+* Fermer la vue actuelle et la ré-ouvrir pour visualiser les modifications.
 
     ![screenshot](images/image29.png)

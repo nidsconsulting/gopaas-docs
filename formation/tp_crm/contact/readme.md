@@ -19,7 +19,7 @@ Renseigner les champs suivant:
 | Type                             | Ex: **Application**                                                                                          |
 | Module                           | Ex: **CRM**                                                                                                  |
 
-* S'assurer que le **groupe** a bien accès à ce **module** en vérifiant dans la **barre de navigation** > <img src="images/image2.png" height="30px" alt="Admin"/> > **Groupes**.
+* Cliquer sur la **barre de navigation** > <img src="images/image2.png" height="30px" alt="Admin"/> > **Groupes**, pour s'assurer que le **groupe** a bien accès à ce **module**.
 
 * Pour le groupe **ADMIN**, ouvrir la fiche du groupe **ADMIN** pour ajouter par exemple le module **CRM**.
 
@@ -49,7 +49,7 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 ###  Création des champs
 
-Nous avons dans une fiche GoPaaS, des onglets, des sections et des colonnes.
+Une fiche GoPaaS est composée d'onglets, de sections et de colonnes.
 
 - Les Onglets contiennent des sections.
 - Les Sections contiennent 1 à 4 colonnes.
@@ -134,8 +134,6 @@ Nous avons dans une fiche GoPaaS, des onglets, des sections et des colonnes.
 
 ####  Liste des autres champs à créer
 
-Voici un tableau avec les champs de la table `Contact` à créer et leur types :
-
 | Nom des champs  | Type                                                                                                                                                                                                                          |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Compte          | Connexion                                                                                                                                                                                                                     |
@@ -173,29 +171,27 @@ Voici un tableau avec les champs de la table `Contact` à créer et leur types :
 
 
 ### Actualisation du FormDesigner
-- Cliquer sur le bouton ![capture](images/image16.png) pour mettre à jour le `FormDesigner` et visualiser les modifications apportées.
+- Cliquer sur le bouton ![capture](images/image16.png) pour actualiser le `FormDesigner` et visualiser les modifications apportées.
 
-    > *Astuce : Il est possible de **glisser-déposer** les champs pour réorganiser leur ordre sur le formulaire.*
+ > *Astuce : Il est possible de **glisser-déposer** les champs pour agencer le formulaire.*
     
-    ![screenshot](images/image17.png)
-
+![screenshot](images/image17.png)
 
 ### Agencer la vue `Par défaut`
 
-* Dans le menu **Application** > cliquer sur le sous-menu **CRM** > et cliquer sur **Contact**
+* Dans le menu **Application**, sélectionner le module **CRM**, puis sélectionner la table **Contact**
 
     ![screenshot](images/image41.png)
 
-* Cliquer sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue pour pouvoir la personnaliser.
-* Cliquer sur l'onglet `Champs` pour voir la liste des champs de la table **Contact** dans la colonne de gauche.
+* Cliquer sur l'icône de modification <img src="images/image26.png" width="28px" alt="capture"> pour accéder aux paramètres de la vue et la personnaliser.
+* Cliquer sur l'onglet `Champs` pour afficher la liste des champs de la table **Contact**.
 
     ![screenshot](images/image18.png)
 
-* Sélectionner les champs à afficher dans la vue.
-  > *Astuce : Sélectionner plusieurs champs simultanément en maintenant la touche CTRL enfoncée.*
-* Après avoir sélectionné les champs, cliquer sur la flèche <img src="images/image19.png" width="28px" alt="capture"> pour les ajouter.
+  > *Astuce : Pour sélectionner plusieurs champs, se positionner sur le premier champ, maintener la touche CTRL enfoncée et sélectionner d'autres champs.*
+* Cliquer sur la flèche <img src="images/image28.png" width="28px" alt="capture"> pour les ajouter à la vue.
 * Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
-* Pour voir les changements effectués, fermer la vue actuelle et la ré-ouvrir.
+* Fermer la vue actuelle et la ré-ouvrir pour visualiser les modifications.
 
     ![screenshot](images/image20.png)
 
@@ -203,9 +199,9 @@ Voici un tableau avec les champs de la table `Contact` à créer et leur types :
 
 ### Création de la vue liée
 
-Pour afficher les **Contacts** liés au **Compte**, il faut créer une vue liée. Pour celà on peut utiliser une vue existante et la dupliquer.
+Pour afficher les **Contacts** liés dans la fiche **Compte**, il faut créer une vue liée. Pour celà on peut utiliser une vue existante et la dupliquer.
 - Ouvrir la vue "Par défaut" des **Contacts**.
-- Cliquer sur <img src="images/image26.png" width="28px" alt="capture">
+- Cliquer sur le bouton <img src="images/image26.png" width="28px" alt="capture">
 
 ![screenshot](images/image38.jpeg)
 
@@ -213,10 +209,10 @@ Pour afficher les **Contacts** liés au **Compte**, il faut créer une vue liée
 
 ![screenshot](images/image21.png)
 
-- Renommer la nouvelle vue avec la convention de nommage suivante:
+- Renommer la nouvelle vue avec la convention suivante :
   - Link pour indiquer que c'est une vue liée.
   - `Compte` est le nom de la table parent.
-  - `Contacts` est la table liée avec les fiches enfants).
+  - `Contacts` est le nom de la table enfant.
   - Soit dans ce cas `linkCompteContacts`.
 
 ![screenshot](images/image22.png)
@@ -236,7 +232,7 @@ Pour afficher seulement les contacts du compte, il faut créer une condition sur
 
 - Cliquer sur le bouton **Enregistrer** pour appliquer les modifications.
   
-### Ajouter la vue liée linkCompteContacts dans un onglet de la table **Compte**
+### Ajouter la vue liée dans un onglet de la table **Compte**
 
 Dans le menu personnalisation ![capture](images/image5.png):
 - Cliquer sur le menu `Tables` pour afficher la vue avec la liste de toutes les tables.
@@ -247,8 +243,6 @@ Dans le menu personnalisation ![capture](images/image5.png):
 #### Ouvrir le FormDesigner
 - Cliquer sur le menu `Outil` de la fiche puis `FormDesigner`.
 - Dans le menu qui apparaît cliquer sur **FormDesigner**.
-
-    ![screenshot](images/image28.png)
 
 - Cliquer sur le bouton <img src="images/image30.PNG"  width="60px" alt="capture"> pour ajouter un nouvel onglet.
 
@@ -301,10 +295,10 @@ Dans le menu personnalisation ![capture](images/image5.png):
 
 #### Actualiser le `FormDesigner`
 
-* Cliquer sur le bouton ![capture](images/image16.png) pour mettre à jour le `FormDesigner` et visualiser les modifications.
+* Cliquer sur le bouton ![capture](images/image16.png) pour actualiser le `FormDesigner` et visualiser les modifications.
 
 ![screenshot](images/image36.png)
 
-- Ouvrir la vue par défaut des comptes et ouvrir une fiche `compte` pour voir le résultat.
+- Ouvrir la vue par défaut des comptes et ouvrir une fiche `compte` pour afficher le résultat.
 
 ![screenshot](images/image37.png)
