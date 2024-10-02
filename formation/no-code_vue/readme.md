@@ -2,17 +2,17 @@
 
 ## Description
 
-Pour visualiser les données saisies dans la base, GoPaaS met à disposition un ensemble de vues entièrement personnalisables. Ces vues peuvent se présenter sous forme de tableau, liste, agenda, graphique ou encore widget.
+Pour visualiser les données saisies dans la base, GoPaaS met à disposition un ensemble de vues entièrement personnalisables. Ces vues peuvent se présenter sous forme de tableau, agenda, kanban, webreport, graphique ou encore widget.
 
 ## Créer une vue
 
-Les vues peuvent être adaptées pour répondre à des besoins spécifiques, tels que la modification des couleurs, l'ordre d'affichage, les conditions d'affichage et les champs inclus. Chaque type de vue (Tableau, Agenda, Graphique, Pivot) offre des options personnalisées permettant une flexibilité accrue.
+Les vues peuvent être adaptées pour répondre à des besoins spécifiques. Il est possible de mettre en forme la vue avec des codes couleurs, des tris et des régroupement. Chaque type de vue (Tableau, Agenda, Graphique, ...) offre des options personnalisées permettant une flexibilité accrue.
 
-1. Accéder au menu "Vue" puis cliquer sur le bouton **Ajouter** pour commencer le paramétrage.
+Cliquer sur le menu "Vue" puis sélectionner `Ajouter`.
 
    <img src="./images/1724163685790.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
 
-2. Commencer par initialiser le paramétrage.
+### Tableau
 
 ![screenshot](images/1724163720069.png)
 
@@ -21,7 +21,7 @@ Renseigner les champs suivants :
 | Champ                                            | Description                                                                                                                                  |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Intitulé**                              | Nom de la vue.                                                                                                                               |
-| **Table**                                  | Table à laquelle la vue est connectée.                                                                                                 |
+| **Table**                                  | Table connectée.                                                                                                 |
 | **Type**                                   | Type de vue : Tableau, Agenda, Graphique, WebReport, Pivot, Kanban.                                                                          |
 | **Rapport**                                | Indiquer si la vue doit être affichée dans un rapport.                                                                                     |
 | **Afficher dans les accès rapide**        | Permet d'afficher la vue dans l'Accès rapide ![acces_rapide](https://gopaas.fr/help/docs/Vues/images/image34.png) de la barre de navigation. |
@@ -42,11 +42,9 @@ Renseigner les champs suivants :
 | **Permissions**                            | Gère les permissions d'accès à la vue.                                                                                                    |
 | **Description**                            | Permet d'ajouter une description pour la vue.                                                                                                |
 
-> **Conseil :** Pour optimiser les performances, il est déconseillé de cocher toutes les options disponibles.
-
 ## Agencer les champs
 
-1. Dans l'onglet **Champs** sélectionner les champs à faire apparaître dans la vue.
+Dans l'onglet **Champs** sélectionner les champs à faire apparaître dans la vue.
 
   <img src="./images/image27.png" width="90%" alt="Hearder Top" style="border-radius: 5px;"/>
 
@@ -59,13 +57,13 @@ Renseigner les champs suivants :
 
 ## Propriétés de la colonne
 
-Il est possible de double-cliquer sur un des champs dans la colonne de droite, acccéder aux propriétés du champ dans la vue. Cela permet d'apporter des modifications spécifiques telles que l'ajustement de la largeur de la colonne ou l'alignement du contenu.
+Pour acccéder aux propriétés du champ dans la vue, double-cliquer sur un des champs dans la colonne de droite. Cela permet d'apporter des modifications spécifiques telles que l'ajustement de la largeur de la colonne ou l'alignement du contenu.
 
 ![screenshot](images/image28.png)
 
 ![screenshot](images/image21.png)
 
-Il est également possible de personnaliser les propriétés suivantes :
+Description des propriétés :
 
 | Champ                                  | Description                                                                                                                                                                                                                                                   |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -93,7 +91,7 @@ Il est également possible de personnaliser les propriétés suivantes :
 3. Utiliser les flèches pour ajouter un champ (flèche de droite) ou le retirer (flèche de gauche).
 4. Les champs sélectionnés pour les conditions.
 
-## Trier et mettre en forme
+## Mise en forme
 
 Dans l'onglet **Mise en forme**, il est possible de trier les données de votre vue, par exemple pour regrouper des actions par statut ou trier des comptes par ordre alphabétique.
 
@@ -105,9 +103,18 @@ Dans l'onglet **Mise en forme**, il est possible de trier les données de votre 
 
 **NB :** Une option est disponible pour condenser le regroupement à l'ouverture de la vue.
 
+
+### Agenda
+
+### Kanban
+
+### WebReport
+
+### Graphique
+
 ## Dupliquer une vue
 
-Il est possible de dupliquer une vue existante et de modifier ses paramètres pour créer une nouvelle vue.
+Pour créer une nouvelle vue, il est possible de dupliquer une vue existante et modifier ses paramètres.
 
 Depuis la vue par défaut, cliquer sur ![alt_text](images/image5.png) -> ![alt_text](images/image18.png) -> **Dupliquer**.
 
