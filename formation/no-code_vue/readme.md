@@ -109,21 +109,28 @@ Dans l'onglet **Mise en forme**, il est possible de trier les données de votre 
 #### Étape 1 : Création des tables
 
 1. **Table Action** : Créer la table **Action** avec les champs suivants :
-   - `Intitulé` (texte)
-   - `Date début` (date)
-   - `Date fin` (date)
-   - `Heure début` (heure)
-   - `Heure fin` (heure)
-   - `Description` (mémo)
-   - `Collaborateur` (connexion vers la table Collaborateur)
+
+    | **Champ**         | **Type**                              |
+    |-------------------|---------------------------------------|
+    | `Intitulé`        | Texte                                 |
+    | `Date début`      | Date                                  |
+    | `Date fin`        | Date                                  |
+    | `Heure début`     | Heure                                 |
+    | `Heure fin`       | Heure                                 |
+    | `Description`     | Mémo                                  |
+    | `Collaborateur`   | Connexion vers la table Collaborateur |
+
 
 2. **Table Collaborateur** : Créer la table **Collaborateur** avec les champs suivants :
-   - `Actif` (checkbox)
-   - `Nom` (texte)
-   - `Prénom` (texte)
-   - `Email` (email)
-   - `Téléphone` (texte)
-   - `Utilisateur` (connexion vers la table utilisateur)
+
+    | **Champ**        | **Type**                           |
+    |------------------|------------------------------------|
+    | `Actif`          | Checkbox                           |
+    | `Nom`            | Texte                              |
+    | `Prénom`         | Texte                              |
+    | `Email`          | Email                              |
+    | `Téléphone`      | Texte                              |
+    | `Utilisateur`    | Connexion vers la table utilisateur |
 
 ### Instructions détaillées
 
