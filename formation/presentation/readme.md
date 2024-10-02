@@ -1,135 +1,123 @@
 # Présentation
 
-## Environnement
-
-GoPaaS fonctionne comme une application web monopage (en anglais single-page application ou SPA), une application web accessible via une page web unique.
-Le but est d'éviter le chargement d'une nouvelle page à chaque action demandée, et de fluidifier ainsi l'expérience utilisateur.
-Chaque fiche GoPaaS est créée à partir de modèle et stockée en cache dans le navigateur pour optimiser les temps de réponse avec le serveur avec lequel il échange des données.
-L'interface utilisateur n'a pas besoin d'être re télécharger du serveur à chaque ouverture. 
+GoPaaS, développé par NIDS Consulting, est une plateforme agile conçue pour gérer et créer rapidement des applications métiers sur mesure, fiables et évolutives. Hébergées dans le Cloud, ces applications offrent une grande souplesse et peuvent s’adapter facilement aux besoins spécifiques des entreprises. GoPaaS permet ainsi une gestion centralisée des processus et des données, tout en garantissant une sécurité optimale et une évolutivité adaptée aux exigences métiers.
 
 ![screenshot](images/image1.png "Ecran principal")
 
-1. **La barre de navigation**
+1. **Menu de navigation**
 
-2. **La barre d'outils**
+2. **Entête**
 
-3. **La barre de personnalisation**
+3. **Menu de gestion de l'application**
 
-4. **L'espace principal**
+4. **Page d'accueil**
 
-5. **Les onglets de navigation**
+5. **Onglets de navigation**
 
-### La barre de navigation
+---
+### Menu de navigation
 
-La barre de navigation est l'espace situé à gauche de l'écran, sur laquelle se placent des boutons correspondant aux vues. En cliquant sur l'un de ces boutons, ouvrer la vue sélectionnée.
+Le menu de navigation, situé sur le bord gauche, permet de regrouper l'ensemble des modules disponibles dans l'application.
 
-La vue est représentée par une icône et un titre qui permet de l'identifier rapidement. La barre de navigation est totalement paramétrable. Il est possible de décider quelles vues y faire figurer et dans quelle rubrique (Application, Accès rapide, Dashboard ou Référence), ainsi que l'icône et le titre.
+Un module est représenté par une icône et un titre qui permet de l'identifier rapidement. Il est possible de paramétrer les modules à y faire figurer dans une rubrique (Application, Accès rapide, Dashboard ou Référence).
 
-#### Applications
+ - #### Applications
 
-Application configure les modules qui constituent votre application. Cliquer sur un module, les tables applicatives qui constituent ce module apparaissent, dans lesquelles sont saisies les informations qui sont partagées avec les collaborateurs. 
+    Le menu **Application** regroupe les modules qui constituent l'application.
 
-Cette liste dépend entièrement des choix faits lors de la création de la table et peuvent être modifiés à tout moment, en modifiant le paramétrage de la table concernée. Lors du clic sur une de ces tables, il est possible d'ouvrir la vue « Par défaut » ou les vues qui ont été sélectionnées. Bien que la vue par défaut soit paramétrable comme toutes les autres, elle a pour but d’afficher tous les enregistrements de la table.
+ - ##### Accès rapide
 
-#### Accès rapide
+    Dans cette liste figurent toutes les vues où l’option **Afficher dans les raccourcis** a été cochée.
 
-Dans cette liste figure toutes les vues pour lesquelles l’option "**Afficher dans les raccourcis**" a été cochée. Il suffit de cliquer sur le titre de la vue dans la liste pour ouvrir cette vue dans un nouvel onglet.
+ - ##### Dashboard
 
-#### Dashboard
+    Le Dashboard permet de visualiser un ensemble de données clés, comme des analyses ou bien des graphiques.
 
-Le Dashboard permet de rassembler sur une seule page un ensemble de vues, analyses et graphiques permettant de piloter les données de votre application.
+ - ##### Admin
 
-#### Référence
+    Dans ce menu sont regroupées les principales tables d’administration de l’application.
 
-Il s’agit de la liste des tables de références de votre application, celles auxquelles font appel les tables applicatives.
+---
 
-#### Admin
+### L'entête
 
-Dans cette liste sont regroupées les principales fonctions d’administration de l’application.
+L'entête regroupe plusieurs boutons :
 
-### La barre d'outils
+| Image                                | Description                                                                                                                                                   |
+|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Bouton](images/Image3.png)         | Cette icône permet de réduire le menu de navigation.                                                                                                            |
+| ![Bouton](images/Image4.png)         | Cette icône permet d’ouvrir le menu de gestion de l'application, pour ainsi accéder au paramétrage des tables, des champs, ...    |
+| ![Bouton](images/Image16.png)        | Cette icône est un raccourci vers une action clé de l'application.            |
+| ![Bouton](images/Image5.png)         | Cette icône permet de sélectionner la langue de l'application.                                 |
+| ![Bouton](images/Image7.png)         | Cette icône permet de gérer les onglets actifs avec des options comme **Fermer les autres onglets** ou **Fermer tous les onglets**.    |
+| ![Bouton](images/Image9.png)         | Cette icône permet de gérer l'historique de navigation.       |
+| ![Bouton](images/Image12.png)        | Cette icône permet d'accéder aux options du profil utilisateur pour voir et éditer le profil, changer le mot de passe, ou se déconnecter de la session.           |
+| ![Bouton](images/Image14.png)        | Cette icône permet d'utiliser le mode **hors connexion**.         |
 
-**La barre d'outils** regroupe plusieurs boutons :
+---
 
-![Bouton](images/Image3.png)  Ce bouton permet de réduire la barre de navigation.
+### Menu de gestion de l'application
 
-![Bouton](images/Image4.png) Ce bouton permet d’ouvrir la barre de personnalisation pour accéder au paramétrage des tables, des champs, pour personnaliser plus avant votre application. Il inclut aussi la fonction d’import des données, et de mise à jour de l’environnement GoPaaS.
+GoPaaS est personnalisable et peut être adapté pour répondre aux besoins d’une entreprise. Ce menu permet ainsi de gérer les tables, champs de l'application.
 
-![Bouton](images/Image16.png) Ce bouton sert à attribuer une action par défaut qui sera exécutée rapidement, comme la création d'une nouvelle tâche, simplifiant ainsi le processus pour les utilisateurs en offrant un raccourci pratique.
+ - #### Automatisation
 
-![Bouton](images/Image5.png) Ce bouton "FR" permet de sélectionner la langue de votre application. Les autres options disponibles dans le menu, telles que "EN" pour l'anglais, "DE" pour l'allemand, "ES" pour l'espagnol, "IT" pour l'italien et "PT" pour le portugais. 
+    Retrouver la liste de tous les automatismes présents dans l'application.
 
-![Bouton](images/Image7.png) Ce bouton permet d'accéder au menu contextuel pour la gestion des onglets actifs sur GoPaaS. Les options présentées sont "Fermer les autres onglets", "Fermer les onglets sur la gauche", "Fermer les onglets sur la droite", et "Fermer tous les onglets". Cela offre à l'utilisateur une manière rapide et facile de contrôler et d'organiser ses onglets ouverts. 
+    GoPaaS met a disposition un système qui permet d'automatiser des tâches ou de procédures.
 
-![Bouton](images/Image9.png) Ce bouton permet d'afficher un panneau de gestion des onglets dans votre application GoPaaS, où l'utilisateur peut visualiser à la fois les onglets actuellement ouverts et ceux qui ont été récemment fermés. Les onglets ouverts sont listés avec des options pour naviguer directement vers eux, tandis que les onglets récemment fermés sont présentés avec l'heure de fermeture pour un accès rapide si l'utilisateur souhaite les rouvrir.
+    Par exemple, GoPaaS peut envoyer un email de relance à un client pour lui rappeler le paiement d'une facture.
 
-![Bouton](images/Image12.png) Ce bouton permet d'accéder aux options du profil utilisateur. Il offre des liens pour voir et éditer le profil de l'utilisateur, changer le mot de passe, et se déconnecter de la session actuelle. 
+ - #### Tables
 
-![Bouton](images/Image14.png) Ce bouton permet de synchroniser des données du mode hors connexion. Les boutons indiquent "Synchro IN" pour importer des données, "Synchro OUT" pour exporter des données, "Sauvegarder" pour enregistrer les données actuelles, "Restaurer" pour revenir à un état antérieur des données, et "Switch" pour changer de mode ou de profil. C'est un outil pratique pour gérer des données lorsqu'on n'a pas accès à Internet.
+    Retrouver la liste des toutes les tables présentes dans l'application.
 
-## La barre de personnalisation
+ - #### Onglets
 
-GoPaaS est personnalisable et peut être adapté pour répondre aux besoins d’une entreprise ou d’un utilisateur individuel. Il permet de recréer dans une base les associations qui sont naturellement présentes entre les différents types d’informations.
+    Retrouver la liste des tous les onglets présents dans l'application.
 
-## Automatisation
-Retrouver la liste des toutes les automatisations présentes dans votre application.
+    Dans GoPaaS, un onglet est une partie d'une fiche qui regroupe plusieurs sections, chacune contenant des champs. Chaque onglet permet de structurer et d'organiser les informations.
 
-GoPaaS met en œuvre une technologie unique d’automatisation qui permet de robotiser un certain nombre de tâches ou de procédures.
+ - #### Sections
 
-Par exemple, GoPaaS peut générer une fiche de relance suite à l’appel d’un client, envoyer un email à tous les participants d’une réunion, ou signaler automatiquement à un client que son contrat arrive à échéance.
+    Retrouver la liste de toutes les sections de l'application.
 
-GoPaaS propose deux types de déclancheur d'automatisation pour répondre à la majorité des besoins des utilisateurs.
-- A l'enregistrement d'une fiche
-- Le temps qui s'écoule (ex : Toutes les X minutes)
+    Une section est une subdivision au sein d'un onglet d'une fiche. Chaque section regroupe des champs. Les sections permettent de regrouper des ensembles de fonctionnalités au sein d'un onglet, facilitant la navigation et la gestion des informations sur les fiches.
 
-### Tables
-Retrouver la liste des toutes les tables présentes dans votre application.
+ - #### Champs
 
-Une table dans GoPaaS est une structure organisée en lignes et en colonnes, utilisée pour stocker des données. Chaque ligne (ou enregistrement) représente une entrée unique, tandis que chaque colonne (ou champ) représente un type de donnée spécifique (comme un nom, un âge, une date, etc.). Par exemple, dans une table de compte client, chaque ligne représente un compte client, et les colonnes pourraient inclure le nom du client, son adresse, et son numéro de téléphone.
-### Onglets
-Retrouver la liste des tous les onglets présents dans votre application.
+    Retrouver la liste de tous les champs de l'application.
 
-Dans GoPaaS, un onglet est une partie d'une fiche qui regroupe plusieurs sections, chacune contenant des colonnes et des champs spécifiques. Chaque onglet permet de structurer et d'organiser les informations ou les fonctionnalités liées à un aspect particulier de la fiche. En cliquant sur un onglet, l'utilisateur accède à un ensemble de sections organisées de manière logique, facilitant ainsi la navigation entre différentes catégories de données ou d'options disponibles dans la fiche.
+ - #### Class JS
 
-### Sections
-Retrouver la liste de toutes les sections de votre application.
+    Retrouver la liste de toutes les classes JS de l'application.
 
-Une section est une subdivision au sein d'un onglet d'une fiche. Chaque section regroupe des colonnes qui, à leur tour, contiennent des champs spécifiques. Les sections permettent de regrouper logiquement des ensembles de données ou de fonctionnalités au sein d'un onglet, facilitant la navigation et la gestion des informations sur les fiches.
+    GoPaaS permet l'utilisation de code JavaScript pour personnaliser l'interface utilisateur, offrant ainsi une grande flexibilité dans l'adaptation de l'application aux besoins spécifiques de l'entreprise.
 
-### Champs
-Retrouver la liste de tous les champs de votre application.
+    En complément, GoPaaS propose un système de classes JavaScript, conçu pour structurer et organiser le développement. Ce système de classes simplifie la gestion du code, améliore la réutilisabilité des composants, et facilite la maintenance des personnalisations.
 
-Dans GoPaaS, un champ est l'unité de base de données située au sein d'une colonne dans une section d'un onglet sur une fiche. Un champ représente un point d'entrée pour une information spécifique, comme un nom, une date, un chiffre, ou tout autre type de donnée. Il permet aux utilisateurs d'interagir directement avec les informations enregistrées dans la fiche. Les champs sont essentiels pour la saisie, la modification, et la visualisation des données dans GoPaaS.
-### Class JS
-Retrouver la liste de toutes les classes JS  de votre application.
+ - #### Modèle d'import
 
-GoPaaS permet l'injection de code JavaScript pour personnaliser l'interface utilisateur, offrant ainsi une grande flexibilité dans l'adaptation de l'application aux besoins spécifiques de l'entreprise. 
+    Retrouver tous les modèles d'import de l'application
 
-En complément, GoPaaS propose un système de classes JavaScript, conçu pour structurer et organiser le développement. Ce système de classes simplifie la gestion du code, améliore la réutilisabilité des composants, et facilite la maintenance des personnalisations.
+    GoPaaS offre un système de modèles d'import qui permet aux utilisateurs de créer et de gérer des modèles prédéfinis pour l'importation de données. Ce système facilite la réutilisation des modèles, permettant de standardiser et d'automatiser les processus d'importation de données à partir de diverses sources.
 
-### Modèle d'import
-Retrouver tous les modèles d'import de votre application
+ - #### Importer un fichier
 
-GoPaaS offre un système de modèles d'import qui permet aux utilisateurs de créer et de gérer des modèles prédéfinis pour l'importation de données. Ce système facilite la réutilisation des modèles, permettant de standardiser et d'automatiser les processus d'importation de données à partir de diverses sources. En créant des modèles d'import personnalisés, les utilisateurs peuvent définir des mappings spécifiques, des formats de données, et des règles d'intégration.
+    Cette fonctionnalité permet de créer rapidement une nouvelle table à partir d'un fichier Excel existant.
 
-### Importer un fichier
-Accéder au module d'import depuis ce menu.
+ - #### Rebuild template
 
-### Rebuild template
-Cette option permet de reconstruire les templates de l'application. Ce mécanisme permet de visualiser en temps réel les développements apportés à l'interface utilisateur.
+    Cette option permet de reconstruire les templates de l'application et ainsi d'adapter en temps réel le design des formulaires.
 
-Cliquer simplement pour déclencher la mise à jour des templates.
-### Check application 
-GoPaaS intégre un centre de contrôle dédié à la surveillance de l'application, conçu pour détecter et signaler toute anomalie ou problème potentiel. Ce centre de contrôle fournit une vue d'ensemble des performances, des erreurs, et des alertes en temps réel, permettant aux administrateurs de surveiller l'état de l'application.
+ - #### Check application 
 
-Cliquer simplement pour déclencher l'ouverture du centre de contrôle.
+    GoPaaS intègre un centre de contrôle dédié à la surveillance de l'application, conçu pour détecter les anomalies dans les tables ou vues.
 
-### Audit application
-GoPaaS propose un système d'audit intégré qui permet de surveiller et d'évaluer les performances de l'application. Ce système d'audit fournit des rapports détaillés et des analyses sur divers aspects du fonctionnement de l'application, tels que la vitesse de traitement, la consommation de ressources, et l'efficacité des processus.
+ - #### Audit application
 
-Cliquer simplement pour déclencher l'ouverture du centre d'audit.
+    GoPaaS propose un système d'audit intégré qui permet d'évaluer les performances de l'application. Ce système d'audit fournit des rapports détaillés sur divers aspects de l'application.
 
-### GoPaaS update
-GoPaaS dispose également d'un système GoPaaS Update qui facilite le processus de mise à jour de l'application. Ce système permet de lancer et de gérer les mises à jour de manière fluide et centralisée, garantissant que les dernières fonctionnalités, améliorations de sécurité et corrections de bogues soient intégrées rapidement.
+ - #### GoPaaS update
 
-Cliquer simplement pour déclencher l'ouverture du centre de mise à jour.
+    GoPaaS dispose également d'un système de mise à jour. Ce système permet de réaliser les mises à jour de manière fluide et centralisée, garantissant que les dernières fonctionnalités, améliorations de sécurité et corrections de bogues soient intégrées rapidement.
