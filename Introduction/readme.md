@@ -2,10 +2,7 @@
 
 ## Environnement
 
-GoPaaS fonctionne comme une application web monopage (en anglais single-page application ou SPA), une application web accessible via une page web unique.
-Le but est d'éviter le chargement d'une nouvelle page à chaque action demandée, et de fluidifier ainsi l'expérience utilisateur.
-Chaque fiche GoPaaS est créée à partir de modèle et stockée en cache dans le navigateur pour optimiser les temps de réponse avec le serveur avec lequel il échange des données.
-L'interface utilisateur n'a pas besoin d'être re télécharger du serveur à chaque ouverture. 
+GoPaaS, développé par NIDS Consulting, est une plateforme agile conçue pour gérer et créer rapidement des applications métiers sur mesure, fiables et évolutives. Hébergées dans le Cloud, ces applications offrent une grande souplesse et peuvent s’adapter facilement aux besoins spécifiques des entreprises. GoPaaS permet ainsi une gestion centralisée des processus et des données, tout en garantissant une sécurité optimale et une évolutivité adaptée aux exigences métiers.
 
 ![screenshot](images/image1.png "Ecran principal")
 
@@ -18,34 +15,6 @@ L'interface utilisateur n'a pas besoin d'être re télécharger du serveur à ch
 4. **L'espace principale**
 
 5. **Les onglets de navigation**
-
-### La barre de navigation
-
-La barre de navigation est l'espace situé à gauche de l'écran, sur laquelle se placent des boutons correspondant aux vues. En cliquant sur l'un de ces boutons, vous ouvrez la vue sélectionnée.
-
-La vue est représentée par une icône et un titre qui vous permet de l'identifier rapidement. La barre de navigation est totalement paramétrable. Vous décidez quelles vues y faire figurer et dans quelle rubrique (Application, Accès rapide, Dashboard ou Référence); vous choisissez les icônes et leur titre.
-
-#### Applications
-
-Application configure les modules qui constituent votre application. Quand vous cliquez sur un module, les tables applicatives qui constituent ce module apparaissent, dans lesquelles sont saisies les informations que vous partagez avec vos collaborateurs. 
-
-Cette liste dépend entièrement des choix faits lors de la création de la table et peuvent être modifiés à tout moment, en modifiant le paramétrage de la table concernée. Lorsque vous cliquez sur une de ces tables vous ouvrez la vue « Par défaut » de cette table ou les vues que vous avez sélectionné comme "**Afficher dans le menu des vues**" . Bien que la vue par défaut soit paramétrable comme toutes les autres, elle a pour but d’afficher tous les enregistrements de la table.
-
-#### Accès rapide
-
-Dans cette liste figure toutes les vues pour lesquelles l’option "**Afficher dans les raccourcis**" a été cochée. Il suffit de cliquer sur le titre de la vue dans la liste pour ouvrir cette vue dans un nouvel onglet.
-
-#### Dashboard
-
-Le Dashboard permet de rassembler sur une seule page un ensemble de vues, analyses et graphiques permettant de piloter les données de votre application.
-
-#### Référence
-
-Il s’agit de la liste des tables de références de votre application, celles auxquelles font appel les tables applicatives.
-
-#### Admin
-
-Dans cette liste sont regroupées les principales fonctions d’administration de l’application.
 
 ### La barre d'outils
 

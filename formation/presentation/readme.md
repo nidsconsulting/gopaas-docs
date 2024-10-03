@@ -4,22 +4,23 @@ GoPaaS, développé par NIDS Consulting, est une plateforme agile conçue pour g
 
 ![screenshot](images/image1.png "Ecran principal")
 
-1. **Menu de navigation**
+1. **La barre de navigation**
 
-2. **Entête**
+2. **La barre d'outils**
 
-3. **Menu de gestion de l'application**
+3. **La barre de personnalisation**
 
-4. **Page d'accueil**
+4. **L'espace principale**
 
-5. **Onglets de navigation**
+5. **Les onglets de navigation**
 
 ---
-### Menu de navigation
 
-Le menu de navigation, situé sur le bord gauche, permet de regrouper l'ensemble des modules disponibles dans l'application.
+### La barre de navigation
 
-Un module est représenté par une icône et un titre qui permet de l'identifier rapidement. Il est possible de paramétrer les modules à y faire figurer dans une rubrique (Application, Accès rapide, Dashboard ou Référence).
+Le menu de navigation à gauche de l'écran, permet de regrouper l'ensemble des modules disponibles dans l'application.
+
+Un module est représenté par un monogramme et un titre qui permet de l'identifier rapidement. Il peut être affiché dans les types de menu Application, Accès rapide, Dashboard ou Référence.
 
  - #### Applications
 
@@ -27,21 +28,21 @@ Un module est représenté par une icône et un titre qui permet de l'identifier
 
  - ##### Accès rapide
 
-    Dans cette liste figurent toutes les vues où l’option **Afficher dans les raccourcis** a été cochée.
+    Le menu **Accès rapide** contient toutes les vues où l’option **Afficher dans les raccourcis** a été cochée.
 
  - ##### Dashboard
 
-    Le Dashboard permet de visualiser un ensemble de données clés, comme des analyses ou bien des graphiques.
+    Le menu **Dashboard** permet de visualiser tous les dashboards de l'application avec des widgets, des WebReport ou des graphiques.
 
  - ##### Admin
 
-    Dans ce menu sont regroupées les principales tables d’administration de l’application.
+    Le menu **Admin** contient tous élements d’administration de l’application.
 
 ---
 
-### L'entête
+### La barre d'outils
 
-L'entête regroupe plusieurs boutons :
+La barre d'outils regroupe plusieurs boutons :
 
 | Image                                | Description                                                                                                                                                   |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,41 +57,41 @@ L'entête regroupe plusieurs boutons :
 
 ---
 
-### Menu de gestion de l'application
+### La barre de personnalisation
 
-GoPaaS est personnalisable et peut être adapté pour répondre aux besoins d’une entreprise. Ce menu permet ainsi de gérer les tables, champs de l'application.
+GoPaaS est personnalisable et peut être adapté pour répondre aux besoins d’une entreprise. Ce menu permet ainsi de gérer les tables et les champs de l'application.
 
  - #### Automatisation
 
-    Retrouver la liste de tous les automatismes présents dans l'application.
+    Le menu **Automatisation** contient la liste de tous les automatismes présents dans l'application.
 
-    GoPaaS met a disposition un système qui permet d'automatiser des tâches ou de procédures.
+    GoPaaS met a disposition un système qui permet d'automatiser des tâches ou les procédures.
 
     Par exemple, GoPaaS peut envoyer un email de relance à un client pour lui rappeler le paiement d'une facture.
 
  - #### Tables
 
-    Retrouver la liste des toutes les tables présentes dans l'application.
+    Le menu **Tables** contient la liste des toutes les tables présentes dans l'application.
 
  - #### Onglets
 
-    Retrouver la liste des tous les onglets présents dans l'application.
+    Le menu **Onglets** contient la liste des tous les onglets présents dans l'application.
 
     Dans GoPaaS, un onglet est une partie d'une fiche qui regroupe plusieurs sections, chacune contenant des champs. Chaque onglet permet de structurer et d'organiser les informations.
 
  - #### Sections
 
-    Retrouver la liste de toutes les sections de l'application.
+    Le menu **Sections** contient la liste de toutes les sections de l'application.
 
     Une section est une subdivision au sein d'un onglet d'une fiche. Chaque section regroupe des champs. Les sections permettent de regrouper des ensembles de fonctionnalités au sein d'un onglet, facilitant la navigation et la gestion des informations sur les fiches.
 
  - #### Champs
 
-    Retrouver la liste de tous les champs de l'application.
+    Le menu **Champs** contient la liste de tous les champs de l'application.
 
  - #### Class JS
 
-    Retrouver la liste de toutes les classes JS de l'application.
+    Le menu **Class JS** contient la liste de toutes les classes JS de l'application.
 
     GoPaaS permet l'utilisation de code JavaScript pour personnaliser l'interface utilisateur, offrant ainsi une grande flexibilité dans l'adaptation de l'application aux besoins spécifiques de l'entreprise.
 
@@ -98,26 +99,26 @@ GoPaaS est personnalisable et peut être adapté pour répondre aux besoins d’
 
  - #### Modèle d'import
 
-    Retrouver tous les modèles d'import de l'application
+    Le menu **Modèle d'import** contient tous les modèles d'import de l'application
 
     GoPaaS offre un système de modèles d'import qui permet aux utilisateurs de créer et de gérer des modèles prédéfinis pour l'importation de données. Ce système facilite la réutilisation des modèles, permettant de standardiser et d'automatiser les processus d'importation de données à partir de diverses sources.
 
  - #### Importer un fichier
 
-    Cette fonctionnalité permet de créer rapidement une nouvelle table à partir d'un fichier Excel existant.
+    Le menu **Importer un fichier** permet de créer rapidement une nouvelle table à partir d'un fichier Excel existant.
 
  - #### Rebuild template
 
-    Cette option permet de reconstruire les templates de l'application et ainsi d'adapter en temps réel le design des formulaires.
+    Le menu **Rebuild template** permet de reconstruire les fichiers HTML de l'application et ainsi d'adapter en temps réel le design des formulaires.
 
  - #### Check application 
 
-    GoPaaS intègre un centre de contrôle dédié à la surveillance de l'application, conçu pour détecter les anomalies dans les tables ou vues.
+    Le menu **Check application** permet de surveiller l'application. Cela permet de détecter les anomalies dans les tables ou vues.
 
  - #### Audit application
 
-    GoPaaS propose un système d'audit intégré qui permet d'évaluer les performances de l'application. Ce système d'audit fournit des rapports détaillés sur divers aspects de l'application.
+    Le menu **Audit application** permet permet d'évaluer les performances de l'application. Ce système d'audit fournit des rapports détaillés sur divers aspects de l'application.
 
  - #### GoPaaS update
 
-    GoPaaS dispose également d'un système de mise à jour. Ce système permet de réaliser les mises à jour de manière fluide et centralisée, garantissant que les dernières fonctionnalités, améliorations de sécurité et corrections de bogues soient intégrées rapidement.
+    Le menu **GoPaaS update** permet de mettre à jour la plateforme. Ce système permet de réaliser les mises à jour de manière fluide et centralisée, garantissant que les dernières fonctionnalités, améliorations de sécurité et corrections de bogues soient intégrées rapidement.
