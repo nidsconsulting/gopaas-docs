@@ -126,8 +126,6 @@ Une fiche GoPaaS est composée d'onglets, de sections et de colonnes.
 | Heure fin      | Heure |
 | Durée          | Nombre |
 | Affaire        | Connexion `Table affaire` |
-| Devis          | Connexion `Table devis` |
-| Facture        | Connexion `Table facture` |
 | Note           | Memo |
 | PJ             | Fichier |
 
