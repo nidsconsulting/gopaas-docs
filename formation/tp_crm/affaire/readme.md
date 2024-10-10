@@ -160,7 +160,6 @@ Une fiche GoPaaS est composée d'onglets, de sections et de colonnes.
 | Gestion par    | Connexion `Table utilisateur` |
 | Statut         | Liste `Obligatoire`<br>Valeur de la liste :<br>En cours<br>Gagnée<br>Perdue<br>Abandonnée |
 | Etape          | Liste `Obligatoire`<br>Valeur de la liste :<br>Prospection<br>Transmission contact<br>Qualification<br>Analyse des besoins<br>Proposition commerciale  |
-| Produit        | Connexion `Table produit`  |
 | CA prévisionnel   | Nombre                  |
 | Note           | Memo                       |
 | Prévision       | Titre                     |
