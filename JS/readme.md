@@ -24,7 +24,7 @@ Ouvrir la page d'impression de la fiche dans une nouvelle fenêtre du navigateur
 
 **Retour :**
 
-- String
+- `String`
 
 ### deleteItems
 
@@ -108,8 +108,8 @@ Ouvrir un onglet existant
 
 **Retour :**
 
-- True, si l'onglet existe
-- False, si l'onglet n'existe pas
+- `true', si l'onglet existe
+- 'false', si l'onglet n'existe pas
 
 ### closeActiveTab
 Fermer l'onglet actif.
@@ -139,7 +139,7 @@ Fermer tous les onglets sauf ceux qui ont besoin d'être enregistrés.
 
 **Retour :**
 
-- Index de l'onglet
+- `Int' Index de l'onglet
 
 ### addTab
 Ajouter un nouvel onglet.
@@ -186,7 +186,7 @@ Ajoute un nombre de jours à la date du jour.
 | days  | int  | Nombre de jours |
 
 **Retour :**
-- Date au format `yyyy-mm-dd`.
+- `Date` au format `yyyy-mm-dd`.
 
 ### time
 Retourne l'heure actuelle au format `hh:mm:ss`.
@@ -204,7 +204,7 @@ Convertit une date au format `yyyy-mm-dd` en `dd/mm/yyyy`.
 | sqlDate | string | Date au format `yyyy-mm-dd` |
 
 **Retour :**
-- Date au format `dd/mm/yyyy`.
+- `Date` au format `dd/mm/yyyy`.
 
 ### toSql
 Convertit une date au format `dd/mm/yyyy` en `yyyy-mm-dd`.
@@ -216,7 +216,7 @@ Convertit une date au format `dd/mm/yyyy` en `yyyy-mm-dd`.
 | frenchDate | string | Date au format `dd/mm/yyyy` |
 
 **Retour :**
-- Date au format `yyyy-mm-dd`.
+- `Date` au format `yyyy-mm-dd`.
 
 
 ## gopaas.dialog
@@ -315,7 +315,7 @@ Récupère les données d'une fiche.
 | itemKey| string   | Clé de la fiche |
 
 **Retour :*
-- Objet JSON
+- `Object` JSON
 
 ### getItems
 Récupère les données d'une vue.
@@ -329,7 +329,7 @@ Récupère les données d'une vue.
 
 **Retour :**
 
-- Objet JSON
+- `Object` JSON
 
 ### updateItem
 Met à jour les données d'une fiche.
@@ -396,4 +396,105 @@ $.when(gopaas.webservice.duplicateItem("compte", thisComponent.getValue('cle'), 
   // fermer l'original
   thisComponent.removeComponent();
 });
+```
+
+
+## ViewDatagrid
+
+### getAllSelected
+
+La fonction `getAllSelected` renvoie un tableau contenant les IDs de toutes les lignes sélectionnées ou cochées dans une vue.
+
+**Retour :**
+
+- `Array` Un tableau contenant les IDs des lignes sélectionnées ou cochées.
+
+**Exemple :**
+```javascript
+// Récupérer les IDs des lignes sélectionnées ou cochées dans la datagrid
+var selectedIDs = thisComponent.getAllSelected();
+
+if (selectedIDs.length) {
+    console.log("IDs sélectionnés :", selectedIDs);
+} else {
+    console.log("Aucun élément sélectionné.");
+}
+
+```
+
+### getAllSelectedRow
+
+La fonction `getAllSelectedRow` renvoie toutes les lignes sélectionnées dans une datagrid, dans le cas d'une multi-sélection ou d'une sélection unique. 
+
+
+**Retour :**
+
+- `Array` Un tableau contenant les objets représentant les lignes sélectionnées.
+
+**Exemple :**
+```javascript
+// Récupérer toutes les lignes sélectionnées dans la datagrid
+var selectedRows = thisComponent.getAllSelectedRow();
+if (selectedRows.length) {
+    console.log("Lignes sélectionnées :", selectedRows);
+} else {
+    console.log("Aucune ligne sélectionnée.");
+}
+```
+
+### getSelectedItem
+
+La fonction `getSelectedItem` renvoie la ligne actuellement sélectionnée dans une vue de type tableau.
+
+
+**Retour :**
+
+- `Object` Un objet avec les données de la ligne sélectionnée dans la vue.
+
+**Exemple :**
+```javascript
+// Récupérer la ligne sélectionnée dans la datagrid
+var selectedItem = thisComponent.getSelectedItem();
+if (selectedItem) {
+    console.log("L'élément sélectionné est :", selectedItem);
+} else {
+    console.log("Aucun élément sélectionné.");
+}
+```
+
+### getAllSelectedKey
+
+La fonction `getAllSelectedKey` renvoie les clés de tous les éléments sélectionnés dans une datagrid, dans le cas d'une multi-sélection. 
+Si la datagrid utilise des cases à cocher, elle récupère les lignes cochées, sinon elle récupère les lignes sélectionnées.
+
+**Retour :**
+
+- `Array` Un tableau avec les clés des éléments sélectionnés.
+
+**Exemple :**
+```javascript
+// Pour un datagrid avec multi-sélection, cela retournera un tableau de clés sélectionnées
+var selectedKeys = thisComponent.getAllSelectedKey(); // thisComponent est un composant View
+console.log(selectedKeys); // Affichera un tableau de clés.
+```
+
+### getDatagridElement
+
+La fonction `getDatagridElement` renvoie l'élément DOM correspondant à une datagrid dans l'interface utilisateur.
+
+**Retour :**
+
+- `Object` L'élément `table` de la vue.
+
+**Exemple :**
+```javascript
+// Récupérer l'élément DOM de la datagrid
+var datagridElement = thisComponent.getDatagridElement();
+
+if (datagridElement.length) {
+    console.log("Élément datagrid trouvé :", datagridElement);
+} else {
+    console.log("Aucun élément datagrid trouvé.");
+}
+
 ```
