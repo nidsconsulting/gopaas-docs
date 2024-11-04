@@ -7,7 +7,7 @@ Pour utiliser l'application en mode hors connexion lorsque vous n'avez plus de c
 1. Allez dans le menu **Statut de la connexion** en haut à droite de l'écran.
 2. Cliquez sur le bouton **Synchro in**.
 
-   <img src="./images/1.png" width="100%" alt="Hearder Top" style="border-radius: 4px;"/>
+   <img src="./images/1.png" width="400" alt="Hearder Top" style="border-radius: 4px;"/>
 
 3. Confirmez en cliquant sur **Oui**.
 4. Patientez pendant la création de la base de données locale.
