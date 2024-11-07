@@ -1,5 +1,33 @@
 # Guide mode hors connexion
 
+
+
+Le tableau ci-dessous présente les données des différentes vues qui seront embarquées dans le mode offline de l'application.
+
+| Nom de la vue             | Nom de la table         |
+|---------------------------|-------------------------|
+| OFFLINE - Action          | actions                 |
+| Par défaut                | activite                |
+| OFFLINE - Affaire         | affaire                 |
+| OFFLINE - article         | article                 |
+| OFFLINE - BDC             | bon_de_commande         |
+| OFFLINE - BC Ligne        | bon_de_commande_ligne   |
+| Collaborateurs actifs     | collaborateur           |
+| OFFLINE - Communes        | communes                |
+| OFFLINE - Csf             | csf                     |
+| OFFLINE - Facture         | facture                 |
+| OFFLINE - Facture ligne   | facture_ligne           |
+| OFFLINE - Interlocuteur   | interlocuteur           |
+| Par défaut                | opco                    |
+| OFFLINE - planning_pub    | planning_pub            |
+| OFFLINE - Prod            | prod                    |
+| OFFLINE - Produits        | produits                |
+| OFFLINE - Remise cascade  | remise_cascade          |
+| OFFLINE - Société         | societe                 |
+| Par défaut                | sous_traitant           |
+| Par défaut                | support                 |
+| Par défaut                | voix                    |
+
 ## Activer le mode hors connexion
 
 Pour utiliser l'application en mode hors connexion lorsque vous n'avez plus de connexion internet, suivez les étapes ci-dessous :
