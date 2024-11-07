@@ -1,7 +1,5 @@
 # Guide mode hors connexion
 
-
-
 Le tableau ci-dessous présente les données des différentes vues qui seront embarquées dans le mode offline de l'application.
 
 | Nom de la vue             | Nom de la table         |
