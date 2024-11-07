@@ -2,31 +2,31 @@
 
 Le tableau ci-dessous présente les données des différentes vues qui seront embarquées dans le mode offline de l'application.
 
-| Nom de la vue             | Nom de la table         |
-|---------------------------|-------------------------|
-| OFFLINE - Action          | actions                 |
-| Par défaut                | activite                |
-| OFFLINE - Affaire         | affaire                 |
-| OFFLINE - article         | article                 |
-| OFFLINE - BDC             | bon_de_commande         |
-| OFFLINE - BC Ligne        | bon_de_commande_ligne   |
-| Collaborateurs actifs     | collaborateur           |
-| OFFLINE - Communes        | communes                |
-| OFFLINE - Csf             | csf                     |
-| OFFLINE - Facture         | facture                 |
-| OFFLINE - Facture ligne   | facture_ligne           |
-| OFFLINE - Interlocuteur   | interlocuteur           |
-| Par défaut                | opco                    |
-| OFFLINE - planning_pub    | planning_pub            |
-| OFFLINE - Prod            | prod                    |
-| OFFLINE - Produits        | produits                |
-| OFFLINE - Remise cascade  | remise_cascade          |
-| OFFLINE - Société         | societe                 |
-| Par défaut                | sous_traitant           |
-| Par défaut                | support                 |
-| Par défaut                | voix                    |
+| Nom de la vue             | Nom de la table         | Conditions            |
+|---------------------------|-------------------------|-----------------------|
+| OFFLINE - Action          | actions                 | La requête cherche des actions liées à un produit ou un bon de commande pour l'utilisateur actuel, où la date du produit ou du bon de commande est dans les 13 derniers mois.                       |
+| Par défaut                | activite                |                       |
+| OFFLINE - Affaire         | affaire                 | La requête cherche des affaires où le collaborateur est l'utilisateur actuel.                      |
+| OFFLINE - article         | article                 | Permet de ne pas embarquer des données.                       |
+| OFFLINE - BDC             | bon_de_commande         | La requête cherche des bons de commande associés à l'utilisateur actuel et dont la date du document est dans les 13 derniers mois.                      |
+| OFFLINE - BC Ligne        | bon_de_commande_ligne   | La requête cherche des bons de commande associés à l'utilisateur actuel, dont la date du document est dans les 13 derniers mois.                       |
+| Collaborateurs actifs     | collaborateur           | La requête cherche des collaborateurs dont le statut est marqué comme actif.                      |
+| OFFLINE - Communes        | communes                | La requête cherche des sociétés dont la clé est non vide et qui ont des produits associés à l'utilisateur actuel, avec une date de départ dans les 13 derniers mois.                      |
+| OFFLINE - Csf             | csf                     | La requête cherche des enregistrements dont la date de création est dans les 13 derniers mois.                   |
+| OFFLINE - Facture         | facture                 | La requête cherche des factures associées à l'utilisateur actuel et dont la date du document est dans les 4 derniers mois.                      |
+| OFFLINE - Facture ligne   | facture_ligne           | La requête cherche des factures associées à l'utilisateur actuel, avec une date de document dans les 4 derniers mois.                       |
+| OFFLINE - Interlocuteur   | interlocuteur           |  La requête cherche des interlocuteurs dont la clé est non vide et qui ont des produits associés à l'utilisateur actuel, avec une date de départ dans les 13 derniers mois.                     |
+| Par défaut                | opco                    |  Aucune condition.                     |
+| OFFLINE - planning_pub    | planning_pub            | La requête cherche des enregistrements dans la table planning_pub où la clé est précisément '1 001'.                    |
+| OFFLINE - Prod            | prod                    | La requête cherche des produits où l'utilisateur actuel est le collaborateur ou la personne en charge du suivi, et dont la date de départ est dans les 13 derniers mois.                        |
+| OFFLINE - Produits        | produits                |   La requête cherche des produits qui sont marqués comme actifs.                     |
+| OFFLINE - Remise cascade  | remise_cascade          |   Aucune condition.                     |
+| OFFLINE - Société         | societe                 |  La requête cherche des sociétés où soit la clé n'est pas vide et il y a des produits associés à l'utilisateur actuel dans les 13 derniers mois, soit l'utilisateur actuel est spécifiquement suivi pour la communication radio.                     |
+| Par défaut                | sous_traitant           |  Aucune condition.                     |
+| Par défaut                | support                 |    Aucune condition.                      |
+| Par défaut                | voix                    |    Aucune condition.                      |
 
-## Activer le mode hors connexion
+## Activer le mode hors connexion 
 
 Pour utiliser l'application en mode hors connexion lorsque vous n'avez plus de connexion internet, suivez les étapes ci-dessous :
 
