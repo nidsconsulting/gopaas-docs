@@ -1,7 +1,6 @@
 # Swagger
 
-## Introduction
-Cette documentation guide les utilisateurs sur la manière d'intégrer et d'utiliser Swagger pour concevoir, documenter, et tester leurs APIs de manière efficace. Swagger permet une interaction fluide avec les endpoints, facilitant la recherche d'informations telles que les méthodes HTTP, les paramètres requis, et les types de réponses attendues.
+Cette documentation guide les utilisateurs sur la manière de créer un fichier Swagger documenter et tester leurs APIs de manière efficace. Swagger permet une interaction fluide avec les endpoints, facilitant la recherche d'informations telles que les méthodes HTTP, les paramètres requis, et les types de réponses attendues.
 
 ## Prérequis
 
