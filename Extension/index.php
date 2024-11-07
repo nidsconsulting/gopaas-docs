@@ -81,6 +81,7 @@ $html = $doc->saveHTML();
       <div class="chapter" onclick="window.location.href='index.php?rub=viewExtractPDF'">viewExtractPDF</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=viewImageGallery'">viewImageGallery</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=viewMapDirection'">viewMapDirection</div>
+      <div class="chapter" onclick="window.location.href='index.php?rub=swagger'">Swagger</div>
     </div>
     <div id="content">
 
