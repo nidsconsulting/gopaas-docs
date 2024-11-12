@@ -82,7 +82,7 @@ $html = $doc->saveHTML();
       <div class="chapter" onclick="window.location.href='index.php?rub=viewMapDirection'">viewMapDirection</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=swagger'">Swagger</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=societe.com'">Societe.com</div>
-      <div class="chapter" onclick="window.location.href='index.php?rub=vs_code'">GoPaaS Script Editor</div>
+      <div class="chapter" onclick="window.location.href='index.php?rub=vscode'">GoPaaS Script Editor</div>
     </div>
     <div id="content">
 
