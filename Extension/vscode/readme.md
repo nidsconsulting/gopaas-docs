@@ -31,9 +31,10 @@
 
         <img src="./images/2.png" alt="Hearder Top" style="border-radius: 4px;"/>
 
-## Collaboration avec Git pour gérer les développements en équipe
+## Utiliser Git pour gérer les développements en équipe
 
-Afin de travailler efficacement à plusieurs sur le même projet GoPaaS et éviter les conflits, il est recommandé d'utiliser un dépôt Git partagé. Voici la procédure de collaboration :
+Afin de travailler efficacement à plusieurs sur le même projet GoPaaS et éviter les conflits, il est recommandé d'utiliser un dépôt Git partagé. 
+Voici la procédure de collaboration :
 
 1. **L'administrateur du projet** :
    - Utilise l'extension pour récupérer le code de GoPaaS en local.
@@ -42,7 +43,7 @@ Afin de travailler efficacement à plusieurs sur le même projet GoPaaS et évit
 
 2. **Les développeurs** :
    - Clonent le dépôt Git distant en local pour obtenir la dernière version du code.
-   - Travaillent sur les scripts JavaScript localement et effectuent leurs commits dans le dépôt Git.
+   - Travaillent sur les scripts en local et effectuent leurs commits dans le dépôt Git.
    - **Ne poussent pas directement** leurs modifications vers GoPaaS, mais uniquement vers le dépôt Git.
 
 3. **L'administrateur** :
