@@ -4,24 +4,24 @@ Le tableau ci-dessous présente les données des différentes vues qui seront em
 
 | Nom de la vue             | Nom de la table         | Conditions            |
 |---------------------------|-------------------------|-----------------------|
-| OFFLINE - Action          | actions                 | Cherche des actions liées à un produit ou un bon de commande pour l'utilisateur actuel, où la date du produit ou du bon de commande est dans les 13 derniers mois.                       |
+| OFFLINE - Action          | actions                 | Actions liées à un produit ou un bon de commande pour l'utilisateur connecté, où la date du produit ou du bon de commande est supérieure aux 13 derniers mois.                       |
 | Par défaut                | activite                |                       |
-| OFFLINE - Affaire         | affaire                 | Cherche des affaires où le collaborateur est l'utilisateur actuel.                      |
-| OFFLINE - article         | article                 | Permet de ne pas embarquer des données.                       |
-| OFFLINE - BDC             | bon_de_commande         | Cherche des bons de commande associés à l'utilisateur actuel et dont la date du document est dans les 13 derniers mois.                      |
-| OFFLINE - BC Ligne        | bon_de_commande_ligne   | Cherche des bons de commande associés à l'utilisateur actuel, dont la date du document est dans les 13 derniers mois.                       |
-| Collaborateurs actifs     | collaborateur           | Cherche des collaborateurs dont le statut est marqué comme actif.                      |
-| OFFLINE - Communes        | communes                | Cherche des sociétés dont la clé est non vide et qui ont des produits associés à l'utilisateur actuel, avec une date de départ dans les 13 derniers mois.                      |
-| OFFLINE - Csf             | csf                     | Cherche des enregistrements dont la date de création est dans les 13 derniers mois.                   |
-| OFFLINE - Facture         | facture                 | Cherche des factures associées à l'utilisateur actuel et dont la date du document est dans les 4 derniers mois.                      |
-| OFFLINE - Facture ligne   | facture_ligne           | Cherche des factures associées à l'utilisateur actuel, avec une date de document dans les 4 derniers mois.                       |
-| OFFLINE - Interlocuteur   | interlocuteur           |  Cherche des interlocuteurs dont la clé est non vide et qui ont des produits associés à l'utilisateur actuel, avec une date de départ dans les 13 derniers mois.                     |
+| OFFLINE - Affaire         | affaire                 | Les affaires de l'utilisateur connecté.                      |
+| OFFLINE - article         | article                 | Liste des articles.                       |
+| OFFLINE - BDC             | bon_de_commande         | Les bons de commande associés à l'utilisateur connecté et dont la date du document est dans les 13 derniers mois.                      |
+| OFFLINE - BC Ligne        | bon_de_commande_ligne   | Les bons de commande associés à l'utilisateur connecté, dont la date du document est dans les 13 derniers mois.                       |
+| Collaborateurs actifs     | collaborateur           | Les collaborateurs dont le statut est marqué comme actif.                      |
+| OFFLINE - Communes        | communes                | Les sociétés dont la clé est non vide et qui ont des produits associés à l'utilisateur connecté, avec une date de départ dans les 13 derniers mois.                      |
+| OFFLINE - Csf             | csf                     | Les enregistrements dont la date de création est dans les 13 derniers mois.                   |
+| OFFLINE - Facture         | facture                 | Les factures associées à l'utilisateur connecté et dont la date du document est dans les 4 derniers mois.                      |
+| OFFLINE - Facture ligne   | facture_ligne           | Les factures associées à l'utilisateur connecté, avec une date de document dans les 4 derniers mois.                       |
+| OFFLINE - Interlocuteur   | interlocuteur           |  Les interlocuteurs dont la clé est non vide et qui ont des produits associés à l'utilisateur connecté, avec une date de départ dans les 13 derniers mois.                     |
 | Par défaut                | opco                    |  Aucune condition.                     |
-| OFFLINE - planning_pub    | planning_pub            | Cherche des enregistrements dans la table planning_pub où la clé est précisément '1 001'.                    |
-| OFFLINE - Prod            | prod                    | Cherche des produits où l'utilisateur actuel est le collaborateur ou la personne en charge du suivi, et dont la date de départ est dans les 13 derniers mois.                        |
-| OFFLINE - Produits        | produits                |   Cherche des produits qui sont marqués comme actifs.                     |
+| OFFLINE - planning_pub    | planning_pub            | Les enregistrements dans la table planning_pub où la clé est précisément '1 001'.                    |
+| OFFLINE - Prod            | prod                    | Les produits où l'utilisateur connecté est le collaborateur ou la personne en charge du suivi, et dont la date de départ est dans les 13 derniers mois.                        |
+| OFFLINE - Produits        | produits                |   Les produits qui sont marqués comme actifs.                     |
 | OFFLINE - Remise cascade  | remise_cascade          |   Aucune condition.                     |
-| OFFLINE - Société         | societe                 |  Cherche des sociétés où soit la clé n'est pas vide et il y a des produits associés à l'utilisateur actuel dans les 13 derniers mois, soit l'utilisateur actuel est spécifiquement suivi pour la communication radio.                     |
+| OFFLINE - Société         | societe                 |  Les sociétés où soit la clé n'est pas vide et il y a des produits associés à l'utilisateur connecté dans les 13 derniers mois, soit l'utilisateur connecté est spécifiquement suivi pour la communication radio.                     |
 | Par défaut                | sous_traitant           |  Aucune condition.                     |
 | Par défaut                | support                 |    Aucune condition.                      |
 | Par défaut                | voix                    |    Aucune condition.                      |
