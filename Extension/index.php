@@ -74,15 +74,14 @@ $html = $doc->saveHTML();
       <div id="sidebar-left-title">
         <img src="../asset/question.png" width="30px"/>&nbsp;&nbsp;GoPaaS Extension
       </div>
-      <div class="chapter" onclick="window.location.href='index.php?rub=Dropfile'">Dropfile</div>
-      <div class="chapter" onclick="window.location.href='index.php?rub=Images'">Images</div>
+      <div class="chapter" onclick="window.location.href='index.php?rub=dropfile'">Dropfile</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=itemAddButton'">itemAddButton</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=viewExportCompta'">viewExportCompta</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=viewExtractPDF'">viewExtractPDF</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=viewImageGallery'">viewImageGallery</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=viewMapDirection'">viewMapDirection</div>
       <div class="chapter" onclick="window.location.href='index.php?rub=swagger'">Swagger</div>
-      <div class="chapter" onclick="window.location.href='index.php?rub=societe.com'">Swagger</div>
+      <div class="chapter" onclick="window.location.href='index.php?rub=societe.com'">Societe.com</div>
     </div>
     <div id="content">
 
