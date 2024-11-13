@@ -104,7 +104,7 @@ Dans l'onglet **Mise en forme**, il est possible de trier les données de votre 
 **NB :** Une option est disponible pour condenser le regroupement à l'ouverture de la vue.
 
 
-### Agenda
+## Agenda
 
 #### Étape 1 : Création des tables
 
@@ -207,7 +207,7 @@ Ouvrer la vue que vous avez créée pour visualiser les actions sous forme d'age
 
 ![screenshot](imagesAgenda/resultat.png)
 
-### Kanban
+## Kanban
 
 La vue KanBan permet de changer le statut des actions rapidement à l'aide de glisser-déposer.
 
@@ -235,7 +235,7 @@ La vue KanBan permet de changer le statut des actions rapidement à l'aide de gl
 
   ![screenshot](imagesKanban/image1.png )
 
-### WebReport
+## WebReport
 
 #### Étape 1 : Dupliquer la vue des factures
 
@@ -266,7 +266,7 @@ Une fois le WebReport configuré, voici un exemple de résultat :
 
 ![screenshot](imagesWebReport/resultat.png)
 
-### Graphique
+## Graphique
 
 #### Étape 1 : Dupliquer une vue
 
