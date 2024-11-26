@@ -20,31 +20,36 @@ Installer l'extension "**dropfile**"
 |imageSize|	object|	Redimensionnement maximum des images (longueur, largeur) en pixel (option)
 |fieldConnection|	string|	Nom de la "connexion" à utiliser dans le cas d'une vue liée (option)
 |trigItemName|	string|	Clé de la fiche parent dans le cas d'une vue liée (option)
+|update| object| Mise à jour des autres champs de la fiche
 
 ## Exemple
 
 Pour afficher le bouton "**Ajouter des fichiers**" et intégerer l'extension, insérer le code suivant dans l'onglet <br>"**Script JS**" de la vue liée :
 ```javascript
-let thisComponent = this;
-let itemComponent = Component.find("Item",this);
+function onLoad_view[VIEW_ID](){
+    let thisComponent = this;
+    let itemComponent = Component.find("Item",this);
 
-thisComponent.ui.find('#bs-example-navbar-collapse-1').append("<div><button id='btnDragNDrop' style='margin-top:8px' class='btn btn-primary'>Ajouter des fichiers</button></div>");
+    thisComponent.ui.find('.glyphicon-search').after("<button id='btnDragNDrop' style='margin-left: 5px' class='btn btn-primary'>Ajouter des fichiers</button>");
 
-thisComponent.ui.find('#btnDragNDrop').on('click', function() {
+    thisComponent.ui.find('#btnDragNDrop').on('click', function() {
 
-    let object = {
-        tableName : "file", 
-        fileName : "nom_fichier", 
-        fieldName : "fichier", 
-        fieldConnection : "compte", 
-        trigItemName : itemComponent.getValue("cle"),
-        imageSize : {width : 1920, height : 1080}
-    };
+        let object = {
+            tableName : "file", 
+            fileName : "nom_fichier", 
+            fieldName : "fichier", 
+            fieldConnection : "compte", 
+            trigItemName : itemComponent.getValue("cle"),
+            imageSize : {width : 1920, height : 1080}
+        };
 
-    let update = {type : "En attente"};
+        let update = {type : "En attente"};
 
-    dropfile(thisComponent, object, update);
-});
+        dropfile(thisComponent, object, update);
+    });
+    
+    return true;
+}
 ```
 
 ## Résultat
