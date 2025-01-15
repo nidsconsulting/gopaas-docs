@@ -129,7 +129,7 @@ Ajouter une fiche de paramétrage pour la synchronisation des contacts.
 
 Faire correspondre les champs dans ce formulaire et cliquer sur **Sync**, et enregistrer la fiche GoPaaS.
 
-<img src="images/image16.png" width="30%">
+<img src="images/image16.png" width="40%">
 
 
 Ajouter une fiche de paramétrage pour la synchronisation des Agendas.
@@ -150,7 +150,7 @@ Ajouter une fiche de paramétrage pour la synchronisation des Agendas.
 
 Faire correspondre les champs dans ce formulaire et cliquer sur **Sync**, et enregistrer la fiche GoPaaS.
 
-<img src="images/image21.png" width="30%">
+<img src="images/image21.png" width="40%">
 
 Se déconnecter puis reconnecter à GoPaaS, et cliquer sur l'icone Outlook.
 
