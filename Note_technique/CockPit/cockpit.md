@@ -1,7 +1,11 @@
 # Documentation de Cockpit
 
 ## Introduction
-Bienvenue dans la documentation de Cockpit. Ce document fournit des informations détaillées sur l'utilisation et les fonctionnalités de Cockpit.
+Bienvenue dans la documentation de Cockpit. 
+<br>
+Ce document fournit des informations détaillées sur l'utilisation et les fonctionnalités de Cockpit.
+<br>
+Cockpit est un outil intélligent permettant de réaliser des dashboards de monitoring simplement et rapidement.
 
 <br>
 
@@ -83,7 +87,7 @@ Suivez les étapes de la section [Création d'un KPI](#création-dun-kpi) en sé
 
 ## Module LineChart
 
-Le module LineChart propose un affichage comme ceci :
+Le module LineChart propose un affichage sous forme de courbe, comme ceci :
 
 <img src="images/linechart_1.png" alt="Exemple de LineChart" width="400">
 
@@ -147,7 +151,7 @@ Suivez les étapes de la section [Création d'un KPI](#création-dun-kpi) en sé
 
 ## Module GaugeChart
 
-Le module GaugeChart propose un affichage sous forme d'histogramme, comme ceci :
+Le module GaugeChart propose un affichage sous forme de compteur / horloge, comme ceci :
 
 <img src="images/gaugechart_1.png" alt="Exemple de TreeMap" width="600">
 
@@ -164,3 +168,63 @@ Suivez les étapes de la section [Création d'un KPI](#création-dun-kpi) en sé
 <img src="images/gaugechart_3.png" alt="KPI TreeMap" width="1500">
 
 <br>
+
+## Module TreeMap
+
+Le module TreeMap propose un affichage comme ceci :
+
+<img src="images/treemap_1.png" alt="Exemple de TreeMap" width="600">
+
+<br>
+
+### Configuration :
+
+Suivez les étapes de la section [Création d'un KPI](#création-dun-kpi) en sélectionnant "TreeMap" comme type.
+
+<img src="images/treemap_3.png" alt="KPI TreeMap" width="1500">
+
+<br>
+
+## Module Calculate
+
+Le module Calculate propose un affichage sous forme de carte mais avec une valeur calculée, comme ceci :
+
+<img src="images/calculate_1.png" alt="Exemple de Calculate" width="600">
+
+<br>
+
+### Configuration :
+
+Suivez les étapes de la section [Création d'un KPI](#création-dun-kpi) en sélectionnant "Calculate" comme type. Ajoutez également le champ suivant :
+
+| Champ         | Description                                                                   |
+|---------------|-------------------------------------------------------------------------------|
+| Calculate     | {{ID_KPI_1}} - {{ID_KPI_2}}, ex : {{SOMME_FACTURES}} - {{SOMME_FACTURES_NON_REGLEES}}                                                   |
+
+<img src="images/calculate_2.png" alt="KPI TreeMap" width="1500">
+
+<br>
+
+Pas besoin de Série pour ce module.
+
+## Module Title
+
+Le module Title propose l'affichage d'un simple titre, comme ceci :
+
+<img src="images/title_1.png" alt="Exemple de Calculate" width="600">
+
+<br>
+
+### Configuration :
+
+Suivez les étapes de la section [Création d'un KPI](#création-dun-kpi) en sélectionnant "Title" comme type. Ajoutez également le champ suivant :
+
+| Champ         | Description                                                                   |
+|---------------|-------------------------------------------------------------------------------|
+| Titre         | Titre à afficher                                                              |
+
+<img src="images/calculate_2.png" alt="KPI TreeMap" width="1500">
+
+<br>
+
+Pas besoin de Série pour ce module.
