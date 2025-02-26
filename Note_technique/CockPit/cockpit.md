@@ -32,8 +32,10 @@ Pour créer un nouveau KPI, suivez les étapes suivantes :
 |---------------|-------------------------------------------------------------------------------|
 | Titre         | Nom du KPI                                                                    |
 | ID            | Identifiant du KPI                                                            |
-| Symbol        | Entête du module                                                              |
 | Type          | Type de graphique (PieChart, Card, LineChart, BarChart, FunnelChart, TreeMap, GaugeChart) |
+| Compact       | Permet de passer d'un affichage 1 000 000 à 1 000k par exemple                |
+| Symbol        | Entête du module                                                              |
+| CustomOptions | Options personnalisées retrouvables sur la doc d'eCharts                      |
 
 2. Cliquer sur 'Appliquer'
 3. Dans la section 'Séries', ajouter une nouvelle Série
@@ -43,13 +45,17 @@ Pour créer un nouveau KPI, suivez les étapes suivantes :
 ## Création d'une Série
 Pour créer une nouvelle Série, remplissez les champs suivants :
 
-| Champ       | Description                                                                 |
-|-------------|-----------------------------------------------------------------------------|
-| Name        | Nom de la série                                                             |
-| Operation   | Opération à effectuer (Somme, moyenne, comptage, plus haut, plus bas)       |
-| Value       | Champ concerné par l'opération                                              |
-| Category    | Champ catégorisé par l'opération                                            |
-| Filters     | Condition souhaitée pour filtrer les données                                |
+| Champ          | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| Name           | Nom de la série                                                             |
+| Operation      | Opération à effectuer (Somme, moyenne, comptage, plus haut, plus bas)       |
+| Value          | Champ concerné par l'opération                                              |
+| Filters        | Condition souhaitée pour filtrer les données                                |
+| Category       | Champ catégorisé par l'opération                                            |
+| Sub-category   | ...                                                                         |
+| Détails        | ...                                                                         |
+| Color          | Couleur du module                                                           |
+| CustomOptions  | Options personnalisées retrouvables sur la doc d'eCharts                    |
 
 <br>
 
