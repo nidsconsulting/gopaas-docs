@@ -223,13 +223,11 @@ Le module Title propose l'affichage d'un simple titre, comme ceci :
 
 ### Configuration :
 
-Suivez les étapes de la section [Création d'un KPI](#création-dun-kpi) en sélectionnant "Title" comme type. Ajoutez également le champ suivant :
+Suivez les étapes de la section [Création d'un KPI](#création-dun-kpi) en sélectionnant "Title" comme type. Attention au champ suivant :
 
 | Champ         | Description                                                                   |
 |---------------|-------------------------------------------------------------------------------|
 | Titre         | Titre à afficher                                                              |
-
-<img src="images/calculate_2.png" alt="KPI TreeMap" width="1500">
 
 <br>
 
