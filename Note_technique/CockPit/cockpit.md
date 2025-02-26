@@ -9,7 +9,7 @@ Bienvenue dans la documentation de Cockpit. Ce document fournit des informations
 3. [Module Card](#module-card)
 4. [Module LineCHart](#module-linechart)
 5. [Module BarChart](#module-barchart)
-6. [Module TreeChart](#module-treechart)
+6. [Module TreeMap](#module-treemap)
 7. [Module GaugeChart](#module-gaugechart)
 
 ## Module PieChart
@@ -225,20 +225,72 @@ Le module BarChart propose un affichage sous forme d'histogramme, comme ceci :
 <br>
 <br>
 
-## Module TreeChart
 
-Le module TreeChart propose un affichage comme ceci :
+## Module FunnelChart
+
+Le module FunnelChart propose un affichage en entonoir, comme ceci :
 
 <br>
 
-<img src="images/treemap_1.png" alt="Exemple de FunnelChart" width="600">
+<img src="images/funnel_1.png" alt="Exemple de FunnelChart" width="600">
 
 <br>
 <br>
 
 ### Configuration :
 
-<img src="images/treemap_2.png" alt="KPI FunnelChart" width="1000">
+<img src="images/funnel_2.png" alt="KPI FunnelChart" width="1000">
+
+<br>
+
+- Créer un nouveau KPI, et remplissez les champs suivants : 
+
+| Champ         | Description                                                                   |
+|---------------|-------------------------------------------------------------------------------|
+| Titre         | Nom du KPI                                                                    |
+| ID            | Identifiant du KPI                                                            |
+| Symbol        | Entête du module                                                              |
+| Type          | FunnelChart                                                                   |
+
+
+- Cliquer sur 'Appliquer'
+- Dans la section 'Séries', ajouter une nouvelle Série
+
+<br>
+<br>
+
+<img src="images/funnel_3.png" alt="Série FunnelChart" width="1000">
+
+<br>
+
+#### Remplir les champs suivants :
+
+| Champ       | Description                                                                 |
+|-------------|-----------------------------------------------------------------------------|
+| Name        | Nom de la série                                                             |
+| Operation   | Opération à effectuer (Somme, moyenne, comptage, plus haut, plus bas)       |
+| Value       | Champ concerné par l'opération                                              |
+| Category    | Champ catégorisé par l'opération                                            |
+| Filters     | Condition souhaitée pour filtrer les données                                |
+
+<br>
+<br>
+
+
+## Module TreeMap
+
+Le module TreeMap propose un affichage comme ceci :
+
+<br>
+
+<img src="images/treemap_1.png" alt="Exemple de TreeMap" width="600">
+
+<br>
+<br>
+
+### Configuration :
+
+<img src="images/treemap_2.png" alt="KPI TreeMap" width="1000">
 
 <br>
 
@@ -258,7 +310,7 @@ Le module TreeChart propose un affichage comme ceci :
 <br>
 <br>
 
-<img src="images/treemap_3.png" alt="Série FunnelChart" width="1000">
+<img src="images/treemap_3.png" alt="Série TreeMap" width="1000">
 
 <br>
 
@@ -281,14 +333,14 @@ Le module GaugeChart propose un affichage sous forme d'histogramme, comme ceci :
 
 <br>
 
-<img src="images/gaugechart_1.png" alt="Exemple de FunnelChart" width="600">
+<img src="images/gaugechart_1.png" alt="Exemple de TreeMap" width="600">
 
 <br>
 <br>
 
 ### Configuration :
 
-<img src="images/gaugechart_2.png" alt="KPI FunnelChart" width="1000">
+<img src="images/gaugechart_2.png" alt="KPI TreeMap" width="1000">
 
 <br>
 
@@ -299,7 +351,7 @@ Le module GaugeChart propose un affichage sous forme d'histogramme, comme ceci :
 | Titre         | Nom du KPI                                                                    |
 | ID            | Identifiant du KPI                                                            |
 | Symbol        | Entête du module                                                              |
-| Type          | TreeGaugeChartMap                                                             |
+| Type          | GaugeChart                                                                    |
 | KeyValue      | Valeur de référence maximale de la jauge                                      |
 
 
